@@ -22,6 +22,7 @@ import ExamResults from "/src/pages/examsResults/examResults.jsx";
 import Placements from "/src/pages/Placements/placements.jsx";
 import YearWisePlacements from "/src/pages/Placements/YearWisePlacements";
 import BranchWisePlacements from "/src/pages/Placements/BranchWisePlacements";
+import { ThemeProvider, CssBaseline } from "@mui/material";
 
 const router = createBrowserRouter([
   {
@@ -73,7 +74,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <React.StrictMode>
       <ChakraProvider>
-        <RouterProvider router={router} />
+        <ThemeProvider>
+          <RouterProvider router={router} />
+        </ThemeProvider>
       </ChakraProvider>
     </React.StrictMode>
   </>
