@@ -35,14 +35,15 @@ export default function Root() {
 					Satuatory Data
 				</Link>
 			</button>
-      <Link
+			<button>
+                 <Link
 					className=" m-2 p-2 border-2 border-black"
 					to={"/departments/IT"}
 				>	
 					Departments
 				</Link>
-      </button>
-      <button>
+            </button>
+             <button>
 				<Link className=" m-2 p-2 border-2 border-black" to={"/exam-downloads"}>
 					Exam downloads
 				</Link>
