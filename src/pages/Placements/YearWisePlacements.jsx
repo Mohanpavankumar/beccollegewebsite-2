@@ -29,7 +29,7 @@ let YearWisePlacements=() =>{
 
   useEffect(() => {
 		getSalaryDetails()
-	}, [data])
+	}, [data,placementYear])
 
 
   //YearWise Placements BarChart
@@ -61,14 +61,14 @@ for (const datum of data) {
 
 const result = Object.values(counts)
 let setYear = placementYear.split('-')
-//console.log("Res", result.filter(x=> (x.academicyear.split('-')[0]<=setYear[1])))
 return result.filter(x=> x.academicyear== placementYear)
 }
 
 const getSalaryDetails = ()=>{
-  setminSal(Math.min(...data.filter(x=>x.academicyear==placementYear).map(y => Number(y.salary))))
-  setmaxSal(Math.max(...data.filter(x=>x.academicyear==placementYear).map(y => Number(y.salary))))
-  setavgSal(Math.round((data.filter(x=>x.academicyear==placementYear).reduce((y,z)=>Number(y)+Number(z.salary),0)/data.length)*10))
+  let newData = data.filter(x => x.academicyear==placementYear)
+  setminSal(Math.min(...newData.map(y => Number(y.salary))))
+  setmaxSal(Math.max(...newData.map(y => Number(y.salary))))
+  setavgSal(Math.round((newData.reduce((y,z)=>Number(y)+Number(z.salary),0)/data.length)*10))
 }
   
   
@@ -133,6 +133,7 @@ const getSalaryDetails = ()=>{
     
     
     <div className='ml-[65rem]'>
+      {console.log(placementYear)}
       <select className='selectYears' value={showbyYears} onChange={(event) => setYears(event.target.value)}>
           <option value={1}>2022-2023</option>
           <option value={2}>2021-2022</option>
@@ -142,7 +143,7 @@ const getSalaryDetails = ()=>{
       </select>
     </div>
       <div className='placements-header flex p-1'>Placements {placementYear}
-      <div className='pl-72'>Max sal : {maxSal}LPA, Avg sal : {avgSal}LPA, Min sal : {minSal}LPA</div>
+      <div className='pl-72'>Max sal :{maxSal}LPA, Avg sal :{avgSal}LPA, Min sal :{minSal}LPA</div>
       </div>
 
       <React.Fragment>
