@@ -17,6 +17,8 @@ import { Box } from "@mui/system";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import Drawercomp from "/src/components/drawercomponent.jsx";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -24,10 +26,42 @@ function Navbar() {
   const handleClick = () => {};
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+  const [state, setState] = React.useState({
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => <div> hello </div>;
+
   return (
     <>
       {isMobile ? (
-        <></>
+        // <div>
+        //   {["right"].map((anchor) => (
+        //     <React.Fragment key={anchor}>
+        //       <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+        //       <Drawer
+        //         anchor={anchor}
+        //         open={state[anchor]}
+        //         onClose={toggleDrawer(anchor, false)}
+        //       >
+        //         {list(anchor)}
+        //       </Drawer>
+        //     </React.Fragment>
+        //   ))}
+        // </div>
+        <Drawercomp />
       ) : (
         <nav className="navbar font-bold text-primaryColor">
           <div className="navbar-container">
@@ -39,7 +73,9 @@ function Navbar() {
             </div>
             <div className="gap-10 ml-10 hidden md:flex">
               <Menu>
-                <MenuButton>Departments</MenuButton>
+                <MenuButton>
+                  Departments <ArrowDropDownIcon />
+                </MenuButton>
                 <MenuList>
                   <MenuItem as="a" href="#">
                     Link 1
@@ -50,7 +86,9 @@ function Navbar() {
                 </MenuList>
               </Menu>
               <Menu>
-                <MenuButton> Facilities</MenuButton>
+                <MenuButton>
+                  Facilities <ArrowDropDownIcon />
+                </MenuButton>
                 <MenuList>
                   <MenuItem as="a" href="#">
                     Link 1
@@ -61,7 +99,9 @@ function Navbar() {
                 </MenuList>
               </Menu>
               <Menu>
-                <MenuButton>Academics</MenuButton>
+                <MenuButton>
+                  Academics <ArrowDropDownIcon />
+                </MenuButton>
                 <MenuList>
                   <MenuItem as="a" href="#">
                     Link 1
@@ -72,7 +112,9 @@ function Navbar() {
                 </MenuList>
               </Menu>
               <Menu>
-                <MenuButton> Exams & Results</MenuButton>
+                <MenuButton>
+                  Exams & Results <ArrowDropDownIcon />
+                </MenuButton>
                 <MenuList>
                   <MenuItem as="a" href="#">
                     Link 1
@@ -83,7 +125,9 @@ function Navbar() {
                 </MenuList>
               </Menu>
               <Menu>
-                <MenuButton> Alumni</MenuButton>
+                <MenuButton>
+                  Alumni <ArrowDropDownIcon />
+                </MenuButton>
                 <MenuList>
                   <MenuItem as="a" href="#">
                     Link 1
@@ -94,7 +138,9 @@ function Navbar() {
                 </MenuList>
               </Menu>
               <Menu>
-                <MenuButton> Login</MenuButton>
+                <MenuButton>
+                  Login <ArrowDropDownIcon />
+                </MenuButton>
                 <MenuList>
                   <MenuItem as="a" href="#">
                     Link 1
@@ -105,7 +151,9 @@ function Navbar() {
                 </MenuList>
               </Menu>
               <Menu>
-                <MenuButton> Reach us</MenuButton>
+                <MenuButton>
+                  Reach us <ArrowDropDownIcon />
+                </MenuButton>
                 <MenuList>
                   <MenuItem as="a" href="#">
                     Link 1

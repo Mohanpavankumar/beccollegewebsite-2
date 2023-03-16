@@ -74,9 +74,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <React.StrictMode>
       <ChakraProvider>
-        <ThemeProvider>
-          <RouterProvider router={router} />
-        </ThemeProvider>
+        <RouterProvider router={router} />
       </ChakraProvider>
     </React.StrictMode>
   </>
