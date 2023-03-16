@@ -283,10 +283,10 @@ export default function homepage() {
 				</button>
 			</div>
 
-			<div className="flex flex-row justify-evenly">
+			<div className="flex flex-col md:flex-row md:justify-evenly items-center">
 				<div>
 					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px] ">
-						<div className="text-white count counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
+						<div className="text-white count counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
 							80
 						</div>
 						<h3 className=" font-semibold text-base text-primaryColor">
@@ -296,7 +296,7 @@ export default function homepage() {
 				</div>
 				<div>
 					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
+						<div className="text-white counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
 							100
 						</div>
 						<h3 className=" font-semibold text-base text-primaryColor">
@@ -306,7 +306,7 @@ export default function homepage() {
 				</div>
 				<div>
 					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
+						<div className="text-white counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
 							200
 						</div>
 						<h3 className=" font-semibold text-base text-primaryColor">
@@ -315,8 +315,8 @@ export default function homepage() {
 					</div>
 				</div>
 				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
+					<div className="text-center rounded-full border-primaryColor  border-8  h-[130px] w-[130px]">
+						<div className="text-white counter-value md:text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
 							182
 						</div>
 						<h3 className=" font-semibold text-base text-primaryColor">
@@ -373,41 +373,46 @@ export default function homepage() {
 				</div>
 			</div>
 			<div className=" flex flex-col justify-center items-center bg-hero-pattern ">
-				<div className="w-4/5 xl:w-3/6 mt-24">
-					<fieldset className=" p-5  text-justify border-2 border-primaryColor rounded-md">
-						<legend className=" text-primaryColor text-xl xl:text-2xl font-medium">
+				<div className="w-4/5 xl:w-3/6 mt-14">
+					<fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
+						<legend className="scheduler-border text-primaryColor text-xl xl:text-2xl font-medium">
 							Vision
 						</legend>
-						<p className="font-medium xl:text-lg">
-							To build centers of excellence, impart high quality education and
-							instill high standards of ethics and professionalism through
-							strategic efforts of our dedicated staff, which allows the college
-							to effectively adapt to the ever changing aspects of education.
-							<br />
-							<br />
-							To empower the faculty and students with the knowledge, skills and
-							innovative thinking to facilitate discovery in numerous existing
-							and yet to be discovered fields of engineering, technology and
-							interdisciplinary endeavors.
-						</p>
+						<label>
+							<p className="font-medium xl:text-lg">
+								To build centers of excellence, impart high quality education
+								and instill high standards of ethics and professionalism through
+								strategic efforts of our dedicated staff, which allows the
+								college to effectively adapt to the ever changing aspects of
+								education.
+								<br />
+								<br />
+								To empower the faculty and students with the knowledge, skills
+								and innovative thinking to facilitate discovery in numerous
+								existing and yet to be discovered fields of engineering,
+								technology and interdisciplinary endeavors.
+							</p>
+						</label>
 					</fieldset>
 				</div>
-				<div className="w-4/5 xl:w-3/6">
-					<fieldset className=" p-5  mt-5 text-justify border-2 border-primaryColor rounded-md mb-24">
-						<legend className=" text-primaryColor text-xl xl:text-2xl font-medium">
+				<div className="w-4/5 xl:w-3/6 mt-14 mb-14">
+					<fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
+						<legend className="scheduler-border text-primaryColor text-xl xl:text-2xl font-medium">
 							Mission
 						</legend>
-						<p className="font-medium xl:text-lg">
-							Our Mission is to impart the quality education at par with global
-							standards to the students from all over India and in particular
-							those from the local and rural areas.
-							<br />
-							<br />
-							We continuously try to maintain high standards so as to make them
-							technologically competent and ethically strong individuals who
-							shall be able to improve the quality of life and economy of our
-							country.
-						</p>
+						<label>
+							<p className="font-medium xl:text-lg">
+								Our Mission is to impart the quality education at par with
+								global standards to the students from all over India and in
+								particular those from the local and rural areas.
+								<br />
+								<br />
+								We continuously try to maintain high standards so as to make
+								them technologically competent and ethically strong individuals
+								who shall be able to improve the quality of life and economy of
+								our country.
+							</p>
+						</label>
 					</fieldset>
 				</div>
 			</div>
@@ -540,6 +545,7 @@ export default function homepage() {
 												: "text-black hover:bg-white/[0.12] hover:text-primaryColor"
 										)
 									}
+
 								>
 									{category}
 								</Tab>

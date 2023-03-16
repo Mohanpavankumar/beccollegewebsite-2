@@ -29,7 +29,7 @@ function Navbar() {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/services" className="nav-links" onClick={handleClick}>
+							<Link to="/facilities" className="nav-links" onClick={handleClick}>
 								Facilities
 							</Link>
 						</li>

@@ -102,10 +102,11 @@ form{
 	margin-left: 250px;
 	width: 920px ;
 	border: 3px solid #0060b1;
+	margin-top: 20px;
  }
- .BarChart1{
-	margin-top: 40px;
-	width: 770px;
+ .DonutChart{
+	margin-left: 250px;
+	width: 920px ;
 	border: 3px solid #0060b1;
  }
  .apexcharts-menu-icon{
@@ -117,15 +118,7 @@ form{
 .apexcharts-xaxis-label{
 	font-weight: 600 !important;
  }
- .donutchart1{
-	margin-right: 270px !important;
-	font-size: large;
-	color: white;
-	background-color: #0060b1;
-	font-weight: bold;
-	margin-left: 349px;
- }
- .donutchart{
+ .placements-header{
 	margin-right: 349px !important;
 	font-size: large;
 	color: white;
@@ -135,6 +128,17 @@ form{
  }
  .float-right:hover{
 	color: #fff;
+ }
+ .selectYears{
+	background-color: #0060b1;
+	color: #fff;
+	cursor: pointer;
+	width: fit-content;
+	padding: 10px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 17px;
+
  }
  @media all and (max-width:320px) {
 	.Training-Placements-Menu{

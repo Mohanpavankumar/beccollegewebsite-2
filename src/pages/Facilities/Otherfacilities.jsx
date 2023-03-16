@@ -15,7 +15,7 @@ export default function Facilities(){
             
             <div className="row w-full pt-3 px-24">
                         <div className="col-3">
-                            <div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
+                            <div className="nav flex-column nav-pills otherfacilitiesmenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="bankhome-tab" data-toggle="pill" href="#bankhome" role="tab" aria-controls="bankhome" aria-selected="true">Bank</a>
                                 <a className="nav-link" id="postofficehome-tab" data-toggle="pill" href="#postofficehome" role="tab" aria-controls="postofficehome" aria-selected="true">Post Office</a>
                                 <a className="nav-link" id="dispensaryhome-tab" data-toggle="pill" href="#dispensaryhome" role="tab" aria-controls="dispensaryhome" aria-selected="true">Dispensary</a>
