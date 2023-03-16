@@ -311,7 +311,7 @@ import '/src/routes/Search.css'
           },
           {
             id: 24,
-            image: dcme,
+            image: dcivil,
             course:"Diploma in Computer Engineering",
             type: "DIPLOMA",
             name: "Programme level",
@@ -322,7 +322,7 @@ import '/src/routes/Search.css'
           },
           {
             id: 25,
-            image: dcivil,
+            image: dcme,
             course:"Diploma in Civil Engineering",
             type: "DIPLOMA",
             name: "Programme level",
@@ -399,8 +399,8 @@ import '/src/routes/Search.css'
         <div className="mx-12  justify-around ">
           <form className='flex flex-col w-max'>
             <label htmlFor="myInput">
-            <div className='font-bold text-xl '>FILTER</div>
-            <input 
+            <div className='font-bold text-xl'>FILTER</div>
+            <input className='text-lg'
               type="checkbox"
               onClick={() => this.onFilterChange("ALL")}
               checked={activeFilter.length === filterList.length}
@@ -409,7 +409,7 @@ import '/src/routes/Search.css'
             </label>
             {this.state.filterList.map(filter => (
               <React.Fragment>
-                <div className='flex items-baseline'>
+                <div className='flex items-baseline text-lg'>
                 <label htmlFor={filter.id}><input className='flex flex-row'
                   type="checkbox" 
                   checked={activeFilter.includes(filter.value)}

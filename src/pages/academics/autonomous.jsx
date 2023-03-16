@@ -23,49 +23,49 @@ export default function autonomous(){
        <p className="text-xl ml-5 font-bold text-blue-800">College Academic Policies
        </p>
        <p className="text-md ml-14 py-1 flex flex-row mt-3 font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\acd_rules&regulations.pdf" target="_blank">Academic Rules & Regulations</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/acd_rules&regulations.pdf" target="_blank">Academic Rules & Regulations</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-           <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_R18_regulations.pdf" target="_blank">BEC R18 Regulations</a>
+           <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_R18_regulations.pdf" target="_blank">BEC R18 Regulations</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold ">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_Teaching&Learning.pdf" target="_blank">BEC Teaching - Learning Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_Teaching&Learning.pdf" target="_blank">BEC Teaching - Learning Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_BenchMarking.pdf" target="_blank">BEC Benchmarking Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_BenchMarking.pdf" target="_blank">BEC Benchmarking Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_Assessment&Examination.pdf" target="_blank" >BEC Assessment and Examination</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_Assessment&Examination.pdf" target="_blank" >BEC Assessment and Examination</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_Researchpolicy.pdf" target="_blank">BEC Research Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_Researchpolicy.pdf" target="_blank">BEC Research Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_cybersecurity.pdf" target="_blank" >BEC Cyber Security Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_cybersecurity.pdf" target="_blank" >BEC Cyber Security Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_programme_review.pdf" target="_blank" >BEC Programme Review Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_programme_review.pdf" target="_blank" >BEC Programme Review Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_library.pdf" target="_blank" >BEC Library Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_library.pdf" target="_blank" >BEC Library Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_Institutional_academy.pdf" target="_blank" >BEC Institutional Academic Audit Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_Institutional_academy.pdf" target="_blank" >BEC Institutional Academic Audit Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_Department_Academic.pdf" target="_blank">BEC Department Academic Audit Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_Department_Academic.pdf" target="_blank">BEC Department Academic Audit Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_Student_mentoring.pdf" target="_blank">BEC Student Mentoring Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics\BCE_Student_mentoring.pdf" target="_blank">BEC Student Mentoring Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_project_allocation.pdf" target="_blank">BEC Project Allocation Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_project_allocation.pdf" target="_blank">BEC Project Allocation Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\BCE_internship.pdf" target="_blank">BEC Internship Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/BCE_internship.pdf" target="_blank">BEC Internship Policy</a>
         </p>
         <p className="text-md ml-14 py-1 flex flex-row font-bold">
-            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="src\assets\plagiarism_policy.pdf" target="_blank">Plagiarism Policy</a>
+            <a className="ml-4 border border-black rounded-md w-72 bg-blue-400 hover:scale-110" href="/src/assets/academics/plagiarism_policy.pdf" target="_blank">Plagiarism Policy</a>
         </p>
        </>
     );
