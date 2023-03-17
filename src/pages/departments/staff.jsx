@@ -24,12 +24,18 @@ let staff = () => {
           <div className="mt-10 flex flex-row justify-evenly">
             {c.staffdata.map((x) => (
               <div className="staff-wrapper flex">
-                <div>{x.name}</div>
-                <div>{x.department}</div>
-                <div>{x.designation}</div>
-                <div>{x.doj}</div>
-                <div>{x.deptid}</div>
-                <div>{x.email}</div>
+                <div className="staff-text flex flex-col ml-2 justify-around">
+                  <div className="staff-name font-bold">{x.name}</div>
+                  <div className="staff-designation">{x.designation}</div>
+                  <div className="staff-breaker flex flex-row items-center">
+                    <div className="staff-line h-1 w-11/12 md:w-52 bg-primaryColor"></div>
+                    <div className="staff-circle h-3 -ml-1 w-3 bg-primaryColor rounded-full"></div>
+                  </div>
+                  <div className="Department">{x.department}</div>
+                  <div className="Date of Joining">{x.doj}</div>
+                  <div className="Qualifification">{x.qul}</div>
+                  <div className="Email">{x.email}</div>
+                </div>
               </div>
             ))}
           </div>
