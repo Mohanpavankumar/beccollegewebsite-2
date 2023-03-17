@@ -11,6 +11,7 @@ const IqacPage = (props) => {
             <Row className='mt-3 px-5'>
                 <Col sm={9}>
                     <Tab.Content>
+                        
                         {iqacDisplayData.map(x =>
                             <Tab.Pane eventKey={x.key}>
                                 {x.DisplayComponent}
