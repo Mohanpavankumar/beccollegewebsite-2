@@ -1,3 +1,23 @@
+import ListComponent from "../../pages/saturaotryData/shared/List"
+
+
+export const listData = [{
+    "link": "http://",
+    "title": "Hey123"
+}]
+
+export const listData2 = [{
+    "link": "",
+    "title": "Hey123",
+    "isExpand": true,
+    "expandData": [{
+        "title": "123",
+        "link": "abc"
+    }
+]
+}]
+
+
 export const iqacNavigation = [
     {
         "title": "IQAC",
@@ -47,11 +67,15 @@ export const iqacDisplayData = [
     },
     {
         "key": "3",
-        "DisplayComponent": <div><h1>Templates</h1>3</div>
+        "DisplayComponent": <div className="list-container">
+            <ListComponent data={listData} listTitle={"Title"} />
+        </div>
     },
     {
         "key": "4",
-        "DisplayComponent": <div><h1>AQARReports</h1>4</div>
+        "DisplayComponent": <div className="list-container">
+            <ListComponent data={listData2} listTitle={"Title2"} />
+        </div>
     },
     {
         "key": "5",
