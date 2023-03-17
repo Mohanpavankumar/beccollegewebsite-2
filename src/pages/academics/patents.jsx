@@ -7,8 +7,6 @@ export default function Patents(){
                 <div className="col-3">
                     <div className="nav flex-column nav-pills text-sm" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <div className='nav flex-column nav-pills text-left py-10 justify-items-start p-4' id='tab' role="tablist">
-                        
-                            
                                     <a className="nav-link bg-slate-400 text-black mb-1" id="YEAR2019-tab" data-toggle="pill" href="#YEAR2019" role="tab" aria-controls="YEAR2019" aria-selected="false">PATENT FILED YEAR 2019</a>
                                     <a className="nav-link bg-slate-400 mb-1" id="YEAR2020-tab" data-toggle="pill" href="#YEAR2020" role="tab" aria-controls="YEAR2020" aria-selected="false">PATENT FILED YEAR 2020</a>
                                     <a className="nav-link bg-slate-400 mb-1" id="YEAR2021-tab" data-toggle="pill" href="#YEAR2021" role="tab" aria-controls="YEAR2021" aria-selected="false">PATENT FILED YEAR 2021</a>
