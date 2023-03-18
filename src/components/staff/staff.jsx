@@ -4,11 +4,11 @@ let staff = (props) => {
 	const { item } = props;
 	return (
 		<div className="staff-wrapper flex">
-			<div className="staff-pic ml-2">
+			{/* <div className="staff-pic ml-2">
 				<img className="h-36" src={item.staffPic} alt="staff picture"></img>
-			</div>
+			</div> */}
 			<div className="staff-text flex flex-col ml-2 justify-around">
-				<div className="staff-name font-bold">{item.staffName}</div>
+				<div className="staff-name font-bold">{item.name}</div>
 				<div className="staff-designation">{item.staffDesignation}</div>
 				<div className="staff-breaker flex flex-row items-center">
 					<div className="staff-line h-1 w-11/12 md:w-52 bg-primaryColor"></div>
