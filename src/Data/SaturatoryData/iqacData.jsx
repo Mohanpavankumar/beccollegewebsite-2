@@ -3,21 +3,122 @@ import ListComponent from "../../pages/saturaotryData/shared/List"
 
 export const listData = [{
     "link": "http://",
-    "title": "Hey123"
-}]
+    "title": "Teachers' Evaluation",
+    "isExpand": false
+},
+{
+    "link": "http://",
+    "title": "Self Appraisal",
+    "isExpand": false
+},
+{
+    "link": "http://",
+    "title": "List of Students with shortage of attendance and marks and phone call comm. at the end of semester",
+    
+},
+{
+    "link": "http://",
+    "title": "AQAR",
+    "isExpand": true,
+    "expandData": [{
+        "title": "One",
+        "link": ""
+    },
+    {
+        "title": "Two",
+        "link": ""
+    },
+    {
+        "title": "Three",
+        "link": ""
+    }
+]
+},
+
+]
 
 export const listData2 = [{
     "link": "",
-    "title": "Hey123",
-    "isExpand": true,
-    "expandData": [{
-        "title": "123",
-        "link": "abc"
-    }
+    "title": "AQAR 2020-21"
+    
+
+},
+{
+   "link":"",
+   "title":"AQAR 2020-20" 
+},
+{
+    "link":"",
+    "title":"AQAR 2020-19" 
+ },
+ {
+    "link":"",
+    "title":"AQAR 2019-18" 
+ },
+ {
+    "link":"",
+    "title":"AQAR 2018-17" 
+ },
+ {
+    "link":"",
+    "title":"AQAR 2017-16" 
+ }
 ]
-}]
+export const listData3 = [{
+    "link": "",
+    "title": "IQAC Minitues of Meeting for A.Y 2018-19"
+    
+
+},
+{
+   "link":"",
+   "title":"IQAC Minitues of Meeting for A.Y 2018-19" 
+},
+{
+    "link":"",
+    "title":"IQAC Minitues of Meeting for A.Y 2018-19" 
+ },
+ {
+    "link":"",
+    "title":"IQAC Minitues of Meeting for A.Y 2018-19" 
+ }
+
+]
+export const listData4 = [{
+    "link": "",
+    "title": "Student feedback on curriculum and teaching"
+    
+
+},
+{
+   "link":"",
+   "title":"Teacher's feedback on curriculum and Developmen" 
+},
+{
+    "link":"",
+    "title":"Alumni feedback on curriculum ,and Development" 
+ },
+ {
+    "link":"",
+    "title":"Employer Feedback on curriculum and Development" 
+ }
+]
+export const listData5 = [{
+    "link": "",
+    "title": "IIQA"
+    
+},
+{
+   "link":"",
+   "title":"Statement of compliance with an IP address" 
+},
+{
+    "link":"",
+    "title":"animated arrow icon gif images & Animations 100% FREE!IS0 22000:2018 Food Safety Management System Certification for BEC Canteen and Girls Hostel Canteen" 
+ },
 
 
+]
 export const iqacNavigation = [
     {
         "title": "IQAC",
@@ -44,10 +145,10 @@ export const iqacNavigation = [
         "key": "6"
     },
     {
-        "title": "Gallery",
+        "title": "IIQA",
         "key": "7"
     }, {
-        "title": "OtherReports",
+        "title": "Green Rankings-2023",
         "key": "8"
     }
 ]
@@ -68,29 +169,37 @@ export const iqacDisplayData = [
     {
         "key": "3",
         "DisplayComponent": <div className="list-container">
-            <ListComponent data={listData} listTitle={"Title"} />
+            <ListComponent data={listData} listTitle={"IQAC Templates "} />
         </div>
     },
     {
         "key": "4",
         "DisplayComponent": <div className="list-container">
-            <ListComponent data={listData2} listTitle={"Title2"} />
+            <ListComponent data={listData2} listTitle={"IQAC Report Status"} />
         </div>
     },
     {
         "key": "5",
-        "DisplayComponent": <div><h1>IQACMinutesofMeeting</h1>5</div>
+        "DisplayComponent":<div className="list-container">
+        <ListComponent data={listData3} listTitle={"IQAC Minutes of Meeting"} />
+    </div>
     },
     {
         "key": "6",
-        "DisplayComponent": <div><h1>Feedback Forms</h1>5</div>
+        "DisplayComponent": <div className="list-container">
+        <ListComponent data={listData4} listTitle={"IQAC Student/Teacher/Alumni/Employee Feedback Forms:"} />
+    </div>
     },
     {
         "key": "7",
-        "DisplayComponent": <div><h1>Gallery</h1>5</div>
+        "DisplayComponent": <div className="list-container">
+        <ListComponent data={listData5} listTitle={"IIQA"} />
+    </div>
     },
     {
         "key": "8",
-        "DisplayComponent": <div><h1>OtherReports</h1>5</div>
+        "DisplayComponent":<div className="list-container">
+        <ListComponent data={listData5} listTitle={"IIQA"} />
+    </div>
     }
 ]
