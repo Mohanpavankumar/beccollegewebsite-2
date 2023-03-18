@@ -45,138 +45,120 @@ import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
 
+import ItStaff from "/src/pages/departments/staff.jsx";
+import Imggallery from "./components/homepage/gallery/imggallery";
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    // errorElement: <ErrorPage />,
-    children: [
-      { index: true, element: <Homepage /> },
-      {
-        path: "/Placements",
-        element: <Placements />,
-      },
-      {
-        path: "/examination-cell",
-        element: <ExaminationCell />,
-      },
-      {
-        path: "/exam-notifications",
-        element: <ExamNotifs />,
-      },
-      {
-        path: "/naac",
-        element: <NaacHome />,
-      },
-      {
-        path: "/naacInfo",
-        element: <Aicte />,
-      },
-      {
-        path: "/naacPage",
-        element: <NaacPage />,
-      },
-      {
-        path: "/iqacPage",
-        element: <IqacPage />,
-      },
-      {
-        path: "/nirf",
-        element: <Nirf />,
-      },
-      {
-        path: "/exam-downloads",
-        element: <ExamDownloads />,
-      },
-      {
-        path: "/exam-login",
-        element: <ExamLogin />,
-      },
-      {
-        path: "/exam-results",
-        element: <ExamResults />,
-      },
-      {
-        path: "/YearWise-Placements",
-        element: <YearWisePlacements />,
-      },
-      {
-        path: "/BranchWise-Placements",
-        element: <BranchWisePlacements />,
-      },
-      {
-        path: "/departments/IT",
-        element: <It />,
-      },
-      {
-        path: "/departments/ItStaff",
-        element: <ItStaff />,
-      },
-      {
-        path: "/Facilities",
-        element: <Facilities />,
-      },
-      {
-        path: "/Library",
-        element: <Library />,
-      },
-      {
-        path: "/RoboticCentre",
-        element: <RoboticCentre />,
-      },
-      {
-        path: "/BoschRexrothCEO",
-        element: <BoschRexrothCEO />,
-      },
-      {
-        path: "/Cafteria",
-        element: <Cafteria />,
-      },
-      {
-        path: "/Transportation",
-        element: <Transportation />,
-      },
-      {
-        path: "/Hostels",
-        element: <Hostels />,
-      },
-      {
-        path: "/Sports",
-        element: <Sports />,
-      },
-      {
-        path: "/Others",
-        element: <Others />,
-      },
-      {
-        path: "/academics",
-        element: <Overview />,
-      },
-      {
-        path: "/academics/programme",
-        element: <Programme />,
-      },
-      {
-        path: "/academics/patents",
-        element: <Patents />,
-      },
-      {
-        path: "/academics/rules",
-        element: <Rules />,
-      },
-      {
-        path: "/academics/autonomous",
-        element: <Autonomous />,
-      },
-      {
-        path: "/academics/institution",
-        element: <Institution />,
-      },
-    ],
-  },
+	{
+		path: "/",
+		element: <Root />,
+		// errorElement: <ErrorPage />,
+		children: [
+			{ index: true, element: <Homepage /> },
+			{
+				path: "/Placements",
+				element: <Placements />,
+			},
+			{
+				path: "/examination-cell",
+				element: <ExaminationCell />,
+			},
+			{
+				path: "/exam-notifications",
+				element: <ExamNotifs />,
+			},
+			{
+				path: "/naac",
+				element: <NaacHome />,
+			},
+			{
+				path: "/naacInfo",
+				element: <Aicte />,
+			},
+			{
+				path: "/naacPage",
+				element: <NaacPage />,
+			},
+			{
+				path: "/iqacPage",
+				element: <IqacPage />,
+			},
+			{
+				path: "/nirf",
+				element: <Nirf />,
+			},
+			{
+				path: "/exam-downloads",
+				element: <ExamDownloads />,
+			},
+			{
+				path: "/exam-login",
+				element: <ExamLogin />,
+			},
+			{
+				path: "/exam-results",
+				element: <ExamResults />,
+			},
+			{
+				path: "/YearWise-Placements",
+				element: <YearWisePlacements />,
+			},
+			{
+				path: "/Imggallery",
+				element: <Imggallery />,
+			},
+			{
+				path: "/BranchWise-Placements",
+				element: <BranchWisePlacements />,
+			},
+			{
+				path: "/departments/IT",
+				element: <It />,
+			},
+			{
+				path: "/departments/ItStaff",
+				element: <ItStaff />,
+			},
+			{
+				path: "/Facilities",
+				element: <Facilities />,
+			},
+			{
+				path: "/Library",
+				element: <Library />,
+			},
+			{
+				path: "/RoboticCentre",
+				element: <RoboticCentre />,
+			},
+			{
+				path: "/BoschRexrothCEO",
+				element: <BoschRexrothCEO />,
+			},
+			{
+				path: "/Cafteria",
+				element: <Cafteria />,
+			},
+			{
+				path: "/Transportation",
+				element: <Transportation />,
+			},
+			{
+				path: "/Hostels",
+				element: <Hostels />,
+			},
+			{
+				path: "/Sports",
+				element: <Sports />,
+			},
+			{
+				path: "/Others",
+				element: <Others />,
+			},
+		],
+	},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
