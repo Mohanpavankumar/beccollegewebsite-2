@@ -23,35 +23,35 @@ let courses = (props) => {
 					<i>Approved by AICTE</i>
 				</div>
 
-				<div className="justify-start text-xs flex">
+				<div className="justify-start text-xs md:text-sm lg:text-base  flex ">
 					<div className="flex flex-col items-center">
 						{props.item.branchCourse.course1 && (
-							<div className="p-1 xl:pl-3 xl:pr-3 text-sm rounded-md m-1 md:m-3 mb-0 text-white font-bold bg-primaryColor cursor-pointer">
+							<div className="p-1 xl:pl-3 xl:pr-3  rounded-md m-1 md:m-3 mb-0 text-white font-bold bg-primaryColor cursor-pointer">
 								{props.item.branchCourse.course1}
 							</div>
 						)}
 						{props.item.intakeNumber.intake1 && (
-							<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1  mt-0  font-bold">
+							<div className="p-1 xl:pl-3 xl:pr-3  m-1  mt-0  font-bold">
 								{props.item.intakeNumber.intake1}
 							</div>
 						)}
 					</div>
 					<div className="flex flex-col items-center">
-						<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+						<div className="p-1 xl:pl-3 xl:pr-3  m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
 							B.TECH
 						</div>
-						<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+						<div className="p-1 xl:pl-3 xl:pr-3  m-1 mt-0 font-bold">
 							{props.item.intakeNumber.intake2}
 						</div>
 					</div>
 					<div className="flex flex-col items-center">
 						{props.item.branchCourse.course2 && (
-							<div className="p-1 xl:pl-3 xl:pr-3 text-sm rounded-md m-1 md:m-3 mb-0 text-white font-bold bg-primaryColor cursor-pointer">
+							<div className="p-1 xl:pl-3 xl:pr-3  rounded-md m-1 md:m-3 mb-0 text-white font-bold bg-primaryColor cursor-pointer">
 								{props.item.branchCourse.course2}
 							</div>
 						)}
 						{props.item.intakeNumber.intake3 && (
-							<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+							<div className="p-1 xl:pl-3 xl:pr-3  m-1 mt-0 font-bold">
 								{props.item.intakeNumber.intake3}
 							</div>
 						)}

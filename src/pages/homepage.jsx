@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "/src/components/navbar/navbar";
 import Gallery from "/src/components/homepage/gallery/gallery.jsx";
 import principal from "/src/assets/homepage/principal.png";
@@ -33,8 +34,10 @@ import cmpy12 from "/src/assets/homepage/placements/image 48.png";
 import cmpy13 from "/src/assets/homepage/placements/image 46.png";
 import cmpy14 from "/src/assets/homepage/placements/image 51.png";
 import { Link } from "react-router-dom";
+
+import Marquee from "react-fast-marquee";
 function classNames(...classes) {
-	return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function homepage() {
@@ -101,10 +104,7 @@ export default function homepage() {
 			},
 		],
 	});
-	// const [isclick, setisclick] = useState(false);
-	// const closeimg=()=>{
-	// 	setisclick(true);
-	// }
+
 	const Course = coursedata.map((item) => {
 		return <Courses key={item.id} item={item} />;
 	});
@@ -114,10 +114,10 @@ export default function homepage() {
 
 	return (
 		<>
-			<div className=" fixed z-50 right-0 transform -rotate-90 origin-bottom-right pb-1">
+			<div className=" fixed z-50 right-0 transform -rotate-90 origin-bottom-right ">
 				<a
 					href="_blank"
-					className="font-bold text-xl cursor-pointer bg-primaryColor text-white hover:bg-black rounded-t-xl p-3"
+					className="font-bold text-sm md:text-2xl p-2 md:p-5 cursor-pointer bg-primaryColor text-white hover:bg-black rounded-t-md md:rounded-t-xl"
 				>
 					<a href="http://becbapatla.ac.in/bectagon2023/" target="_blank">
 						BECTAGON 2023
@@ -126,7 +126,6 @@ export default function homepage() {
 			</div>
 			<div className="fixed z-50 bottom-0 left-0 right-0">
 				<img
-					// onClick={closeimg}
 					src={close}
 					className="h-5 w-5 cursor-pointer right fixed left-[98.5%] bottom-6"
 				></img>
@@ -283,251 +282,251 @@ export default function homepage() {
 				</button>
 			</div>
 
-			<div className="flex flex-col md:flex-row md:justify-evenly items-center">
-				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px] ">
-						<div className="text-white count counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
-							80
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							Ph.D Faculty
-						</h3>
-					</div>
-				</div>
-				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
-							100
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							Publications
-						</h3>
-					</div>
-				</div>
-				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
-							200
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							R&D Projects
-						</h3>
-					</div>
-				</div>
-				<div>
-					<div className="text-center rounded-full border-primaryColor  border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value md:text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
-							182
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							IPR's
-						</h3>
-					</div>
-				</div>
-			</div>
+      <div className="flex flex-col md:flex-row md:justify-evenly items-center">
+        <div>
+          <div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px] ">
+            <div className="text-white count counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
+              80
+            </div>
+            <h3 className=" font-semibold text-base text-primaryColor">
+              Ph.D Faculty
+            </h3>
+          </div>
+        </div>
+        <div>
+          <div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
+            <div className="text-white counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
+              100
+            </div>
+            <h3 className=" font-semibold text-base text-primaryColor">
+              Publications
+            </h3>
+          </div>
+        </div>
+        <div>
+          <div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
+            <div className="text-white counter-value text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
+              200
+            </div>
+            <h3 className=" font-semibold text-base text-primaryColor">
+              R&D Projects
+            </h3>
+          </div>
+        </div>
+        <div>
+          <div className="text-center rounded-full border-primaryColor  border-8  h-[130px] w-[130px]">
+            <div className="text-white counter-value md:text-xl bg-primaryColor p-3 rounded-t-full droppp font-bold">
+              182
+            </div>
+            <h3 className=" font-semibold text-base text-primaryColor">
+              IPR's
+            </h3>
+          </div>
+        </div>
+      </div>
 
-			<div>
-				<p className="flex justify-center text-2xl font-semibold xl:text-4xl">
-					Welcome to Bapatla Engineering College
-				</p>
-				<div className="flex flex-col xl:flex-row xl:m-16 xl:mt-8">
-					<div className=" justify-center  m-7 mb-0 text-justify  xl:w-full xl:mr-8 xl:mt-12 xl:text-xl">
-						The <b>Bapatla Engineering College(Autonomous)</b>, one of the seven
-						educational institutions sponsored by the Bapatla Education Society,
-						was established in 1981 with a vision to impart quality technical
-						education and is affiliated to <b>Acharya Nagarjuna University</b>.
-						The College is a little away from the din and bustle of Bapatla, a
-						town with a historic and hoary past, about 75 Km. south of
-						Vijayawada on Chennai-Vijayawada rail route. The college offers
-						B.Tech. Programmes in 8 branches of Engineering- Civil, Computer
-						Science, Electronics and Communications, Electrical and Electronics,
-						Mechanical Engineering which are thrice NBA accredited, Electronics
-						and Instrumentation, Chemical Engineering which are accredited twice
-						and Information Technology which is accredited once.
-						<a
-							href="#"
-							className="text-primaryColor mt-7 xl:mt-40 float-right underline "
-						>
-							view more
-						</a>
-					</div>
-					<div className="m-5 xl:ml-8 xl:mt-1 xl:w-full xl:text-xl">
-						<p className="text-primaryColor font-bold text-2xl">
-							Principal's Message
-						</p>
-						<div className="w-16 h-1 bg-primaryColor rounded"></div>
-						<img src={principal} className="ml-14 m-4"></img>
-						<p className="text-justify">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-							volutpat nisl pharetra, ipsum purus. Et tincidunt sed aliquam
-							penatibus gravida pharetra risus. Vitae sit erat leo id amet. Amet
-							nulla quisque suspendisse nulla ac suspendisse bibendum massa sit.
-							<br />
-							<b>
-								Dr. Nazeer Shaik , M.Tech; Ph.D
-								<br />
-								Principal
-							</b>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div className=" flex flex-col justify-center items-center bg-hero-pattern ">
-				<div className="w-4/5 xl:w-3/6 mt-14">
-					<fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
-						<legend className="scheduler-border text-primaryColor text-xl xl:text-2xl font-medium">
-							Vision
-						</legend>
-						<label>
-							<p className="font-medium xl:text-lg">
-								To build centers of excellence, impart high quality education
-								and instill high standards of ethics and professionalism through
-								strategic efforts of our dedicated staff, which allows the
-								college to effectively adapt to the ever changing aspects of
-								education.
-								<br />
-								<br />
-								To empower the faculty and students with the knowledge, skills
-								and innovative thinking to facilitate discovery in numerous
-								existing and yet to be discovered fields of engineering,
-								technology and interdisciplinary endeavors.
-							</p>
-						</label>
-					</fieldset>
-				</div>
-				<div className="w-4/5 xl:w-3/6 mt-14 mb-14">
-					<fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
-						<legend className="scheduler-border text-primaryColor text-xl xl:text-2xl font-medium">
-							Mission
-						</legend>
-						<label>
-							<p className="font-medium xl:text-lg">
-								Our Mission is to impart the quality education at par with
-								global standards to the students from all over India and in
-								particular those from the local and rural areas.
-								<br />
-								<br />
-								We continuously try to maintain high standards so as to make
-								them technologically competent and ethically strong individuals
-								who shall be able to improve the quality of life and economy of
-								our country.
-							</p>
-						</label>
-					</fieldset>
-				</div>
-			</div>
-			<div className="flex">
-				<div className="w-1/2 bg-placementsbg">
-					<div className="font-bold  text-3xl text-primaryColor text-center pt-10">
-						Impeccable Placements
-					</div>
-					<div className="text-2xl m-14 mt-5 mb-0 font-semibold">
-						1100+ Job offers in 2021-22
-						<br />
-						850+ Job offers in 2020-21
-						<br />
-						All of these offers are from 50+ MNC companies <br />
-					</div>
-					<div className="ml-24 text-lg m-2">
-						We continuously strive towards facilitating campus-drives where
-						eminent companies offer the most worth-while career opportunities.
-					</div>
-					<marquee>
-						<div className="flex w-1/2 mt-16">
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy1}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy2}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy3}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy4}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy5}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy6}></img>
-							{/* <img className="w-40  h-24 pr-4 pb-4" src={cmpy7}></img> */}
-						</div>
-					</marquee>
-					<marquee>
-						<div className="flex w-1/2 mb-10">
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy8}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy9}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy10}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy11}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy12}></img>
-							<img className="w-40  h-24 pr-4 pb-4" src={cmpy13}></img>
-							{/* <img className="w-40  h-24 pr-4 pb-4" src={cmpy14}></img> */}
-						</div>
-					</marquee>
-				</div>
+      <div>
+        <p className="flex justify-center text-2xl font-semibold xl:text-4xl">
+          Welcome to Bapatla Engineering College
+        </p>
+        <div className="flex flex-col xl:flex-row xl:m-16 xl:mt-8">
+          <div className=" justify-center  m-7 mb-0 text-justify  xl:w-full xl:mr-8 xl:mt-12 xl:text-xl">
+            The <b>Bapatla Engineering College(Autonomous)</b>, one of the seven
+            educational institutions sponsored by the Bapatla Education Society,
+            was established in 1981 with a vision to impart quality technical
+            education and is affiliated to <b>Acharya Nagarjuna University</b>.
+            The College is a little away from the din and bustle of Bapatla, a
+            town with a historic and hoary past, about 75 Km. south of
+            Vijayawada on Chennai-Vijayawada rail route. The college offers
+            B.Tech. Programmes in 8 branches of Engineering- Civil, Computer
+            Science, Electronics and Communications, Electrical and Electronics,
+            Mechanical Engineering which are thrice NBA accredited, Electronics
+            and Instrumentation, Chemical Engineering which are accredited twice
+            and Information Technology which is accredited once.
+            <a
+              href="#"
+              className="text-primaryColor mt-7 xl:mt-40 float-right underline "
+            >
+              view more
+            </a>
+          </div>
+          <div className="m-5 xl:ml-8 xl:mt-1 xl:w-full xl:text-xl">
+            <p className="text-primaryColor font-bold text-2xl">
+              Principal's Message
+            </p>
+            <div className="w-16 h-1 bg-primaryColor rounded"></div>
+            <img src={principal} className="ml-14 m-4"></img>
+            <p className="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              volutpat nisl pharetra, ipsum purus. Et tincidunt sed aliquam
+              penatibus gravida pharetra risus. Vitae sit erat leo id amet. Amet
+              nulla quisque suspendisse nulla ac suspendisse bibendum massa sit.
+              <br />
+              <b>
+                Dr. Nazeer Shaik , M.Tech; Ph.D
+                <br />
+                Principal
+              </b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className=" flex flex-col justify-center items-center bg-hero-pattern ">
+        <div className="w-4/5 xl:w-3/6 mt-14">
+          <fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
+            <legend className="scheduler-border text-primaryColor text-xl xl:text-2xl font-medium">
+              Vision
+            </legend>
+            <label>
+              <p className="font-medium xl:text-lg">
+                To build centers of excellence, impart high quality education
+                and instill high standards of ethics and professionalism through
+                strategic efforts of our dedicated staff, which allows the
+                college to effectively adapt to the ever changing aspects of
+                education.
+                <br />
+                <br />
+                To empower the faculty and students with the knowledge, skills
+                and innovative thinking to facilitate discovery in numerous
+                existing and yet to be discovered fields of engineering,
+                technology and interdisciplinary endeavors.
+              </p>
+            </label>
+          </fieldset>
+        </div>
+        <div className="w-4/5 xl:w-3/6 mt-14 mb-14">
+          <fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
+            <legend className="scheduler-border text-primaryColor text-xl xl:text-2xl font-medium">
+              Mission
+            </legend>
+            <label>
+              <p className="font-medium xl:text-lg">
+                Our Mission is to impart the quality education at par with
+                global standards to the students from all over India and in
+                particular those from the local and rural areas.
+                <br />
+                <br />
+                We continuously try to maintain high standards so as to make
+                them technologically competent and ethically strong individuals
+                who shall be able to improve the quality of life and economy of
+                our country.
+              </p>
+            </label>
+          </fieldset>
+        </div>
+      </div>
+      <div className="flex">
+        <div className="w-1/2 bg-placementsbg">
+          <div className="font-bold  text-3xl text-primaryColor text-center pt-10">
+            Impeccable Placements
+          </div>
+          <div className="text-2xl m-14 mt-5 mb-0 font-semibold">
+            1100+ Job offers in 2021-22
+            <br />
+            850+ Job offers in 2020-21
+            <br />
+            All of these offers are from 50+ MNC companies <br />
+          </div>
+          <div className="ml-24 text-lg m-2">
+            We continuously strive towards facilitating campus-drives where
+            eminent companies offer the most worth-while career opportunities.
+          </div>
+          <marquee>
+            <div className="flex w-1/2 mt-16">
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy1}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy2}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy3}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy4}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy5}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy6}></img>
+              {/* <img className="w-40  h-24 pr-4 pb-4" src={cmpy7}></img> */}
+            </div>
+          </marquee>
+          <marquee>
+            <div className="flex w-1/2 mb-10">
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy8}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy9}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy10}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy11}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy12}></img>
+              <img className="w-40  h-24 pr-4 pb-4" src={cmpy13}></img>
+              {/* <img className="w-40  h-24 pr-4 pb-4" src={cmpy14}></img> */}
+            </div>
+          </marquee>
+        </div>
 
-				<div className="w-1/2 ">
-					<div className="text-primaryColor text-3xl pt-10 text-center font-bold ">
-						Distinguished ALumini
-					</div>
-					<div className="mt-10 ">
-						<div>
-							<div className="flex">
-								<div className="flex w-1/2">
-									<div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
-										<div>Sudhakar Reddy E</div>
-										<div>Principle software engineering manager</div>
-										<div>Microsoft</div>
-									</div>
+        <div className="w-1/2 ">
+          <div className="text-primaryColor text-3xl pt-10 text-center font-bold ">
+            Distinguished ALumini
+          </div>
+          <div className="mt-10 ">
+            <div>
+              <div className="flex">
+                <div className="flex w-1/2">
+                  <div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
+                    <div>Sudhakar Reddy E</div>
+                    <div>Principle software engineering manager</div>
+                    <div>Microsoft</div>
+                  </div>
 
-									<div>
-										<div className=" z-50 absolute mt-20 "></div>
-										<img
-											className="h-48 w-48 object-fill relative"
-											src={alumni1}
-										/>
-									</div>
-								</div>
-								<div className="flex w-1/2">
-									<div className="flex flex-col justify-around text-center w-1/2">
-										<div>Sudhakar Reddy E</div>
-										<div>Principle software engineering manager</div>
-										<div>Microsoft</div>
-									</div>
-									<div>
-										<div className=" z-50 absolute mt-20"></div>
-										<img
-											className="h-48 w-48 object-fill relative"
-											src={alumni2}
-										></img>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="flex">
-							<div className="flex w-1/2">
-								<div>
-									<div className=" z-50 absolute mt-20"></div>
-									<img
-										className="h-48 w-48 object-fill relative"
-										src={alumni3}
-									></img>
-								</div>
+                  <div>
+                    <div className=" z-50 absolute mt-20 "></div>
+                    <img
+                      className="h-48 w-48 object-fill relative"
+                      src={alumni1}
+                    />
+                  </div>
+                </div>
+                <div className="flex w-1/2">
+                  <div className="flex flex-col justify-around text-center w-1/2">
+                    <div>Sudhakar Reddy E</div>
+                    <div>Principle software engineering manager</div>
+                    <div>Microsoft</div>
+                  </div>
+                  <div>
+                    <div className=" z-50 absolute mt-20"></div>
+                    <img
+                      className="h-48 w-48 object-fill relative"
+                      src={alumni2}
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex w-1/2">
+                <div>
+                  <div className=" z-50 absolute mt-20"></div>
+                  <img
+                    className="h-48 w-48 object-fill relative"
+                    src={alumni3}
+                  ></img>
+                </div>
 
-								<div className="flex flex-col justify-around text-center w-1/2">
-									<div>Sudhakar Reddy E</div>
-									<div>Principle software engineering manager</div>
-									<div>Microsoft</div>
-								</div>
-							</div>
-							<div className="flex w-1/2">
-								<div>
-									<div className=" z-50 absolute mt-20"></div>
-									<img
-										className="h-48 w-48 object-fill relative"
-										src={alumni4}
-									></img>
-								</div>
-								<div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
-									<div>Sudhakar Reddy E</div>
-									<div>Principle software engineering manager</div>
-									<div>Microsoft</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <div className="flex flex-col justify-around text-center w-1/2">
+                  <div>Sudhakar Reddy E</div>
+                  <div>Principle software engineering manager</div>
+                  <div>Microsoft</div>
+                </div>
+              </div>
+              <div className="flex w-1/2">
+                <div>
+                  <div className=" z-50 absolute mt-20"></div>
+                  <img
+                    className="h-48 w-48 object-fill relative"
+                    src={alumni4}
+                  ></img>
+                </div>
+                <div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
+                  <div>Sudhakar Reddy E</div>
+                  <div>Principle software engineering manager</div>
+                  <div>Microsoft</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 			<div className="flex flex-col justify-center items-center -mt-10">
 				<div className="w-full max-w-md px-2 py-16 sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
@@ -545,7 +544,6 @@ export default function homepage() {
 												: "text-black hover:bg-white/[0.12] hover:text-primaryColor"
 										)
 									}
-
 								>
 									{category}
 								</Tab>
@@ -619,9 +617,20 @@ export default function homepage() {
 						Gallery
 					</p>
 					<div className="flex flex-wrap justify-center">{Galery}</div>
-					<a className="text-primaryColor mt-2 mr-10 text-lg text-right underline ">
+					{/* <link
+						href="src\components\homepage\gallery\imggallery.jsx"
+						className="text-primaryColor cursor-pointer mt-2 mr-10 text-lg text-right underline "
+					>
 						view more
-					</a>
+					</a> */}
+
+					<Link
+						className="text-primaryColor cursor-pointer mt-2 mr-10 text-lg
+					text-right underline "
+						to={"/Imggallery"}
+					>
+						viewmore
+					</Link>
 				</div>
 			</div>
 		</>

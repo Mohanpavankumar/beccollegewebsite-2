@@ -17,11 +17,11 @@ import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
 
-import Aicte from "/src/pages/saturaotryData/aicte.jsx"
-import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
-import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
-import IqacPage from "./pages/saturaotryData/Iqac"
-import Nirf from "/src/pages/saturaotryData/Nirf.jsx"
+import Aicte from "/src/pages/saturaotryData/aicte.jsx";
+import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
+import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
+import IqacPage from "./pages/saturaotryData/Iqac";
+import Nirf from "/src/pages/saturaotryData/Nirf.jsx";
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -43,8 +43,8 @@ import Patents from "/src/pages/academics/patents";
 import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
-import ItStaff from "/src/pages/departments/staff.jsx"
-
+import ItStaff from "/src/pages/departments/staff.jsx";
+import Imggallery from "./components/homepage/gallery/imggallery";
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
 
@@ -87,7 +87,7 @@ const router = createBrowserRouter([
 				path: "/nirf",
 				element: <Nirf />,
 			},
-      {
+			{
 				path: "/exam-downloads",
 				element: <ExamDownloads />,
 			},
@@ -102,6 +102,10 @@ const router = createBrowserRouter([
 			{
 				path: "/YearWise-Placements",
 				element: <YearWisePlacements />,
+			},
+			{
+				path: "/Imggallery",
+				element: <Imggallery />,
 			},
 			{
 				path: "/BranchWise-Placements",
@@ -150,30 +154,6 @@ const router = createBrowserRouter([
 			{
 				path: "/Others",
 				element: <Others />,
-			},
-			{
-				path: "/academics",
-				element: <Overview />,
-			},
-			{
-				path: "/academics/programme",
-				element: <Programme />,
-			},
-			{
-				path: "/academics/patents",
-				element: <Patents />,
-			},
-			{
-				path: "/academics/rules",
-				element: <Rules />,
-			},
-			{
-				path: "/academics/autonomous",
-				element: <Autonomous />,
-			},
-			{
-				path: "/academics/institution",
-				element: <Institution />,
 			},
 		],
 	},
