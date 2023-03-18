@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import {
-  createBrowserRouter,
-  RouterProvider,
-  BrowserRouter,
-  Route,
-  Routes,
+	createBrowserRouter,
+	RouterProvider,
+	BrowserRouter,
+	Route,
+	Routes,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -43,8 +43,6 @@ import Patents from "/src/pages/academics/patents";
 import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
-import ItStaff from "/src/pages/departments/staff.jsx";
-
 import ItStaff from "/src/pages/departments/staff.jsx";
 import Imggallery from "./components/homepage/gallery/imggallery";
 // import Sidebar from "/src/components/Sidebar.jsx"
@@ -162,11 +160,11 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <>
-    <React.StrictMode>
-      <ChakraProvider>
-        <RouterProvider router={router} />
-      </ChakraProvider>
-    </React.StrictMode>
-  </>
+	<>
+		<React.StrictMode>
+			<ChakraProvider>
+				<RouterProvider router={router} />
+			</ChakraProvider>
+		</React.StrictMode>
+	</>
 );
