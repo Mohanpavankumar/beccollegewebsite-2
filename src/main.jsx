@@ -16,18 +16,43 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
+
+import Aicte from "/src/pages/saturaotryData/aicte.jsx";
+import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
+import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
+import IqacPage from "./pages/saturaotryData/Iqac";
+import Nirf from "/src/pages/saturaotryData/Nirf.jsx";
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
 import Placements from "/src/pages/Placements/placements.jsx";
 import YearWisePlacements from "/src/pages/Placements/YearWisePlacements";
 import BranchWisePlacements from "/src/pages/Placements/BranchWisePlacements";
-import { ThemeProvider, CssBaseline } from "@mui/material";
+import Facilities from "/src/pages/Facilities/Facilities.jsx";
+import Library from "/src/pages/Facilities/Library.jsx";
+import RoboticCentre from "/src/pages/Facilities/RoboticCentre.jsx";
+import BoschRexrothCEO from "/src/pages/Facilities/BoschRexrothCEO.jsx";
+import Cafteria from "/src/pages/Facilities/Cafteria.jsx";
+import Transportation from "/src/pages/Facilities/Transportation.jsx";
+import Hostels from "/src/pages/Facilities/Hostel.jsx";
+import Sports from "/src/pages/Facilities/Sports.jsx";
+import Others from "/src/pages/Facilities/Otherfacilities.jsx";
+import Overview from "/src/pages/academics/academics";
+import Programme from "/src/pages/academics/programme";
+import Patents from "/src/pages/academics/patents";
+import Rules from "/src/pages/academics/rules.jsx";
+import Autonomous from "/src/pages/academics/autonomous";
+import Institution from "/src/pages/academics/institution";
+import ItStaff from "/src/pages/departments/staff.jsx";
+
+// import Sidebar from "/src/components/Sidebar.jsx"
+// import AboutPlacements from "/src/pages/Placements/AboutPlacements"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    // errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Homepage /> },
       {
@@ -41,6 +66,26 @@ const router = createBrowserRouter([
       {
         path: "/exam-notifications",
         element: <ExamNotifs />,
+      },
+      {
+        path: "/naac",
+        element: <NaacHome />,
+      },
+      {
+        path: "/naacInfo",
+        element: <Aicte />,
+      },
+      {
+        path: "/naacPage",
+        element: <NaacPage />,
+      },
+      {
+        path: "/iqacPage",
+        element: <IqacPage />,
+      },
+      {
+        path: "/nirf",
+        element: <Nirf />,
       },
       {
         path: "/exam-downloads",
@@ -65,6 +110,70 @@ const router = createBrowserRouter([
       {
         path: "/departments/IT",
         element: <It />,
+      },
+      {
+        path: "/departments/ItStaff",
+        element: <ItStaff />,
+      },
+      {
+        path: "/Facilities",
+        element: <Facilities />,
+      },
+      {
+        path: "/Library",
+        element: <Library />,
+      },
+      {
+        path: "/RoboticCentre",
+        element: <RoboticCentre />,
+      },
+      {
+        path: "/BoschRexrothCEO",
+        element: <BoschRexrothCEO />,
+      },
+      {
+        path: "/Cafteria",
+        element: <Cafteria />,
+      },
+      {
+        path: "/Transportation",
+        element: <Transportation />,
+      },
+      {
+        path: "/Hostels",
+        element: <Hostels />,
+      },
+      {
+        path: "/Sports",
+        element: <Sports />,
+      },
+      {
+        path: "/Others",
+        element: <Others />,
+      },
+      {
+        path: "/academics",
+        element: <Overview />,
+      },
+      {
+        path: "/academics/programme",
+        element: <Programme />,
+      },
+      {
+        path: "/academics/patents",
+        element: <Patents />,
+      },
+      {
+        path: "/academics/rules",
+        element: <Rules />,
+      },
+      {
+        path: "/academics/autonomous",
+        element: <Autonomous />,
+      },
+      {
+        path: "/academics/institution",
+        element: <Institution />,
       },
     ],
   },

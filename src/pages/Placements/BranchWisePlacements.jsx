@@ -30,14 +30,14 @@ let BranchWisePlacements=() =>{
             <div className='Placements2022-2023 pb-1'>Placements Statistics for Academic Year : 2022-2023</div>
               <div className='line w-32 h-1 mb-2' style={{background:"#0060b1"}}></div>
 
-      <React.Fragment>
+    <React.Fragment>
       <div className="BarChart1 container-fluid mb-5">
         <Chart
           type="bar"
           series={[
             {
               name: "Students Placed",
-              data: [87,66,53,45,40,34,20],
+              data: [40,21,18,17,19,15,13],
             },
           ]}
           
@@ -102,7 +102,7 @@ let BranchWisePlacements=() =>{
         <div className='Placements2021-2022 pb-1'>Placements Statistics for Academic Year : 2021-2022</div>
           <div className='line w-32 h-1 mb-2' style={{background:"#0060b1"}}></div>
 
-                <React.Fragment>
+      <React.Fragment>
       <div className="BarChart1 container-fluid mb-5">
 
         <Chart
@@ -169,7 +169,7 @@ let BranchWisePlacements=() =>{
           }}
         ></Chart>
       </div>
-    </React.Fragment>
+      </React.Fragment>
 			</div>
 			<div className="tab-pane fade" id="Placements2020-2021" role="tabpanel" aria-labelledby="Placements2020-2021-tab">
 				<div className='Placements2020-2021 pb-1'>Placements Statistics for Academic Year : 2020-2021</div>

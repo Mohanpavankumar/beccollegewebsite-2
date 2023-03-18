@@ -30,10 +30,21 @@ export default function Root() {
 			<button>
 				<Link
 					className=" m-2 p-2 border-2 border-black"
-					to={"/departments/IT"}
+					to={"/naac"}
 				>
+					Satuatory Data
+				</Link>
+			</button>
+      <button>
+      <Link
+					className=" m-2 p-2 border-2 border-black"
+					to={"/departments/IT"}
+				>	
 					Departments
 				</Link>
+
+      </button>
+       <button>
 				<Link className=" m-2 p-2 border-2 border-black" to={"/exam-downloads"}>
 					Exam downloads
 				</Link>
@@ -46,7 +57,14 @@ export default function Root() {
 			<button>
 				<Link className=" m-2 p-2 border-2 border-black" to={"/exam-results"}>
 					Exam Results
-
+				</Link>
+			</button>
+			<button>
+				<Link
+					className=" m-2 p-2 border-2 border-black"
+					to={"/Facilities"}
+				>
+					Facilities
 				</Link>
 			</button> */}
       <Outlet />
