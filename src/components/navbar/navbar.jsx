@@ -61,7 +61,8 @@ function Navbar() {
         //     </React.Fragment>
         //   ))}
         // </div>
-        <Drawercomp />
+        // <Drawercomp />
+        <></>
       ) : (
         <nav className="navbar font-bold text-primaryColor">
           <div className="navbar-container">

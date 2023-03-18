@@ -308,7 +308,7 @@ export default function homepage() {
         </button>
       </div>
 
-      {/* <div className="flex flex-row justify-evenly">
+      <div className="flex flex-row justify-evenly">
         <div>
           <div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px] ">
             <div className="text-white count counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
@@ -349,7 +349,7 @@ export default function homepage() {
             </h3>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div>
         <p className="flex justify-center text-2xl font-semibold xl:text-4xl">
@@ -376,7 +376,7 @@ export default function homepage() {
               view more
             </a>
           </div>
-          {/* <div className="m-5 xl:ml-8 xl:mt-1 xl:w-full xl:text-xl">
+          <div className="m-5 xl:ml-8 xl:mt-1 xl:w-full xl:text-xl">
             <p className="text-primaryColor font-bold text-2xl">
               Principal's Message
             </p>
@@ -394,7 +394,7 @@ export default function homepage() {
                 Principal
               </b>
             </p>
-          </div> */}
+          </div>
         </div>
       </div>
       <div className=" flex flex-col justify-center items-center bg-hero-pattern ">
@@ -622,7 +622,7 @@ export default function homepage() {
           </Tab.Group>
         </div>
       </div>
-      {/* <div className="bg-courses">
+      <div className="bg-courses">
         <div className="text-primaryColor text-xl ml-5 xl:ml-20 xl:text-3xl">
           <b>COURSES OFFERED</b>
         </div>
@@ -631,8 +631,8 @@ export default function homepage() {
           postgraduate programmes in Engineering.
         </p>
         <div className="flex flex-wrap justify-center">{Course}</div>
-      </div> */}
-      {/* <div>
+      </div>
+      <div>
         <div className="flex flex-col">
           <p className="flex justify-center  font-semibold text-4xl text-primaryColor">
             Gallery
@@ -642,7 +642,7 @@ export default function homepage() {
             view more
           </a>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
