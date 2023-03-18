@@ -78,11 +78,11 @@ function Navbar() {
                   Departments <ArrowDropDownIcon />
                 </MenuButton>
                 <MenuList>
-                  <MenuItem as="a" href="#">
-                    Link 1
+                  <MenuItem as="a">
+                    <Link to={"/departments/IT"}>IT</Link>
                   </MenuItem>
                   <MenuItem as="a" href="#">
-                    Link 2
+                    CSE
                   </MenuItem>
                 </MenuList>
               </Menu>
