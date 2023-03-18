@@ -21,7 +21,7 @@ import Aicte from "/src/pages/saturaotryData/aicte.jsx"
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
 import IqacPage from "./pages/saturaotryData/Iqac"
-import Nirf from "/src/pages/saturaotryData/nirf.jsx"
+import Nirf from "/src/pages/saturaotryData/Nirf.jsx"
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -43,6 +43,7 @@ import Patents from "/src/pages/academics/patents";
 import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
+import ItStaff from "/src/pages/departments/staff.jsx"
 
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
 			{
 				path: "/departments/IT",
 				element: <It />,
+			},
+			{
+				path: "/departments/ItStaff",
+				element: <ItStaff />,
 			},
 			{
 				path: "/Facilities",
