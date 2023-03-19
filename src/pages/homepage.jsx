@@ -36,6 +36,7 @@ import cmpy14 from "/src/assets/homepage/placements/image 51.png";
 import { Link } from "react-router-dom";
 
 import Marquee from "react-fast-marquee";
+import { DisplayAlumini } from "../components/homepage/alumini/display-alumini";
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
@@ -487,7 +488,7 @@ export default function homepage() {
 						Distinguished ALumini
 					</div>
 					<div className="mt-10 ">
-						<div>
+						{/* <div>
 							<div className="flex">
 								<div className="flex w-1/2">
 									<div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
@@ -550,7 +551,8 @@ export default function homepage() {
 									<div>Microsoft</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
+						<DisplayAlumini />
 					</div>
 				</div>
 			</div>

@@ -19,11 +19,12 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Drawercomp from "/src/components/drawercomponent.jsx";
+import HamburgerMenu from "./burgermenu";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
-  const handleClick = () => {};
+  const handleClick = () => { };
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -47,22 +48,22 @@ function Navbar() {
   return (
     <>
       {isMobile ? (
-        // <div>
-        //   {["right"].map((anchor) => (
-        //     <React.Fragment key={anchor}>
-        //       <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-        //       <Drawer
-        //         anchor={anchor}
-        //         open={state[anchor]}
-        //         onClose={toggleDrawer(anchor, false)}
-        //       >
-        //         {list(anchor)}
-        //       </Drawer>
-        //     </React.Fragment>
-        //   ))}
-        // </div>
+        <HamburgerMenu />
+        /* {["right"].map((anchor) => (
+          <React.Fragment key={anchor}>
+            <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+            <Drawer
+              anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+            >
+              {list(anchor)}
+            </Drawer>
+          </React.Fragment>
+        ))} */
         // <Drawercomp />
-        <></>
+        // <>
+        // </>
       ) : (
         <nav className="navbar font-bold text-primaryColor">
           <div className="navbar-container">
