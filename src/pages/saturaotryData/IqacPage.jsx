@@ -8,7 +8,7 @@ import { iqacDisplayData, iqacNavigation } from '../../Data/SaturatoryData/iqacD
 const IqacPage = (props) => {
     return (
         <Tab.Container id="tabs-ipcpage" defaultActiveKey="1">
-            <Row className='mt-3 px-1 w-auto'>
+            <Row className='mt-3 px-2 w-auto'>
                 <Col sm={8}>
                     {iqacDisplayData.map(x =>
                         <Tab.Content>

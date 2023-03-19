@@ -119,6 +119,25 @@ export const listData5 = [{
 
 
 ]
+export const listData6 = [{
+    "link": "",
+    "title": "Green Audit Report"
+    
+
+},
+{
+   "link":"",
+   "title":"Green Audit Report" 
+},
+{
+    "link":"",
+    "title":"Alumni feedback on curriculum ,and Development" 
+ },
+ {
+    "link":"",
+    "title":"Employer Feedback on curriculum and Development" 
+ }
+]
 export const iqacNavigation = [
     {
         "title": "IQAC",
@@ -199,7 +218,7 @@ export const iqacDisplayData = [
     {
         "key": "8",
         "DisplayComponent":<div className="list-container">
-        <ListComponent data={listData5} listTitle={"IIQA"} />
+        <ListComponent data={listData6} listTitle={"IIQA"} />
     </div>
     }
 ]
