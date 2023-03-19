@@ -5,7 +5,7 @@ import Courses from "/src/components/homepage/courses/courses";
 import coursedata from "/src/Data/homepage/coursedata.js";
 import gallerydata from "/src/Data/homepage/gallerydata.js";
 import close from "/src/assets/homepage/close-btn.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import BecDetails from "/src/assets/BecDetails.jpg";
 import culturalFest from "/src/assets/culturalFest.jpg";
@@ -33,6 +33,7 @@ import cmpy12 from "/src/assets/homepage/placements/image 48.png";
 import cmpy13 from "/src/assets/homepage/placements/image 46.png";
 import cmpy14 from "/src/assets/homepage/placements/image 51.png";
 import { Link } from "react-router-dom";
+import { getLandingPageData } from "../config/services";
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
@@ -111,8 +112,23 @@ export default function homepage() {
 	const Galery = gallerydata.map((galleryarg) => {
 		return <Gallery key={galleryarg.id} item={galleryarg} />;
 	});
+	const [data, setData] = useState([])
+
+	const getData = () => {
+		getLandingPageData().then(res =>
+			setData(res.data)
+		).catch(err =>
+			console.log('something went wrong', err)
+		)
+	}
+
+	useEffect(() => {
+		getData()
+	}, [])
 
 	return (
+		<>
+		{data.map(c =>
 		<>
 			<div className=" fixed z-50 right-0 transform -rotate-90 origin-bottom-right pb-1">
 				<a
@@ -283,47 +299,18 @@ export default function homepage() {
 				</button>
 			</div>
 
-			<div className="flex flex-row justify-evenly">
-				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px] ">
-						<div className="text-white count counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
-							80
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							Ph.D Faculty
-						</h3>
-					</div>
-				</div>
-				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
-							100
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							Publications
-						</h3>
-					</div>
-				</div>
-				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
-							200
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							R&D Projects
-						</h3>
-					</div>
-				</div>
-				<div>
-					<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-						<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
-							182
-						</div>
-						<h3 className=" font-semibold text-base text-primaryColor">
-							IPR's
-						</h3>
-					</div>
-				</div>
+			<div className="mt-10 flex flex-row justify-evenly">
+						{c.collegeStatistics.map(statistics =>
+							<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
+								<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
+									{statistics.number}
+								</div>
+								<h3 className=" font-semibold text-base text-primaryColor">
+									{statistics.title}
+								</h3>
+							</div>
+
+						)}
 			</div>
 
 			<div>
@@ -357,18 +344,10 @@ export default function homepage() {
 						</p>
 						<div className="w-16 h-1 bg-primaryColor rounded"></div>
 						<img src={principal} className="ml-14 m-4"></img>
-						<p className="text-justify">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-							volutpat nisl pharetra, ipsum purus. Et tincidunt sed aliquam
-							penatibus gravida pharetra risus. Vitae sit erat leo id amet. Amet
-							nulla quisque suspendisse nulla ac suspendisse bibendum massa sit.
-							<br />
-							<b>
-								Dr. Nazeer Shaik , M.Tech; Ph.D
-								<br />
+						<p className="text-justify">{c.principal.message}</p><br />
+								<b>{c.principal.name} <br />
 								Principal
-							</b>
-						</p>
+								</b>
 					</div>
 				</div>
 			</div>
@@ -609,16 +588,18 @@ export default function homepage() {
 				<div className="flex flex-wrap justify-center">{Course}</div>
 			</div>
 			<div>
-				<div className="flex flex-col">
-					<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
-						Gallery
-					</p>
-					<div className="flex flex-wrap justify-center">{Galery}</div>
-					<a className="text-primaryColor mt-2 mr-10 text-lg text-right underline ">
-						view more
-					</a>
-				</div>
+			<div className="flex flex-col">
+				<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
+					Gallery
+				</p>
+				<div className="flex flex-wrap justify-center">{Galery}</div>
+				<a className="text-primaryColor mt-2 mr-10 text-lg text-right underline ">
+					view more
+				</a>
 			</div>
+			</div>
+		</>
+		)}
 		</>
 	);
 }
