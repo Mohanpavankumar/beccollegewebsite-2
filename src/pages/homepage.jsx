@@ -111,12 +111,6 @@ export default function homepage() {
 	//   };
 	const [showResults, setShowResults] = React.useState(true);
 	const onClick = () => setShowResults(false);
-	const Course = coursedata.map((item) => {
-		return <Courses key={item.id} item={item} />;
-	});
-	const Galery = gallerydata.map((galleryarg) => {
-		return <Gallery key={galleryarg.id} item={galleryarg} />;
-	});
 	const Results = () => (
 		//   <div id="results" className="search-results">
 		//     Some Results
@@ -156,6 +150,7 @@ export default function homepage() {
 					</a>
 				</a>
 			</div>
+			{showResults ? <Results /> : null}
 			<div className="fixed z-50 bottom-0 left-0 right-0">
 				<img
 					src={close}
@@ -463,7 +458,7 @@ export default function homepage() {
 						We continuously strive towards facilitating campus-drives where
 						eminent companies offer the most worth-while career opportunities.
 					</div>
-					<marquee>
+					<Marquee gradientWidth={30}>
 						<div className="flex w-1/2 mt-16">
 							<img className="w-40  h-24 pr-4 pb-4" src={cmpy1}></img>
 							<img className="w-40  h-24 pr-4 pb-4" src={cmpy2}></img>
@@ -473,8 +468,8 @@ export default function homepage() {
 							<img className="w-40  h-24 pr-4 pb-4" src={cmpy6}></img>
 							{/* <img className="w-40  h-24 pr-4 pb-4" src={cmpy7}></img> */}
 						</div>
-					</marquee>
-					<marquee>
+					</Marquee>
+					<Marquee gradientWidth={30}>
 						<div className="flex w-1/2 mb-10">
 							<img className="w-40  h-24 pr-4 pb-4" src={cmpy8}></img>
 							<img className="w-40  h-24 pr-4 pb-4" src={cmpy9}></img>
@@ -484,7 +479,7 @@ export default function homepage() {
 							<img className="w-40  h-24 pr-4 pb-4" src={cmpy13}></img>
 							{/* <img className="w-40  h-24 pr-4 pb-4" src={cmpy14}></img> */}
 						</div>
-					</marquee>
+					</Marquee>
 				</div>
 
 				<div className="w-1/2 ">
