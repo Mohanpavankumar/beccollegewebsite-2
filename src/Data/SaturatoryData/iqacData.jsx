@@ -33,7 +33,7 @@ export const listData = [{
         "title": "Three",
         "link": ""
     }
-]
+    ]
 }]
 
 export const listData2 = [{
@@ -174,6 +174,77 @@ export const iqacNavigation = [
 export const iqacCommitteeData = [
     {
         "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },
+    {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },
+    {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },
+    {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },
+    {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },
+    {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },
+    {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    }, {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },
+    {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    }, {
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },{
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },{
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },{
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },{
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },{
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },{
+        "sno": 1,
+        "designation": "BlindingLights",
+        "memberName": "TheWeeknd"
+    },{
+        "sno": 111,
         "designation": "BlindingLights",
         "memberName": "TheWeeknd"
     }
