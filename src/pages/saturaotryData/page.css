@@ -1,0 +1,34 @@
+.nirfPage-tabs .nav-link {
+    width: max-content !important;
+    background-color: inherit;
+    color: #0d0d0d;
+    border: 1px solid #0a0a0a;
+}
+
+.nirfPage-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.nirfPage-tabs .nav-item {
+    height: inherit;
+}
+
+.nirfPage-tabs .nav-link:focus {
+    outline: 1px solid #fff;
+}
+
+.nirfPage-tabs .nav-link:focus-visible {
+    outline: 1px solid #fff;
+}
+
+.nirf-tab-content {
+    padding: 1rem 2rem !important;
+}
+
+.naac-tab-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 2rem !important;
+}
