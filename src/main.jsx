@@ -21,7 +21,7 @@ import Aicte from "/src/pages/saturaotryData/aicte.jsx"
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
 import IqacPage from "./pages/saturaotryData/IqacPage.jsx"
-import Nirf from "/src/pages/saturaotryData/Nirf.jsx"
+import Nirf from "/src/pages/saturaotryData/NirfPage.jsx"
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";

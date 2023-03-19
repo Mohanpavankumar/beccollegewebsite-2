@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NaacCyclePage from './NaacCyclePage';
 import NaacItems from "/src/components/saturatoryDataComponents/NaacItems.jsx"
 import naacCycles from "/src/Data/SaturatoryData/naacCycles.js"
 function Naac() {
@@ -43,35 +44,31 @@ function Naac() {
                             </div>
                         </div>
                         <div className="tab-pane fade mt-4 " id="AICTEEOAS" role="tabpanel" aria-labelledby="AICTEEOAS-tab">NAAC CYCLE-II
-                        <div className='nav grid grid-cols-1 md:grid-cols-2 gap-4 nav-pills' id='tab' role="tablist">
+                            <NaacCyclePage />
 
-                        <a className="nav-link bg-slate-400 text-black" id="selfStudyReport-tab" data-toggle="pill" href="#selfStudyReport" role="tab" aria-controls="selfStudyReport" >Self Study Report</a>
-                        <a className="nav-link bg-slate-400" id="DataVerification-tab" data-toggle="pill" href="#DataVerification" role="tab" aria-controls="AICTEApproval" aria-selected="false">Data Verification</a>
+
+                            <div className="tab-pane fade mt-3 " id="DataVerification" role="tabpanel" aria-labelledby="DataVerification-tab"></div>
+                            <div className="tab-pane fade mt-3 " id="selfStudyReport" role="tabpanel" aria-labelledby="selfStudyReport-tab">
+                                <div className='grid grid-cols-1 md:grid-cols-3 gap-8  w-auto'>
+
+                                    {
+                                        naacCycles.map((naacCycles, index) => (
+                                            <NaacItems
+                                                title={naacCycles.title}
+                                                parts={naacCycles.parts}
+                                                index={index}
+                                            >
+                                            </NaacItems>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+
+
                         </div>
-                     
-
-                        <div className="tab-pane fade mt-3 " id="DataVerification" role="tabpanel" aria-labelledby="DataVerification-tab"></div>
-                        <div className="tab-pane fade mt-3 " id="selfStudyReport" role="tabpanel" aria-labelledby="selfStudyReport-tab">
-                        <div className='grid grid-cols-1 md:grid-cols-3 gap-8  w-auto'>
-
-                        {
-                naacCycles.map((naacCycles, index) => (
-                    <NaacItems
-                    title={naacCycles.title}
-                    parts={naacCycles.parts}
-                    index={index}
-                    >
-                    </NaacItems>
-                ))
-            }
-            </div>
-            </div>
-
-
-</div>
                     </div>
                 </div>
-                
+
             </div>
 
         </div >
