@@ -69,3 +69,26 @@ legend.scheduler-border {
 .c-pointer {
 	cursor: pointer;
 }
+
+/* scroll bar  */
+
+#naaclist-sroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#naaclist-sroll::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#naaclist-sroll::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 6px rgba(159, 157, 157, 0.3);
+	background-color: #9c9a9a;
+}
+
