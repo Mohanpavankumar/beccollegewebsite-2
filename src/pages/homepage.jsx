@@ -15,10 +15,7 @@ import robotics from "/src/assets/robotics.jpg";
 import bectagon from "/src/assets/bectagon.jpg";
 
 import EngineersDay from "/src/assets/EngineersDay.jpg";
-import alumni1 from "/src/assets/homepage/placements/image 55.png";
-import alumni2 from "/src/assets/homepage/placements/image 57.png";
-import alumni3 from "/src/assets/homepage/placements/image 58.png";
-import alumni4 from "/src/assets/homepage/placements/image 60.png";
+
 import cmpy1 from "/src/assets/homepage/placements/Group 19.png";
 import cmpy2 from "/src/assets/homepage/placements/Group 20.png";
 import cmpy3 from "/src/assets/homepage/placements/Group 21.png";
@@ -645,7 +642,21 @@ export default function homepage() {
 					<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
 						Gallery
 					</p>
-					<div className="flex flex-wrap justify-center">{Galery}</div>
+					<div className="flex flex-wrap justify-center">{Galery}</d
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					iv>
 					{/* <link
 						href="src\components\homepage\gallery\imggallery.jsx"
 						className="text-primaryColor cursor-pointer mt-2 mr-10 text-lg text-right underline "
