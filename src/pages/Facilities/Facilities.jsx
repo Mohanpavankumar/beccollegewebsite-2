@@ -52,6 +52,7 @@ export default function Facilities()
 													</div>
 												  </div>
 											</div>
+
 											<div className="w-[30rem] mt-5 h-[32rem] ml-5  shadow-2xl shadow-black  hover:scale-105"> 
 												 <img src={CafteriaImg} className="w-[30rem] h-[25rem] rounded-t-2xl"></img>
 												  <div className="w-[30rem] h-[3rem]">
@@ -63,6 +64,7 @@ export default function Facilities()
 													</div>
 												  </div>
 											</div>
+
 											<div className="w-[30rem] mt-5 h-[32rem] ml-5 shadow-2xl shadow-black hover:scale-105 "> 
 												<img src={TransportImg} className="w-[30rem] h-[25rem] rounded-t-2xl"></img>
 												  <div className="w-[30rem] h-[3rem]">
@@ -74,6 +76,7 @@ export default function Facilities()
 													</div>
 												  </div>
 											</div>
+
 											<div className="w-[30rem] mt-5 h-[32rem] ml-5 shadow-2xl shadow-black hover:scale-105"> 
 												  <img src={HostelImg} className="w-[30rem] h-[25rem] rounded-t-2xl"></img>
 												  <div className="w-[30rem] h-[3rem]">
@@ -85,6 +88,7 @@ export default function Facilities()
 													</div>
 												  </div>
 											</div>
+
 											<div className="w-[30rem] mt-5 h-[32rem] ml-5 shadow-2xl shadow-black hover:scale-105"> 
 												  <img src={sports} className="w-[30rem] h-[25rem] rounded-t-2xl"></img>
 												  <div className="w-[30rem] h-[3rem]">
@@ -96,6 +100,7 @@ export default function Facilities()
 													</div>
 												  </div>
 											</div>
+											
 											<div className="w-[30rem] mt-5 h-[32rem] ml-5 shadow-2xl shadow-black hover:scale-105"> 
 											     <img src={Others} className="w-[30rem] h-[25rem] rounded-t-2xl"></img>
 												  <div className="w-[30rem] h-[3rem]">
