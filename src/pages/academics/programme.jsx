@@ -27,9 +27,7 @@ import dcivil from "/src/assets/academics/dcivil.jpg"
 import dcme from "/src/assets/academics/dcme.jpg"
 import dece from "/src/assets/academics/dece.jpg"
 import '/src/routes/Search.css'
- 
 
- 
   class Programme extends React.Component {
     constructor() {
       super();
@@ -61,7 +59,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "90 + 9",
             duration: "Duration",
             years: "4  years"
           },
@@ -72,7 +70,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "90 + 9",
             duration: "Duration",
             years: "4  years"
           },
@@ -84,7 +82,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "180 + 18",
             duration: "Duration",
             years: "4  years"
           },
@@ -96,7 +94,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "60 + 6",
             duration: "Duration",
             years: "4  years"
           },
@@ -107,7 +105,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "60 + 6",
             duration: "Duration",
             years: "4  years"
           },
@@ -118,7 +116,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "120 + 12",
             duration: "Duration",
             years: "4  years"
           },
@@ -129,7 +127,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "180 + 18",
             duration: "Duration",
             years: "4  years"
           },
@@ -140,7 +138,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "30 + 3",
             duration: "Duration",
             years: "4  years"
           },
@@ -151,7 +149,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "120 + 12",
             duration: "Duration",
             years: "4  years"
           },
@@ -162,7 +160,7 @@ import '/src/routes/Search.css'
             type: "UNDERGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "120",
+            available: "90 + 9",
             duration: "Duration",
             years: "4  years"
           },
@@ -239,7 +237,7 @@ import '/src/routes/Search.css'
             type: "POSTGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "60",
+            available: "30",
             duration: "Duration",
             years: "2  years"
           },
@@ -250,7 +248,7 @@ import '/src/routes/Search.css'
             type: "POSTGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "60",
+            available: "40",
             duration: "Duration",
             years: "2  years"
           },
@@ -261,7 +259,7 @@ import '/src/routes/Search.css'
             type: "POSTGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "60",
+            available: "40",
             duration: "Duration",
             years: "2  years"
           },
@@ -272,7 +270,7 @@ import '/src/routes/Search.css'
             type: "POSTGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "60",
+            available: "40",
             duration: "Duration",
             years: "2  years"
           },
@@ -283,7 +281,7 @@ import '/src/routes/Search.css'
             type: "POSTGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "60",
+            available: "30",
             duration: "Duration",
             years: "2  years"
           },
@@ -294,7 +292,7 @@ import '/src/routes/Search.css'
             type: "POSTGRADUATE",
             name: "Programme level",
             seats: "seats",
-            available: "60",
+            available: "30",
             duration: "Duration",
             years: "2  years"
           },
@@ -430,7 +428,7 @@ import '/src/routes/Search.css'
                 <div key={item.id} className="ml-4 justify-evenly" >
                 
                 <li > 
-                  <img  src={item.image} className="image transition duration-300 ease-in-out"></img>
+                  <img  src={item.image} className="image hover:scale-90 transition duration-300 ease-in-out"></img>
                   <div className='font-bold'>{item.course}</div>
                   <div><span className='font-bold'>{item.name}</span><span className='font-semibold'> - {item.type}</span></div>
                   <div><span className='font-bold'> {item.seats}</span><span className='font-semibold'>-{item.available}</span></div>
