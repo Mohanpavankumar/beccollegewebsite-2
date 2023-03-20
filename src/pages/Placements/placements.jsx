@@ -7,12 +7,30 @@ import Engineersday from "/images/EngineersDay.jpg"
 import Becdetails from "/images/BecDetails.jpg"
 import GraduationCeremony from "/images/GraduationDayCeremony.jpg"
 import  RegistrationFormComponent  from '../../components/RegistrationForms/Form.jsx';
+import { useEffect, useState } from 'react';
+import { getPlacementsNotifications } from '../../config/services.js';
+import pdf from "/images/Hor_lor.pdf"
 
 const PlacementsStaff = Placementsteam.map((dataArg) => {
 	return <Staff key={dataArg.staffId} item={dataArg} />;
 });
 
+
 let Placements=() =>{
+	const [data, setData] = useState([])
+
+	const getData = () => {
+	getPlacementsNotifications().then(res =>
+			setData(res.data)
+		).catch(err =>
+			console.log('something went wrong', err)
+		)
+	}
+
+	useEffect(() => {
+		getData()
+	}, [])
+
     return(
 		<>
 			<div
@@ -198,13 +216,13 @@ let Placements=() =>{
 			<div className="tab-pane fade md:ml-28 xl:ml-0" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
 				<div className='notifications pb-1'>Training & Placement Notifications</div>
 				<div className='line w-14 h-1' style={{background:"#0060b1"}}></div>
+				{data.map(c =>
 				<div>
-					<a href=""><li>Attended students  for training</li></a>
-					<a href=""><li>Schedule for training</li></a>
-					<a href=""><li>Campus Placement Drive is on 10/11/2022</li></a>
-					<a href=""><li>Campus Placement Drive is on 10/11/2022</li></a>
-					<a href=""><li>Placements Registration</li></a>
+					{c.placementNotifications.map(x=>
+					<a href={pdf}  target='_blank' rel='noopener noreferrer'><li>{x.title}</li></a>
+					)}
 				</div>
+				)}
 			</div>
 			<div className="tab-pane fade " id="trainingregistration" role="tabpanel" aria-labelledby="trainingregistration-tab">
 				<div className='TrainingRegistration pb-1 md:ml-28 xl:ml-0'>Training Registration Form</div>
@@ -254,4 +272,4 @@ let Placements=() =>{
 		</>
     )}
 
-export default Placements
+export default Placements;
