@@ -1,4 +1,5 @@
 import BusImg1 from "/src/assets/BusesImg1.png";
+import BusImg4 from "/src/assets/BusesImg4.png";
 import BusImg3 from "/src/assets/BusesImg3.png";
 
 function Slider4(){
@@ -11,11 +12,18 @@ function Slider4(){
                     <img src={BusImg1} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                 </div>
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src={BusImg4} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                </div>
+                <div className="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src={BusImg3} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                 </div>
+               
             </div>
             <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
                 <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+
+                <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="1"></button>
+
                 <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
             </div>
             <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-36 cursor-pointer group focus:outline-none" data-carousel-prev>

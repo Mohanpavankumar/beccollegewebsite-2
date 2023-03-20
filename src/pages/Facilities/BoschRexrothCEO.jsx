@@ -53,58 +53,58 @@ export default function Facilities(){
 															<h3 className="ml-2 font-semibold font-serif text-2xl underline underline-offset-2  text-sky-800">Faculty Trained</h3>
 														</div>
 
-														<p className="ml-5 mt-3 text-lg text-justify"> List of Faculty Trained at VTU-BR Centre of Competence in Automation Technology – Mysore during the Period March 19th, 2012 to April 18th, 2012.</p>
+														<p className="ml-4 mt-3 text-lg text-justify"> List of Faculty Trained at VTU-BR Centre of Competence in Automation Technology – Mysore during the Period March 19th, 2012 to April 18th, 2012.</p>
 
 														<div className="flex mt-1 ">
 																	<div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Dr. N. Sudhakar, Professor, CSE Department </h4>
 																		</div>
 
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Prof. CH. Ramesh, Head, EIE Department </h4>
 																		</div>
 
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. K. Prasada Rao, Assoc. Prof. ME. Department </h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. D. Narayana Chowdary, Assoc. Prof. ME. Department </h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. V. Kumara Swamy, Assoc. Prof. EIE. Department </h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Dr. CH. Lakshmi Srinivas, Prof. ME. Department </h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. M. V. N. Chakravarthy, Asst. Prof. EIE. Department</h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. S. Ravi Kumar, Asst. Prof. ME. Department</h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. T. Krishna Chaithanya, Asst. Prof. ECE. Department</h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. N. Balakrishna, Asst. Prof. EEE. Department</h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. B. Siva Nageswara Rao, Sr. Mechanic. ME. Department</h4>
 																		</div>
 																		<div className="flex mt-2 ">
-																			<img src={eastArrow} className="w-5 h-5 ml-5 "></img>
+																			<img src={eastArrow} className="w-5 h-5 ml-3 "></img>
 																			<h4 className="ml-3 hover:text-teal-700">Sri. Y. Venkata Krishna, Lab Technician. ECE. Department</h4>
 																		</div>
 																	</div>
