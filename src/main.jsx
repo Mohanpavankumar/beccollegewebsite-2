@@ -26,10 +26,14 @@ import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
 
+// import Sidebar from "/src/components/Sidebar.jsx"
+// import AboutPlacements from "/src/pages/Placements/AboutPlacements"
+
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
+		// errorElement: <ErrorPage />,
 		children: [
 			{ index: true, element: <Homepage /> },
 			{
@@ -111,7 +115,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<>
 		<React.StrictMode>
-				
 				{/* <BrowserRouter>
       <Sidebar>
         <Routes>
@@ -119,8 +122,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </Routes>
       </Sidebar>
     </BrowserRouter> */}
-
-
 			<ChakraProvider>
 				<RouterProvider router={router} />
 			</ChakraProvider>

@@ -1,155 +1,94 @@
 import { useState, useEffect } from "react";
-import "./Form.css";
 
 function Form() {
-  const initialValues = { Name: "",RegdNo: "", Branch: "", event:"", email: "", ContactNo: "" };
-  const [formValues, setFormValues] = useState(initialValues);
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormErrors(validate(formValues));
-    setIsSubmit(true);
-  };
-
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
-    }
-  }, [formErrors]);
-  const validate = (values) => {
-    const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!values.Name) {
-      errors.Name = "Name is required!";
-    }
-    if (!values.RegdNo) {
-      errors.RegdNo = "RegdNo is required!";
-    }
-    if (!values.Branch) {
-      errors.Branch = "Branch is required!";
-    }
-    if (!values.Event) {
-      errors.Event = "Event is required!";
-    }
-    if (!values.email) {
-      errors.email = "Email is required!";
-    } else if (!regex.test(values.email)) {
-      errors.email = "This is not a valid email format!";
-    }
-    if (!values.ContactNo) {
-      errors.ContactNo = "ContactNo is required!";
-    }
-    // if (!values.password) {
-    //   errors.password = "Password is required";
-    // } else if (values.password.length < 8) {
-    //   errors.password = "Password must be more than 8 characters";
-    // } else if (values.password.length > 20) {
-    //   errors.password = "Password cannot exceed more than 20 characters";
-    // }
-    return errors;
-  };
-
   return (
-    <div className="form-container">
-      {Object.keys(formErrors).length === 0 && isSubmit ? (
-        <div className="ui message success">Signed in successfully</div>
-      ) 
-      : (
-        <pre>
-          {/* {JSON.stringify(formValues, undefined, 2)} */}
-        </pre>
-      )}
-
-      <form onSubmit={handleSubmit}>
-        <div className="ui divider"></div>
-        <div className="ui form">
-          <div className="flex flex-row max-h-64 overflow-hidden overflow-y-auto">
-          <div className="">
-          <label>Name</label>
-          <label>Regd No</label>
-          <label>Branch</label>
-          <label>Event</label>
-          <label>Email</label>
-          <label>Contact No</label>
+    <>
+    <div className="registrationform overflow-x-hidden overflow-y-auto border-2 mt-2 h-72">
+      <div className="card-body mx-auto ml-auto" style={{width: "500px"}}>	
+        <form action="" method="post">
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+                <span className="input-group-text"> <i className="fa fa-id-card"></i> </span>
+            </div>
+                <input name="regno" className="form-control" placeholder="Registration Number" type="text" />
+          </div> 
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+                <span className="input-group-text"> <i className="fa fa-user"></i> </span>
+            </div>
+              <input name="fullname" className="form-control" placeholder="Full name" type="text" />
           </div>
-          <div className="">
-          <input
-              type="text"
-              name="Name"
-              placeholder="Name"
-              autoComplete="off"
-              value={formValues.Name}
-              onChange={handleChange}
-              required
-            />
-            {/* <p>{formErrors.Name}</p> */}
-          <input
-              type="text"
-              name="RegdNo"
-              placeholder="Regd No"
-              autoComplete="off"
-              value={formValues.RegdNo}
-              onChange={handleChange}
-              required
-            />
-            {/* <p>{formErrors.RegdNo}</p> */}
-          <input
-              type="text"
-              name="Branch"
-              placeholder="Branch"
-              autoComplete="off"
-              value={formValues.Branch}
-              onChange={handleChange}
-              required
-            />
-            {/* <p>{formErrors.Branch}</p> */}
-            <select name="Events" id="">
-              <option value={formValues.event}>event1</option>
-              <option value={formValues.event}>event2</option>
-              <option value={formValues.event}>event3</option>
-              <option value={formValues.event}>event4</option>
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+              <span className="input-group-text"> <i className="fa fa-envelope"></i> </span>
+            </div>
+              <input name="email" className="form-control" placeholder="Email address" type="email" />
+          </div> 
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+              <span className="input-group-text"> <i className="fa fa-phone"></i> </span>
+            </div>
+            <select className="custom-select">
+                <option selected="">+91</option>
             </select>
-            {/* <input
-              type="text"
-              name="event"
-              placeholder="Select Event"
-              value={formValues.event}
-              onChange={handleChange}
-            /> */}
-          <input
-              type="text"
-              name="email"
-              placeholder="Email"
-              autoComplete="off"
-              value={formValues.email}
-              onChange={handleChange}
-              required
-            />
-            {/* <p>{formErrors.email}</p> */}
-          <input
-              type="text"
-              name="ContactNo"
-              placeholder="Contact No"
-              autoComplete="off"
-              value={formValues.ContactNo}
-              onChange={handleChange}
-              required
-            />
-            {/* <p>{formErrors.ContactNo}</p> */}
+            <input name="phoneno" className="form-control" placeholder="Phone number" type="text" />
           </div>
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+              <span className="input-group-text"> <i className="fa fa-building"></i> </span>
           </div>
-          <button className="submit fluid ui button blue">Submit</button>
+          <select className="form-control" name="department">
+            <option selected=""> Department</option>
+            <option>Civil Engineering</option>
+            <option>Chemical Engineering </option>
+            <option>Computer Science and Engineering </option>
+                  <option>Data Science(CS)</option>
+                  <option>Cyber Security(CS)</option>
+                  <option>Electronics and Communication Engineering </option>
+                  <option>Electrical and Electronics Engineering </option>
+                  <option>Information Technology</option>
+                  <option>Mechanical Engineering </option>
+                  
+          </select>
         </div>
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+              <span className="input-group-text"> <i className="fa fa-graduation-cap"></i> </span>
+          </div>
+          <select className="form-control" name="eventname">
+            <option selected=""> Event Name</option>
+          </select>
+        </div>
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+              <span className="input-group-text"> <i className="fa fa-calendar"></i> </span>
+          </div>
+          <select className="form-control" name="year">
+            <option selected=""> Select year</option>
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+                  <option>IV</option>
+                  
+          </select>
+        </div>
+          <div className="form-group input-group">
+            <div className="input-group-prepend">
+              <span className="input-group-text"> <i className="fa fa-mars"></i> </span>
+          </div>
+          <select className="form-control" name="gender">
+            <option selected=""> Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>       
+          <div className="form-group">
+              <button type="submit" className="btn bg-primaryColor text-white btn-block">Submit</button>
+          </div>                                               
       </form>
-    </div>
+      </div>
+</div> 
+    </>
   );
 }
 

@@ -540,6 +540,7 @@ export default function homepage() {
 												: "text-black hover:bg-white/[0.12] hover:text-primaryColor"
 										)
 									}
+
 								>
 									{category}
 								</Tab>
