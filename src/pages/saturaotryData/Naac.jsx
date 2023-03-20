@@ -43,7 +43,7 @@ function Naac() {
                                 </embed>
                             </div>
                         </div>
-                        <div className="tab-pane fade mt-4 " id="AICTEEOAS" role="tabpanel" aria-labelledby="AICTEEOAS-tab">NAAC CYCLE-II
+                        <div className="tab-pane fade mt-2 " id="AICTEEOAS" role="tabpanel" aria-labelledby="AICTEEOAS-tab">NAAC CYCLE-II
                             <NaacCyclePage />
 
 
