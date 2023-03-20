@@ -1,6 +1,6 @@
 import ServiceItem from "/src/components/saturatoryDataComponents/ServiceItems.jsx"
 import Header from "/src/components/saturatoryDataComponents/HeroSection.jsx"
-import services from "/src/Data/saturatoryData/services.js"
+import services from "/src/Data/SaturatoryData/services.js"
 import HeroSection from "../../components/saturatoryDataComponents/HeroSection"
 
 function Services(){

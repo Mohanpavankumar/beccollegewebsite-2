@@ -12,3 +12,11 @@ export const getPlacementData = () => {
 export const getAcademicsData = () => {
     return AxiosInstance.get('/getAcademicsData');
 }
+
+export const getDepartmentsData = () => {
+    return AxiosInstance.get('/getDepartmentsData');
+}
+
+export const registerPlacementData = (data) => {
+    return AxiosInstance.post('/placementRegistration',data);
+}

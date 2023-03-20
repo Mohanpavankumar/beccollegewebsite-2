@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NaacItems from "/src/components/saturatoryDataComponents/NaacItems.jsx"
-import naacCycles from "/src/Data/saturatoryData/naacCycles.js"
+import naacCycles from "/src/Data/SaturatoryData/naacCycles.js"
 function Nirf() {
     const [selectedValue, setSelectedValue] = useState('');
     const [showButtons, setShowButtons] = useState(true);

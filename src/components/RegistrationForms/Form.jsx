@@ -1,6 +1,36 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { registerPlacementData } from '../../config/services'
 
-function Form() {
+let RegistrationFormComponent = () => {
+    const [regdNo, setRegdNo] = useState("")
+    const [fullName, setFullName] = useState("")
+    const [emailId, setEmailId] = useState("")
+    const [mobileNo, setMobileNo] = useState("")
+    const [department, setDepartment] = useState("Information Technology")
+    const [eventName, setEventName] = useState("Event Name")
+    const [year, setYear] = useState("IV")
+    const [gender, setGender] = useState("Male")
+  
+    const handleSubmit =()=>{
+      let data = {
+          "regdNo":regdNo,
+          "fullName":fullName,
+          "emailId":emailId,
+          "mobileNo":mobileNo,
+          "department":department,
+          "eventName":eventName,
+          "year":year,
+          "gender":gender
+      }
+      registerPlacementData(data).then(res =>
+          alert("Submitted Succesfully")
+          
+    ).catch(err=>
+      {
+          alert("Something went wrong please check logs")
+          console.log(err)
+      }
+      )}
   return (
     <>
     <div className="registrationform overflow-x-hidden overflow-y-auto border-2 mt-2 h-72">
@@ -10,19 +40,19 @@ function Form() {
             <div className="input-group-prepend">
                 <span className="input-group-text"> <i className="fa fa-id-card"></i> </span>
             </div>
-                <input name="regno" className="form-control" placeholder="Registration Number" type="text" />
+            <input type="text" class="form-control" placeholder='Please enter regdNo' name="regdNo" id="" onChange={(e)=>setRegdNo(e.target.value)} />
           </div> 
           <div className="form-group input-group">
             <div className="input-group-prepend">
                 <span className="input-group-text"> <i className="fa fa-user"></i> </span>
             </div>
-              <input name="fullname" className="form-control" placeholder="Full name" type="text" />
+            <input type="text" className="form-control" placeholder='Please enter fullName' name="fullName" onChange={(e)=>setFullName(e.target.value)}/>
           </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
               <span className="input-group-text"> <i className="fa fa-envelope"></i> </span>
             </div>
-              <input name="email" className="form-control" placeholder="Email address" type="email" />
+            <input type="text" className="form-control" placeholder='Please enter emailId' name="emailId" onChange={(e)=>setEmailId(e.target.value)}/>
           </div> 
           <div className="form-group input-group">
             <div className="input-group-prepend">
@@ -31,59 +61,57 @@ function Form() {
             <select className="custom-select">
                 <option selected="">+91</option>
             </select>
-            <input name="phoneno" className="form-control" placeholder="Phone number" type="text" />
+            <input type="text" className="form-control" placeholder='Please enter mobileNo' name="mobileNo" onChange={(e)=>setMobileNo(e.target.value)}/>
           </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
               <span className="input-group-text"> <i className="fa fa-building"></i> </span>
           </div>
-          <select className="form-control" name="department">
+          <select className="form-control" name="department" onChange={(e)=>setDepartment(e.target.value)}>
             <option selected=""> Department</option>
+            <option>Information Technology</option>
             <option>Civil Engineering</option>
             <option>Chemical Engineering </option>
             <option>Computer Science and Engineering </option>
-                  <option>Data Science(CS)</option>
-                  <option>Cyber Security(CS)</option>
-                  <option>Electronics and Communication Engineering </option>
-                  <option>Electrical and Electronics Engineering </option>
-                  <option>Information Technology</option>
-                  <option>Mechanical Engineering </option>
-                  
+            <option>Data Science(CS)</option>
+            <option>Cyber Security(CS)</option>
+            <option>Electronics and Communication Engineering </option>
+            <option>Electrical and Electronics Engineering </option>
+            <option>Mechanical Engineering </option>
           </select>
         </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
               <span className="input-group-text"> <i className="fa fa-graduation-cap"></i> </span>
           </div>
-          <select className="form-control" name="eventname">
-            <option selected=""> Event Name</option>
+          <select className="form-control" name="eventName" onChange={(e)=>setEventName(e.target.value)}>
+            <option>Event Name</option>
           </select>
         </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
               <span className="input-group-text"> <i className="fa fa-calendar"></i> </span>
           </div>
-          <select className="form-control" name="year">
+          <select className="form-control" name="year" onChange={(e)=>setYear(e.target.value)}>
             <option selected=""> Select year</option>
             <option>I</option>
             <option>II</option>
             <option>III</option>
-                  <option>IV</option>
-                  
+            <option>IV</option>     
           </select>
         </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
               <span className="input-group-text"> <i className="fa fa-mars"></i> </span>
           </div>
-          <select className="form-control" name="gender">
-            <option selected=""> Gender</option>
+          <select className="form-control" name="gender" onChange={(e)=>setGender(e.target.value)}>
+            <option>Gender</option>
             <option>Male</option>
             <option>Female</option>
           </select>
         </div>       
           <div className="form-group">
-              <button type="submit" className="btn bg-primaryColor text-white btn-block">Submit</button>
+              <button type="submit" onClick={handleSubmit} className="btn bg-primaryColor text-white btn-block">Submit</button>
           </div>                                               
       </form>
       </div>
@@ -91,5 +119,4 @@ function Form() {
     </>
   );
 }
-
-export default Form;
+export default RegistrationFormComponent;
