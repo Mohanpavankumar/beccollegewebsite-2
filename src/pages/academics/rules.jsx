@@ -2,7 +2,7 @@ export default function rules(){
     return(
         <>
         <p className="text-xl ml-10 font-bold text-blue-800 underline mt-12">ACADEMICS RULES AND REGULATIONS </p>
-        <p className="text-xl ml-14 py-1 flex flex-row mt-5 ">
+        <p className="text-xl ml-14 py-1 flex flex-row mt-3 ">
             <a className="ml-4 border border-black rounded-md w-2/5 bg-blue-400 hover:scale-110" href="http://www.becbapatla.ac.in/uploads/BCE1637727678598.pdf"  target="_blank">R20 Academic Rules & Regulations (Nov. 2021)</a>
         </p>
         <p className="text-xl ml-14 py-1 flex flex-row">

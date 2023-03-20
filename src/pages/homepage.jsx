@@ -6,7 +6,7 @@ import Courses from "/src/components/homepage/courses/courses";
 import coursedata from "/src/Data/homepage/coursedata.js";
 import gallerydata from "/src/Data/homepage/gallerydata.js";
 import close from "/src/assets/homepage/close-btn.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import BecDetails from "/src/assets/BecDetails.jpg";
 import culturalFest from "/src/assets/culturalFest.jpg";
@@ -31,9 +31,9 @@ import cmpy12 from "/src/assets/homepage/placements/image 48.png";
 import cmpy13 from "/src/assets/homepage/placements/image 46.png";
 import cmpy14 from "/src/assets/homepage/placements/image 51.png";
 import { Link } from "react-router-dom";
-
 import Marquee from "react-fast-marquee";
 import { DisplayAlumini } from "../components/homepage/alumini/display-alumini";
+import { getLandingPageData } from "../config/services";
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
@@ -642,21 +642,7 @@ export default function homepage() {
 					<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
 						Gallery
 					</p>
-					<div className="flex flex-wrap justify-center">{Galery}</d
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					iv>
+					<div className="flex flex-wrap justify-center">{Galery}</div>
 					{/* <link
 						href="src\components\homepage\gallery\imggallery.jsx"
 						className="text-primaryColor cursor-pointer mt-2 mr-10 text-lg text-right underline "

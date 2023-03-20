@@ -16,6 +16,7 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
+import Acheivements from "/src/pages/academics/acheivements.jsx"
 
 import Aicte from "/src/pages/saturaotryData/aicte.jsx";
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
@@ -45,14 +46,11 @@ import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
 import Imggallery from "./components/homepage/gallery/imggallery";
-// import Sidebar from "/src/components/Sidebar.jsx"
-// import AboutPlacements from "/src/pages/Placements/AboutPlacements"
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
-		// errorElement: <ErrorPage />,
 		children: [
 			{ index: true, element: <Homepage /> },
 			{
@@ -122,6 +120,10 @@ const router = createBrowserRouter([
 			{
 				path: "/Facilities",
 				element: <Facilities />,
+			},
+			{
+				path: "/Acheivements",
+				element: <Acheivements />,
 			},
 			{
 				path: "/Library",

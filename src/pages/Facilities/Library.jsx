@@ -126,7 +126,7 @@ export default function Facilities(){
 										</div>
 							</div>
 							<div className="tab-pane fade px-5" id="E-library" role="tabpanel" aria-labelledby="E-library-tab">
-									<div className=" w-10/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-3"> 
+									<div className=" w-10/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-3 "> 
 												<h4 className="font-serif font-semibold text-xl px-3 mt-3"> IEEE-ASP:</h4>
 												<div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 												<p className="justify-center text-lg ml-5 ">All Society Periodicals on Computer Engineering + Computer Science + Electrical & Electronics Engineering + Telecommunications & related disciplines</p>
@@ -217,7 +217,7 @@ export default function Facilities(){
 								
 							</div>
 							<div className="tab-pane fade " id="librarystaff" role="tabpanel" aria-labelledby="librarystaff-tab">
-								   <h3 className="font-semibold font-serif text-2xl mt-3">Staff Members</h3>
+								   <h3 className="font-semibold font-serif text-2xl mt-3">Staff Members:</h3>
 								   <div className='line w-14 h-1' style={{background:"#0060b1"}}></div>
 									<div className="mt-3 p-3 ">
 				               				<div className="staff-container grid grid-flow-row justify-center gap-4 mt-3 mb-5 md:grid-cols-1 md:ml-32 md:justify-items-center lg:grid-cols-1 xl:ml-0 xl:grid-cols-2 2xl:grid-cols-3">{Library}</div>
@@ -354,13 +354,13 @@ export default function Facilities(){
 													<td>01</td>
 													<td>40</td>
 												</tr>
-
 												<tr className="text-center text-blue-800">
-													<td> </td>
-													<td><b>Total:</b></td>
-													<td><b>236</b></td>
-													<td><b>9173</b></td>	
+														<td> </td>
+														<td><b>Total :</b></td>
+														<td><b>236</b></td>
+														<td><b>9173</b></td>	
 												</tr>
+												
 											</table>
 											
 										</div>

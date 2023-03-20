@@ -9,6 +9,15 @@ export const getPlacementData = () => {
     return AxiosInstance.get('/getPlacementsData');
 }
 
+export const getAcademicsData = () => {
+    return AxiosInstance.get('/getAcademicsData');
+
+}
+
+export const getPlacementsNotifications = () => {
+    return AxiosInstance.get('/getPlacementsNotifications');
+}
+
 export const getDepartmentsData = () => {
     return AxiosInstance.get('/getDepartmentsData');
 }
