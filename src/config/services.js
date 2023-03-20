@@ -8,3 +8,11 @@ export const getLandingPageData = () => {
 export const getPlacementData = () => {
     return AxiosInstance.get('/getPlacementsData');
 }
+
+export const getDepartmentsData = () => {
+    return AxiosInstance.get('/getDepartmentsData');
+}
+
+export const registerPlacementData = (data) => {
+    return AxiosInstance.post('/placementRegistration',data);
+}

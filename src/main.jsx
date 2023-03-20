@@ -2,7 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-import { createBrowserRouter, RouterProvider, BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import Root from "/src/routes/root.jsx";
@@ -10,6 +16,12 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
+
+import Aicte from "/src/pages/saturaotryData/aicte.jsx";
+import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
+import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
+import IqacPage from "./pages/saturaotryData/Iqac";
+import Nirf from "/src/pages/saturaotryData/Nirf.jsx";
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -25,106 +37,154 @@ import Transportation from "/src/pages/Facilities/Transportation.jsx";
 import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
+import Overview from "/src/pages/academics/academics";
+import Programme from "/src/pages/academics/programme";
+import Patents from "/src/pages/academics/patents";
+import Rules from "/src/pages/academics/rules.jsx";
+import Autonomous from "/src/pages/academics/autonomous";
+import Institution from "/src/pages/academics/institution";
+import ItStaff from "/src/pages/departments/staff.jsx";
 
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Root />,
-		// errorElement: <ErrorPage />,
-		children: [
-			{ index: true, element: <Homepage /> },
-			{
-				path: "/Placements",
-				element: <Placements />,
-			},
-			{
-				path: "/examination-cell",
-				element: <ExaminationCell />,
-			},
-			{
-				path: "/exam-notifications",
-				element: <ExamNotifs />,
-			},
-			{
-				path: "/exam-downloads",
-				element: <ExamDownloads />,
-			},
-			{
-				path: "/exam-login",
-				element: <ExamLogin />,
-			},
-			{
-				path: "/exam-results",
-				element: <ExamResults />,
-			},
-			{
-				path: "/YearWise-Placements",
-				element: <YearWisePlacements />,
-			},
-			{
-				path: "/BranchWise-Placements",
-				element: <BranchWisePlacements />,
-			},
-			{
-				path: "/departments/IT",
-				element: <It />,
-			},
-			{
-				path: "/Facilities",
-				element: <Facilities />,
-			},
-			{
-				path: "/Library",
-				element: <Library />,
-			},
-			{
-				path: "/RoboticCentre",
-				element: <RoboticCentre />,
-			},
-			{
-				path: "/BoschRexrothCEO",
-				element: <BoschRexrothCEO />,
-			},
-			{
-				path: "/Cafteria",
-				element: <Cafteria />,
-			},
-			{
-				path: "/Transportation",
-				element: <Transportation />,
-			},
-			{
-				path: "/Hostels",
-				element: <Hostels />,
-			},
-			{
-				path: "/Sports",
-				element: <Sports />,
-			},
-			{
-				path: "/Others",
-				element: <Others />,
-			},
-		],
-	},
+  {
+    path: "/",
+    element: <Root />,
+    // errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Homepage /> },
+      {
+        path: "/Placements",
+        element: <Placements />,
+      },
+      {
+        path: "/examination-cell",
+        element: <ExaminationCell />,
+      },
+      {
+        path: "/exam-notifications",
+        element: <ExamNotifs />,
+      },
+      {
+        path: "/naac",
+        element: <NaacHome />,
+      },
+      {
+        path: "/naacInfo",
+        element: <Aicte />,
+      },
+      {
+        path: "/naacPage",
+        element: <NaacPage />,
+      },
+      {
+        path: "/iqacPage",
+        element: <IqacPage />,
+      },
+      {
+        path: "/nirf",
+        element: <Nirf />,
+      },
+      {
+        path: "/exam-downloads",
+        element: <ExamDownloads />,
+      },
+      {
+        path: "/exam-login",
+        element: <ExamLogin />,
+      },
+      {
+        path: "/exam-results",
+        element: <ExamResults />,
+      },
+      {
+        path: "/YearWise-Placements",
+        element: <YearWisePlacements />,
+      },
+      {
+        path: "/BranchWise-Placements",
+        element: <BranchWisePlacements />,
+      },
+      {
+        path: "/departments/IT",
+        element: <It />,
+      },
+      {
+        path: "/departments/ItStaff",
+        element: <ItStaff />,
+      },
+      {
+        path: "/Facilities",
+        element: <Facilities />,
+      },
+      {
+        path: "/Library",
+        element: <Library />,
+      },
+      {
+        path: "/RoboticCentre",
+        element: <RoboticCentre />,
+      },
+      {
+        path: "/BoschRexrothCEO",
+        element: <BoschRexrothCEO />,
+      },
+      {
+        path: "/Cafteria",
+        element: <Cafteria />,
+      },
+      {
+        path: "/Transportation",
+        element: <Transportation />,
+      },
+      {
+        path: "/Hostels",
+        element: <Hostels />,
+      },
+      {
+        path: "/Sports",
+        element: <Sports />,
+      },
+      {
+        path: "/Others",
+        element: <Others />,
+      },
+      {
+        path: "/academics",
+        element: <Overview />,
+      },
+      {
+        path: "/academics/programme",
+        element: <Programme />,
+      },
+      {
+        path: "/academics/patents",
+        element: <Patents />,
+      },
+      {
+        path: "/academics/rules",
+        element: <Rules />,
+      },
+      {
+        path: "/academics/autonomous",
+        element: <Autonomous />,
+      },
+      {
+        path: "/academics/institution",
+        element: <Institution />,
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-	<>
-		<React.StrictMode>
-				{/* <BrowserRouter>
-      <Sidebar>
-        <Routes>
-          <Route path="/aboutPlacements" element={<AboutPlacements />} />
-        </Routes>
-      </Sidebar>
-    </BrowserRouter> */}
-			<ChakraProvider>
-				<RouterProvider router={router} />
-			</ChakraProvider>
-		</React.StrictMode>
-	</>
+  <>
+    <React.StrictMode>
+      <ChakraProvider>
+        <RouterProvider router={router} />
+      </ChakraProvider>
+    </React.StrictMode>
+  </>
 );

@@ -3,10 +3,10 @@ import Footer from "/src/components/footer/footer.jsx";
 import { Outlet, Link } from "react-router-dom";
 
 export default function Root() {
-	return (
-		<>
-			<Header />
-			<button>
+  return (
+    <>
+      <Header />
+      {/* <button>
 				<Link className=" m-2 p-2 border-2 border-black" to={"/Placements"}>
 					Placements
 				</Link>
@@ -30,12 +30,21 @@ export default function Root() {
 			<button>
 				<Link
 					className=" m-2 p-2 border-2 border-black"
-					to={"/departments/IT"}
+					to={"/naac"}
 				>
+					Satuatory Data
+				</Link>
+			</button>
+      <button>
+      <Link
+					className=" m-2 p-2 border-2 border-black"
+					to={"/departments/IT"}
+				>	
 					Departments
 				</Link>
+
       </button>
-      <button>
+       <button>
 				<Link className=" m-2 p-2 border-2 border-black" to={"/exam-downloads"}>
 					Exam downloads
 				</Link>
@@ -57,9 +66,9 @@ export default function Root() {
 				>
 					Facilities
 				</Link>
-			</button>
-			<Outlet />
-			<Footer />
-		</>
-	);
+			</button> */}
+      <Outlet />
+      <Footer />
+    </>
+  );
 }
