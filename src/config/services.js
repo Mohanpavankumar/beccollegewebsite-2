@@ -9,6 +9,10 @@ export const getPlacementData = () => {
     return AxiosInstance.get('/getPlacementsData');
 }
 
+export const getPlacementsNotifications = () => {
+    return AxiosInstance.get('/getPlacementsNotifications');
+}
+
 export const getDepartmentsData = () => {
     return AxiosInstance.get('/getDepartmentsData');
 }
