@@ -10,9 +10,21 @@ export const nirfData = {
             "link": SamplePDF
         },
         {
-            "key": "2022",
-            "tabTitle": "2022",
-            "contentTitle": "Who says, By Selena",
+            "key": "2021",
+            "tabTitle": "2021",
+            "contentTitle": "Who",
+            "link": "http://www.becbapatla.ac.in/uploads/BCE1675075999314.pdf"
+        },
+        {
+            "key": "2020",
+            "tabTitle": "2020",
+            "contentTitle": " By Selena",
+            "link": "http://www.becbapatla.ac.in/uploads/BCE1675075999314.pdf"
+        },
+        {
+            "key": "2019",
+            "tabTitle": "2019",
+            "contentTitle": "Who says",
             "link": "http://www.becbapatla.ac.in/uploads/BCE1675075999314.pdf"
         }
     ]

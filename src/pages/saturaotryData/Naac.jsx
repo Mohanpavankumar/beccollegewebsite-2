@@ -34,7 +34,7 @@ function Naac() {
                     </div>
                 </div>
 
-                <div className="flex left-navcontent">
+                <div className="flex left-navcontent col-8">
                     <div className="tab-content" id="tabContent">
                         <div className="tab-pane fade show active" id="AICTEMandatoryDisclosure" role="tabpanel" aria-labelledby="AICTEMandatoryDisclosure-tab">
                             <div className='mt-4'>

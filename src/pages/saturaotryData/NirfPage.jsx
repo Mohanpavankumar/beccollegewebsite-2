@@ -6,8 +6,8 @@ import './page.css';
 
 const Nirf = () => {
     return (
-        <div className='d-flex justify-between  mt-4 mb-1'>
-            <div>
+        <div className='d-flex justify-between  mt-4 mb-1 px-20'>
+            <div className=" border-slate-400 rounded-lg p-3 px-3 bg-slate-400">
                 <Tabs
                     defaultActiveKey={nirfData.deafultKey}
                     id="justify-tab-example"
@@ -20,8 +20,8 @@ const Nirf = () => {
                     </Tab>)}
                 </Tabs>
             </div>
-            <div style={{ border: "1px solid red", padding: "1rem", margin:"1rem" }}>
-                1
+            <div style={{ border: "1px solid red", padding: "1rem", margin:"1rem" }} >
+                <img src="/src/assets/saturatoryData/nirf.jpg"></img>
             </div>
         </div >
     );
