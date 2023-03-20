@@ -19,153 +19,154 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Drawercomp from "/src/components/drawercomponent.jsx";
+import HamburgerMenu from "./burgermenu";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [openDrawer, setOpenDrawer] = useState(false);
-  const handleClick = () => {};
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+	const [click, setClick] = useState(false);
+	const [openDrawer, setOpenDrawer] = useState(false);
+	const handleClick = () => {};
+	const theme = useTheme();
+	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  const [state, setState] = React.useState({
-    right: false,
-  });
+	const [state, setState] = React.useState({
+		right: false,
+	});
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
+	const toggleDrawer = (anchor, open) => (event) => {
+		if (
+			event.type === "keydown" &&
+			(event.key === "Tab" || event.key === "Shift")
+		) {
+			return;
+		}
 
-    setState({ ...state, [anchor]: open });
-  };
+		setState({ ...state, [anchor]: open });
+	};
 
-  const list = (anchor) => <div> hello </div>;
+	const list = (anchor) => <div> hello </div>;
 
-  return (
-    <>
-      {isMobile ? (
-        // <div>
-        //   {["right"].map((anchor) => (
-        //     <React.Fragment key={anchor}>
-        //       <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-        //       <Drawer
-        //         anchor={anchor}
-        //         open={state[anchor]}
-        //         onClose={toggleDrawer(anchor, false)}
-        //       >
-        //         {list(anchor)}
-        //       </Drawer>
-        //     </React.Fragment>
-        //   ))}
-        // </div>
-        // <Drawercomp />
-        <></>
-      ) : (
-        <nav className="navbar font-bold text-primaryColor">
-          <div className="navbar-container">
-            {/* <Link to="/" className="navbar-logo">
+	return (
+		<>
+			{isMobile ? (
+				<HamburgerMenu />
+			) : (
+				/* {["right"].map((anchor) => (
+          <React.Fragment key={anchor}>
+            <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+            <Drawer
+              anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+            >
+              {list(anchor)}
+            </Drawer>
+          </React.Fragment>
+        ))} */
+				// <Drawercomp />
+				// <>
+				// </>
+				<nav className="navbar font-bold text-primaryColor">
+					<div className="navbar-container">
+						{/* <Link to="/" className="navbar-logo">
 						Logo
 					</Link> */}
-            <div className="menu-icon" onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
-            </div>
-            <div className="gap-10 ml-10 hidden md:flex">
-              <Menu>
-                <MenuButton>
-                  Departments <ArrowDropDownIcon />
-                </MenuButton>
-                <MenuList>
-                  <MenuItem as="a">
-                    <Link to={"/departments/IT"}>IT</Link>
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    CSE
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu>
-                <MenuButton>
-                  Facilities <ArrowDropDownIcon />
-                </MenuButton>
-                <MenuList>
-                  <MenuItem as="a" href="#">
-                    Link 1
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Link 2
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu>
-                <MenuButton>
-                  Academics <ArrowDropDownIcon />
-                </MenuButton>
-                <MenuList>
-                  <MenuItem as="a" href="#">
-                    Link 1
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Link 2
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu>
-                <MenuButton>
-                  Exams & Results <ArrowDropDownIcon />
-                </MenuButton>
-                <MenuList>
-                  <MenuItem as="a" href="#">
-                    Link 1
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Link 2
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu>
-                <MenuButton>
-                  Alumni <ArrowDropDownIcon />
-                </MenuButton>
-                <MenuList>
-                  <MenuItem as="a" href="#">
-                    Link 1
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Link 2
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu>
-                <MenuButton>
-                  Login <ArrowDropDownIcon />
-                </MenuButton>
-                <MenuList>
-                  <MenuItem as="a" href="#">
-                    Link 1
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Link 2
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu>
-                <MenuButton>
-                  Reach us <ArrowDropDownIcon />
-                </MenuButton>
-                <MenuList>
-                  <MenuItem as="a" href="#">
-                    Link 1
-                  </MenuItem>
-                  <MenuItem as="a" href="#">
-                    Link 2
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-            </div>
-            {/* <ul className={click ? "nav-menu active" : "nav-menu"}>
+						<div className="menu-icon" onClick={handleClick}>
+							{click ? <FaTimes /> : <FaBars />}
+						</div>
+						<div className="gap-10 ml-10 hidden md:flex">
+							<Menu>
+								<MenuButton>
+									Departments <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a">
+										<Link to={"/departments/IT"}>IT</Link>
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										CSE
+									</MenuItem>
+								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton>
+									Facilities <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a" href="#">
+										Link 1
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Link 2
+									</MenuItem>
+								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton>
+									Academics <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a" href="#">
+										Link 1
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Link 2
+									</MenuItem>
+								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton>
+									Exams & Results <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a" href="#">
+										Link 1
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Link 2
+									</MenuItem>
+								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton>
+									Alumni <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a" href="#">
+										Link 1
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Link 2
+									</MenuItem>
+								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton>
+									Login <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a" href="#">
+										Link 1
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Link 2
+									</MenuItem>
+								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton>
+									Reach us <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a" href="#">
+										Link 1
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Link 2
+									</MenuItem>
+								</MenuList>
+							</Menu>
+						</div>
+						{/* <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/about" className="nav-links" onClick={handleClick}>
                 Departments
@@ -210,11 +211,11 @@ function Navbar() {
               </Link>
             </li>
           </ul> */}
-          </div>
-        </nav>
-      )}
-    </>
-  );
+					</div>
+				</nav>
+			)}
+		</>
+	);
 }
 
 export default Navbar;

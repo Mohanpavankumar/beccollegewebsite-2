@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import {
-  createBrowserRouter,
-  RouterProvider,
-  BrowserRouter,
-  Route,
-  Routes,
+	createBrowserRouter,
+	RouterProvider,
+	BrowserRouter,
+	Route,
+	Routes,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -45,6 +45,7 @@ import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
+import Imggallery from "./components/homepage/gallery/imggallery";
 
 const router = createBrowserRouter([
 	{
@@ -65,6 +66,26 @@ const router = createBrowserRouter([
 				element: <ExamNotifs />,
 			},
 			{
+				path: "/naac",
+				element: <NaacHome />,
+			},
+			{
+				path: "/naacInfo",
+				element: <Aicte />,
+			},
+			{
+				path: "/naacPage",
+				element: <NaacPage />,
+			},
+			{
+				path: "/iqacPage",
+				element: <IqacPage />,
+			},
+			{
+				path: "/nirf",
+				element: <Nirf />,
+			},
+			{
 				path: "/exam-downloads",
 				element: <ExamDownloads />,
 			},
@@ -79,6 +100,10 @@ const router = createBrowserRouter([
 			{
 				path: "/YearWise-Placements",
 				element: <YearWisePlacements />,
+			},
+			{
+				path: "/Imggallery",
+				element: <Imggallery />,
 			},
 			{
 				path: "/BranchWise-Placements",
