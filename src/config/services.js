@@ -8,3 +8,7 @@ export const getLandingPageData = () => {
 export const getPlacementData = () => {
     return AxiosInstance.get('/getPlacementsData');
 }
+
+export const getAcademicsData = () => {
+    return AxiosInstance.get('/getAcademicsData');
+}
