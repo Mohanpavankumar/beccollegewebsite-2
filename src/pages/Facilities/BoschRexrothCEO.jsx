@@ -245,7 +245,6 @@ export default function Facilities(){
 																</div>
 															</div>
 
-
 								</div>
 							</div>                 
                         </div>

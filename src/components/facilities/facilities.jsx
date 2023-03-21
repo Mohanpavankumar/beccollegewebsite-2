@@ -35,7 +35,7 @@ export const FacilitiesChart = () => {
                     enabled: true,
                     orientation: 'horizontal',
                     position: 'top',
-                    offsetY: -10,
+                    offsetY: -12,
                     // formatter: function (val) {
                     //     return val
                     // }
@@ -55,7 +55,7 @@ export const FacilitiesChart = () => {
                             return data.filter(x => x.id == val).map(y => y.dept).toString()
                         },
                         style: {
-                            colors: '#808080',
+                            colors: '#000000',
                         }
                     },
                     type: 'numeric',
