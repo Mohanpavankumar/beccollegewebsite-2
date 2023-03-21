@@ -151,7 +151,7 @@ export default function Facilities(){
 																					<th className="pt-4">Prerequisite</th>
 																					<th className="pt-4">Expert Faculty</th>
 																				</tr>
-																				<tr className="text-center text-justify" >
+																				<tr className="text-center" >
 																					<td>Pneumatics</td>
 																					<td  className="text-left">
 																						1. Basic and Electro Pneumatics-30hrs<br></br>
@@ -164,7 +164,7 @@ export default function Facilities(){
 																						3.S.Ravi Kumar<br></br>
 																					</td>
 																				</tr>
-																				<tr className="text-center text-justify">
+																				<tr className="text-center">
 																					<td>Hydraulics</td>
 																					<td  className="text-left">
 																						1. Basic and Electro Hydraulics-30hrs<br></br>
@@ -177,7 +177,7 @@ export default function Facilities(){
 																						3.N.Bala Krishna<br></br>
 																					</td>
 																				</tr>
-																				<tr className="text-center text-justify">
+																				<tr className="text-center ">
 																					<td>PLC</td>
 																					<td  className="text-left">
 																						1.Basic PLC --30hrs<br></br>
@@ -192,7 +192,7 @@ export default function Facilities(){
 																							5.Ch.Ramesh
 																					</td>
 																				</tr>
-																				<tr className="text-center text-justify">
+																				<tr className="text-center">
 																					<td>Sensorics</td>
 																					<td  className="text-left">
 																						1.Sensorics-15hrs
@@ -204,7 +204,7 @@ export default function Facilities(){
 																						3.Ch.Ramesh<br></br>
 																					</td>
 																				</tr>
-																				<tr className="text-center text-justify">
+																				<tr className="text-center">
 																					<td>MLD & MTX</td>
 																					<td  className="text-left">
 																						1.MLD & MTX-18hrs
@@ -218,7 +218,7 @@ export default function Facilities(){
 																						5.Ch.Ramesh
 																					</td>
 																				</tr>
-																				<tr className="text-center text-justify">
+																				<tr className="text-center">
 																					<td>MMS</td>
 																					<td  className="text-left">
 																						1.MMS -15hrs
