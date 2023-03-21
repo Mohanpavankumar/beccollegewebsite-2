@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import {
-  createBrowserRouter,
-  RouterProvider,
-  BrowserRouter,
-  Route,
-  Routes,
+	createBrowserRouter,
+	RouterProvider,
+	BrowserRouter,
+	Route,
+	Routes,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -45,6 +45,7 @@ import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
+import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
 	{
@@ -132,6 +133,10 @@ const router = createBrowserRouter([
 				path: "/Others",
 				element: <Others />,
 			},
+			{
+				path: "/f",
+				element: <FacilitiesChart />
+			}
 		],
 	},
 ]);

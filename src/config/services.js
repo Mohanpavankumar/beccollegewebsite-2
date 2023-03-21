@@ -25,3 +25,7 @@ export const getDepartmentsData = () => {
 export const registerPlacementData = (data) => {
     return AxiosInstance.post('/placementRegistration',data);
 }
+
+export const getFacilitiesChartData = () => {
+    return AxiosInstance.get('/getLibraryGraphData');
+}
