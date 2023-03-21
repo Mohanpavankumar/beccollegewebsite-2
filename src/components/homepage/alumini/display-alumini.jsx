@@ -1,8 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { aluminiData } from "../../../Data/homepage/aluminiData";
-
-export const DisplayAlumini = (props) => {
+import { Link } from "react-router-dom";
+export const DisplayAlumini = ({ isMobile }) => {
 	const [data, setData] = React.useState([]);
 
 	const getRandomObject = (aData, num) => {
@@ -16,18 +16,19 @@ export const DisplayAlumini = (props) => {
 	}, [aluminiData]);
 
 	return (
-		<>
-			<div className="d-flex">
+		<div className="flex flex-col">
+			<div
+				className={`flex justify-around  ${isMobile && "flex-column mx-auto"}`}
+			>
 				{!!data &&
 					data.map((x) => (
-						<Card style={{ width: "18rem" }}>
+						<Card style={{ width: "14rem" }}>
 							<Card.Img
 								variant="top"
 								src={x.profileImage}
-								alt="fa-user"
 								style={{ height: "14rem" }}
 							/>
-							<Card.Body className="text-center">
+							<Card.Body className="text-center ">
 								<Card.Title>{x.name}</Card.Title>
 								<Card.Text>{x.description}</Card.Text>
 								<Card.Subtitle className="p-3">{x.companyName}</Card.Subtitle>
@@ -35,6 +36,12 @@ export const DisplayAlumini = (props) => {
 						</Card>
 					))}
 			</div>
-		</>
+			<Link
+				className="text-primaryColor cursor-pointer p-1 ml-auto text-lg    "
+				to={"/AllAlumni"}
+			>
+				viewmore
+			</Link>
+		</div>
 	);
 };

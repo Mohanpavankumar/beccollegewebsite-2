@@ -16,7 +16,7 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
-import Acheivements from "/src/pages/academics/acheivements.jsx"
+import Acheivements from "/src/pages/academics/acheivements.jsx";
 
 import Aicte from "/src/pages/saturaotryData/aicte.jsx";
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
@@ -46,6 +46,7 @@ import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
 import Imggallery from "./components/homepage/gallery/imggallery";
+import AllAlumni from "./components/homepage/alumini/all-alumni";
 
 const router = createBrowserRouter([
 	{
@@ -104,6 +105,10 @@ const router = createBrowserRouter([
 			{
 				path: "/Imggallery",
 				element: <Imggallery />,
+			},
+			{
+				path: "/AllAlumni",
+				element: <AllAlumni />,
 			},
 			{
 				path: "/BranchWise-Placements",

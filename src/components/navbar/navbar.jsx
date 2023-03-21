@@ -65,7 +65,7 @@ function Navbar() {
 				// <Drawercomp />
 				// <>
 				// </>
-				<nav className="navbar font-bold text-primaryColor">
+				<nav className="navbar font-bold text-primaryColor mx-auto">
 					<div className="navbar-container">
 						{/* <Link to="/" className="navbar-logo">
 						Logo
@@ -73,32 +73,66 @@ function Navbar() {
 						<div className="menu-icon" onClick={handleClick}>
 							{click ? <FaTimes /> : <FaBars />}
 						</div>
-						<div className="gap-10 ml-10 hidden md:flex">
+						<div className="gap-10 ml-10 hidden md:flex ">
+							<Menu>
+								<MenuButton>Home</MenuButton>
+							</Menu>
 							<Menu>
 								<MenuButton>
 									Departments <ArrowDropDownIcon />
 								</MenuButton>
 								<MenuList>
+									<MenuItem as="a" href="#">
+										Civil Engineering
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Computer Science & Engineering
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Computer Science and Engineering ( Artificial intelligence
+										and Machine Learning )
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Cyber Security
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Data Science
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Chemistry
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										English
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										MCA
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Mathematics
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Physics
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Electrical & Electronics Engineering
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Electronics & Communication Engineering
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Electronics and Instrumentation Engineering
+									</MenuItem>
+
 									<MenuItem as="a">
 										<Link to={"/departments/IT"}>IT</Link>
 									</MenuItem>
 									<MenuItem as="a" href="#">
-										CSE
+										Mechanical Engineering
 									</MenuItem>
 								</MenuList>
 							</Menu>
 							<Menu>
-								<MenuButton>
-									Facilities <ArrowDropDownIcon />
-								</MenuButton>
-								<MenuList>
-									<MenuItem as="a" href="#">
-										Link 1
-									</MenuItem>
-									<MenuItem as="a" href="#">
-										Link 2
-									</MenuItem>
-								</MenuList>
+								<MenuButton>Facilities</MenuButton>
 							</Menu>
 							<Menu>
 								<MenuButton>
@@ -106,10 +140,45 @@ function Navbar() {
 								</MenuButton>
 								<MenuList>
 									<MenuItem as="a" href="#">
-										Link 1
+										Overview
 									</MenuItem>
 									<MenuItem as="a" href="#">
-										Link 2
+										Courses Offered
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Patents
+									</MenuItem>
+
+									<MenuItem as="a" href="#">
+										Rules & Regulations
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Antonomous Policies
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Institution
+									</MenuItem>
+								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton>
+									Statutory Data <ArrowDropDownIcon />
+								</MenuButton>
+								<MenuList>
+									<MenuItem as="a" href="#">
+										Accrediational Approvals
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Committees
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										ARIIA Reports
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										BOS(Board of studies)
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										RTI Act 2005
 									</MenuItem>
 								</MenuList>
 							</Menu>
@@ -119,25 +188,40 @@ function Navbar() {
 								</MenuButton>
 								<MenuList>
 									<MenuItem as="a" href="#">
-										Link 1
+										Examination Cell
 									</MenuItem>
 									<MenuItem as="a" href="#">
-										Link 2
+										Exam Notices
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Education Verification
+									</MenuItem>
+									<MenuItem as="a" href="#">
+										Student Marks
+									</MenuItem>
+									<MenuItem as="a" href="#"></MenuItem>
+									<MenuItem as="a" href="#">
+										Payment of examination fee
 									</MenuItem>
 								</MenuList>
 							</Menu>
 							<Menu>
-								<MenuButton>
-									Alumni <ArrowDropDownIcon />
+								<MenuButton
+									as="a"
+									href="https://becalumni.org/"
+									target={"_blank"}
+								>
+									Placements
 								</MenuButton>
-								<MenuList>
-									<MenuItem as="a" href="#">
-										Link 1
-									</MenuItem>
-									<MenuItem as="a" href="#">
-										Link 2
-									</MenuItem>
-								</MenuList>
+							</Menu>
+							<Menu>
+								<MenuButton
+									as="a"
+									href="https://becalumni.org/"
+									target={"_blank"}
+								>
+									Alumni
+								</MenuButton>
 							</Menu>
 							<Menu>
 								<MenuButton>

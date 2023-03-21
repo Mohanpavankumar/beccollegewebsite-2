@@ -36,6 +36,8 @@ import { DisplayAlumini } from "../components/homepage/alumini/display-alumini";
 import { getLandingPageData } from "../config/services";
 import TabsComponent from "../components/shared/Tabs";
 import { ListGroup } from "react-bootstrap";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
@@ -66,13 +68,15 @@ const Galery = gallerydata.map((galleryarg) => {
 });
 export default function HomePage() {
 	const [data, setData] = useState([]);
-	const [showResults, setshowResults] = useState(false);
+	const [showResults, setshowResults] = useState(true);
 
 	const getData = () => {
 		getLandingPageData()
 			.then((res) => setData(res.data))
 			.catch((err) => console.log("something went wrong", err));
 	};
+	const theme = useTheme();
+	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
 	useEffect(() => {
 		getData();
@@ -91,20 +95,23 @@ export default function HomePage() {
 							</a>
 						</a>
 					</div>
-					{showResults ? <Results /> : null}
-					<div className="fixed z-50 bottom-0 left-0 right-0">
-						<img
-							onClick={setshowResults(false)}
-							src={close}
-							className="h-5 w-5 cursor-pointer right fixed left-[98.5%] bottom-6"
-						/>
-						<div className="bg-primaryColor  text-white">
-							<marquee>
-								This is a message which displays in the bottom of the screen and
-								can be closed if not needed
-							</marquee>
+					{/* {showResults ? <Results /> : null} */}
+					{showResults && (
+						<div className="fixed z-50 bottom-0 left-0 right-0">
+							<img
+								onClick={() => setshowResults(false)}
+								src={close}
+								className="h-5 w-5 cursor-pointer right fixed left-[98.5%] bottom-6"
+							/>
+
+							<div className="bg-primaryColor  text-white">
+								<marquee>
+									This is a message which displays in the bottom of the screen
+									and can be closed if not needed
+								</marquee>
+							</div>
 						</div>
-					</div>
+					)}
 					<div
 						id="default-carousel"
 						className="relative mt-3"
@@ -269,13 +276,13 @@ export default function HomePage() {
 						</button>
 					</div>
 
-					<div className="mt-10 flex flex-row justify-evenly">
+					<div className="mt-10 flex flex-col md:flex-row ">
 						{c.collegeStatistics.map((statistics) => (
-							<div className="text-center rounded-full border-primaryColor border-8  h-[130px] w-[130px]">
-								<div className="text-white counter-value text-xl bg-primaryColor p-4 rounded-t-full droppp font-bold">
+							<div className="text-center mx-auto my-1   rounded-full border-primaryColor border-8 h-[110px] w-[110px] md:h-[130px] md:w-[130px]">
+								<div className="text-white counter-value text-sm md:text-xl bg-primaryColor p-3 md:p-4 rounded-t-full droppp font-bold">
 									{statistics.number}
 								</div>
-								<h3 className=" font-semibold text-base text-primaryColor">
+								<h3 className=" font-semibold text-sm md:text-base text-primaryColor">
 									{statistics.title}
 								</h3>
 							</div>
@@ -334,13 +341,18 @@ export default function HomePage() {
 										tabKey: "latestNews",
 										tabTitle: "Latest News",
 										tabView: (
-											<ListGroup as="ul">
+											<ListGroup
+												id="listgroup-scroll"
+												style={{ height: "60vh", overflowY: "scroll" }}
+												as="ul"
+											>
 												{c.latestNews.map((latestNews, index) => (
 													<ListGroup.Item
 														key={index}
 														as="li"
 														className="d-flex justify-between"
 													>
+														{/* {console.log(latestNews)} */}
 														<div className="my-auto mr-2">
 															<a
 																href={latestNews.link}
@@ -400,6 +412,94 @@ export default function HomePage() {
 							/>
 						</div>
 					</div>
+					<div
+						className={`flex justify-between w-100 ${
+							isMobile && "flex-column"
+						}`}
+					>
+						<div className="md:w-1/2  bg-placementsbg">
+							<div className="font-bold text-2xl  md:text-3xl text-primaryColor text-center pt-10">
+								Impeccable Placements
+							</div>
+							<div className="text-lg md:text-2xl m-7 mt-3 md:m-14 md:mt-5 mb-0 font-semibold">
+								1100+ Job offers in 2021-22
+								<br />
+								850+ Job offers in 2020-21
+								<br />
+								All of these offers are from 50+ MNC companies <br />
+							</div>
+							<div className="ml-24 text-base md:text-lg m-2">
+								We continuously strive towards facilitating campus-drives where
+								eminent companies offer the most worth-while career
+								opportunities.
+							</div>
+							<Marquee gradientWidth={15} className="mt-8 md:mt-16">
+								<div className="flex w-1/2   ">
+									<img
+										className=" w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy1}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy2}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy3}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy4}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy5}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy6}
+									></img>
+								</div>
+							</Marquee>
+							<Marquee gradientWidth={30} className="w-1/2">
+								<div className="flex w-1/2 ">
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy8}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy9}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy10}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy11}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy12}
+									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy13}
+									></img>
+								</div>
+							</Marquee>
+						</div>
+
+						<div className="md:w-1/2">
+							<div className="text-primaryColor text-3xl pt-10 text-center font-bold ">
+								Distinguished ALumini
+							</div>
+							<div className="mt-5 ">
+								<DisplayAlumini isMobile={isMobile} />
+							</div>
+						</div>
+					</div>
 					<div className=" flex flex-col justify-center items-center bg-hero-pattern ">
 						<div className="w-4/5 xl:w-3/6 mt-14">
 							<fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
@@ -444,54 +544,7 @@ export default function HomePage() {
 							</fieldset>
 						</div>
 					</div>
-					<div className="flex">
-						<div className="w-1/2 bg-placementsbg">
-							<div className="font-bold  text-3xl text-primaryColor text-center pt-10">
-								Impeccable Placements
-							</div>
-							<div className="text-2xl m-14 mt-5 mb-0 font-semibold">
-								1100+ Job offers in 2021-22
-								<br />
-								850+ Job offers in 2020-21
-								<br />
-								All of these offers are from 50+ MNC companies <br />
-							</div>
-							<div className="ml-24 text-lg m-2">
-								We continuously strive towards facilitating campus-drives where
-								eminent companies offer the most worth-while career
-								opportunities.
-							</div>
-							<Marquee gradientWidth={30}>
-								<div className="flex w-1/2 mt-16">
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy1}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy2}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy3}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy4}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy5}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy6}></img>
-								</div>
-							</Marquee>
-							<Marquee gradientWidth={30}>
-								<div className="flex w-1/2 mb-10">
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy8}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy9}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy10}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy11}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy12}></img>
-									<img className="w-40  h-24 pr-4 pb-4" src={cmpy13}></img>
-								</div>
-							</Marquee>
-						</div>
 
-						<div className="w-1/2 ">
-							<div className="text-primaryColor text-3xl pt-10 text-center font-bold ">
-								Distinguished ALumini
-							</div>
-							<div className="mt-10 ">
-								<DisplayAlumini />
-							</div>
-						</div>
-					</div>
 					<div className="bg-courses">
 						<div className="text-primaryColor text-xl ml-5 xl:ml-20 xl:text-3xl">
 							<b>COURSES OFFERED</b>

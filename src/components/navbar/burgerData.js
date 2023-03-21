@@ -1,32 +1,7 @@
 export const burgerData = [
 	{
+		to: "#",
 		label: "Home",
-		children: [
-			{
-				to: "/departments/IT",
-				label: "College Profile",
-			},
-			{
-				to: "http://www.ebay.com",
-				label: "Governance",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Location",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Accreditation",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Infrastructure",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "MoUs",
-			},
-		],
 	},
 	{
 		label: "Departments",
@@ -97,51 +72,18 @@ export const burgerData = [
 	},
 	{
 		label: "Facilities",
-		children: [
-			{
-				to: "/departments/IT",
-				label: "Library",
-			},
-			{
-				to: "http://www.ebay.com",
-				label: "Bank",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Food Court",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Transportation",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Ladies Hostel",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Post Office",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Dispensary",
-			},
-			{
-				to: "http://www.hp.com",
-				label: "Sports",
-			},
-		],
+		to: "#",
 	},
 	{
 		label: "Academics",
 		children: [
 			{
-				to: "/departments/IT",
-				label: "Library",
+				to: "#",
+				label: "Overview",
 			},
 			{
-				to: "http://www.ebay.com",
-				label: "Bank",
+				to: "#",
+				label: "Courses Offered",
 			},
 		],
 	},
