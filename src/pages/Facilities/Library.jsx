@@ -121,7 +121,7 @@ export default function Facilities(){
 												<div className='line w-20 h-1 mb-5' style={{background:"#0060b1"}}></div>
 								                <p className="text-justify text-lg ">BEC Central Library is fully automated with SOUL 2.0 Software; updated with latest version in 2010 and Bar-coding system facilitating easy access to students and well maintenance of library for they say “As the biggest library if it is in disorder is not as useful as a small but well-arranged one.” </p>
 								            </div>
-								            <div className="w-[32rem] ml-2 mt-3 px-3">
+								            <div className="w-[34rem] ml-2 mt-3 px-3">
 							                    <img src={DigiLibImg} className="h-[20rem] ml-2 w-full border-2 rounded-lg" ></img>
 							                </div>
 										</div>
