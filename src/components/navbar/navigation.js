@@ -1,4 +1,4 @@
-export const burgerData = [
+export const navigationData = [
 	{
 		to: "#",
 		label: "Home",

@@ -18,7 +18,7 @@ export const DisplayAlumini = ({ isMobile }) => {
 	return (
 		<div className="flex flex-col">
 			<div
-				className={`flex justify-around  ${isMobile && "flex-column mx-auto"}`}
+				className={`flex justify-around md:flex-row flex-col`}
 			>
 				{!!data &&
 					data.map((x) => (
@@ -28,10 +28,10 @@ export const DisplayAlumini = ({ isMobile }) => {
 								src={x.profileImage}
 								style={{ height: "14rem" }}
 							/>
-							<Card.Body className="text-center ">
-								<Card.Title>{x.name}</Card.Title>
-								<Card.Text>{x.description}</Card.Text>
-								<Card.Subtitle className="p-3">{x.companyName}</Card.Subtitle>
+							<Card.Body className="text-center">
+								<Card.Title className="text-sm">{x.name}</Card.Title>
+								<Card.Text className="text-sm">{x.description}</Card.Text>
+								<Card.Subtitle className="text-sm p-3">{x.companyName}</Card.Subtitle>
 							</Card.Body>
 						</Card>
 					))}
@@ -40,7 +40,7 @@ export const DisplayAlumini = ({ isMobile }) => {
 				className="text-primaryColor cursor-pointer p-1 ml-auto text-lg    "
 				to={"/AllAlumni"}
 			>
-				viewmore
+				Viewmore
 			</Link>
 		</div>
 	);

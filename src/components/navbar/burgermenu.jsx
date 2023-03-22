@@ -1,19 +1,19 @@
 import React from "react";
 import "./burger.css";
-import { burgerData } from "./burgerData";
-import { BurgerList } from "./burgerLinks";
+import { navigationData } from "./navigation";
+import { BurgerList } from "./burgerList";
 
-const Menu = ({ className }) => (
+
+const Menu = ({ className, handleClick }) => (
 	<div className={className}>
-		<BurgerList nodes={burgerData} />
+		<BurgerList nodes={navigationData} handleClick={handleClick} />
 	</div>
 );
 
-const Hamburger = ({ className, onClick }) => (
+const Hamburger = ({ className, onClick, isOpen }) => (
 	<button onClick={onClick} className={className}>
-		<span className={"hamburger-box"}>
-			<span className={"hamburger-inner"} />
-		</span>
+		{!isOpen ? <i class="fa-solid fa-bars"></i> : <i class="fa-solid fa-xmark"></i>}
+
 	</button>
 );
 
@@ -38,6 +38,7 @@ export default class HamburgerMenu extends React.Component {
 							? `${"hamburger"} ${"hamburgeractive"}`
 							: "hamburger"
 					}
+					isOpen={this.state.isOpen}
 				/>
 				{this.state.isOpen && (
 					<Menu
@@ -46,6 +47,7 @@ export default class HamburgerMenu extends React.Component {
 								? `${"hamburger-navigation"} ${"hamburger-navigationactive"}`
 								: "hamburger-navigation"
 						}
+						handleClick={this.handleClick}
 					/>
 				)}
 			</>

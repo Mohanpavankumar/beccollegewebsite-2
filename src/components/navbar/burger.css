@@ -32,9 +32,7 @@ a:focus {
 }
 
 .hamburgeractive {
-    transform: translate(253px,-145px);
     z-index: 999 !important;
-    position: relative;
 }
 
 .hamburger-box {
@@ -96,6 +94,7 @@ a:focus {
     right: 0;
     transform: translateX(250px);
     z-index: 99;
+    overflow-y: scroll;
 }
 
 .hamburger-navigationactive {

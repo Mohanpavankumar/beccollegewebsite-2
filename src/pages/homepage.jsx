@@ -292,7 +292,7 @@ export default function HomePage() {
 						<p className="flex justify-center text-2xl font-semibold xl:text-4xl">
 							Welcome to Bapatla Engineering College
 						</p>
-						<div className="flex flex-col xl:flex-row xl:m-16 xl:mt-8">
+						<div className="flex flex-col md:flex-row xl:m-16 xl:mt-8">
 							<div className=" justify-center m-7 mb-0 text-justify  xl:w-full xl:mr-8 xl:mt-12 xl:text-xl">
 								The <b>Bapatla Engineering College(Autonomous)</b>, one of the
 								seven educational institutions sponsored by the Bapatla
@@ -312,11 +312,11 @@ export default function HomePage() {
 									href="#"
 									className="text-primaryColor mt-7 xl:mt-40 float-right underline "
 								>
-									view more
+									Viewmore
 								</a>
 							</div>
 
-							<div className="xl:ml-8 xl:mt-1 xl:w-full xl:text-xl">
+							<div className="xl:ml-8 xl:mt-1 xl:w-full xl:text-xl mx-2">
 								<p className="text-primaryColor font-bold text-2xl">
 									Principal's Message
 								</p>
@@ -332,8 +332,8 @@ export default function HomePage() {
 						</div>
 					</div>
 
-					<div className="flex flex-col justify-center items-center -mt-10">
-						<div className="tabs-notices w-full max-w-md px-2 py-16 sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
+					<div className="flex flex-col justify-center items-center mt-10">
+						<div className="mx-auto news-events-tabs tabs-notices w-full max-w-md px-2 py-8F sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
 							<TabsComponent
 								defaultKey={"latestNews"}
 								tabsData={[
@@ -375,7 +375,7 @@ export default function HomePage() {
 													</ListGroup.Item>
 												))}
 											</ListGroup>
-										),
+										)
 									},
 									{
 										tabKey: "events",
@@ -413,9 +413,7 @@ export default function HomePage() {
 						</div>
 					</div>
 					<div
-						className={`flex justify-between w-100 ${
-							isMobile && "flex-column"
-						}`}
+						className="flex justify-between w-100 md:flex-row flex-col"
 					>
 						<div className="md:w-1/2  bg-placementsbg">
 							<div className="font-bold text-2xl  md:text-3xl text-primaryColor text-center pt-10">
@@ -434,7 +432,7 @@ export default function HomePage() {
 								opportunities.
 							</div>
 							<Marquee gradientWidth={15} className="mt-8 md:mt-16">
-								<div className="flex w-1/2   ">
+								<div className="flex w-1/2">
 									<img
 										className=" w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
 										src={cmpy1}
@@ -492,7 +490,7 @@ export default function HomePage() {
 						</div>
 
 						<div className="md:w-1/2">
-							<div className="text-primaryColor text-3xl pt-10 text-center font-bold ">
+							<div className="text-primaryColor text-2xl md:text-3xl pt-10 text-center font-bold ">
 								Distinguished ALumini
 							</div>
 							<div className="mt-5 ">
