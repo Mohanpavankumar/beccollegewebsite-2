@@ -131,9 +131,7 @@ const getSalaryDetails = ()=>{
     </React.Fragment>
     </>
     
-    
     <div className='ml-[65rem]'>
-      {console.log(placementYear)}
       <select className='selectYears' value={showbyYears} onChange={(event) => setYears(event.target.value)}>
           <option value={1}>2022-2023</option>
           <option value={2}>2021-2022</option>
@@ -158,16 +156,6 @@ const getSalaryDetails = ()=>{
              labels: getyearwiseData().map(y=>y.company),
              colors: ['#F44336', '#9C27B0', '#462626', '#E91E63','#591478', '#DF5877', '#EAE70E', '#EA890E', '#899286', '#ABEA0E', '#18EA0E', '#0EEAD9',
                           '#0E9AEA', '#0E0EEA', '#750EEA', '#EA0EEA', '#EA0E6F', '#EA0E0E', '#AE9595', '#608553', '#BDFFFC', '#CD69C4'],
-             title:{
-                // text:`Placements ${placementYear}`,
-                // style: {
-                //   fontSize:  '30',
-                //   fontWeight:  'bold',
-
-                // },                
-             },
-             
-
              plotOptions:{
              pie:{
                 donut:{
@@ -180,7 +168,6 @@ const getSalaryDetails = ()=>{
                     }
                 }
              }
-
              },
              dataLabels:{
                 enabled:true,
@@ -189,7 +176,6 @@ const getSalaryDetails = ()=>{
             />
         </div>
     </React.Fragment>
-        
         </>
     )
 }
