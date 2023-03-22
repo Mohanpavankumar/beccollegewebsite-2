@@ -16,23 +16,28 @@ let Acheivements = () => {
 		)
 	}
 
-
 	const getYears = () => {
-		setYears(data.map(x => x.year))
+		setYears([...new Set(data.map(x => x.year))])
 	}
 
+	const getTableData = () => {
+		if (!!selectedYear) {
+			setTableData(data.filter(x => x.year == selectedYear))
+		}
+		else {
+			setTableData(data)
+		}
+	}
 
 	useEffect(() => {
 		getData()
 	}, [])
-
 
 	useEffect(() => {
 		getYears()
 	}, [data])
 
 	useEffect(() => {
-		setTableData(data.filter(x => x.year == selectedYear))
 	}, [selectedYear, data])
 
 
@@ -41,6 +46,7 @@ let Acheivements = () => {
 			<h2 className='text-danger mb-4 mx-auto'>{"Title"}</h2>
 			<select name="SelectYear" id="select" className="mx-auto my-2" onChange={(e) => setSelectedYear(e.target.value)}>
 				<option val={selectedYear} selected>{selectedYear}</option>
+				<option val={""} selected>Select a Year</option>
 				{years.map(y =>
 					<option val={y}>{y}</option>
 				)}
