@@ -5,7 +5,7 @@ let staff = (props) => {
 	return (
 		<div className="staff-wrapper flex">
 			<div className="staff-pic ml-2">
-				<img className="h-36" src={item.staffPic} alt="staff picture"></img>
+				<img className=" h-32" src={item.staffPic} alt="staff picture"></img>
 			</div>
 			<div className="staff-text flex flex-col ml-2 justify-around">
 				<div className="staff-name font-bold">{item.staffName}</div>

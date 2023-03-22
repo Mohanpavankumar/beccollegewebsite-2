@@ -36,6 +36,9 @@ export const FacilitiesChart = () => {
                     orientation: 'horizontal',
                     position: 'top',
                     offsetY: -12,
+                    background:{
+                        enabled:false
+                    }
                     // formatter: function (val) {
                     //     return val
                     // }
@@ -63,7 +66,7 @@ export const FacilitiesChart = () => {
                 },
                 yaxis: [
                     {
-                        seriesName: 'Books',
+                        seriesName: 'Titles',
                         opposite: false,
                         axisTicks: {
                             show: false,
@@ -109,12 +112,14 @@ export const FacilitiesChart = () => {
                     }
                 ],
                 tooltip: {
-                    fixed: {
-                        enabled: true,
-                        position: 'topLeft', // topRight, topLeft, bottomRight, bottomLeft
-                        offsetY: 30,
-                        offsetX: 60
-                    },
+                    // fixed: {
+                    //     enabled: true,
+                    //     position: 'topLeft', // topRight, topLeft, bottomRight, bottomLeft
+                    //     offsetY: 30,
+                    //     offsetX: 60
+                    // },
+                    enabled:true,
+                   
                 },
                 legend: {
                     position: 'top',

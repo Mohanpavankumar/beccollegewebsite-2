@@ -45,7 +45,7 @@ import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
-import { FacilitiesChart } from "./components/facilities/facilities";
+// import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
 	{
@@ -133,10 +133,10 @@ const router = createBrowserRouter([
 				path: "/Others",
 				element: <Others />,
 			},
-			{
-				path: "/f",
-				element: <FacilitiesChart />
-			}
+			// {
+			// 	path: "/f",
+			// 	element: <FacilitiesChart />
+			// }
 		],
 	},
 ]);
