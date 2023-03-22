@@ -599,7 +599,7 @@ export default function homepage() {
 			)
 			}
 		</>)
-=======
+    
   return (
     <>
       {data.map((c) => (
@@ -1093,9 +1093,6 @@ export default function homepage() {
             </div>
           </div>
         </>
-      ))}
-      ;
+      ))};
     </>
-  );
-
-}
+  )};

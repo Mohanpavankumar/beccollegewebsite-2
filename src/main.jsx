@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {
 	createBrowserRouter,
 	RouterProvider,
@@ -10,14 +11,12 @@ import {
 	Routes,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-
 import Root from "/src/routes/root.jsx";
 import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
 import Acheivements from "/src/pages/academics/acheivements.jsx"
-
 import Aicte from "/src/pages/saturaotryData/aicte.jsx";
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
@@ -38,12 +37,7 @@ import Transportation from "/src/pages/Facilities/Transportation.jsx";
 import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
-import Overview from "/src/pages/academics/academics";
-import Programme from "/src/pages/academics/programme";
-import Patents from "/src/pages/academics/patents";
-import Rules from "/src/pages/academics/rules.jsx";
-import Autonomous from "/src/pages/academics/autonomous";
-import Institution from "/src/pages/academics/institution";
+import UploadStaffImage from "./pages/UploadStaffImage";
 import ItStaff from "/src/pages/departments/staff.jsx";
 // import { FacilitiesChart } from "./components/facilities/facilities";
 
@@ -132,6 +126,10 @@ const router = createBrowserRouter([
 			{
 				path: "/Others",
 				element: <Others />,
+			},
+			{
+				path: "/upload/staffimage",
+				element: <UploadStaffImage />,
 			},
 			// {
 			// 	path: "/f",
