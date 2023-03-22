@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "/src/components/navbar/navbar";
 import Gallery from "/src/components/homepage/gallery/gallery.jsx";
 import principal from "/src/assets/homepage/principal.png";
@@ -35,7 +36,7 @@ import cmpy14 from "/src/assets/homepage/placements/image 51.png";
 import { Link } from "react-router-dom";
 import { getLandingPageData } from "../config/services";
 function classNames(...classes) {
-	return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function homepage() {
@@ -429,177 +430,172 @@ export default function homepage() {
 						</div>
 					</marquee>
 				</div>
+        <div className="w-1/2 ">
+          <div className="text-primaryColor text-3xl pt-10 text-center font-bold ">
+            Distinguished ALumini
+          </div>
+          <div className="mt-10 ">
+            <div>
+              <div className="flex">
+                <div className="flex w-1/2">
+                  <div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
+                    <div>Sudhakar Reddy E</div>
+                    <div>Principle software engineering manager</div>
+                    <div>Microsoft</div>
+                  </div>
 
-				<div className="w-1/2 ">
-					<div className="text-primaryColor text-3xl pt-10 text-center font-bold ">
-						Distinguished ALumini
-					</div>
-					<div className="mt-10 ">
-						<div>
-							<div className="flex">
-								<div className="flex w-1/2">
-									<div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
-										<div>Sudhakar Reddy E</div>
-										<div>Principle software engineering manager</div>
-										<div>Microsoft</div>
-									</div>
+                  <div>
+                    <div className=" z-50 absolute mt-20 "></div>
+                    <img
+                      className="h-48 w-48 object-fill relative"
+                      src={alumni1}
+                    />
+                  </div>
+                </div>
+                <div className="flex w-1/2">
+                  <div className="flex flex-col justify-around text-center w-1/2">
+                    <div>Sudhakar Reddy E</div>
+                    <div>Principle software engineering manager</div>
+                    <div>Microsoft</div>
+                  </div>
+                  <div>
+                    <div className=" z-50 absolute mt-20"></div>
+                    <img
+                      className="h-48 w-48 object-fill relative"
+                      src={alumni2}
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="flex w-1/2">
+                <div>
+                  <div className=" z-50 absolute mt-20"></div>
+                  <img
+                    className="h-48 w-48 object-fill relative"
+                    src={alumni3}
+                  ></img>
+                </div>
 
-									<div>
-										<div className=" z-50 absolute mt-20 "></div>
-										<img
-											className="h-48 w-48 object-fill relative"
-											src={alumni1}
-										/>
-									</div>
-								</div>
-								<div className="flex w-1/2">
-									<div className="flex flex-col justify-around text-center w-1/2">
-										<div>Sudhakar Reddy E</div>
-										<div>Principle software engineering manager</div>
-										<div>Microsoft</div>
-									</div>
-									<div>
-										<div className=" z-50 absolute mt-20"></div>
-										<img
-											className="h-48 w-48 object-fill relative"
-											src={alumni2}
-										></img>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="flex">
-							<div className="flex w-1/2">
-								<div>
-									<div className=" z-50 absolute mt-20"></div>
-									<img
-										className="h-48 w-48 object-fill relative"
-										src={alumni3}
-									></img>
-								</div>
+                <div className="flex flex-col justify-around text-center w-1/2">
+                  <div>Sudhakar Reddy E</div>
+                  <div>Principle software engineering manager</div>
+                  <div>Microsoft</div>
+                </div>
+              </div>
+              <div className="flex w-1/2">
+                <div>
+                  <div className=" z-50 absolute mt-20"></div>
+                  <img
+                    className="h-48 w-48 object-fill relative"
+                    src={alumni4}
+                  ></img>
+                </div>
+                <div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
+                  <div>Sudhakar Reddy E</div>
+                  <div>Principle software engineering manager</div>
+                  <div>Microsoft</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-								<div className="flex flex-col justify-around text-center w-1/2">
-									<div>Sudhakar Reddy E</div>
-									<div>Principle software engineering manager</div>
-									<div>Microsoft</div>
-								</div>
-							</div>
-							<div className="flex w-1/2">
-								<div>
-									<div className=" z-50 absolute mt-20"></div>
-									<img
-										className="h-48 w-48 object-fill relative"
-										src={alumni4}
-									></img>
-								</div>
-								<div className="flex flex-col bg-alumnibg justify-around text-center w-1/2">
-									<div>Sudhakar Reddy E</div>
-									<div>Principle software engineering manager</div>
-									<div>Microsoft</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className="flex flex-col justify-center items-center -mt-10">
-				<div className="w-full max-w-md px-2 py-16 sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
-					<Tab.Group>
-						<Tab.List className="flex space-x-1 bg-gray-900/20">
-							{Object.keys(categories).map((category) => (
-								<Tab
-									key={category}
-									className={({ selected }) =>
-										classNames(
-											"w-full  py-3 m-0 font-bold lg:text-xl leading-5 border-r-2 border-white",
-											"ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
-											selected
-												? "bg-primaryColor text-white shadow"
-												: "text-black hover:bg-white/[0.12] hover:text-primaryColor"
-										)
-									}
-
-								>
-									{category}
-								</Tab>
-							))}
-						</Tab.List>
-						<Tab.Panels>
-							{Object.values(categories).map((posts, idx) => (
-								<Tab.Panel
-									key={idx}
-									className={classNames(
-										"bg-white border-4 border-primaryColor  lg:w-max"
-									)}
-								>
-									<ul>
-										{posts.map((post) => (
-											<li
-												key={post.id}
-												className="relative pt-3 pl-3 pr-3 mb-2 hover:bg-blue-100 post flex flex-col"
-											>
-												<div className="post flex">
-													<div className="post-desc flex flex-col mr-2">
-														<div className="post-title text-primaryColor text-sm md:text-base xl:text-lg font-medium">
-															{post.title}
-														</div>
-														<div className="post-extraInfo text-sm ml-1 font-normal leading-2 text-gray-600">
-															Published on : {post.lastdate}
-														</div>
-													</div>
-													{post.day && (
-														<div className="published w-max">
-															<div className="bg-primaryColor p-1 text-white text-center font-bold">
-																{post.day}
-															</div>
-															<div className="bg-secondaryColor p-1 text-black text-sm font-semibold">
-																{post.year}
-															</div>
-														</div>
-													)}
-
-													<a
-														href="#"
-														className={classNames(
-															"absolute inset-0 rounded-md",
-															"ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
-														)}
-													/>
-												</div>
-												<hr className="h-0.2 mt-2 w-90% bg-gray-400" />
-											</li>
-										))}
-									</ul>
-								</Tab.Panel>
-							))}
-						</Tab.Panels>
-					</Tab.Group>
-				</div>
-			</div>
-			<div className="bg-courses">
-				<div className="text-primaryColor text-xl ml-5 xl:ml-20 xl:text-3xl">
-					<b>COURSES OFFERED</b>
-				</div>
-				<p className=" ml-8  xl:ml-36 mt-2 xl:text-xl">
-					The Bapatla Engineering College offers Diploma, undergraduate,and
-					postgraduate programmes in Engineering.
-				</p>
-				<div className="flex flex-wrap justify-center">{Course}</div>
-			</div>
-			<div>
-			<div className="flex flex-col">
-				<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
-					Gallery
-				</p>
-				<div className="flex flex-wrap justify-center">{Galery}</div>
-				<a className="text-primaryColor mt-2 mr-10 text-lg text-right underline ">
-					view more
-				</a>
-			</div>
-			</div>
-		</>
-		)}
-		</>
-	);
+      <div className="flex flex-col justify-center items-center -mt-10">
+        <div className="w-full max-w-md px-2 py-16 sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
+          <Tab.Group>
+            <Tab.List className="flex space-x-1 bg-gray-900/20">
+              {Object.keys(categories).map((category) => (
+                <Tab
+                  key={category}
+                  className={({ selected }) =>
+                    classNames(
+                      "w-full  py-3 m-0 font-bold lg:text-xl leading-5 border-r-2 border-white",
+                      "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                      selected
+                        ? "bg-primaryColor text-white shadow"
+                        : "text-black hover:bg-white/[0.12] hover:text-primaryColor"
+                    )
+                  }
+                >
+                  {category}
+                </Tab>
+              ))}
+            </Tab.List>
+            <Tab.Panels>
+              {Object.values(categories).map((posts, idx) => (
+                <Tab.Panel
+                  key={idx}
+                  className={classNames(
+                    "bg-white border-4 border-primaryColor  lg:w-max"
+                  )}
+                >
+                  <ul>
+                    {posts.map((post) => (
+                      <li
+                        key={post.id}
+                        className="relative pt-3 pl-3 pr-3 mb-2 hover:bg-blue-100 post flex flex-col"
+                      >
+                        <div className="post flex">
+                          <div className="post-desc flex flex-col mr-2">
+                            <div className="post-title text-primaryColor text-sm md:text-base xl:text-lg font-medium">
+                              {post.title}
+                            </div>
+                            <div className="post-extraInfo text-sm ml-1 font-normal leading-2 text-gray-600">
+                              Published on : {post.lastdate}
+                            </div>
+                          </div>
+                          {post.day && (
+                            <div className="published w-max">
+                              <div className="bg-primaryColor p-1 text-white text-center font-bold">
+                                {post.day}
+                              </div>
+                              <div className="bg-secondaryColor p-1 text-black text-sm font-semibold">
+                                {post.year}
+                              </div>
+                            </div>
+                          )}
+                          <a
+                            href="#"
+                            className={classNames(
+                              "absolute inset-0 rounded-md",
+                              "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
+                            )}
+                          />
+                        </div>
+                        <hr className="h-0.2 mt-2 w-90% bg-gray-400" />
+                      </li>
+                    ))}
+                  </ul>
+                </Tab.Panel>
+              ))}
+            </Tab.Panels>
+          </Tab.Group>
+        </div>
+      </div>
+      <div className="bg-courses">
+        <div className="text-primaryColor text-xl ml-5 xl:ml-20 xl:text-3xl">
+          <b>COURSES OFFERED</b>
+        </div>
+        <p className=" ml-8  xl:ml-36 mt-2 xl:text-xl">
+          The Bapatla Engineering College offers Diploma, undergraduate,and
+          postgraduate programmes in Engineering.
+        </p>
+        <div className="flex flex-wrap justify-center">{Course}</div>
+      </div>
+      <div>
+        <div className="flex flex-col">
+          <p className="flex justify-center  font-semibold text-4xl text-primaryColor">
+            Gallery
+          </p>
+          <div className="flex flex-wrap justify-center">{Galery}</div>
+          <a className="text-primaryColor mt-2 mr-10 text-lg text-right underline ">
+            view more
+          </a>
+        </div>
+      </div>
+    </>
+  );
 }

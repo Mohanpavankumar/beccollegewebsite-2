@@ -2,9 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-import { createBrowserRouter, RouterProvider, BrowserRouter, Route, Routes } from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-
 import Root from "/src/routes/root.jsx";
 import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
@@ -25,8 +24,8 @@ import Transportation from "/src/pages/Facilities/Transportation.jsx";
 import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
-import ItStaff from "/src/pages/departments/staff.jsx"
 import UploadStaffImage from "./pages/UploadStaffImage";
+import ItStaff from "/src/pages/departments/staff.jsx";
 
 const router = createBrowserRouter([
 	{
