@@ -16,7 +16,7 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
-import Acheivements from "/src/pages/academics/acheivements.jsx"
+
 
 import Aicte from "/src/pages/saturaotryData/aicte.jsx";
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
@@ -44,7 +44,9 @@ import Patents from "/src/pages/academics/patents";
 import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
+
 import ItStaff from "/src/pages/departments/staff.jsx";
+import Acheivements from "./pages/academics/acheivements";
 
 const router = createBrowserRouter([
 	{
@@ -131,6 +133,34 @@ const router = createBrowserRouter([
 			{
 				path: "/Others",
 				element: <Others />,
+			},
+			{
+				path: "/Programme",
+				element: <Programme />,
+			},
+			{
+				path: "/Overview",
+				element: <Overview />,
+			},
+			{
+				path: "/Patents",
+				element: <Patents />,
+			},
+			{
+				path: "/Rules",
+				element: <Rules />,
+			},
+			{
+				path: "/Autonomous",
+				element: <Autonomous />,
+			},
+			{
+				path: "/Institution",
+				element: <Institution />,
+			},
+			{
+				path: "/Acheivements",
+				element: <Acheivements />,
 			},
 		],
 	},
