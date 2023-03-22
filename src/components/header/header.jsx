@@ -6,7 +6,32 @@ import iqac from "/src/assets/iqac.png";
 import naac from "/src/assets/naac.png";
 import aicte from "/src/assets/aicte.png";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { getDeptFromUrl } from "../../routes/helpers";
 let Header = () => {
+	const [deptName, setDeptName] = useState("default")
+	const [deptRoute, setDeptRoute] = useState("")
+
+	const getDeptName = (val) => {
+		switch (val) {
+			case "IT":
+				setDeptName("Information Technology")
+				setDeptRoute(val)
+				break;
+			case "Mech":
+				setDeptName("Mechanical")
+				setDeptRoute(val)
+				break;
+			default:
+				setDeptName("default")
+				setDeptRoute("")
+		}
+	}
+
+	useEffect(() => {
+		getDeptName(getDeptFromUrl())
+	}, [getDeptFromUrl()])
+
 	return (
 		<>
 			<header className="general-header flex justify-center items-center md:justify-between xl:justify-between">
@@ -33,7 +58,7 @@ let Header = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex mr-10  ">
+				{deptName === "default" ? <div className="flex mr-10">
 					<img
 						className="md:w-36 md:h-36 md:pr-5 md:block hidden cursor-pointer "
 						src={nirf}
@@ -50,7 +75,7 @@ let Header = () => {
 						className="w-36 h-36 pr-5 md:block hidden cursor-pointer"
 						src={aicte}
 					></img>
-				</div>
+				</div> : <div className="flex mx-auto"><h1>{deptName}</h1></div>}
 				{/* <img
 					className="college-logo hidden md:block md:h-20 md:-mt-4 md:mr-4 xl:h-32 xl:mr-4 xl:mt-2"
 					src={no1}
@@ -58,7 +83,7 @@ let Header = () => {
 			</header>
 			<nav className="w-full h-10 -mt-2 flex">
 				{/* <nav className="bg-primaryColor w-full h-10 -mt-2 flex items-center"> */}
-				<Navbar />
+				<Navbar deptName={deptName} deptRoute={deptRoute} />
 			</nav>
 		</>
 	);

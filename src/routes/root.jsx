@@ -6,7 +6,7 @@ export default function Root() {
 	return (
 		<>
 			<Header />
-			<button>
+			{/* <button>
 				<Link className=" m-2 p-2 border-2 border-black" to={"/Placements"}>
 					Placements
 				</Link>
@@ -66,7 +66,7 @@ export default function Root() {
 				>
 					Facilities
 				</Link>
-			</button>
+			</button> */}
 			<Outlet />
 			<Footer />
 		</>

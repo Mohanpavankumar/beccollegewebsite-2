@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-function Navbar() {
+function Navbar(props) {
 	const [click, setClick] = useState(false);
 
 	const handleClick = () => setClick(!click);
 
 	return (
 		<>
-			<nav className="navbar font-bold text-primaryColor">
+			{props.deptName === "default" ? <nav className="navbar font-bold text-primaryColor">
 				<div className="navbar-container">
 					<Link to="/" className="navbar-logo">
 						Logo
@@ -88,7 +88,13 @@ function Navbar() {
 						</li>
 					</ul>
 				</div>
-			</nav>
+			</nav> :
+				<nav>
+					<Link to={`/departments/${props.deptRoute}/depstat`} className="navbar-logo">
+						Dept Stats
+					</Link>
+				</nav>
+			}
 		</>
 	);
 }

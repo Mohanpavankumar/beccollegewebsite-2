@@ -14,5 +14,9 @@ export const getDepartmentsData = () => {
 }
 
 export const registerPlacementData = (data) => {
-    return AxiosInstance.post('/placementRegistration',data);
+    return AxiosInstance.post('/placementRegistration', data);
+}
+
+export const getDepartmentsGraphData = (data) => {
+    return AxiosInstance.get('/getdeptGraphData');
 }
