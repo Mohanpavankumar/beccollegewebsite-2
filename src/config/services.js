@@ -20,3 +20,12 @@ export const getDepartmentsData = () => {
 export const registerPlacementData = (data) => {
     return AxiosInstance.post('/placementRegistration',data);
 }
+
+export const uploadImage = (data) => {
+    return AxiosInstance.post('/uploadStaffImage', data);
+}
+
+
+export const getStaffImage = () => {
+    return AxiosInstance.get('/getStaffImgage')
+}
