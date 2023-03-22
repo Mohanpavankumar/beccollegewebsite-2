@@ -599,7 +599,6 @@ export default function homepage() {
 			)
 			}
 		</>)
-=======
   return (
     <>
       {data.map((c) => (
