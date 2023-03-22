@@ -39,6 +39,49 @@ thead th {
     padding: 1rem !important;
 }
 
+
+
+/* Table Gate examFixed */
+
+.acheive-gateexam-shared-table {
+    width: 100%;
+}
+
+.acheive-gateexam-shared-table thead,
+tbody,
+tr,
+td,
+th {
+    display: block;
+}
+
+.acheive-gateexam-shared-table tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.acheive-gateexam-shared-table thead th {
+    height: 3rem;
+    width: 16.6%;
+}
+
+.acheive-gateexam-shared-table tbody {
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.acheive-gateexam-shared-table thead {}
+
+
+.acheive-gateexam-shared-table tbody td,
+thead th {
+    width: 16.6%;
+    float: left;
+    padding: 1rem !important;
+}
+
 /* scroll */
 
 #acheive-sroll::-webkit-scrollbar-track
