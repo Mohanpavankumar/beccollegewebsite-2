@@ -9,6 +9,11 @@ export const getPlacementData = () => {
     return AxiosInstance.get('/getPlacementsData');
 }
 
+export const getAcademicsData = () => {
+    return AxiosInstance.get('/getAcademicsData');
+
+}
+
 export const getPlacementsNotifications = () => {
     return AxiosInstance.get('/getPlacementsNotifications');
 }
@@ -25,7 +30,9 @@ export const uploadImage = (data) => {
     return AxiosInstance.post('/uploadStaffImage', data);
 }
 
-
 export const getStaffImage = () => {
     return AxiosInstance.get('/getStaffImgage')
+}
+export const getFacilitiesChartData = () => {
+    return AxiosInstance.get('/getLibraryGraphData');
 }
