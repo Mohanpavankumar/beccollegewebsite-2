@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
 import {
 	createBrowserRouter,
 	RouterProvider,
@@ -10,18 +9,23 @@ import {
 	Routes,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-
 import Root from "/src/routes/root.jsx";
 import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
-
 import Aicte from "/src/pages/saturaotryData/aicte.jsx"
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
 import IqacPage from "./pages/saturaotryData/IqacPage.jsx"
 import Nirf from "/src/pages/saturaotryData/NirfPage.jsx"
+import Acheivements from "/src/pages/academics/acheivements.jsx"
+import Aicte from "/src/pages/saturaotryData/aicte.jsx";
+import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
+import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
+import IqacPage from "./pages/saturaotryData/Iqac";
+import Nirf from "/src/pages/saturaotryData/Nirf.jsx";
+
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -39,15 +43,13 @@ import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
 import ItStaff from "/src/pages/departments/staff.jsx";
 import Committee from "./pages/saturaotryData/committee"
-
-// import Sidebar from "/src/components/Sidebar.jsx"
-// import AboutPlacements from "/src/pages/Placements/AboutPlacements"
+import UploadStaffImage from "./pages/UploadStaffImage";
+// import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
-		// errorElement: <ErrorPage />,
 		children: [
 			{ index: true, element: <Homepage />, exact: true },
 			{
@@ -119,6 +121,10 @@ const router = createBrowserRouter([
 				element: <Facilities />,
 			},
 			{
+				path: "/Acheivements",
+				element: <Acheivements />,
+			},
+			{
 				path: "/Library",
 				element: <Library />,
 			},
@@ -150,6 +156,14 @@ const router = createBrowserRouter([
 				path: "/Others",
 				element: <Others />,
 			},
+			{
+				path: "/upload/staffimage",
+				element: <UploadStaffImage />,
+			},
+			// {
+			// 	path: "/f",
+			// 	element: <FacilitiesChart />
+			// }
 		],
 	},
 ]);

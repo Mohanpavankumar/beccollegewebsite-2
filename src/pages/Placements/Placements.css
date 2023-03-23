@@ -63,29 +63,6 @@ form{
 	width: 10%;
 }
 }
-/* Table */
-.scroll-thead{
-    width: 100%;
-    display: inline-table;
-}
-.scroll-tbody-y
-{
-    display: block;
-    overflow-y: scroll;
-	width: 100%;
-}
-.table-body{
-    height: 500px;
-	width: 100%;
-}
-.table-striped>tbody>tr:nth-child(odd){
-	background-color:#0060b1;
-	color: white;
- }
- .table-striped>tbody>tr:nth-child(even){
-	background-color:white;
-	color: black;
- }
  .apexcharts-zoom-icon,
  .apexcharts-zoomin-icon, 
  .apexcharts-zoomout-icon ,.apexcharts-element-hidden,
@@ -119,7 +96,14 @@ form{
 	font-weight: 600 !important;
  }
  .placements-header{
-	margin-right: 366px !important;
+	margin-right: 349px !important;
+	font-size: large;
+	color: white;
+	background-color: #0060b1;
+	font-weight: bold;
+	margin-left: 250px;
+ }
+ .branchwise-placements-header{
 	font-size: large;
 	color: white;
 	background-color: #0060b1;
