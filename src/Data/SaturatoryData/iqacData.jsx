@@ -174,85 +174,60 @@ export const iqacNavigation = [
 export const iqacCommitteeData = [
     {
         "sno": 1,
-        "memberName": "Chairperson",
-        "designation": "Dr. Nazeer Shaik, Principal, BEC, Bapatla",
+        "designation": "Chairperson",
+        "memberName": "Dr. Nazeer Shaik, Principal, BEC, Bapatla",
         
     },
     {
         "sno": 2,
-        "memberName": "Member from the Management",
-        "designation": "Sri A. Madhusudhana Rao",
+        "designation": "Member from the Management",
+        "memberName": "Sri A. Madhusudhana Rao",
         
     },
     {
         "sno": 3,
-        "memberName": "Administrative Officers",
-        "designation": "Dr.B.Chandra Mohan,Prof.& Dean(Academics),ECE,BEC,Bapatla \nDr M.Venkateswara Rao, Prof. & Dean(R&D), ME, BEC, Bapatla \nDr. K. Rama Krishna, Prof. & Dean(SA), Physics, BEC, Bapatla.Dr. Sk. Nazeer, Prof. CSE, BEC, Bapatla.Sri. D. Gopal Krishna, Manager, Office, BEC, Bapatla.",
-        
+        "designation": "Administrative Officers",
+        "memberName": "Dr.B.Chandra Mohan,Prof.& Dean(Academics) ,ECE ,BEC,Bapatla \nDr M.Venkateswara Rao, Prof. & Dean(R&D), ME, BEC, Bapatla \nDr. K. Rama Krishna, Prof. & Dean(SA), Physics, BEC, Bapatla. \nDr. Sk. Nazeer, Prof. CSE, BEC, Bapatla. \nSri. D. Gopal Krishna, Manager, Office, BEC, Bapatla.",
     },
     {
         "sno": 4,
-        "memberName": "Convener",
-        "designation": "Dr. P. Sundara Kumar, Prof. CE, BEC, Bapatla",
+        "designation": "Convener",
+        "memberName": "Dr. P. Sundara Kumar, Prof. CE, BEC, Bapatla",
         
     },
     {
         "sno": 5,
-        "memberName": "Co- Convener",
-        "designation": "Dr. D.Sameer Kumar, Assoc. Prof. ME,Bapatla",
+        "designation": "Co- Convener",
+        "memberName": "Dr. D.Sameer Kumar, Assoc. Prof. ME,Bapatla",
         
     },
     {
         "sno": 6,
-        "memberName": "TheWeeknd",
-        "designation": "BlindingLights",
+        "memberName": "Mr. V. S. J. Yeswanth Paluri, Asst.Prof. CE, BEC, Bapatla \nDr. Karthik, Assoc. Prof. EEE, BEC, Bapatla \nDr. M. Vinod Kumar, Asst. Prof. ECE, BEC, Bapatla \nDr. K. Srinivasa Rao, Asst. Prof. IT, BEC, Bapatla \nMr. A. Praveen, Asst. Prof. ME, BEC, Bapatla \nMr. M. V. N. Chakravarthi, Asst. Prof., EIE, BEC, Bapatla \nMr. T. Nagarjuna, Asst. Prof. CSE, BEC, Bapatla \nDr. T. Krishna Murthy, Chemistry, BEC, Bapatla \nMr. P. Ravi Kumar. Asst.Prof. IT, BEC, Bapatla \nDr. V. Aruna, Assoc. Prof.  Physics, BEC, Bapatla \nDr. N. Rafi, Asst. Prof. Maths, BEC, Bapatla \nDr. P. V. Nagamalleswara Rao, Asst.Prof, English, BEC, Bapatla \nMr. P. V. Koteswararao, Asst.Prof, MCA, BEC,Bapatla",
+        "designation": "Members of the faculty",
         
     },
     {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 7,
+        "designation": "Member from Local society",
+        "memberName": "Dr. P.C. Sai Babu, Retd. Prof, Commerce, BCAS, Bapatla."
     }, {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 8,
+        "designation": "External Experts",
+        "memberName": "Dr. Rayapati Subba Rao, Associate professor, NITTTR Kolkata "
     },
     {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 9,
+        "designation": "Nominee from Industries",
+        "memberName": "Mr. G. Krishna Murthy Naidu, Head Quality, Amara Raja Batteries, Tirupati."
     }, {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 10,
+        "designation": "Nominee from Alumni",
+        "memberName": "Ms. R. Kaanthi Keerthi, Consultant Manager(KPMG), AIRBUS, Bangalore."
     },{
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
-    },{
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
-    },{
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
-    },{
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
-    },{
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
-    },{
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
-    },{
-        "sno": 111,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 11,
+        "designation": "Nominee from Students",
+        "memberName": "	Ms. Sindhura Paleru, Y17ACS513, 4/4 CSE, BEC, Bapatla."
     }
 ]
 
@@ -267,7 +242,7 @@ export const iqacDisplayData = [
     {
         "key": "2",
         "DisplayComponent": <div className="p-1">
-            <TableComponent data={iqacCommitteeData} cardTitle={"IqacCommittee"} />
+            <TableComponent data={iqacCommitteeData} cardTitle={"IQACCommittee"} />
         </div>
 
     },
@@ -279,13 +254,13 @@ export const iqacDisplayData = [
     },
     {
         "key": "4",
-        "DisplayComponent": <div className=" pl-3">
+        "DisplayComponent": <div className="pl-3">
             <ListComponent data={listData2} listTitle={"IQAC Report Status"} />
         </div>
     },
     {
         "key": "5",
-        "DisplayComponent": <div className="pl-3">
+        "DisplayComponent": <div className="flex-wrap pl-3">
             <ListComponent data={listData3} listTitle={"IQAC Minutes of Meeting"} />
         </div>
     },
@@ -297,13 +272,13 @@ export const iqacDisplayData = [
     },
     {
         "key": "7",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-3">
             <ListComponent data={listData5} listTitle={"IIQA"} />
         </div>
     },
     {
         "key": "8",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-3">
             <ListComponent data={listData5} listTitle={"IIQA"} />
         </div>
     }

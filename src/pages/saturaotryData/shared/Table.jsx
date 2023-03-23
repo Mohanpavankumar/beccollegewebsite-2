@@ -7,15 +7,15 @@ const TableComponent = (props) => {
                 <thead>
                     <tr>
                         <th>S.NO</th>
-                        <th>Designation</th>
                         <th>Member Name</th>
+                        <th>Designation</th>
                     </tr>
                 </thead>
                 <tbody id="naaclist-sroll">
                     {props.data.map(x => <tr>
                         <td>{x.sno}</td>
-                        <td >{x.memberName}</td>
-                        <td style={{whiteSpace:"pre-wrap"}}>{x.designation}</td>
+                        <td >{x.designation}</td>
+                        <td style={{whiteSpace:"pre-wrap"}}>{x.memberName}</td>
                     </tr>)}
                 </tbody>
             </table>

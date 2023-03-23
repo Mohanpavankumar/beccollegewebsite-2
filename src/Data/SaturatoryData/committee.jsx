@@ -140,114 +140,142 @@ export const listData6 = [{
 ]
 export const committeeNavigation = [
     {
-        "title": "IQAC",
+        "title": "Internal Complaints Committee",
         "key": "1"
     },
     {
-        "title": "IQACCommittee",
+        "title": "Constitution of Grievance Redressal Committee",
         "key": "2"
     },
     {
-        "title": "Templates",
+        "title": "Constitution of Anti RaggingCommittee",
         "key": "3"
     },
     {
-        "title": "AQARReports",
+        "title": "SC/ST Committee",
         "key": "4"
     },
     {
-        "title": "IQACMinutesofMeeting",
+        "title": "OBC Committee",
         "key": "5"
     },
     {
-        "title": "Feedback Forms",
+        "title": "Discipline & Code of Conduct for Students",
         "key": "6"
-    },
-    {
-        "title": "IIQA",
-        "key": "7"
-    }, {
-        "title": "Green Rankings-2023",
-        "key": "8"
     }
+    
 ]
 
 export const committeeCommitteeData = [
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     }, {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     }, {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },{
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },{
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },{
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },{
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },{
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },{
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     },{
         "sno": 111,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "Member": "BlindingLights",
+        "Designation": "TheWeeknd",
+        "Role":"role",
+        "Email":"email"
     }
 ]
 export const committee = [
@@ -268,7 +296,10 @@ export const committee = [
     {
         "key":3,
         "tabTitle":"Guidelines",
-        "tabContent":<h1>Guidelines</h1>
+        "tabContent":<h1 className="justify-center">To organize guest lectures involving career planning, work-life balance by inviting eminent personalities.
+                          To organize awareness programs regarding sexual harassment at work.
+                          To conduct seminars and presentations regarding gender sensitization, ensure knowledge and awareness of the rights, entitlements and responsibilities enshrined in the Act.
+        </h1>
     }
     
 ]
@@ -296,7 +327,7 @@ export const committeeDisplayData1 = [
     },
     {
         "key": "2",
-        "DisplayComponent": <div className="p-1">
+        "DisplayComponent": <div className="pr-1">
             <ListComponent data={listData} listTitle={"IQAC Templates "} />
         </div>
 

@@ -7,8 +7,12 @@ import { iqacDisplayData, iqacNavigation } from '../../Data/SaturatoryData/iqacD
 
 const IqacPage = (props) => {
     return (
+        <div className='flex  justify-center flex-col py-3 overflow-x-hidden mt-2'>
+            <div className='text-center  py-3 w-screen'>
+                <h1 className='bg-indigo-500 text-slate-50 py-3'>IQAC DETAILS</h1>
+            </div>
         <Tab.Container id="tabs-ipcpage" defaultActiveKey="1">
-            <Row className='mt-3 px-2 w-auto'>
+            <Row className='mt-6 px-4 w-auto'>
                 <Col sm={8}>
                     {iqacDisplayData.map(x =>
                         <Tab.Content style={{ background: "#efefef" }}>
@@ -26,6 +30,7 @@ const IqacPage = (props) => {
                 </Col>
             </Row>
         </Tab.Container>
+        </div>
     );
 }
 

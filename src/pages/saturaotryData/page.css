@@ -72,3 +72,42 @@ thead th {
     float: left;
     padding: 1rem !important;
 }
+.shared-table-committees {
+    width: 100%;
+}
+
+.shared-table-commmittees thead,
+tbody,
+tr,
+td,
+th {
+    display: block;
+}
+
+.shared-table-committees tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.shared-table-committees thead th {
+    height: 3rem;
+    width: 20%;
+}
+
+.shared-table-committees tbody {
+    height: 32vh;
+    overflow-y: auto;
+}
+
+.shared-table-commitees thead {
+}
+
+
+.shared-table-committees tbody td,
+thead th {
+    width: 20%;
+    float: left;
+    padding: 1rem !important;
+}

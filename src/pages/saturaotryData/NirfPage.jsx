@@ -6,9 +6,13 @@ import './page.css';
 
 const Nirf = () => {
     return (
+        <div className='flex items-center justify-center flex-col py-3 overflow-x-hidden mt-2'>
+            <div className='text-center  py-3 w-screen'>
+                <h1 className='bg-indigo-500 text-slate-50 py-3'>NIRF DETAILS</h1>
+            </div>
         <div className='d-flex justify-between  mt-4 mb-1 pl-10'>
-            <div className=" border-slate-300 col-8 rounded-lg p-3 px-3 bg-slate-300">
-                <h1 classname="">NIRF REPORTS</h1>
+            <div className=" border-slate-300 col-8 rounded-lg p-3 px-3 bg-slate-300 mt-1">
+                <h1>NIRF REPORTS</h1>
                 <Tabs
                     defaultActiveKey={nirfData.deafultKey}
                     id="justify-tab-example"
@@ -26,13 +30,14 @@ const Nirf = () => {
                     </Tab>)}
                 </Tabs>
             </div>
-            <div className="col-4 rounded-lg bg-slate-300 text-justify pr-0.5 mx-6">
-                <img  className=" w-80 h-40 ml-3 mt-2 rounded-lg"src="/src/assets/saturatoryData/nirf.jpg"></img>
-                <div className='px-20 text-justify py-2'>
+            <div className="col-4 rounded-lg bg-slate-300 text-justify pr-0.5 mx-3">
+                <img  className=" w-75 h-40 ml-5 mt-2 rounded-lg"src="/src/assets/saturatoryData/nirf.jpg"></img>
+                <div className='px-20 py-2'>
                     <p>The National Institutional Ranking Framework (NIRF) was approvedby the MHRD and launched by Honourable Minister of Human Resource Development on 29th September 2015.</p>
                 </div>
             </div>
         </div >
+        </div>
     );
 }
 
