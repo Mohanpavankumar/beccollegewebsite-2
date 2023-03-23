@@ -37,7 +37,8 @@ import Transportation from "/src/pages/Facilities/Transportation.jsx";
 import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
-import ItStaff from "/src/pages/departments/staff.jsx"
+import ItStaff from "/src/pages/departments/staff.jsx";
+import Committee from "./pages/saturaotryData/committee"
 
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
 			{
 				path: "/nirf",
 				element: <Nirf />,
+			},
+			{
+				path: "/committees",
+				element: <Committee />,
 			},
 			{
 				path: "/exam-downloads",

@@ -16,28 +16,14 @@ export const naacData = {
                                     label: "1.1",
                                     children: [
                                         {
-                                            url: "http://www.amazon.com",
+                                            url: "/src/assets/saturatoryData/1.1.1.pdf",
                                             label: "1.1.1",
                                             hoverText:"Number of Programmes offered year wise for the last five years"
                                         },
                                         {
-                                            url: "http://www.ebay.com",
+                                            url: "/src/assets/saturatoryData/1.1.2.pdf",
                                             label: "1.1.2",
                                             hoverText:"Number of eligible applications received for admissions to all the programs year wise during the last five years"
-                                        },
-                                        {
-                                            url: "http://www.hp.com",
-                                            label: "1.1.3",
-                                            hoverText:"Number of seats earmarked for reserved category as per GOI/ State Govt rule year wise during last five years"
-                                        },
-                                        {
-                                            url: "http://www.hp.com",
-                                            label: "1.1.4",
-                                            hoverText:"Total number of computers in the campus for academic purpose"
-                                        },{
-                                            url: "http://www.hp.com",
-                                            label: "1.1.5",
-                                            hoverText:"Total Expenditure excluding salary - year wise during the last five years (INR in Lakhs)"
                                         }
                                     ]
                                 },
@@ -535,42 +521,35 @@ export const naacData = {
                             children: [
                                 {
                                     label: "Student Support",
-                                    children: [
-                                        {
-                                            label: "5.1.1",
-                                            children:[
-                                                {
-                                                    label:"5.1.1.1",
-                                                    children:[
-                                                        {  
-                                                            url:"http://www.ebay.com",
-                                                            label:"2017-18"
-                                                        },
-                                                        {
-                                                            url: "http://www.ebay.com",
-                                                            label: "2018-19"
-                                                            
-                                                        },
-                                                        {
-                                                            url: "http://www.ebay.com",
-                                                            label: "2019-20"
-                                                            
-                                                        },
-                                                        {
-                                                            url: "http://www.ebay.com",
-                                                            label: "2020-21"
-                                                            
-                                                        },
-                                                        {
-                                                            url: "http://www.ebay.com",
-                                                            label: "2021-22"
-                                                            
-                                                        }
-
-                                                    ]
-                                                }
-                                            ]
-                                        },
+                                    children: [ 
+                                                    {
+                                                        url: "http://www.yahoo.com",
+                                                        label: "5.1.1",
+                                                        hoverText:""
+                                                    }, 
+                                                    {
+                                                        url: "http://www.yahoo.com",
+                                                        label: "5.1.1.1",
+                                                        hoverText:"You can see me"
+                                                    },
+                                                    {
+                                                        url: "http://www.yahoo.com",
+                                                        label: "5.1.1.2",
+                                                        hoverText:"You can see me"
+                                                    },
+                                                    {
+                                                        url: "http://www.yahoo.com",
+                                                        label: "5.1.1.3",
+                                                        hoverText:"You can see me"
+                                                    },
+                                                    {
+                                                        url: "http://www.yahoo.com",
+                                                        label: "5.1.1.4",
+                                                        hoverText:"You can see me"
+                                                    },
+                                                
+                                            
+                                           
                                         {
                                             url: "http://www.ebay.com",
                                             label: "5.1.2",

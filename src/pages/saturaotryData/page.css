@@ -23,11 +23,52 @@
 }
 
 .nirf-tab-content {
-    padding: 1rem 2rem !important;
+    padding: 2rem 2rem !important;
 }
 
 .naac-tab-content {
     display: flex !important;
     justify-content: space-around !important;
     flex-wrap: wrap !important;
+}
+/* Table Fixed */
+
+.shared-table {
+    width: 100%;
+}
+
+.shared-table thead,
+tbody,
+tr,
+td,
+th {
+    display: block;
+}
+
+.shared-table tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.shared-table thead th {
+    height: 3rem;
+    width: 33.3%;
+}
+
+.shared-table tbody {
+    height: 32vh;
+    overflow-y: auto;
+}
+
+.shared-table thead {
+}
+
+
+.shared-table tbody td,
+thead th {
+    width: 33.3%;
+    float: left;
+    padding: 1rem !important;
 }

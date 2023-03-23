@@ -174,33 +174,39 @@ export const iqacNavigation = [
 export const iqacCommitteeData = [
     {
         "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "memberName": "Chairperson",
+        "designation": "Dr. Nazeer Shaik, Principal, BEC, Bapatla",
+        
     },
     {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 2,
+        "memberName": "Member from the Management",
+        "designation": "Sri A. Madhusudhana Rao",
+        
     },
     {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 3,
+        "memberName": "Administrative Officers",
+        "designation": "Dr.B.Chandra Mohan,Prof.& Dean(Academics),ECE,BEC,Bapatla \nDr M.Venkateswara Rao, Prof. & Dean(R&D), ME, BEC, Bapatla \nDr. K. Rama Krishna, Prof. & Dean(SA), Physics, BEC, Bapatla.Dr. Sk. Nazeer, Prof. CSE, BEC, Bapatla.Sri. D. Gopal Krishna, Manager, Office, BEC, Bapatla.",
+        
     },
     {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 4,
+        "memberName": "Convener",
+        "designation": "Dr. P. Sundara Kumar, Prof. CE, BEC, Bapatla",
+        
     },
     {
-        "sno": 1,
-        "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        "sno": 5,
+        "memberName": "Co- Convener",
+        "designation": "Dr. D.Sameer Kumar, Assoc. Prof. ME,Bapatla",
+        
     },
     {
-        "sno": 1,
+        "sno": 6,
+        "memberName": "TheWeeknd",
         "designation": "BlindingLights",
-        "memberName": "TheWeeknd"
+        
     },
     {
         "sno": 1,
@@ -267,25 +273,25 @@ export const iqacDisplayData = [
     },
     {
         "key": "3",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-1">
             <ListComponent data={listData} listTitle={"IQAC Templates "} />
         </div>
     },
     {
         "key": "4",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className=" pl-3">
             <ListComponent data={listData2} listTitle={"IQAC Report Status"} />
         </div>
     },
     {
         "key": "5",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-3">
             <ListComponent data={listData3} listTitle={"IQAC Minutes of Meeting"} />
         </div>
     },
     {
         "key": "6",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-3">
             <ListComponent data={listData4} listTitle={"IQAC Student/Teacher/Alumni/Employee Feedback Forms:"} />
         </div>
     },

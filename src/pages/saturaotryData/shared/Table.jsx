@@ -1,11 +1,9 @@
 import React from 'react'
-import Table from 'react-bootstrap/Table';
-
 const TableComponent = (props) => {
     return (
-        <div className='d-flex flex-column mb-1 h-64'>
+        <div className='d-flex flex-column p-2'>
             <h2 className='text-danger mt-1 mb-4'>{props.cardTitle}</h2>
-            <Table bordered hover size='lg'>
+            <table className="table table-striped shared-table">
                 <thead>
                     <tr>
                         <th>S.NO</th>
@@ -13,14 +11,14 @@ const TableComponent = (props) => {
                         <th>Member Name</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="naaclist-sroll">
                     {props.data.map(x => <tr>
                         <td>{x.sno}</td>
-                        <td>{x.designation}</td>
-                        <td>{x.memberName}</td>
+                        <td >{x.memberName}</td>
+                        <td style={{whiteSpace:"pre-wrap"}}>{x.designation}</td>
                     </tr>)}
                 </tbody>
-            </Table>
+            </table>
         </div>
     )
 }
