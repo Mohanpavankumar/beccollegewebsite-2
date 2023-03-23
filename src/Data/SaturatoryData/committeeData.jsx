@@ -280,7 +280,7 @@ export const committeeCommitteeData = [
 ]
 export const committee = [
     {
-        "key":1,
+        "key":"1",
         "tabTitle":"Overview",
         "tabContent":<h1>As per the guidelines of government given in Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013, a committee was formed in June 2014 to address issues and complaints regarding sexual harassment.
             Vision To build self-confidence and enhance self-esteem to meet the challenges of the world and to provide congenial work environment in the institute for the students and the women employees.
@@ -289,12 +289,12 @@ export const committee = [
         </h1>
     },
     {
-        "key":2,
+        "key":"2",
         "tabTitle":"Committee Members",
         "tabContent":<CommitteeTable data={committeeCommitteeData} cardTitle={"Committee"} />
     },
     {
-        "key":3,
+        "key":"3",
         "tabTitle":"Guidelines",
         "tabContent":<h1 className="justify-center">To organize guest lectures involving career planning, work-life balance by inviting eminent personalities.
                           To organize awareness programs regarding sexual harassment at work.
@@ -334,37 +334,37 @@ export const committeeDisplayData1 = [
     },
     {
         "key": "3",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-1">
             <ListComponent data={listData} listTitle={"IQAC Templates "} />
         </div>
     },
     {
         "key": "4",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-1">
             <ListComponent data={listData2} listTitle={"IQAC Report Status"} />
         </div>
     },
     {
         "key": "5",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-1">
             <ListComponent data={listData3} listTitle={"IQAC Minutes of Meeting"} />
         </div>
     },
     {
         "key": "6",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-1">
             <ListComponent data={listData4} listTitle={"IQAC Student/Teacher/Alumni/Employee Feedback Forms:"} />
         </div>
     },
     {
         "key": "7",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-1">
             <ListComponent data={listData5} listTitle={"IIQA"} />
         </div>
     },
     {
         "key": "8",
-        "DisplayComponent": <div className="list-container">
+        "DisplayComponent": <div className="pl-1">
             <ListComponent data={listData5} listTitle={"IIQA"} />
         </div>
     }
