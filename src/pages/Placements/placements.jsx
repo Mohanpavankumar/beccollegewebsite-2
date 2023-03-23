@@ -9,7 +9,7 @@ import GraduationCeremony from "/images/GraduationDayCeremony.jpg"
 import  RegistrationFormComponent  from '../../components/RegistrationForms/Form.jsx';
 import { useEffect, useState } from 'react';
 import { getPlacementsNotifications } from '../../config/services.js';
-import pdf from "/images/Hor_lor.pdf"
+import DeltaX from "/images/DeltaX.pdf"
 
 const PlacementsStaff = Placementsteam.map((dataArg) => {
 	return <Staff key={dataArg.staffId} item={dataArg} />;
@@ -35,7 +35,7 @@ let Placements=() =>{
 		<>
 			<div
 				id="default-carousel"
-				className="relative mt-3"
+				className="relative mt-10"
 				data-carousel="slide"
 			>
 				<div className="relative h-40 overflow-hidden md:h-96">
@@ -219,7 +219,7 @@ let Placements=() =>{
 				{data.map(c =>
 				<div>
 					{c.placementNotifications.map(x=>
-					<a href={pdf}  target='_blank' rel='noopener noreferrer'><li>{x.title}</li></a>
+					<a href={DeltaX}  target='_blank' rel='noopener noreferrer'><li>{x.title}</li></a>
 					)}
 				</div>
 				)}
@@ -229,10 +229,6 @@ let Placements=() =>{
 				<div className='line w-14 h-1 md:ml-28 xl:ml-0' style={{background:"#0060b1"}}></div>
 				<div className='flex max-h-96 md:ml-28 xl:ml-0'><RegistrationFormComponent /></div> 
 			</div>
-			{/* <div className="tab-pane fade" id="placementgallery" role="tabpanel" aria-labelledby="placementgallery-tab">
-			<div className='PlacementGallery pb-1'>placement Gallery</div>
-				<div className='line w-14 h-1' style={{background:"#0060b1"}}></div>
-			</div> */}
 			<div className="tab-pane fade" id="yearWiseplacements" role="tabpanel" aria-labelledby="yearWiseplacements-tab">
 				This page can be used to yearWiseplacements
 			</div>
@@ -243,7 +239,6 @@ let Placements=() =>{
   		</div>
 	</div>
 </div>
-
 
 			<div className='Recruitersdiv mt-5 flex'>
 			<div className='flex h-26'>
@@ -265,10 +260,6 @@ let Placements=() =>{
 				</marquee>
 			</div>
 			</div>
-
-			
-
-			
 		</>
     )}
 
