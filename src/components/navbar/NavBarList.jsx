@@ -1,22 +1,24 @@
-import React from 'react'
+import React from 'react';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 
 
 const Leaf = ({ to, label }, idx) => {
     return (
-        <Nav.Link className='my-auto' key={`leaf-${idx}`} href={to} >{label}</Nav.Link>
+        <Link className='my-auto nav-link' key={`leaf-${idx}`} to={to} >{label}</Link>
     )
 }
 
 
 const Branch = ({ label, children }, idx) => {
     return (
-        <NavDropdown title={label} id={`basic-nav-dropdown-${idx}`} key={`basic-nav-dropdown-${idx}`}>
-                {children.map(x =>
-                    <NavDropdown.Item href={x.to}>{x.label}</NavDropdown.Item>
-                )}
-        </NavDropdown>
+        <NavDropdown title={label} id={`basic-nav-dropdown-${idx}`} key={`basic-nav-dropdown-${idx}`} className={children.length > 5 && 'cutsom-nav-item'}>
+            {
+                children.map(x =>
+                    <Link to={x.to} className='dropdown-link-item'>{x.label}</Link>
+                )
+            }
+        </NavDropdown >
     )
 }
 

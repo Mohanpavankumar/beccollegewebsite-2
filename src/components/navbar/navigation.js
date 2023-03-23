@@ -1,6 +1,6 @@
 export const navigationData = [
 	{
-		to: "#",
+		to: "/",
 		label: "Home",
 	},
 	{
