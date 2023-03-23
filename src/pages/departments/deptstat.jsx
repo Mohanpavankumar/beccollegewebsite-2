@@ -7,7 +7,7 @@ export const DeptStats = () => {
     const [graphData, setGraphData] = useState([])
 
     const [years, setYears] = useState([])
-    const [selectedYear, setSelectedYear] = useState((new Date().getFullYear() - 5).toString() + '-' + (new Date().getFullYear() - 1).toString())
+    const [selectedYear, setSelectedYear] = useState((new Date().getFullYear() - 1).toString() + '-' + (new Date().getFullYear()).toString())
 
 
     const getYears = () => {

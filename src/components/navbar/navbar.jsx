@@ -89,11 +89,29 @@ function Navbar(props) {
 					</ul>
 				</div>
 			</nav> :
-				<nav>
-					<Link to={`/departments/${props.deptRoute}/depstat`} className="navbar-logo">
-						Dept Stats
+				<nav className="flex">
+					<Link to={`/departments/${props.deptRoute}/deptstat`} className="navbar-logo">
+						Home
+					</Link>
+					<Link to={`/departments/${props.deptRoute}`} className="navbar-logo">
+						IT Home
+					</Link>
+					<Link to={`/departments/${props.deptRoute}/ItStaff`} className="navbar-logo">
+						Staff
+					</Link>
+					<Link to={`/departments/${props.deptRoute}/deptstat`} className="navbar-logo">
+						Facilities
+					</Link>
+					<Link to={`/departments/${props.deptRoute}/deptstat`} className="navbar-logo">
+						Students
+					</Link>
+					<Link to={`/departments/${props.deptRoute}/deptstat`} className="navbar-logo">
+						News&Events
 					</Link>
 				</nav>
+				
+				
+				
 			}
 		</>
 	);
