@@ -81,8 +81,8 @@ let Acheivements = () => {
 			</div>
 			<div>
 				<p className="text-center text-lg ml-10 font-bold ">II)a)An Unique Saga of Success in GATE</p>
-				<p className="text-base ml-8 font-roboto ">The College has established a tradition of sending year after year a large number of students to IITs, NITs and other reputed institutes for pursuing post-graduate studies based on their performance at the GATE examination conducted at the All India level. It is a matter of deep satisfaction that a good number of the alumni are acquitting themselves most creditably either in pursuing courses of higher study or in their chosen careers abroad / within India.</p>
-				<p className="text-base ml-8 font-roboto mt-2">A percentile of 99.96 in Civil Engineering Branch – AN ALL INDIA FIRST RANK FOR 1997 – scored by Mr. Padavala Ravindra Babu of the College at GATE-97 marks a memorable acme of achievement and provide eloquent testimony to the efforts being put in by the staff and students.</p>
+				<p className="text-base ml-10 font-roboto ">The College has established a tradition of sending year after year a large number of students to IITs, NITs and other reputed institutes for pursuing post-graduate studies based on their performance at the GATE examination conducted at the All India level. It is a matter of deep satisfaction that a good number of the alumni are acquitting themselves most creditably either in pursuing courses of higher study or in their chosen careers abroad / within India.</p>
+				<p className="text-base ml-10 font-roboto mt-2">A percentile of 99.96 in Civil Engineering Branch – AN ALL INDIA FIRST RANK FOR 1997 – scored by Mr. Padavala Ravindra Babu of the College at GATE-97 marks a memorable acme of achievement and provide eloquent testimony to the efforts being put in by the staff and students.</p>
 				<p className="text-center text-lg ml-10 font-bold mt-3">II) b) Record of Rare Brilliance in previous GATE examinations</p>
 			</div>
 			<div className="flex flex-col mt-4 px-8">
@@ -107,7 +107,7 @@ let Acheivements = () => {
 							<td>0</td>
 						</tr>
 						<tr>
-							<th>Civil</th>
+							<td><d>Civil</d></td>
 							<td>7</td>
 							<td>33</td>
 							<td>27</td>
@@ -115,7 +115,7 @@ let Acheivements = () => {
 							<td>11</td>
 						</tr>
 						<tr>
-							<th>CSE</th>
+							<td><b>CSE</b></td>
 							<td>19</td>
 							<td>28</td>
 							<td>27</td>
@@ -123,7 +123,7 @@ let Acheivements = () => {
 							<td>7</td>
 						</tr>
 						<tr>
-							<th>ECE</th>
+							<td><b>ECE</b></td>
 							<td></td>
 							<td>23</td>
 							<td>41</td>
@@ -131,7 +131,7 @@ let Acheivements = () => {
 							<td>15</td>
 						</tr>
 						<tr>
-							<th>EEE</th>
+							<td><b>EEE</b></td>
 							<td>15</td>
 							<td>18</td>
 							<td>21</td>
@@ -139,7 +139,7 @@ let Acheivements = () => {
 							<td>11</td>
 						</tr>
 						<tr>
-							<th>E&I</th>
+							<td><b>E&I</b></td>
 							<td>2</td>
 							<td>6</td>
 							<td>1</td>
@@ -147,7 +147,7 @@ let Acheivements = () => {
 							<td>0</td>
 						</tr>
 						<tr>
-							<th>IT</th>
+							<td><b>IT</b></td>
 							<td>4</td>
 							<td>8</td>
 							<td>3</td>
@@ -155,7 +155,7 @@ let Acheivements = () => {
 							<td>1</td>
 						</tr>
 						<tr>
-							<th>ME</th>
+							<td><b>ME</b></td>
 							<td>14</td>
 							<td>13</td>
 							<td>14</td>
