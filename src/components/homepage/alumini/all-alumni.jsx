@@ -4,7 +4,7 @@ import { aluminiData } from "../../../Data/homepage/aluminiData";
 
 let AllAlumni = (props) => {
 	return (
-		<div className="d-flex justify-around ">
+		<div className="flex p-8 justify-around ">
 			{!!aluminiData &&
 				aluminiData.map((x) => (
 					<Card style={{ width: "14rem" }}>

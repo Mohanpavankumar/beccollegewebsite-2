@@ -47,13 +47,17 @@ import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
 import Imggallery from "./components/homepage/gallery/imggallery";
 import AllAlumni from "./components/homepage/alumini/all-alumni";
-
+import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
 		children: [
-			{ index: true, element: <Homepage /> },
+			{
+				index: true,
+				path: "/",
+				element: <Homepage />,
+			},
 			{
 				path: "/Placements",
 				element: <Placements />,
@@ -161,6 +165,34 @@ const router = createBrowserRouter([
 			{
 				path: "/Others",
 				element: <Others />,
+			},
+			{
+				path: "/Overview",
+				element: <Overview />,
+			},
+			{
+				path: "/Programme",
+				element: <Programme />,
+			},
+			{
+				path: "/Patents",
+				element: <Patents />,
+			},
+			{
+				path: "/Rules",
+				element: <Rules />,
+			},
+			{
+				path: "/Autonomous",
+				element: <Autonomous />,
+			},
+			{
+				path: "/Institution",
+				element: <Institution />,
+			},
+			{
+				path: "/NaacHomePage",
+				element: <NaacHomePage />,
 			},
 		],
 	},

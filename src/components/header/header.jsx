@@ -14,10 +14,12 @@ let Header = () => {
 		<div className="flex flex-col">
 			<header className="general-header flex flex-wrap justify-center items-center md:mt-5 md:justify-around">
 				<div className="col-span-2 flex">
-					<img
-						className="college-logo hidden md:block mt-6 h-14 md:m-2 xl:h-36"
-						src={collegeLogo}
-					></img>
+					<Link to={"/"}>
+						<img
+							className="college-logo hidden md:block mt-6 h-14 md:m-2 xl:h-36"
+							src={collegeLogo}
+						></img>
+					</Link>
 					<div className="college-desc flex flex-col justify-center items-center m-3 md:-mt-2 w-max">
 						<div className="college-title text-primaryColor font-bold text-sm md:text-lg xl:text-3xl">
 							BAPATLA ENGINEERING COLLEGE
@@ -37,18 +39,30 @@ let Header = () => {
 					</div>
 				</div>
 				<div className="flex gap-4 col-span-2 place-content-center">
-					<div className="rounded-full border-primaryColor border-4 w-12 h-12 md:w-16 md:h-16 xl:w-24 xl:h-24 flex justify-center items-center">
-						<img className="cursor-pointer" src={nirf}></img>
-					</div>
-					<div className="rounded-full border-primaryColor border-4  p-2  w-12 h-12 md:w-16 md:h-16 xl:w-24 xl:h-24  flex justify-center items-center">
+					<Link
+						to={"/nirf"}
+						className="rounded-full border-primaryColor border-4 w-12 h-12 md:w-16 md:h-16 xl:w-24 xl:h-24 flex justify-center items-center"
+					>
+						<img className="cursor-pointer" src={nirf} />
+					</Link>
+					<Link
+						to={"/iqacPage"}
+						className="rounded-full border-primaryColor border-4  p-2  w-12 h-12 md:w-16 md:h-16 xl:w-24 xl:h-24  flex justify-center items-center"
+					>
 						<img className="cursor-pointer rounded-full" src={iqac}></img>
-					</div>
-					<div className="rounded-full border-primaryColor border-4 w-12 h-12 md:w-16 md:h-16 xl:w-24 xl:h-24  flex justify-center items-center">
+					</Link>
+					<Link
+						to={"/naacPage"}
+						className="rounded-full border-primaryColor border-4 w-12 h-12 md:w-16 md:h-16 xl:w-24 xl:h-24  flex justify-center items-center"
+					>
 						<img className="rounded-full cursor-pointer" src={naac}></img>
-					</div>
-					<div className="rounded-full border-primaryColor border-4 p-2 w-12 md:w-16 md:h-16 h-12 xl:w-24 xl:h-24  flex justify-center items-center">
+					</Link>
+					<Link
+						to={"/naacInfo"}
+						className="rounded-full border-primaryColor border-4 p-2 w-12 md:w-16 md:h-16 h-12 xl:w-24 xl:h-24  flex justify-center items-center"
+					>
 						<img className="rounded-full cursor-pointer" src={aicte}></img>
-					</div>
+					</Link>
 				</div>
 			</header>
 

@@ -5,7 +5,7 @@ import alumni4 from "/src/assets/homepage/alumni/image 60.png";
 import alumni5 from "/src/assets/homepage/alumni/alumni5.jpg";
 import alumni6 from "/src/assets/homepage/alumni/alumni6.jpg";
 import alumni7 from "/src/assets/homepage/alumni/alumni7.jpg";
-import usericon from "/src/assets/homepage/alumni/usericon.png";
+import usericon from "/src/assets/homepage/alumni/user-ICON.svg";
 
 export const aluminiData = [
 	{

@@ -72,18 +72,34 @@ export const navigationData = [
 	},
 	{
 		label: "Facilities",
-		to: "#",
+		to: "/Facilities",
 	},
 	{
 		label: "Academics",
 		children: [
 			{
-				to: "#",
+				to: "/Overview",
 				label: "Overview",
 			},
 			{
-				to: "#",
+				to: "/Programme",
 				label: "Courses Offered",
+			},
+			{
+				to: "/Patents",
+				label: "Patents ",
+			},
+			{
+				to: "/Rules",
+				label: "Rules & Regulations ",
+			},
+			{
+				to: "/Autonomous",
+				label: "Atonomous Policies ",
+			},
+			{
+				to: "/Institution",
+				label: "Institution",
 			},
 		],
 	},
@@ -91,30 +107,46 @@ export const navigationData = [
 		label: "Statutory Data",
 		children: [
 			{
-				to: "/departments/IT",
-				label: "Library",
+				to: "/NaacHomePage",
+				label: "ACCREDIATION/Approvals",
+			},
+			{
+				to: "#",
+				label: "Committees",
+			},
+			{
+				to: "#",
+				label: "ARIIA Reports",
 			},
 			{
 				to: "http://www.ebay.com",
-				label: "Bank",
-			},
-		],
-	},
-	{
-		label: "Exams & Results",
-		children: [
-			{
-				to: "/departments/IT",
-				label: "Library",
+				label: "BOS(Board of Studies)",
 			},
 			{
 				to: "http://www.ebay.com",
-				label: "Bank",
+				label: "RTI Act 2005",
 			},
 		],
 	},
 	// {
-	// 	url: "https://becalumni.org/",
-	// 	label: "Alumni",
+	// 	label: "Exams & Results",
+	// 	children: [
+	// 		{
+	// 			to: "/departments/IT",
+	// 			label: "Examination Cell",
+	// 		},
+	// 		{
+	// 			to: "http://www.ebay.com",
+	// 			label: "Bank",
+	// 		},
+	// 	],
 	// },
+	{
+		label: "Placements",
+		to: "/Placements",
+	},
+	{
+		label: "Alumni",
+		to: "https://becalumni.org/",
+	},
 ];

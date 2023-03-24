@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "/src/components/navbar/navbar";
 import Gallery from "/src/components/homepage/gallery/gallery.jsx";
 import principal from "/src/assets/homepage/principal.png";
 import Courses from "/src/components/homepage/courses/courses";
@@ -7,15 +6,12 @@ import coursedata from "/src/Data/homepage/coursedata.js";
 import gallerydata from "/src/Data/homepage/gallerydata.js";
 import close from "/src/assets/homepage/close-btn.svg";
 import { useEffect, useState } from "react";
-import { Tab } from "@headlessui/react";
 import BecDetails from "/src/assets/BecDetails.jpg";
 import culturalFest from "/src/assets/culturalFest.jpg";
 import Devops from "/src/assets/Devops.jpg";
 import robotics from "/src/assets/robotics.jpg";
 import bectagon from "/src/assets/bectagon.jpg";
-
 import EngineersDay from "/src/assets/EngineersDay.jpg";
-
 import cmpy1 from "/src/assets/homepage/placements/Group 19.png";
 import cmpy2 from "/src/assets/homepage/placements/Group 20.png";
 import cmpy3 from "/src/assets/homepage/placements/Group 21.png";
@@ -41,25 +37,6 @@ import { useTheme } from "@mui/material/styles";
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
-
-// const [showResults, setShowResults] = React.useState(true);
-// const onClick = () => setShowResults(false);
-// const Results = () => (
-// 	<div className="fixed z-50 bottom-0 left-0 right-0">
-// 		<img
-// 			onClick={onClick}
-// 			src={close}
-// 			className="h-5 w-5 cursor-pointer right fixed left-[98.5%] bottom-6"
-// 		></img>
-// 		<div className="bg-primaryColor border-white border-2  text-white">
-// 			<marquee>
-// 				This is a message which displays in the bottom of the screen and can be
-// 				closed if not needed
-// 			</marquee>
-// 		</div>
-// 	</div>
-// );
-
 const Course = coursedata.map((item) => {
 	return <Courses key={item.id} item={item} />;
 });
@@ -69,7 +46,6 @@ const Galery = gallerydata.map((galleryarg) => {
 export default function HomePage() {
 	const [data, setData] = useState([]);
 	const [showResults, setshowResults] = useState(true);
-
 	const getData = () => {
 		getLandingPageData()
 			.then((res) => setData(res.data))
@@ -77,7 +53,6 @@ export default function HomePage() {
 	};
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
 	useEffect(() => {
 		getData();
 	}, []);
@@ -95,7 +70,7 @@ export default function HomePage() {
 							</a>
 						</a>
 					</div>
-					{/* {showResults ? <Results /> : null} */}
+
 					{showResults && (
 						<div className="fixed z-50 bottom-0 left-0 right-0">
 							<img
@@ -112,6 +87,7 @@ export default function HomePage() {
 							</div>
 						</div>
 					)}
+
 					<div
 						id="default-carousel"
 						className="relative mt-3"
@@ -288,6 +264,7 @@ export default function HomePage() {
 							</div>
 						))}
 					</div>
+
 					<div>
 						<p className="flex justify-center text-2xl font-semibold xl:text-4xl">
 							Welcome to Bapatla Engineering College
@@ -308,12 +285,6 @@ export default function HomePage() {
 								accredited, Electronics and Instrumentation, Chemical
 								Engineering which are accredited twice and Information
 								Technology which is accredited once.
-								<a
-									href="#"
-									className="text-primaryColor mt-7 xl:mt-40 float-right underline "
-								>
-									Viewmore
-								</a>
 							</div>
 
 							<div className="xl:ml-8 xl:mt-1 xl:w-full xl:text-xl mx-2">
@@ -333,7 +304,7 @@ export default function HomePage() {
 					</div>
 
 					<div className="flex flex-col justify-center items-center mt-10">
-						<div className="mx-auto news-events-tabs tabs-notices w-full max-w-md px-2 py-8F sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
+						<div className="mx-auto news-events-tabs tabs-notices w-full max-w-md md:px-2 py-8F px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
 							<TabsComponent
 								defaultKey={"latestNews"}
 								tabsData={[
@@ -352,7 +323,6 @@ export default function HomePage() {
 														as="li"
 														className="d-flex justify-between"
 													>
-														{/* {console.log(latestNews)} */}
 														<div className="my-auto mr-2">
 															<a
 																href={latestNews.link}
@@ -363,7 +333,6 @@ export default function HomePage() {
 															<p>{latestNews.description}</p>
 														</div>
 														<div className="my-auto text-nowrap">
-															{/* {latestNews.date} */}
 															<div className="bg-primaryColor p-1 text-white text-center font-bold">
 																{new Date(latestNews.date).getDate()}
 															</div>
@@ -375,7 +344,7 @@ export default function HomePage() {
 													</ListGroup.Item>
 												))}
 											</ListGroup>
-										)
+										),
 									},
 									{
 										tabKey: "events",
@@ -412,9 +381,8 @@ export default function HomePage() {
 							/>
 						</div>
 					</div>
-					<div
-						className="flex justify-between w-100 md:flex-row flex-col"
-					>
+
+					<div className="flex justify-between w-100 md:flex-row flex-col">
 						<div className="md:w-1/2  bg-placementsbg">
 							<div className="font-bold text-2xl  md:text-3xl text-primaryColor text-center pt-10">
 								Impeccable Placements
@@ -457,6 +425,10 @@ export default function HomePage() {
 										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
 										src={cmpy6}
 									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy7}
+									></img>
 								</div>
 							</Marquee>
 							<Marquee gradientWidth={30} className="w-1/2">
@@ -485,6 +457,10 @@ export default function HomePage() {
 										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
 										src={cmpy13}
 									></img>
+									<img
+										className="w-20 h-12 pr-2 pb-2 md:w-40  md:h-24 md:pr-4 md:pb-4"
+										src={cmpy14}
+									></img>
 								</div>
 							</Marquee>
 						</div>
@@ -498,6 +474,7 @@ export default function HomePage() {
 							</div>
 						</div>
 					</div>
+
 					<div className=" flex flex-col justify-center items-center bg-hero-pattern ">
 						<div className="w-4/5 xl:w-3/6 mt-14">
 							<fieldset className="scheduler-border p-3 border border-primary rounded-md text-justify">
@@ -553,20 +530,19 @@ export default function HomePage() {
 						</p>
 						<div className="flex flex-wrap justify-center">{Course}</div>
 					</div>
-					<div>
-						<div className="flex flex-col">
-							<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
-								Gallery
-							</p>
-							<div className="flex flex-wrap justify-center">{Galery}</div>
-							<Link
-								className="text-primaryColor cursor-pointer mt-2 mr-10 text-lg
+
+					<div className="flex flex-col">
+						<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
+							Gallery
+						</p>
+						<div className="flex flex-wrap justify-center">{Galery}</div>
+						<Link
+							className="text-primaryColor cursor-pointer mt-2 mr-10 text-lg
 					text-right underline "
-								to={"/Imggallery"}
-							>
-								viewmore
-							</Link>
-						</div>
+							to={"/Imggallery"}
+						>
+							viewmore
+						</Link>
 					</div>
 				</>
 			))}
