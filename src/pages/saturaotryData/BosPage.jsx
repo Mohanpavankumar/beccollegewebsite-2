@@ -216,7 +216,7 @@ export const data = [
             },
             {
                 Ay: "2020-2021",
-                link: null
+                link:"/src/assets/saturatoryData/MATHS.pdf"
             }
         ]
     },
@@ -233,7 +233,7 @@ export const data = [
             },
             {
                 Ay: "2020-2021",
-                link: null
+                link:"/src/assets/saturatoryData/ENGLISH.pdf"
             }
         ]
     },{
@@ -249,7 +249,7 @@ export const data = [
             },
             {
                 Ay: "2020-2021",
-                link: null
+                link:"/src/assets/saturatoryData/LIBRARY.pdf"
             }
         ]
     }
