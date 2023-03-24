@@ -29,6 +29,7 @@ const Leaf = ({ url, label, hoverText }, idx) => {
             className="d-flex"
             style={leaf}
             key={`leaf-${idx}`}
+            target='_blank' rel='noopener noreferrer'
         >
             <OverlayTriggerComponent hoverText={hoverText} label={label} />
         </a>

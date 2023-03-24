@@ -37,7 +37,7 @@ function Aicte() {
                     <div className="tab-content" id="tabContent">
                         <div className="tab-pane fade show active" id="AICTEMandatoryDisclosure" role="tabpanel" aria-labelledby="AICTEMandatoryDisclosure-tab">
                             <div className='mt-4'>
-                                <h1 className='text-start py-2 text-xl text-neutral-900'>AICTE MANDATORY DISCLOSURE</h1>
+                                <h1 className='text-start py-2 text-xl text-neutral-900 ml-4'>AICTE MANDATORY DISCLOSURE</h1>
                                 <embed src="/src/assets/saturatoryData/AICTE_Mandatory_Disclosure.pdf" width={showButtons ? 800 : 1000} height={400}>
                                 </embed>
                             </div>
