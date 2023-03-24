@@ -3,10 +3,12 @@ import Slides3 from "/src/components/Carousel/Boschcoe.jsx";
 import tickmark from "/src/assets/tick-mark.png";
 import circleDot from "/src/assets/circle-solid.svg";
 import eastArrow from "/src/assets/eastArrow.png";
+import { Modal } from "react-bootstrap";
+import React from "react";
 
 
 export default function Facilities(){
-    
+     const [modalShow, setModalShow] = React.useState(false);
 	 	return (
 	       <div>
 
@@ -123,26 +125,34 @@ export default function Facilities(){
 																	
 														    </div>
 															<button 
+															    onClick={() => setModalShow(true)}
 															    data-modal-target="large-modal" data-modal-toggle="large-modal"
  																type="button" 
 																className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-4 py-2.5 text-center mr-2 mb-2 flex mt-4 ml-5 ">
 																											Training Modules
 																<svg aria-hidden="true" className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 															</button>
-															<div id="large-modal" tabindex="-1" class="mx-4 fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full  border-black border-2">
+															<Modal
+																	show={modalShow}
+																	onHide={() => setModalShow(false)}
+																	size="lg"
+																	aria-labelledby="contained-modal-title-vcenter"
+																	centered
+															>
+															{/* <div id="large-modal" tabindex="-1" class="mx-4 fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full  border-black border-2"> */}
 																<div class="relative w-full h-full max-w-6xl md:h-full">
 																	<div class="relative bg-white rounded-lg shadow dark:bg-gray-700 " >
 																		<div class="flex items-center justify-between p-3 border-b rounded-t dark:border-gray-600" >
 																			<p className="text-2xl ml-3 font-semibold">
 																						Training Modules
 																			</p>
-																			<button type="button" class="absolute top-3 right-2.5 text-black  hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-300 dark:hover:text-black" data-modal-hide="popup-modal">
+																			<button onClick={() => setModalShow(false)} type="button" class="absolute top-3 right-2.5 text-black  hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-300 dark:hover:text-black" data-modal-hide="popup-modal">
 																				<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
 																				<span class="sr-only">Close modal</span>
 																			</button>
 																		</div>
 																	
-																		<div >
+																		<div className="scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-[36rem] overflow-y-scroll" >
 																			<table className="table text-justify">
 
 																				<tr className="bg-sky-600 text-center ">
@@ -239,12 +249,12 @@ export default function Facilities(){
 																			</table>
 																		</div>
 																		<div class="flex items-center p-3 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-																			<button data-modal-hide="large-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
+																			<button onClick={() => setModalShow(false)} data-modal-hide="large-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
 																		</div>
 																	</div>
 																</div>
-															</div>
-
+															{/* </div> */}
+													</Modal>
 
 
 								</div>
@@ -254,5 +264,6 @@ export default function Facilities(){
                 </div>
 		    </div>
 	    </div>
+
 	)
 }

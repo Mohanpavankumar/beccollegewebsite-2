@@ -11,12 +11,12 @@ function Aicte() {
     const onDropdownClick = () => setShowDroupdown(!showDroupdown)
     console.log(documentYear);
     return (
-        <div className='flex items-center justify-center flex-col py-3 overflow-x-hidden'>
+        <div className='flex items-center justify-center flex-col py-3 overflow-x-hidden mt-2'>
             <div className='text-center  py-3 w-screen'>
                 <h1 className='bg-indigo-500 text-slate-50 py-3'>AICTE DETAILS</h1>
             </div>
             <div className='row w-screen'>
-                <div className="col-3">
+                <div className="col-4">
                     <div className="nav flex-column nav-pills text-sm" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <div className='nav flex-column nav-pills text-left py-10 justify-items-start p-4' id='tab' role="tablist">
                             <button className="nav-link bg-slate-400 text-black mb-1" onClick={() => setShowButtons(!showButtons)} > {showButtons ? <>Hide Buttons</> : <>ClickHere</>}</button>

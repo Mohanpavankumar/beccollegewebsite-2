@@ -1,0 +1,115 @@
+.nirfPage-tabs .nav-link {
+    width: max-content !important;
+    background-color: inherit;
+    color: #0d0d0d;
+    border: 1px solid #0a0a0a;
+}
+
+.nirfPage-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.nirfPage-tabs .nav-item {
+    height: inherit;
+}
+
+.nirfPage-tabs .nav-link:focus {
+    outline: 1px solid #fff;
+}
+
+.nirfPage-tabs .nav-link:focus-visible {
+    outline: 1px solid #fff;
+}
+
+.nirf-tab-content {
+    padding: 2rem 2rem !important;
+}
+
+.naac-tab-content {
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+}
+
+
+/* Table Fixed */
+
+.shared-table {
+    width: 100%;
+}
+
+.shared-table thead,
+tbody,
+tr,
+td,
+th {
+    display: block;
+}
+
+.shared-table tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.shared-table thead th {
+    height: 3rem;
+    width: 33.3%;
+}
+
+.shared-table tbody {
+    height: 32vh;
+    overflow-y: auto;
+}
+
+.shared-table thead {
+}
+
+
+.shared-table tbody td,
+thead th {
+    width: 33.3%;
+    float: left;
+    padding: 1rem !important;
+}
+.shared-table-committees {
+    width: 100%;
+}
+
+.shared-table-commmittees thead,
+tbody,
+tr,
+td,
+th {
+    display: block;
+}
+
+.shared-table-committees tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.shared-table-committees thead th {
+    height: 3rem;
+    width: 20%;
+}
+
+.shared-table-committees tbody {
+    height: 32vh;
+    overflow-y: auto;
+}
+
+.shared-table-commitees thead {
+}
+
+
+.shared-table-committees tbody td,
+thead th {
+    width: 20%;
+    float: left;
+    padding: 1rem !important;
+}
