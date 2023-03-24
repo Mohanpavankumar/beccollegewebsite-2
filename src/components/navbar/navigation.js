@@ -111,19 +111,12 @@ export const navigationData = [
 				label: "ACCREDIATION/Approvals",
 			},
 			{
-				to: "#",
+				to: "/CommittePage",
 				label: "Committees",
 			},
+
 			{
-				to: "#",
-				label: "ARIIA Reports",
-			},
-			{
-				to: "http://www.ebay.com",
-				label: "BOS(Board of Studies)",
-			},
-			{
-				to: "http://www.ebay.com",
+				to: "/RtiAct",
 				label: "RTI Act 2005",
 			},
 		],

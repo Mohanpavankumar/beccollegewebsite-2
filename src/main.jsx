@@ -47,7 +47,7 @@ import AllAlumni from "./components/homepage/alumini/all-alumni";
 import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
-import RtiAct from "./pages/saturaotryData/Rti"
+import RtiAct from "./pages/saturaotryData/Rti";
 import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
@@ -100,7 +100,7 @@ const router = createBrowserRouter([
 				path: "/rti",
 				element: <RtiAct />,
 			},
-			
+
 			{
 				path: "/exam-downloads",
 				element: <ExamDownloads />,
@@ -208,6 +208,14 @@ const router = createBrowserRouter([
 			{
 				path: "/upload/staffimage",
 				element: <UploadStaffImage />,
+			},
+			{
+				path: "/CommittePage",
+				element: <CommittePage />,
+			},
+			{
+				path: "/RtiAct",
+				element: <RtiAct />,
 			},
 		],
 	},
