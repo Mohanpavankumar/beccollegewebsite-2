@@ -119,6 +119,11 @@ export const navigationData = [
 				to: "/RtiAct",
 				label: "RTI Act 2005",
 			},
+
+			{
+				to: "#",
+				label: "BOS(Board of Studies)",
+			},
 		],
 	},
 	// {
