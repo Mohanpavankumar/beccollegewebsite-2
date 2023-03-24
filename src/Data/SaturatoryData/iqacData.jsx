@@ -3,139 +3,153 @@ import TableComponent from "../../pages/saturaotryData/shared/Table"
 
 
 export const listData = [{
-    "link": "http://",
+    "link": "/src/assets/BCE1559978288598.docx",
     "title": "Teachers' Evaluation",
     "isExpand": false
 },
 {
-    "link": "http://",
+    "link": "/src/assets/BCE1559978288599.docx",
     "title": "Self Appraisal",
     "isExpand": false
 },
 {
-    "link": "http://",
+    "link": "/src/assets/BCE1559978288599 (1).docx",
     "title": "List of Students with shortage of attendance and marks and phone call comm. at the end of semester",
 
 },
 {
-    "link": "http://",
+    "link": "",
     "title": "AQAR",
     "isExpand": true,
     "expandData": [{
         "title": "One",
-        "link": ""
+        "link": "/src/assets/BCE1559978288613 (1).doc"
     },
     {
         "title": "Two",
-        "link": ""
+        "link": "/src/assets/BCE1559978288604 (1).doc"
     },
     {
         "title": "Three",
-        "link": ""
+        "link": "/src/assets/BCE1559978288613 (1).doc"
     }
     ]
 }]
 
 export const listData2 = [{
-    "link": "",
+    "link": "/src/assets/saturatoryData/AQAR(2020-2021).pdf",
     "title": "AQAR 2020-21"
 
 
 },
 {
-    "link": "",
-    "title": "AQAR 2020-20"
+    "link": "/src/assets/saturatoryData/AQAR(2019-2020).pdf",
+    "title": "AQAR 2019-20"
 },
 {
-    "link": "",
-    "title": "AQAR 2020-19"
+    "link": "/src/assets/saturatoryData/AQAR(2018-2019).pdf",
+    "title": "AQAR 2018-19"
 },
 {
-    "link": "",
-    "title": "AQAR 2019-18"
+    "link": "/src/assets/saturatoryData/AQAR(2017-2018).pdf",
+    "title": "AQAR 2017-18"
 },
 {
-    "link": "",
-    "title": "AQAR 2018-17"
+    "link": "/src/assets/saturatoryData/AQAR(2016-2017).pdf",
+    "title": "AQAR 2016-17"
 },
 {
-    "link": "",
-    "title": "AQAR 2017-16"
+    "link": "/src/assets/saturatoryData/AQAR(2015-2016).pdf",
+    "title": "AQAR 2015-16"
 }
 ]
 export const listData3 = [{
-    "link": "",
+    "link": "/src/assets/saturatoryData/IQAC(1).pdf",
     "title": "IQAC Minitues of Meeting for A.Y 2018-19"
 
 
 },
 {
-    "link": "",
-    "title": "IQAC Minitues of Meeting for A.Y 2018-19"
+    "link": "/src/assets/saturatoryData/IQAC2.pdf",
+    "title": "IQAC Minitues of Meeting for A.Y 2019-20"
 },
 {
-    "link": "",
-    "title": "IQAC Minitues of Meeting for A.Y 2018-19"
+    "link": "/src/assets/saturatoryData/IQAC3.pdf",
+    "title": "IQAC Minitues of Meeting for A.Y 2020-21"
 },
 {
-    "link": "",
-    "title": "IQAC Minitues of Meeting for A.Y 2018-19"
+    "link": "/src/assets/saturatoryData/IQAC_Minutes_of_meeting_2021-22.pdf",
+    "title": "IQAC Minitues of Meeting for A.Y 2021-22"
 }
 
 ]
 export const listData4 = [{
-    "link": "",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSdALJjnNY1V5cDZj0_E1wRmhV88IxdmcIf5S-6BV9Zkb_O2SQ/viewform",
     "title": "Student feedback on curriculum and teaching"
 
 
 },
 {
-    "link": "",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLScb6p6TegVFLGmdNZgnDFAvrGXwXEDHECPKTSPULJ-xcXveVA/viewform",
     "title": "Teacher's feedback on curriculum and Developmen"
 },
 {
-    "link": "",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSc4Nc-S2M0XgqKkKsNPqA6rlt_Jzta9XtrcOIm2IaP8m0rq8Q/viewform",
     "title": "Alumni feedback on curriculum ,and Development"
 },
 {
-    "link": "",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSdMDa47Ubv0v3IR95ZR1rZEcZDm5EjutaV4PO66gpDgFHv99g/viewform",
     "title": "Employer Feedback on curriculum and Development"
 }
 ]
 export const listData5 = [{
-    "link": "",
+    "link": "/src/assets/saturatoryData/IIAQ.pdf",
     "title": "IIQA"
 
 },
 {
-    "link": "",
+    "link": "/src/assets/saturatoryData/IIAQ2.pdf",
     "title": "Statement of compliance with an IP address"
 },
 {
-    "link": "",
+    "link": "/src/assets/saturatoryData/ISO_Canteen_GirlsHostelCanteen.pdf",
     "title": "animated arrow icon gif images & Animations 100% FREE!IS0 22000:2018 Food Safety Management System Certification for BEC Canteen and Girls Hostel Canteen"
 },
 
 
 ]
 export const listData6 = [{
-    "link": "",
+    "link": "/src/assets/saturatoryData/GREEN_AUDIT.pdf",
     "title": "Green Audit Report"
     
 
 },
 {
-   "link":"",
-   "title":"Green Audit Report" 
-},
-{
-    "link":"",
-    "title":"Alumni feedback on curriculum ,and Development" 
- },
- {
-    "link":"",
-    "title":"Employer Feedback on curriculum and Development" 
- }
+    "link": "",
+    "title": "Green Rankings-2023:",
+    "isExpand": true,
+    "expandData": [{
+        "title": "List of Utilities - Energy Conservation",
+        "link": "/src/assets/saturatoryData/BCE1644564782435.pdf"
+    },
+    {
+        "title": "Energy efficiency plan - Policy",
+        "link": "/src/assets/saturatoryData/RANK(2).pdf"
+    },
+    {
+        "title": "Optimum usage of water - Policy",
+        "link": "/src/assets/saturatoryData/RANK(3).pdf"
+    },
+    {
+        "title": "Rainwater harvesting system -Policy",
+        "link": "/src/assets/saturatoryData/RANK(4).pdf"
+    },
+    {
+        "title": "Building standards to minimize water - Policy",
+        "link": "/src/assets/saturatoryData/RANK(5).pdf"
+    }
+    ]
+}
 ]
 export const iqacNavigation = [
     {
@@ -280,7 +294,7 @@ export const iqacDisplayData = [
     {
         "key": "8",
         "DisplayComponent": <div className="pl-3">
-            <ListComponent data={listData5} listTitle={"IIQA"} />
+            <ListComponent data={listData5} listTitle={"Green Rankings-2023:"} />
         </div>
     }
 ]
