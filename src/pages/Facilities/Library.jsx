@@ -222,8 +222,8 @@ export default function Facilities(){
 								<div className="mt-3">
 									<p className="text-lg">Based on AICTE Model Curriculum, AICTE suggested Indian Authored books in the following link:</p>
 									<div className="flex mt-1">
-									    <img src={Arrow} className=" w-5 h-5 mt-1"></img>
-										<a href="https://www.aicte-india.org/sites/default/files/list-suggested-books-indian-authors-publishers.pdf" className="text-lg text-blue-900 ml-3"><i> AICTE Recommended List of Books by Indian Authors/Publishers</i></a>
+									    <img src={Arrow} className=" w-6 h-6 mt-1"></img>
+										<a href="https://www.aicte-india.org/sites/default/files/list-suggested-books-indian-authors-publishers.pdf" className="text-lg text-blue-900 ml-2 underline"><i> AICTE Recommended List of Books by Indian Authors/Publishers</i></a>
 									</div>
 								</div>
 							</div>
@@ -378,12 +378,13 @@ export default function Facilities(){
 									    <div className="flex mt-4">
 															<img src={Arrow} className=" w-5 h-5 mt-1"></img>
 															<p className="text-lg ml-2 font-semibold"> NPTEL URL:</p>
-															<a href="https://nptel.ac.in/ " className="text-lg text-blue-900 ml-3"> https://nptel.ac.in </a>
+															<a href="https://nptel.ac.in/ " className="text-lg text-blue-900 ml-3 underline "> https://nptel.ac.in </a>
 										</div>
 										<div className="flex mt-2">
 														<img src={Arrow} className=" w-5 h-5 mt-1"></img>
+
 														<p className="text-lg ml-2 font-semibold">Swayam URL:</p>
-														<a href="https://swayam.gov.in/" className="text-lg text-blue-900 ml-3"> https://swayam.gov.in</a>
+														<a href="https://swayam.gov.in/" className="text-lg text-blue-900 ml-3 underline"> https://swayam.gov.in</a>
 										</div>
 							</div>
 
