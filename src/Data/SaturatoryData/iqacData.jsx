@@ -238,6 +238,7 @@ export const iqacDisplayData = [
             IQAC is a part of the institution’s system and work towards realization of the goals of quality enhancement and sustenance. The prime task of the IQAC is to develop a system for conscious, consistent and catalytic improvement in the overall performance of institutions.
             The Internal Quality Assurance Cell of BAPATLA ENGINEERING COLLEGE was formulated with Dr.P.Pardhasaradhi, Associate Professor, Department of Computer Science and Engineering as the Co-coordinator of the Cell.
         </div>
+        
     },
     {
         "key": "2",
