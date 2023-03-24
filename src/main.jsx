@@ -44,6 +44,7 @@ import Institution from "/src/pages/academics/institution";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
 import { FacilitiesChart } from "./components/facilities/facilities";
+import ItStaff from "/src/pages/departments/staff.jsx"
 
 const router = createBrowserRouter([
 	{
