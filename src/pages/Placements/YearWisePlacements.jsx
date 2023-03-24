@@ -1,8 +1,9 @@
 import '/src/pages/Placements/Placements.css'
 import React, {useState, useEffect} from "react";
 import Chart from "react-apexcharts";
-
+import Placements from "/src/pages/Placements/placements.jsx";
 import { getPlacementData } from "/src/config/services.js";
+import { Link } from 'react-router-dom';
 
 
 let YearWisePlacements=() =>{
@@ -176,6 +177,7 @@ const getSalaryDetails = ()=>{
             />
         </div>
     </React.Fragment>
+    <Link className="placements-home-link" to={"/Placements"} >Placements Home</Link>
         </>
     )
 }

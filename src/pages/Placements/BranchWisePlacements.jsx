@@ -2,6 +2,7 @@ import '/src/pages/Placements/Placements.css'
 import Chart from "react-apexcharts";
 import React, {useState, useEffect} from "react";
 import { getPlacementData } from "/src/config/services.js";
+import { Link } from 'react-router-dom';
 
 let BranchWisePlacements=() =>{
 
@@ -112,6 +113,7 @@ let result = Object.keys(duplicateCount).map(e =>
         ></Chart>
       </div>
     </React.Fragment>
+    <Link className="placements-home-link1" to={"/Placements"} >Placements Home</Link>
     </div>
 			</div>
 			</div>

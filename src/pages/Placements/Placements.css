@@ -79,7 +79,15 @@ form{
 	margin-left: 250px;
 	width: 920px ;
 	border: 3px solid #0060b1;
-	margin-top: 20px;
+	margin-top: 50px;
+ }
+ .placements-home-link{
+	margin-left: 1320px;
+	font-size: 20px;
+ }
+ .placements-home-link1{
+	margin-left: 1300px;
+	font-size: 20px;
  }
  .DonutChart{
 	margin-left: 250px;
@@ -109,6 +117,7 @@ form{
 	background-color: #0060b1;
 	font-weight: bold;
 	margin-left: 250px;
+	margin-right: 290px !important;
  }
  .float-right:hover{
 	color: #fff;
