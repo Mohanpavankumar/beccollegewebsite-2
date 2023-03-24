@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
 import {
 	createBrowserRouter,
 	RouterProvider,
@@ -10,19 +9,17 @@ import {
 	Routes,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-
 import Root from "/src/routes/root.jsx";
 import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
-import Acheivements from "/src/pages/academics/acheivements.jsx";
-
 import Aicte from "/src/pages/saturaotryData/aicte.jsx";
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
-import IqacPage from "./pages/saturaotryData/Iqac";
-import Nirf from "/src/pages/saturaotryData/Nirf.jsx";
+import IqacPage from "./pages/saturaotryData/IqacPage.jsx";
+import Nirf from "/src/pages/saturaotryData/NirfPage.jsx";
+import Acheivements from "/src/pages/academics/acheivements.jsx";
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -48,6 +45,10 @@ import ItStaff from "/src/pages/departments/staff.jsx";
 import Imggallery from "./components/homepage/gallery/imggallery";
 import AllAlumni from "./components/homepage/alumini/all-alumni";
 import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
+import UploadStaffImage from "./pages/UploadStaffImage";
+import CommittePage from "./pages/saturaotryData/committee";
+// import { FacilitiesChart } from "./components/facilities/facilities";
+
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
 			{
 				path: "/nirf",
 				element: <Nirf />,
+			},
+			{
+				path: "/committees",
+				element: <CommittePage />,
 			},
 			{
 				path: "/exam-downloads",
@@ -193,6 +198,10 @@ const router = createBrowserRouter([
 			{
 				path: "/NaacHomePage",
 				element: <NaacHomePage />,
+			},
+			{
+				path: "/upload/staffimage",
+				element: <UploadStaffImage />,
 			},
 		],
 	},

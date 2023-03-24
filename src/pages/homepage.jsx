@@ -27,8 +27,6 @@ import cmpy12 from "/src/assets/homepage/placements/image 48.png";
 import cmpy13 from "/src/assets/homepage/placements/image 46.png";
 import cmpy14 from "/src/assets/homepage/placements/image 51.png";
 import { Link } from "react-router-dom";
-import Marquee from "react-fast-marquee";
-import { DisplayAlumini } from "../components/homepage/alumini/display-alumini";
 import { getLandingPageData } from "../config/services";
 import TabsComponent from "../components/shared/Tabs";
 import { ListGroup } from "react-bootstrap";
