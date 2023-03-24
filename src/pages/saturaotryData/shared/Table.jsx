@@ -7,8 +7,8 @@ const TableComponent = (props) => {
                 <thead>
                     <tr>
                         <th>S.NO</th>
-                        <th>Member Name</th>
                         <th>Designation</th>
+                        <th>Member Name</th>
                     </tr>
                 </thead>
                 <tbody id="naaclist-sroll">

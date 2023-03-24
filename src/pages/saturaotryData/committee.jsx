@@ -15,7 +15,7 @@ const CommittePage = (props) => {
                 <Row className='mt-6 px-4 w-auto'>
                     <Col sm={4}>
                         <Nav variant="pills" className="flex-column">
-                            {committeeNavigation.map(x => <Nav.Item className='h-25'>
+                            {committeeNavigation.map(x => <Nav.Item className='h-25 pr-32'>
                                 <Nav.Link eventKey={x.key}>{x.title}</Nav.Link>
                             </Nav.Item>)}
                         </Nav>

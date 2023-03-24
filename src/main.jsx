@@ -43,6 +43,7 @@ import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
+import RtiAct from "./pages/saturaotryData/Rti"
 import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
@@ -87,6 +88,11 @@ const router = createBrowserRouter([
 				path: "/committees",
 				element: <CommittePage />,
 			},
+			{
+				path: "/rti",
+				element: <RtiAct />,
+			},
+			
 			{
 				path: "/exam-downloads",
 				element: <ExamDownloads />,
