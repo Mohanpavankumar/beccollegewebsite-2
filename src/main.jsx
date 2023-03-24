@@ -42,7 +42,6 @@ import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import UploadStaffImage from "./pages/UploadStaffImage";
-import ItStaff from "/src/pages/departments/staff.jsx";
 import CommittePage from "./pages/saturaotryData/committee";
 import { FacilitiesChart } from "./components/facilities/facilities";
 
@@ -184,7 +183,7 @@ const router = createBrowserRouter([
 				path: "/Acheivements",
 				element: <Acheivements />,
 			},
-			{
+	        {
 				path: "/upload/staffimage",
 				element: <UploadStaffImage />,
 			},
