@@ -83,10 +83,7 @@ const router = createBrowserRouter([
 				path: "/committees",
 				element: <CommittePage />,
 			},
-			{
-				path: "/committees",
-				element: <Rt />,
-			},
+			
 			{
 				path: "/exam-downloads",
 				element: <ExamDownloads />,
