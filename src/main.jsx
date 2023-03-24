@@ -184,6 +184,7 @@ const router = createBrowserRouter([
 				path: "/Acheivements",
 				element: <Acheivements />,
 			},
+	                {
 				path: "/upload/staffimage",
 				element: <UploadStaffImage />,
 			},
