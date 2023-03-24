@@ -43,7 +43,6 @@ import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
 import ItStaff from "/src/pages/departments/staff.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
-import ItStaff from "/src/pages/departments/staff.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
 // import { FacilitiesChart } from "./components/facilities/facilities";
