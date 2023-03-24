@@ -36,9 +36,9 @@ import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
 import ItStaff from "/src/pages/departments/staff.jsx";
-import Committee from "./pages/saturaotryData/committee"
 import UploadStaffImage from "./pages/UploadStaffImage";
-import RtiAct from "./pages/saturaotryData/Rti"
+import CommittePage from "./pages/saturaotryData/committee";
+
 // import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
@@ -81,7 +81,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/committees",
-				element: <Committee />,
+				element: <CommittePage />,
 			},
 			{
 				path: "/committees",
