@@ -35,6 +35,14 @@ import Transportation from "/src/pages/Facilities/Transportation.jsx";
 import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
+import Overview from "/src/pages/academics/academics";
+import Programme from "/src/pages/academics/programme";
+import Patents from "/src/pages/academics/patents";
+import Rules from "/src/pages/academics/rules.jsx";
+import Autonomous from "/src/pages/academics/autonomous";
+import Institution from "/src/pages/academics/institution";
+import ItStaff from "/src/pages/departments/staff.jsx";
+import UploadStaffImage from "./pages/UploadStaffImage";
 import ItStaff from "/src/pages/departments/staff.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
@@ -151,13 +159,40 @@ const router = createBrowserRouter([
 				element: <Others />,
 			},
 			{
+				path: "/Programme",
+				element: <Programme />,
+			},
+			{
+				path: "/Overview",
+				element: <Overview />,
+			},
+			{
+				path: "/Patents",
+				element: <Patents />,
+			},
+			{
+				path: "/Rules",
+				element: <Rules />,
+			},
+			{
+				path: "/Autonomous",
+				element: <Autonomous />,
+			},
+			{
+				path: "/Institution",
+				element: <Institution />,
+			},
+			{
+				path: "/Acheivements",
+				element: <Acheivements />,
+			},
 				path: "/upload/staffimage",
 				element: <UploadStaffImage />,
 			},
-			// {
-			// 	path: "/f",
-			// 	element: <FacilitiesChart />
-			// }
+			{
+			path: "/f",
+			element: <FacilitiesChart />
+			}
 		],
 	},
 ]);
