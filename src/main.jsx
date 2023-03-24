@@ -14,12 +14,12 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
-import Aicte from "/src/pages/saturaotryData/aicte.jsx"
-import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
-import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
-import IqacPage from "./pages/saturaotryData/IqacPage.jsx"
-import Nirf from "/src/pages/saturaotryData/NirfPage.jsx"
-import Acheivements from "/src/pages/academics/acheivements.jsx"
+import Aicte from "/src/pages/saturaotryData/aicte.jsx";
+import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
+import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
+import IqacPage from "./pages/saturaotryData/IqacPage.jsx";
+import Nirf from "/src/pages/saturaotryData/NirfPage.jsx";
+import Acheivements from "/src/pages/academics/acheivements.jsx";
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -41,8 +41,13 @@ import Patents from "/src/pages/academics/patents";
 import Rules from "/src/pages/academics/rules.jsx";
 import Autonomous from "/src/pages/academics/autonomous";
 import Institution from "/src/pages/academics/institution";
+import ItStaff from "/src/pages/departments/staff.jsx";
+import Imggallery from "./components/homepage/gallery/imggallery";
+import AllAlumni from "./components/homepage/alumini/all-alumni";
+import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
+import RtiAct from "./pages/saturaotryData/Rti"
 import { FacilitiesChart } from "./components/facilities/facilities";
 import ItStaff from "/src/pages/departments/staff.jsx"
 
@@ -51,7 +56,11 @@ const router = createBrowserRouter([
 		path: "/",
 		element: <Root />,
 		children: [
-			{ index: true, element: <Homepage />, exact: true },
+			{
+				index: true,
+				path: "/",
+				element: <Homepage />,
+			},
 			{
 				path: "/Placements",
 				element: <Placements />,
@@ -89,6 +98,11 @@ const router = createBrowserRouter([
 				element: <CommittePage />,
 			},
 			{
+				path: "/rti",
+				element: <RtiAct />,
+			},
+			
+			{
 				path: "/exam-downloads",
 				element: <ExamDownloads />,
 			},
@@ -103,6 +117,14 @@ const router = createBrowserRouter([
 			{
 				path: "/YearWise-Placements",
 				element: <YearWisePlacements />,
+			},
+			{
+				path: "/Imggallery",
+				element: <Imggallery />,
+			},
+			{
+				path: "/AllAlumni",
+				element: <AllAlumni />,
 			},
 			{
 				path: "/BranchWise-Placements",
@@ -157,12 +179,12 @@ const router = createBrowserRouter([
 				element: <Others />,
 			},
 			{
-				path: "/Programme",
-				element: <Programme />,
-			},
-			{
 				path: "/Overview",
 				element: <Overview />,
+			},
+			{
+				path: "/Programme",
+				element: <Programme />,
 			},
 			{
 				path: "/Patents",
@@ -181,17 +203,13 @@ const router = createBrowserRouter([
 				element: <Institution />,
 			},
 			{
-				path: "/Acheivements",
-				element: <Acheivements />,
+				path: "/NaacHomePage",
+				element: <NaacHomePage />,
 			},
-	        {
+			{
 				path: "/upload/staffimage",
 				element: <UploadStaffImage />,
 			},
-			{
-			path: "/f",
-			element: <FacilitiesChart />
-			}
 		],
 	},
 ]);
