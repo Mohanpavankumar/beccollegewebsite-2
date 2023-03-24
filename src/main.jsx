@@ -38,6 +38,7 @@ import Others from "/src/pages/Facilities/Otherfacilities.jsx";
 import ItStaff from "/src/pages/departments/staff.jsx";
 import Committee from "./pages/saturaotryData/committee"
 import UploadStaffImage from "./pages/UploadStaffImage";
+import RtiAct from "./pages/saturaotryData/Rti"
 // import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
 			{
 				path: "/committees",
 				element: <Committee />,
+			},
+			{
+				path: "/committees",
+				element: <Rt />,
 			},
 			{
 				path: "/exam-downloads",
