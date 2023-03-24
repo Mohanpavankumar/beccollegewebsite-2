@@ -105,7 +105,7 @@
 .custom-navbar .dropdown-link-item {
 	display: flex;
 	width: 100%;
-	padding: 0.25rem 1.5rem; 
+	padding: 0.25rem 1.5rem;
 	clear: both;
 	font-weight: 400;
 	color: #212529;
@@ -115,6 +115,12 @@
 	border: 0;
 }
 
+.dropdown-link-item:hover {
+	color: #0061B0 !important;
+	text-decoration: underline !important;
+}
+
+
 .cutsom-nav-item .dropdown-menu.show {
 	-moz-column-count: 2 !important;
 	-moz-column-gap: 0.5rem !important;
@@ -122,7 +128,7 @@
 	-webkit-column-gap: 0.5rem !important;
 	column-count: 2 !important;
 	column-gap: 0.5rem !important;
-	left: -135% !important; 
+	left: -135% !important;
 }
 
 .burger-badge-subnav {

@@ -15,7 +15,9 @@ const Branch = ({ label, children }, idx) => {
         <NavDropdown title={label} id={`basic-nav-dropdown-${idx}`} key={`basic-nav-dropdown-${idx}`} className={children.length > 5 && 'cutsom-nav-item'}>
             {
                 children.map(x =>
-                    <Link to={x.to} className='dropdown-link-item'>{x.label}</Link>
+                    <NavDropdown.Item className='dropdown-link-item'>
+                        <Link to={x.to} className='dropdown-link-item'>{x.label}</Link>
+                    </NavDropdown.Item>
                 )
             }
         </NavDropdown >
