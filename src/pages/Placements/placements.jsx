@@ -15,7 +15,6 @@ const PlacementsStaff = Placementsteam.map((dataArg) => {
 	return <Staff key={dataArg.staffId} item={dataArg} />;
 });
 
-
 let Placements=() =>{
 	const [data, setData] = useState([])
 
