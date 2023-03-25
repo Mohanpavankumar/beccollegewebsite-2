@@ -75,13 +75,13 @@ let Header = () => {
 						className="w-36 h-36 pr-5 md:block hidden cursor-pointer"
 						src={aicte}
 					></img>
-				</div> : <div className="flex mx-auto"><h1>{deptName}</h1></div>}
+				</div> : <div className="flex mx-auto"><h1 className="text-5xl font-extrabold">{deptName}</h1></div>}
 				{/* <img
 					className="college-logo hidden md:block md:h-20 md:-mt-4 md:mr-4 xl:h-32 xl:mr-4 xl:mt-2"
 					src={no1}
 				></img> */}
 			</header>
-			<nav className="w-full h-10 -mt-2 flex">
+			<nav className="w-full h-10 -mt-2 flex ">
 				{/* <nav className="bg-primaryColor w-full h-10 -mt-2 flex items-center"> */}
 				<Navbar deptName={deptName} deptRoute={deptRoute} />
 			</nav>

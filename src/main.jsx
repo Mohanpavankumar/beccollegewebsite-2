@@ -39,6 +39,7 @@ import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
 import ItStaff from "/src/pages/departments/staff.jsx"
 import { DeptStats } from "./pages/departments/deptstat";
+import UploadStaffImage from "./pages/departments/UploadStaffImage";
 
 
 // import Sidebar from "/src/components/Sidebar.jsx"
@@ -112,7 +113,7 @@ const router = createBrowserRouter([
 				element: <It />,
 			},
 			{
-				path: "/departments/ItStaff",
+				path: "/departments/IT/ItStaff",
 				element: <ItStaff />,
 			},
 			{
@@ -154,6 +155,10 @@ const router = createBrowserRouter([
 			{
 				path: "/departments/IT/deptstat",
 				element: <DeptStats />,
+			},
+			{
+				path: "/departments/IT/upload",
+				element: <UploadStaffImage />,
 			},
 		],
 	},
