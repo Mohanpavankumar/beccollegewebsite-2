@@ -23,7 +23,7 @@ export default function Facilities(){
 			<div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Library</div>
             <Slides />
         </div>
-        <div className="row w-full pt-3 px-24">
+        <div className="row w-full pt-3 px-25 ml-5">
             <div className="col-3">
                 <div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
                     <a className="nav-link" id="libraryhome-tab" data-toggle="pill" href="#libraryhome" role="tab" aria-controls="libraryhome" aria-selected="true">Library Home</a>
@@ -40,7 +40,7 @@ export default function Facilities(){
 						
 							<div className="tab-pane fade show in active" style={{width:"fit-content"}} id="libraryhome" role="tabpanel" aria-labelledby="libraryhome-tab">
 							{/* <div className='line w-14 h-1 mb-2' style={{background:"#0060b1"}}></div> */}
-									<div className="w-full text-lg text-justify pr-3 pt-3" >
+									<div className=" text-lg text-justify pr-5 mr-5 pt-3" >
 										<p> Acclaimed as the one of the biggest Libraries with 22,000 sq. ft. area in the State, The Central Library of BEC has been playing a vital role as Information Centre catering to the Academic and learning needs of the faculty and Students alike since inception. The facility is serving the student fraternity ranging from under graduate to Masters and ultimately aiding the Research stratum of Bapatla Engineering College.</p><br></br>
 										<p> As a jewel in the crown of BEC, The Library aims at providing premium quality learning resources in the form of Books, Journals, E-Journals, Video Courses and CDs pertinent to Curricula of diverse Engineering and Technology and of general nature to the students and Teaching Staff. The Library also supports Departmental Libraries for acquisition and maintenance of Titles throughout the academic year.</p><br></br>
 										<p>As the veritable abode of Knowledge, the Central Library of BEC houses,</p>
@@ -51,7 +51,7 @@ export default function Facilities(){
 												<li> 20 Print Journals  </li>
 										</p>
 									</div> 
-									<div className="w-full mt-3 pr-3">
+									<div className=" mt-3 pr-5 mr-5">
 											<div className="flex mt-1 pt-2"> 
 												<img src={tickmark} className="w-4 h-4 mt-1"></img>
 												<p className="ml-3  text-justify text-lg">
@@ -209,14 +209,14 @@ export default function Facilities(){
 								<div>
 									<h4 className=" mt-3 text-xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
 									<div className='line w-16 h-1' style={{background:"#0060b1"}}></div>
-									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-3"> The following subscriptions can be used from any desktop or laptop with in the campus network and through Knimbus Mobile App.</p>
-									<p className="text-justify  ml-2 my-2 text-lg pr-3"> <b className="text-xl"> Note:- </b>  IP address based access is provided for all e journals in our college campus. Hence, all the following e-Journals are directly accessible in our College Campus network systems  and no user name & password is required. In case of any difficulty in accessing these e resources, please contact the - Librarian / HOD Concerned.</p>
+									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-5 mr-5"> The following subscriptions can be used from any desktop or laptop with in the campus network and through Knimbus Mobile App.</p>
+									<p className="text-justify  ml-2 my-2 text-lg pr-5 mr-5"> <b className="text-xl"> Note:- </b>  IP address based access is provided for all e journals in our college campus. Hence, all the following e-Journals are directly accessible in our College Campus network systems  and no user name & password is required. In case of any difficulty in accessing these e resources, please contact the - Librarian / HOD Concerned.</p>
 									<h4 className=" mt-4 text-xl text-cyan-800"><b> Off Campus Access (Mobile App):</b></h4>
 									<div className='line w-16 h-1' style={{background:"#0060b1"}}></div>
-									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-3"> Off Campus access through Knimbus mobile app is provided to access all  e journals & e books subscribed by our Library. Users can access all e resources of the Library from anywhere and at any time through the mobile app. Contact the Librarian for installation of Knimbus mobile app.</p>
+									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-5 mr-5"> Off Campus access through Knimbus mobile app is provided to access all  e journals & e books subscribed by our Library. Users can access all e resources of the Library from anywhere and at any time through the mobile app. Contact the Librarian for installation of Knimbus mobile app.</p>
 
 								</div>
-								<div className="mt-3">
+								<div className="mt-3 -ml-10 mr-5 ">
 									<FacilitiesChart/>
 								</div>
 								<div className="mt-3">
@@ -238,7 +238,7 @@ export default function Facilities(){
 										
 										<h3 className="text-2xl font-bold mt-3 font-serif">NPTEL Video Courses:</h3>
 										<div className='line w-20 h-1 mb-4' style={{background:"#0060b1"}}></div> 
-										<div className=" border-black border-2 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-[36rem] overflow-y-scroll ">									
+										<div className="border-black border-2 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-[36rem] overflow-y-scroll w-[40rem]">									
 											<table className="table">
 
 												<tr className="bg-sky-600 text-center">

@@ -17,7 +17,7 @@ export default function Facilities(){
 				    <Slides3 />
 			   </div>
 
-			   <div className="row w-full pt-3 px-24">
+			   <div className="row w-full pt-3 px-25 ml-5">
                         <div className="col-3">
                             <div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="boschhome-tab" data-toggle="pill" href="#boschhome" role="tab" aria-controls="boschhome" aria-selected="true">Bosch-Rexroth Home</a>
@@ -28,7 +28,7 @@ export default function Facilities(){
                             <div className="col">
                                 <div className="tab-content" id="tabContent">
                                         <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="boschhome" role="tabpanel" aria-labelledby="boschhome-tab">
-													<div className="pr-4 ">
+													<div className="pr-5 mr-5 ">
 															<div className="flex mt-4 ">
 																	<img src={tickmark} className="w-4 h-4 mt-1"></img>
 																	<p className="text-justify text-lg ml-3"> The College, known for its quality Engineering education, innovative practices in teaching learning processes and research, took a giant leap by joining with Bosch–Rexroth to establish a centre of competence at a cost of 5 crores in industrial automation technologies, which is the first of its kind in AP. This centre is located in the research park along with Siemens Centre of Excellence and center for Robotics, which was built in a plinth area of one lakh square feet at a cost of Rs 20 crores in the college.<br></br></p>
@@ -48,7 +48,7 @@ export default function Facilities(){
 													</div>
                                         </div>  
 										<div className="tab-pane fade " id="boschfaculty" role="tabpanel" aria-labelledby="boschfaculty-tab">
-												<div className="pr-4">
+												<div className="pr-5 mr-5">
 
 														<div className="flex mt-1">
 															<img src={tickmark} className="w-4 mt-2 h-4"></img>

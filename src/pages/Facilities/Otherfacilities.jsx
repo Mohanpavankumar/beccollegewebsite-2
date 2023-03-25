@@ -13,7 +13,7 @@ export default function Facilities(){
 				<Slides7 />
 			</div>
             
-            <div className="row w-full pt-3 px-24">
+            <div className="row w-full pt-3 px-25 ml-5">
                         <div className="col-3">
                             <div className="nav flex-column nav-pills otherfacilitiesmenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="bankhome-tab" data-toggle="pill" href="#bankhome" role="tab" aria-controls="bankhome" aria-selected="true">Bank</a>
@@ -25,7 +25,7 @@ export default function Facilities(){
                             <div className="col">
                                 <div className="tab-content" id="tabContent">
                                             <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="bankhome" role="tabpanel" aria-labelledby="bankhome-tab">
-                                                <div className="mt-4">
+                                                <div className="mt-4 mr-5 pr-5">
                                                             <b className="font-serif text-3xl mt-5">Bank<br></br></b>
                                                             <div className='line w-12 h-1 mb-2' style={{background:"#0060b1"}}></div>
                                                             <div className="w-full pr-5 ">
@@ -46,7 +46,7 @@ export default function Facilities(){
                                             </div>
                                 
                                             <div className="tab-pane fade"  id="postofficehome" role="tabpanel" aria-labelledby="postofficehome-tab">
-                                                        <div className="mt-4">
+                                                        <div className="mt-4 pr-5 mr-5">
                                                                     <b className="font-serif text-3xl mt-5">Post Office<br></br></b>
                                                                     <div className='line w-14 h-1 mb-2' style={{background:"#0060b1"}}></div>
                                                                     <div className="w-full pr-5 ">
@@ -63,7 +63,7 @@ export default function Facilities(){
                                             </div>
 
                                             <div className="tab-pane fade"  id="dispensaryhome" role="tabpanel" aria-labelledby="dispensaryhome-tab">
-                                                <div className="mt-4">
+                                                <div className="mt-4 pr-5 mr-5">
                                                             <b className="font-serif text-3xl mt-5">Dispensary<br></br></b>
                                                             <div className='line w-10 h-1 mb-2' style={{background:"#0060b1"}}></div>
                                                             <div className="w-full pr-5 ">

@@ -115,7 +115,7 @@ export const navigationData = [
 				label: "ACCREDIATION/Approvals",
 			},
 			{
-				to: "#",
+				to: "/",
 				label: "Committees",
 			},
 			{
