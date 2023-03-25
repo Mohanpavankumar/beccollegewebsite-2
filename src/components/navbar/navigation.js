@@ -86,6 +86,10 @@ export const navigationData = [
 				label: "Courses Offered",
 			},
 			{
+				to: "/Acheivements",
+				label: "Academic Acheivements",
+			},
+			{
 				to: "/Patents",
 				label: "Patents ",
 			},

@@ -48,8 +48,6 @@ import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
 import RtiAct from "./pages/saturaotryData/Rti"
-import { FacilitiesChart } from "./components/facilities/facilities";
-import ItStaff from "/src/pages/departments/staff.jsx"
 
 const router = createBrowserRouter([
 	{
@@ -133,10 +131,6 @@ const router = createBrowserRouter([
 			{
 				path: "/departments/IT",
 				element: <It />,
-			},
-			{
-				path: "/departments/ItStaff",
-				element: <ItStaff />,
 			},
 			{
 				path: "/Facilities",

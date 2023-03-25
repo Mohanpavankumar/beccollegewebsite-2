@@ -57,19 +57,19 @@ let RegistrationFormComponent = () => {
             <div className="input-group-prepend">
                 <span className="input-group-text"> <i className="fa fa-id-card"></i> </span>
             </div>
-            <input type="text" class="form-control" placeholder='Please enter regdNo' name="regdNo" id="" onChange={(e)=>setRegdNo(e.target.value)} />
+            <input type="text" className="form-control py-3" placeholder='Please enter regdNo' name="regdNo" id="" onChange={(e)=>setRegdNo(e.target.value)} />
           </div> 
           <div className="form-group input-group">
             <div className="input-group-prepend">
                 <span className="input-group-text"> <i className="fa fa-user"></i> </span>
             </div>
-            <input type="text" className="form-control" placeholder='Please enter fullName' name="fullName" onChange={(e)=>setFullName(e.target.value)}/>
+            <input type="text" className="form-control py-3" placeholder='Please enter fullName' name="fullName" onChange={(e)=>setFullName(e.target.value)}/>
           </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
               <span className="input-group-text"> <i className="fa fa-envelope"></i> </span>
             </div>
-            <input type="text" className="form-control" placeholder='Please enter emailId' name="emailId" onChange={(e)=>setEmailId(e.target.value)}/>
+            <input type="text" className="form-control py-3" placeholder='Please enter emailId' name="emailId" onChange={(e)=>setEmailId(e.target.value)}/>
           </div> 
           <div className="form-group input-group">
             <div className="input-group-prepend">
@@ -78,7 +78,7 @@ let RegistrationFormComponent = () => {
             <select className="custom-select">
                 <option selected="">+91</option>
             </select>
-            <input type="text" className="form-control" placeholder='Please enter mobileNo' name="mobileNo" onChange={(e)=>setMobileNo(e.target.value)}/>
+            <input type="text" className="form-control py-3" placeholder='Please enter mobileNo' name="mobileNo" onChange={(e)=>setMobileNo(e.target.value)}/>
           </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
