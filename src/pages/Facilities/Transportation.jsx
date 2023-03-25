@@ -35,7 +35,7 @@ export default function Facilities(){
                                                 </div> 
                                                 <div>
                                                     <div className="flex mt-5 h-[28rem] facilities-background ">
-                                                                 <p className="w-1/2 ml-3 p-4">
+                                                                 <p className="w-1/2 ml-3 p-2">
                                                                     <b className="text-3xl font-serif text-sky-600">Why Travel By Bus </b>
                                                                     <div className="flex mt-1"> 
                                                                              <img src={tickBox} className="w-5 mt-3 ml-2 h-6"></img>

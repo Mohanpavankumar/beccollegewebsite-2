@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
 import {
 	createBrowserRouter,
 	RouterProvider,
@@ -10,18 +9,26 @@ import {
 	Routes,
 } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-
 import Root from "/src/routes/root.jsx";
 import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
+
 import Cse from "/src/pages/departments/CSE.jsx";
 import Aicte from "/src/pages/saturaotryData/aicte.jsx"
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
 import IqacPage from "./pages/saturaotryData/Iqac"
 import Nirf from "/src/pages/saturaotryData/Nirf.jsx"
+
+import Aicte from "/src/pages/saturaotryData/aicte.jsx";
+import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
+import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
+import IqacPage from "./pages/saturaotryData/IqacPage.jsx";
+import Nirf from "/src/pages/saturaotryData/NirfPage.jsx";
+import Acheivements from "/src/pages/academics/acheivements.jsx";
+
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -37,6 +44,7 @@ import Transportation from "/src/pages/Facilities/Transportation.jsx";
 import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
+
 import ItStaff from "/src/pages/departments/staff.jsx"
 import { DeptStats } from "./pages/departments/deptstat";
 import UploadStaffImage from "./pages/departments/UploadStaffImage";
@@ -45,13 +53,34 @@ import UploadStaffImage from "./pages/departments/UploadStaffImage";
 // import Sidebar from "/src/components/Sidebar.jsx"
 // import AboutPlacements from "/src/pages/Placements/AboutPlacements"
 
+import Overview from "/src/pages/academics/academics";
+import Programme from "/src/pages/academics/programme";
+import Patents from "/src/pages/academics/patents";
+import Rules from "/src/pages/academics/rules.jsx";
+import Autonomous from "/src/pages/academics/autonomous";
+import Institution from "/src/pages/academics/institution";
+import ItStaff from "/src/pages/departments/staff.jsx";
+import Imggallery from "./components/homepage/gallery/imggallery";
+import AllAlumni from "./components/homepage/alumini/all-alumni";
+import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
+import UploadStaffImage from "./pages/UploadStaffImage";
+import CommittePage from "./pages/saturaotryData/committee";
+import RtiAct from "./pages/saturaotryData/Rti"
+import Bos from "./pages/saturaotryData/BosPage"
+// import { FacilitiesChart } from "./components/facilities/facilities";
+import { FacilitiesChart } from "./components/facilities/facilities";
+
+
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
-		// errorElement: <ErrorPage />,
 		children: [
-			{ index: true, element: <Homepage /> },
+			{
+				index: true,
+				path: "/",
+				element: <Homepage />,
+			},
 			{
 				path: "/Placements",
 				element: <Placements />,
@@ -85,6 +114,19 @@ const router = createBrowserRouter([
 				element: <Nirf />,
 			},
 			{
+
+				path: "/committees",
+				element: <CommittePage />,
+			},
+			{
+				path: "/rti",
+				element: <RtiAct />,
+			},
+			{
+				path: "/bos",
+				element: <Bos />,
+			},
+			{
 				path: "/exam-downloads",
 				element: <ExamDownloads />,
 			},
@@ -99,6 +141,14 @@ const router = createBrowserRouter([
 			{
 				path: "/YearWise-Placements",
 				element: <YearWisePlacements />,
+			},
+			{
+				path: "/Imggallery",
+				element: <Imggallery />,
+			},
+			{
+				path: "/AllAlumni",
+				element: <AllAlumni />,
 			},
 			{
 				path: "/BranchWise-Placements",
@@ -119,6 +169,10 @@ const router = createBrowserRouter([
 			{
 				path: "/Facilities",
 				element: <Facilities />,
+			},
+			{
+				path: "/Acheivements",
+				element: <Acheivements />,
 			},
 			{
 				path: "/Library",
@@ -157,7 +211,36 @@ const router = createBrowserRouter([
 				element: <DeptStats />,
 			},
 			{
-				path: "/departments/IT/upload",
+				path: "/Overview",
+				element: <Overview />,
+			},
+			{
+				path: "/Programme",
+				element: <Programme />,
+			},
+			{
+				path: "/Patents",
+				element: <Patents />,
+			},
+			{
+				path: "/Rules",
+				element: <Rules />,
+			},
+			{
+				path: "/Autonomous",
+				element: <Autonomous />,
+			},
+			{
+				path: "/Institution",
+				element: <Institution />,
+			},
+			{
+				path: "/NaacHomePage",
+				element: <NaacHomePage />,
+			},
+			{
+				path: "/upload/staffimage",
+
 				element: <UploadStaffImage />,
 			},
 		],

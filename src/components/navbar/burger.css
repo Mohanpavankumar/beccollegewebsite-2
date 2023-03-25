@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:focus {
+    outline: 2px solid white;
+    padding: 4px;
+}
+
+.hamburger,
+.navigation {
+    /* transition: transform 0.3s 0.1s ease-in-out; */
+}
+
+.hamburger {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.hamburgeractive {
+    z-index: 999 !important;
+}
+
+.hamburger-box {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.1s 0.2s ease-in-out;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    content: "";
+    transition: transform 0.1s 0.2s ease-in-out;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    top: 10px;
+}
+
+.hamburgeractive .hamburger-inner {
+    background-color: transparent;
+}
+
+.hamburgeractive .hamburger-inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburgeractive .hamburger-inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.hamburger-navigation {
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.32);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(250px);
+    z-index: 99;
+    overflow-y: scroll;
+}
+
+.hamburger-navigationactive {
+    transform: translateX(0);
+}

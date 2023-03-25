@@ -4,8 +4,8 @@ import PostOffImg from "/src/assets/PostOffice.jpeg";
 function Slider7(){
     return(
         <>
-    <div id="default-carousel" className="relative mt-4 px-32" data-carousel="slide">
-            <div className="relative overflow-hidden md:h-[32rem] rounded-xl" >
+    <div id="default-carousel" className="relative mt-4 px-20" data-carousel="slide">
+            <div className="relative overflow-hidden md:h-[32rem] rounded-xl w-[87rem]" >
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                     <span className="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
                     <img src={BankImg} className="absolute h-[32rem] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />

@@ -1,82 +1,60 @@
-.navbar {
-	background-color: #fff;
-	height: 80px;
+.custom-navbar .nav-link {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* font-size: 1.2rem; */
-	position: sticky;
-	top: 0;
-	z-index: 999;
-}
-
-.navbar-container {
-	display: flex;
-	justify-content: space-between;
-	height: 20px;
-	z-index: 1;
-	width: 100%;
-	/* max-width: 1300px; */
-}
-
-.navbar-logo {
-	justify-self: flex-start;
-	cursor: pointer;
-
-	display: flex;
-	align-items: center;
-	margin-left: 24px;
-	font-weight: bold;
+	align-items: center !important;
 	text-decoration: none;
-}
-
-.nav-menu {
-	display: flex;
-	align-items: center;
-	list-style: none;
+	color: #0061b0 !important;
+	background: none;
+	padding: 0.5rem !important;
+	margin: 0.5rem 1rem !important;
+	width: inherit;
 	text-align: center;
-	margin-right: -22px;
+	border-radius: 5px;
 }
 
-.nav-item {
-	height: 80px;
-}
-
-.nav-links {
+.custom-navbar .nav-item {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	padding: 0.5rem 1rem;
 	height: 100%;
 }
 
-.menu-icon {
-	display: none;
+.custom-navbar .dropdown-link-item {
+	display: flex;
+	width: 100%;
+	padding: 0.25rem 1.5rem;
+	clear: both;
+	font-weight: 400;
+	color: #212529;
+	text-align: inherit;
+	white-space: nowrap;
+	background-color: transparent;
+	border: 0;
 }
 
-@media screen and (max-width: 960px) {
-	.navbar-container {
-		display: flex;
-		justify-content: space-between;
-		height: 80px;
-		z-index: 1;
-		width: 100%;
-		max-width: 1300px;
-	}
+.dropdown-link-item:hover {
+	color: #0061b0 !important;
+	text-decoration: underline !important;
+}
 
-	.menu-icon {
-		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translate(-100%, 60%);
-		font-size: 1.8rem;
-		cursor: pointer;
-	}
+.cutsom-nav-item .dropdown-menu.show {
+	-moz-column-count: 2 !important;
+	-moz-column-gap: 0.5rem !important;
+	-webkit-column-count: 2 !important;
+	-webkit-column-gap: 0.5rem !important;
+	column-count: 2 !important;
+	column-gap: 0.5rem !important;
+	left: -135% !important;
+}
 
-	.nav-menu {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
+.burger-badge-subnav {
+	border-radius: 50%;
+	display: inline-flex;
+	height: 5px;
+	min-width: 5px;
+	width: 5px;
+	background-color: #3d3df9af;
+}
+
+.news-events-tabs .nav-link {
+	width: inherit !important;
 }

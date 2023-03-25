@@ -5,6 +5,7 @@ import DigiLibImg from "/src/assets/DigitalLibrary.jpg";
 import tickmark from "/src/assets/tick-mark.png";
 import Slides from "/src/components/Carousel/Slides.jsx";
 import Arrow from "/src/assets/Arrow.png";
+import { FacilitiesChart } from "../../components/facilities/facilities";
 
 
 
@@ -52,61 +53,61 @@ export default function Facilities(){
 									</div> 
 									<div className="w-full mt-3 pr-3">
 											<div className="flex mt-1 pt-2"> 
-												<img src={tickmark} className="w-5 h-5 mt-1"></img>
+												<img src={tickmark} className="w-4 h-4 mt-1"></img>
 												<p className="ml-3  text-justify text-lg">
 														One of its kinds, BEC Central Library is fully automated with SOUL 2.0 Software; updated with latest version in 2010 and Bar-coding system facilitating easy access to students and well maintenance of library for they say “As the biggest library if it is in disorder is not as useful as a small but well-arranged one.”
 												</p>
 											</div>
 												<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1"></img>
+													<img src={tickmark} className="w-4 h-4 mt-1"></img>
 													<p className="ml-3 text-justify text-lg">
 														The library offers special services to the Students of SC & ST categories by providing Book Banks enriched with 23,477 volumes related to 4,051 Titles.
 												    </p>
 											</div>
 											<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1"></img>
+													<img src={tickmark} className="w-4 h-4 mt-1"></img>
 													<p className="ml-3 text-justify text-lg">
 														A Book Bank specially earmarked with the funds of TEQIP is provided with 1896 volumes consisting 323 Titles also supplements the needs of SC & ST Students.
 												    </p>
 											</div>
 											<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1"></img>
+													<img src={tickmark} className="w-4 h-4 mt-1"></img>
 													<p className="ml-3 text-justify text-lg">
 														Through these Book Banks each SC or ST student can borrow 12 books and a BC student can borrow 2 books. 
 													</p>
 											</div>
 											<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1"></img>
+													<img src={tickmark} className="w-4 h-4 mt-1"></img>
 													<p className="ml-3 text-justify text-lg">
 														The library added a feather to its cap by having a wing of Digital Library featuring online connectivity with DELNET, New Delhi and providing Internet facility to students with the infrastructure of 28 Computers with DVD and CD Writers. 
 													</p>
 											</div>
 												<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1 "></img>
+													<img src={tickmark} className="w-4 h-4 mt-1 "></img>
 													<p className="ml-3 text-justify text-lg">
 														To take the learning experience of students to next level BEC Library has added NPTEL Video Courses to its armour of facilities.
 													</p>
 											</div>
 												<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1"></img>
+													<img src={tickmark} className="w-4 h-4 mt-1"></img>
 													<p className="ml-3 text-justify text-lg">
 														The video library is furnished with 34” Colour T.V and DVD Player supported by a stack of 3,259 CDs.
 													</p>
 											</div>
 											<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1"></img>
+													<img src={tickmark} className="w-4 h-4 mt-1"></img>
 													<p className="ml-3 text-justify text-lg">
 														The thrust area of video library is providing NPTEL video lecturers to learners and Teaching Community effectively.
 													</p>
 											</div>
 											<div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 mt-1"></img>
+													<img src={tickmark} className="w-4 h-4 mt-1"></img>
 													<p className="ml-3 text-justify text-lg">
 														Library is providing reprographic facility to students to disseminate material quickly and cost effectively aiding better learning on campus.
 													</p>
 											</div>
 										    <div className="flex mt-1 pt-2" > 
-													<img src={tickmark} className="w-5 h-5 "></img>
+													<img src={tickmark} className="w-4 h-4 "></img>
 													<p className="ml-3 text-justify text-lg">
 														The photo copying is provided at 50 paise per copy with latest reprographic machine
 													</p>
@@ -120,13 +121,13 @@ export default function Facilities(){
 												<div className='line w-20 h-1 mb-5' style={{background:"#0060b1"}}></div>
 								                <p className="text-justify text-lg ">BEC Central Library is fully automated with SOUL 2.0 Software; updated with latest version in 2010 and Bar-coding system facilitating easy access to students and well maintenance of library for they say “As the biggest library if it is in disorder is not as useful as a small but well-arranged one.” </p>
 								            </div>
-								            <div className="w-[45rem] ml-2 px-3">
-							                    <img src={DigiLibImg} className="h-[25rem] ml-2 w-full border-2 rounded-lg" ></img>
+								            <div className="w-[34rem] ml-2 mt-3 px-3">
+							                    <img src={DigiLibImg} className="h-[20rem] ml-2 w-full border-2 rounded-lg" ></img>
 							                </div>
 										</div>
 							</div>
 							<div className="tab-pane fade px-5" id="E-library" role="tabpanel" aria-labelledby="E-library-tab">
-									<div className=" w-10/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-3"> 
+									<div className=" w-11/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-3 "> 
 												<h4 className="font-serif font-semibold text-xl px-3 mt-3"> IEEE-ASP:</h4>
 												<div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 												<p className="justify-center text-lg ml-5 ">All Society Periodicals on Computer Engineering + Computer Science + Electrical & Electronics Engineering + Telecommunications & related disciplines</p>
@@ -141,7 +142,7 @@ export default function Facilities(){
 													 <a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 												</div>
 			                        </div>
-									<div className=" w-10/12 h-60 tems-center facilities-background border-2 border-black rounded-md mt-4"> 
+									<div className=" w-11/12 h-60 tems-center facilities-background border-2 border-black rounded-md mt-4"> 
 								                    <h4 className="font-serif font-semibold text-xl px-3 mt-3"> ASME:</h4>
 													<div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 							                        <p className="justify-center text-lg ml-5">American Society of Mechanical Engineers for Mechanical Engineering Journals</p>
@@ -156,7 +157,7 @@ export default function Facilities(){
 													   <a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 												    </div>
                      				</div>
-									<div className=" w-10/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-4"> 
+									<div className=" w-11/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-4"> 
 					                            <h4 className="font-serif font-semibold text-xl px-3 mt-3">ASCE:</h4>
 												<div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 					                            <p className="justify-center text-lg ml-5">American Society of Civil Engineers for Civil Engineering Journals</p>
@@ -171,7 +172,7 @@ export default function Facilities(){
 													   <a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 												</div>  
                     				</div>
-									<div className=" w-10/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-4"> 
+									<div className=" w-11/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-4"> 
 		                                    <h4 className="font-serif font-semibold text-xl px-3 mt-3 "> Springer Nature e-Journals</h4>
 											<div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 		                             		<p className="justify-center text-lg ml-5">Engineering, Computer Science, Mathematics & Statistics, Physics & Chemistry</p>
@@ -186,7 +187,7 @@ export default function Facilities(){
 													   <a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 											</div>  
                                     </div>
-									<div className=" w-10/12 h-60 facilities-background items-center border-2 border-black rounded-md mt-4"> 
+									<div className=" w-11/12 h-60 facilities-background items-center border-2 border-black rounded-md mt-4"> 
 			                             <h4 className="font-serif font-semibold text-xl px-3 mt-3">DELNET Digital Library:</h4>
 										 <div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 			                             <p className="justify-center text-lg px-5">
@@ -198,28 +199,38 @@ export default function Facilities(){
 										    (New Discovery Portal) 
 										 </p> 
 			                        </div>
-									<div className="w-10/12 h-60 items-center facilities-background  border-2 border-black rounded-md mt-4"> 
+									<div className="w-11/12 h-60 items-center facilities-background  border-2 border-black rounded-md mt-4"> 
 					                     <h4 className="font-serif font-semibold text-xl px-3 mt-3">Library Catalogue - OPAC (Online Public Access Catalogue):</h4>
 										 <div className='line w-14 h-1 ml-3 mb-3' style={{background:"#0060b1"}}></div> 
 					                   	 <p className="justify-center text-lg ml-5 mt-4 mr-2">OPAC is an online database of complete details of Books available with the Library. Users may access the OPAC in our Library to search for Books by Author or by Title or by Subject etc... to locate the required Books.</p>  
 				                    </div>
 							</div>
-							<div className="tab-pane fade md:ml-28 xl:ml-0" id="E-books" role="tabpanel" aria-labelledby="E-books-tab">
+							<div className="tab-pane fade " id="E-books" role="tabpanel" aria-labelledby="E-books-tab">
 								<div>
-									<h4 className="ml-3 mt-3 text-2xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
-									<div className='line w-16 h-1 ml-3' style={{background:"#0060b1"}}></div>
-									<p className="text-justify mt-4 ml-4 my-2 text-lg pr-3"> The following subscriptions can be used from any desktop or laptop with in the campus network and through Knimbus Mobile App.</p>
-									<p className="text-justify  ml-4 my-2 text-lg pr-3"> <b className="text-xl"> Note:- </b>  IP address based access is provided for all e journals in our college campus. Hence, all the following e-Journals are directly accessible in our College Campus network systems  and no user name & password is required. In case of any difficulty in accessing these e resources, please contact the - Librarian / HOD Concerned.</p>
-									<h4 className="ml-3 mt-4 text-2xl text-cyan-800"><b> Off Campus Access (Mobile App):</b></h4>
-									<div className='line w-16 h-1 ml-3 ' style={{background:"#0060b1"}}></div>
-									<p className="text-justify mt-4 ml-4 my-2 text-lg pr-3"> Off Campus access through Knimbus mobile app is provided to access all  e journals & e books subscribed by our Library. Users can access all e resources of the Library from anywhere and at any time through the mobile app. Contact the Librarian for installation of Knimbus mobile app.</p>
+									<h4 className=" mt-3 text-xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
+									<div className='line w-16 h-1' style={{background:"#0060b1"}}></div>
+									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-3"> The following subscriptions can be used from any desktop or laptop with in the campus network and through Knimbus Mobile App.</p>
+									<p className="text-justify  ml-2 my-2 text-lg pr-3"> <b className="text-xl"> Note:- </b>  IP address based access is provided for all e journals in our college campus. Hence, all the following e-Journals are directly accessible in our College Campus network systems  and no user name & password is required. In case of any difficulty in accessing these e resources, please contact the - Librarian / HOD Concerned.</p>
+									<h4 className=" mt-4 text-xl text-cyan-800"><b> Off Campus Access (Mobile App):</b></h4>
+									<div className='line w-16 h-1' style={{background:"#0060b1"}}></div>
+									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-3"> Off Campus access through Knimbus mobile app is provided to access all  e journals & e books subscribed by our Library. Users can access all e resources of the Library from anywhere and at any time through the mobile app. Contact the Librarian for installation of Knimbus mobile app.</p>
+
 								</div>
-								
+								<div className="mt-3">
+									<FacilitiesChart/>
+								</div>
+								<div className="mt-3">
+									<p className="text-lg">Based on AICTE Model Curriculum, AICTE suggested Indian Authored books in the following link:</p>
+									<div className="flex mt-1">
+									    <img src={Arrow} className=" w-6 h-6 mt-1"></img>
+										<a href="https://www.aicte-india.org/sites/default/files/list-suggested-books-indian-authors-publishers.pdf" className="text-lg text-blue-900 ml-2 underline"><i> AICTE Recommended List of Books by Indian Authors/Publishers</i></a>
+									</div>
+								</div>
 							</div>
 							<div className="tab-pane fade " id="librarystaff" role="tabpanel" aria-labelledby="librarystaff-tab">
-								   <h3 className="font-semibold font-serif text-2xl mt-3">Staff Members</h3>
+								   <h3 className="font-semibold font-serif text-2xl mt-3">Staff Members:</h3>
 								   <div className='line w-14 h-1' style={{background:"#0060b1"}}></div>
-									<div className="mt-3 p-3 ">
+									<div >
 				               				<div className="staff-container grid grid-flow-row justify-center gap-4 mt-3 mb-5 md:grid-cols-1 md:ml-32 md:justify-items-center lg:grid-cols-1 xl:ml-0 xl:grid-cols-2 2xl:grid-cols-3">{Library}</div>
 									</div>
 							</div>
@@ -354,25 +365,26 @@ export default function Facilities(){
 													<td>01</td>
 													<td>40</td>
 												</tr>
-
 												<tr className="text-center text-blue-800">
-													<td> </td>
-													<td><b>Total:</b></td>
-													<td><b>236</b></td>
-													<td><b>9173</b></td>	
+														<td> </td>
+														<td><b>Total :</b></td>
+														<td><b>236</b></td>
+														<td><b>9173</b></td>	
 												</tr>
+												
 											</table>
 											
 										</div>
-										<div className="flex mt-4">
-			                              <img src={Arrow} className=" w-5 h-5 mt-1"></img>
-							              <p className="text-lg ml-2 font-semibold"> NPTEL URL:</p>
-										  <a href="https://nptel.ac.in/ " className="text-lg text-blue-900 ml-3"> https://nptel.ac.in </a>
+									    <div className="flex mt-4">
+															<img src={Arrow} className=" w-5 h-5 mt-1"></img>
+															<p className="text-lg ml-2 font-semibold"> NPTEL URL:</p>
+															<a href="https://nptel.ac.in/ " className="text-lg text-blue-900 ml-3 underline "> https://nptel.ac.in </a>
 										</div>
 										<div className="flex mt-2">
-										 <img src={Arrow} className=" w-5 h-5 mt-1"></img>
-							              <p className="text-lg ml-2 font-semibold">Swayam URL:</p>
-										  <a href="https://swayam.gov.in/" className="text-lg text-blue-900 ml-3"> https://swayam.gov.in</a>
+														<img src={Arrow} className=" w-5 h-5 mt-1"></img>
+
+														<p className="text-lg ml-2 font-semibold">Swayam URL:</p>
+														<a href="https://swayam.gov.in/" className="text-lg text-blue-900 ml-3 underline"> https://swayam.gov.in</a>
 										</div>
 							</div>
 
