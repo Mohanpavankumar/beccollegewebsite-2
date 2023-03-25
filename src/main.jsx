@@ -14,21 +14,12 @@ import Homepage from "/src/pages/homepage.jsx";
 import ExaminationCell from "/src/pages/examsResults/examination.jsx";
 import ExamNotifs from "/src/pages/examsResults/examsNotifs.jsx";
 import It from "/src/pages/departments/IT.jsx";
-
-import Cse from "/src/pages/departments/CSE.jsx";
-import Aicte from "/src/pages/saturaotryData/aicte.jsx"
-import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx"
-import NaacPage from "/src/pages/saturaotryData/Naac.jsx"
-import IqacPage from "./pages/saturaotryData/Iqac"
-import Nirf from "/src/pages/saturaotryData/Nirf.jsx"
-
 import Aicte from "/src/pages/saturaotryData/aicte.jsx";
 import NaacHome from "/src/pages/saturaotryData/naacHomepage.jsx";
 import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
 import IqacPage from "./pages/saturaotryData/IqacPage.jsx";
 import Nirf from "/src/pages/saturaotryData/NirfPage.jsx";
 import Acheivements from "/src/pages/academics/acheivements.jsx";
-
 import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
@@ -44,15 +35,6 @@ import Transportation from "/src/pages/Facilities/Transportation.jsx";
 import Hostels from "/src/pages/Facilities/Hostel.jsx";
 import Sports from "/src/pages/Facilities/Sports.jsx";
 import Others from "/src/pages/Facilities/Otherfacilities.jsx";
-
-import ItStaff from "/src/pages/departments/staff.jsx"
-import { DeptStats } from "./pages/departments/deptstat";
-import UploadStaffImage from "./pages/departments/UploadStaffImage";
-
-
-// import Sidebar from "/src/components/Sidebar.jsx"
-// import AboutPlacements from "/src/pages/Placements/AboutPlacements"
-
 import Overview from "/src/pages/academics/academics";
 import Programme from "/src/pages/academics/programme";
 import Patents from "/src/pages/academics/patents";
@@ -69,7 +51,6 @@ import RtiAct from "./pages/saturaotryData/Rti"
 import Bos from "./pages/saturaotryData/BosPage"
 // import { FacilitiesChart } from "./components/facilities/facilities";
 import { FacilitiesChart } from "./components/facilities/facilities";
-
 
 const router = createBrowserRouter([
 	{
@@ -114,7 +95,6 @@ const router = createBrowserRouter([
 				element: <Nirf />,
 			},
 			{
-
 				path: "/committees",
 				element: <CommittePage />,
 			},
@@ -159,14 +139,6 @@ const router = createBrowserRouter([
 				element: <It />,
 			},
 			{
-				path: "/departments/CSE",
-				element: <It />,
-			},
-			{
-				path: "/departments/IT/ItStaff",
-				element: <ItStaff />,
-			},
-			{
 				path: "/Facilities",
 				element: <Facilities />,
 			},
@@ -207,10 +179,6 @@ const router = createBrowserRouter([
 				element: <Others />,
 			},
 			{
-				path: "/departments/IT/deptstat",
-				element: <DeptStats />,
-			},
-			{
 				path: "/Overview",
 				element: <Overview />,
 			},
@@ -240,7 +208,6 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/upload/staffimage",
-
 				element: <UploadStaffImage />,
 			},
 		],
