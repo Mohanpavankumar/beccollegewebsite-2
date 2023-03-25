@@ -7,7 +7,7 @@ import { iqacDisplayData, iqacNavigation } from '../../Data/SaturatoryData/iqacD
 
 const IqacPage = (props) => {
     return (
-        <div className='flex  justify-center flex-col py-3 overflow-x-hidden mt-2'>
+        <div className='flex  justify-center flex-col py-3 mt-2'>
             <div className='text-center  py-3 w-screen'>
                 <h1 className='bg-indigo-500 text-slate-50 py-3'>IQAC DETAILS</h1>
             </div>
