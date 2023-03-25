@@ -34,7 +34,7 @@ let Placements=() =>{
 		<>
 			<div
 				id="default-carousel"
-				className="relative mt-10"
+				className="relative"
 				data-carousel="slide"
 			>
 				<div className="relative h-40 overflow-hidden md:h-96">
