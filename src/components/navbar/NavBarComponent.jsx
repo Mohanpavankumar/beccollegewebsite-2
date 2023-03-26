@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { navigationData } from './navigation';
-import { NavBarList } from './navBarList';
+import { NavBarList } from '/src/components/navbar/NavBarList.jsx';
 
 export const NavBarComponent = () => {
     return (

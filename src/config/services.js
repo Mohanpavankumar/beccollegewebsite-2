@@ -23,20 +23,6 @@ export const getDepartmentsData = () => {
 }
 
 export const registerPlacementData = (data) => {
-
-    return AxiosInstance.post('/placementRegistration', data);
-}
-
-export const getDepartmentsGraphData = (data) => {
-    return AxiosInstance.get('/getdeptGraphData');
-}
-export const uploadImage = (data) => {
-    return AxiosInstance.post('/uploadStaffImage', data);
-}
-export const getStaffImage = () => {
-    return AxiosInstance.get('/getStaffImgage')
-}
-
     return AxiosInstance.post('/placementRegistration',data);
 }
 
@@ -45,9 +31,8 @@ export const uploadImage = (data) => {
 }
 
 export const getStaffImage = () => {
-    return AxiosInstance.get('/getStaffImgage')
+    return AxiosInstance.get('/getStaffImgage');
 }
 export const getFacilitiesChartData = () => {
     return AxiosInstance.get('/getLibraryGraphData');
 }
-

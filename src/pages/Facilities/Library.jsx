@@ -236,7 +236,7 @@ export default function Facilities(){
 							</div>
 							<div className="tab-pane fade " id="nptel" role="tabpanel" aria-labelledby="nptel-tab">
 										
-										<h3 className="text-2xl font-bold mt-3 font-serif">NPTEL Video Courses:</h3>
+							<h3 className="text-2xl font-bold mt-3 font-serif">NPTEL Video Courses:</h3>
 										<div className='line w-20 h-1 mb-4' style={{background:"#0060b1"}}></div> 
 										<div className=" border-black border-2 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-[36rem] overflow-y-scroll ">									
 											<table className="table">
@@ -373,6 +373,7 @@ export default function Facilities(){
 												</tr>
 												
 											</table>
+											
 											
 										</div>
 									    <div className="flex mt-4">
