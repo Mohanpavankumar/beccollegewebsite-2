@@ -26,12 +26,11 @@ export const registerPlacementData = (data) => {
     return AxiosInstance.post('/placementRegistration',data);
 }
 
-<<<<<<< HEAD
+
 export const getDepartmentsGraphData = () => {
     return AxiosInstance.get('/getdeptGraphData');
 }
-=======
->>>>>>> bab10fe347d17cfe745975edebd1a72c567f3c91
+
 export const uploadImage = (data) => {
     return AxiosInstance.post('/uploadStaffImage', data);
 }
