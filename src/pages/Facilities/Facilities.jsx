@@ -17,7 +17,7 @@ export default function Facilities()
 					<div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center"> Central Facilities</div>
 				</div>
 				<div className="my-5 flex flex-wrap px-5">
-										  	<div className="w-[27rem] h-[28rem] mx-4 shadow-2xl shadow-black hover:scale-105 "> 
+										  	<div className="w-[27rem] h-[28rem] mx-3 shadow-2xl shadow-black hover:scale-105 "> 
 												  <img src={LibImg} className=" w-[30rem] h-[21rem] rounded-t-2xl "></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center font-serif font-semibold">Library</h3>
@@ -29,7 +29,7 @@ export default function Facilities()
 												  </div>
 										 	</div>
 
-										    <div className="w-[27rem] h-[28rem] mx-4 shadow-2xl shadow-black  hover:scale-105"> 
+										    <div className="w-[27rem] h-[28rem] mx-3 shadow-2xl shadow-black  hover:scale-105"> 
 											     <img src={RoboImg} className="w-[30rem] h-[21rem]  rounded-t-2xl "></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center  font-serif font-semibold">Robotic Centre</h3>
@@ -41,7 +41,7 @@ export default function Facilities()
 												  </div>
 											</div>
 
-											<div className="w-[27rem] h-[28rem] mx-4 shadow-2xl shadow-black  hover:scale-105 "> 
+											<div className="w-[27rem] h-[28rem] mx-3 shadow-2xl shadow-black  hover:scale-105 "> 
 											     <img src={BoschImg} className="w-[30rem] h-[21rem]  rounded-t-2xl"></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center font-serif font-semibold">Bosch-Rexroth COE</h3>
@@ -53,7 +53,7 @@ export default function Facilities()
 												  </div>
 											</div>
 
-											<div className="w-[27rem] mt-5 h-[28rem] mx-4 shadow-2xl shadow-black  hover:scale-105"> 
+											<div className="w-[27rem] mt-5 h-[28rem] mx-3 shadow-2xl shadow-black  hover:scale-105"> 
 												 <img src={CafteriaImg} className="w-[30rem] h-[21rem] rounded-t-2xl"></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center font-serif font-semibold">Cafteria</h3>
@@ -65,7 +65,7 @@ export default function Facilities()
 												  </div>
 											</div>
 
-											<div className="w-[27rem] mt-5 h-[28rem] mx-4  shadow-2xl shadow-black hover:scale-105 "> 
+											<div className="w-[27rem] mt-5 h-[28rem] mx-3  shadow-2xl shadow-black hover:scale-105 "> 
 												<img src={TransportImg} className="w-[30rem] h-[21rem] rounded-t-2xl"></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center font-serif font-semibold">Transportation</h3>
@@ -77,7 +77,7 @@ export default function Facilities()
 												  </div>
 											</div>
 
-											<div className="w-[27rem] mt-5 h-[28rem] mx-4  shadow-2xl shadow-black hover:scale-105"> 
+											<div className="w-[27rem] mt-5 h-[28rem] mx-3  shadow-2xl shadow-black hover:scale-105"> 
 												  <img src={HostelImg} className="w-[30rem] h-[21rem] rounded-t-2xl"></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center font-serif font-semibold">Hostels</h3>
@@ -89,7 +89,7 @@ export default function Facilities()
 												  </div>
 											</div>
 
-											<div className="w-[27rem] mt-5 h-[28rem] mx-4 shadow-2xl shadow-black hover:scale-105"> 
+											<div className="w-[27rem] mt-5 h-[28rem] mx-3 shadow-2xl shadow-black hover:scale-105"> 
 												  <img src={sports} className="w-[30rem] h-[21rem] rounded-t-2xl"></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center font-serif font-semibold">Physical Education</h3>
@@ -101,7 +101,7 @@ export default function Facilities()
 												  </div>
 											</div>
 											
-											<div className="w-[27rem] mt-5 h-[28rem] mx-4 shadow-2xl shadow-black hover:scale-105"> 
+											<div className="w-[27rem] mt-5 h-[28rem] mx-3 shadow-2xl shadow-black hover:scale-105"> 
 											     <img src={Others} className="w-[30rem] h-[21rem] rounded-t-2xl"></img>
 												  <div className="w-[27rem] h-[3rem]">
 													  <h3 className="text-3xl flex justify-center mt-3 items-center font-serif font-semibold">Other Campus Amenities</h3>

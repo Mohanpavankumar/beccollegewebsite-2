@@ -15,6 +15,7 @@ const Library = LibraryStaff.map((dataArg) => {
 	return <Staff key={dataArg.staffId} item={dataArg} />;
 });
 
+
 export default function Facilities() {
 
 	return (
@@ -113,6 +114,8 @@ export default function Facilities() {
 									</div>
 								</div>
 							</div>
+
+
 							<div className="tab-pane fade " id="digitallibrary" role="tabpanel" aria-labelledby="digitallibrary-tab">
 								<div className="w-[70rem] flex mt-1">
 									<div className="w-[30rem] h-96 mt-6">
@@ -207,6 +210,7 @@ export default function Facilities() {
 							<div className="tab-pane fade " id="E-books" role="tabpanel" aria-labelledby="E-books-tab">
 								<div>
 									<h4 className=" mt-3 text-xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
+
 									<div className='line w-16 h-1' style={{ background: "#0060b1" }}></div>
 									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-3"> The following subscriptions can be used from any desktop or laptop with in the campus network and through Knimbus Mobile App.</p>
 									<p className="text-justify  ml-2 my-2 text-lg pr-3"> <b className="text-xl"> Note:- </b>  IP address based access is provided for all e journals in our college campus. Hence, all the following e-Journals are directly accessible in our College Campus network systems  and no user name & password is required. In case of any difficulty in accessing these e resources, please contact the - Librarian / HOD Concerned.</p>
@@ -217,6 +221,7 @@ export default function Facilities() {
 								</div>
 								<div className="mt-3">
 									<FacilitiesChart />
+								
 								</div>
 								<div className="mt-3">
 									<p className="text-lg">Based on AICTE Model Curriculum, AICTE suggested Indian Authored books in the following link:</p>
@@ -234,6 +239,7 @@ export default function Facilities() {
 								</div>
 							</div>
 							<div className="tab-pane fade " id="nptel" role="tabpanel" aria-labelledby="nptel-tab">
+
 								<h3 className="text-2xl font-bold mt-3 font-serif">NPTEL Video Courses:</h3>
 								<div className='line w-20 h-1 mb-4' style={{ background: "#0060b1" }}></div>
 								<div className="border-black border-2">

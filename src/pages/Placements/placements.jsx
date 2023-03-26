@@ -218,7 +218,7 @@ let Placements=() =>{
 				{data.map(c =>
 				<div>
 					{c.placementNotifications.map(x=>
-					<a href={DeltaX}  target='_blank' rel='noopener noreferrer'><li>{x.title}</li></a>
+					<a href={DeltaX}  target='_blank' className=' text-lg' rel='noopener noreferrer'><li>{x.title}</li></a>
 					)}
 				</div>
 				)}
