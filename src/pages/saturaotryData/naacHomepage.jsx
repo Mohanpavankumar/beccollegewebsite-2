@@ -5,7 +5,7 @@ import HeroSection from "../../components/saturatoryDataComponents/HeroSection"
 
 function Services(){
     return(
-        <div className='flex items-center justify-center flex-col py-3 overflow-x-hidden'>
+        <div className='flex items-center justify-center flex-col py-3'>
         <div className='text-center  py-4 w-screen'>
                     <h1 className='bg-indigo-500 text-slate-50 py-3'>Accreditations/Approvals</h1>
                     </div>

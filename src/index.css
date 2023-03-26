@@ -6,46 +6,27 @@
 	box-shadow: inset 0 8px 10px rgb(0 0 0 / 30%);
 }
 
-.triangle-right {
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-left: 20px solid #3ac2c2;
-	border-bottom: 10px solid transparent;
+/* scrollbar */
+#listgroup-scroll::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #f5f5f5;
 }
 
-.triangle-right-2 {
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-left: 20px solid white;
-	border-bottom: 10px solid transparent;
+#listgroup-scroll::-webkit-scrollbar {
+	width: 12px;
+	background-color: #f5f5f5;
 }
 
-.triangle-left {
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-right: 20px solid white;
-	border-bottom: 10px solid transparent;
+#listgroup-scroll::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #0061b0;
 }
 
-.triangle-left-2 {
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-right: 20px solid #3ac2c2;
-	border-bottom: 10px solid transparent;
+body {
+	overflow: hidden;
 }
-
-fieldset.scheduler-border {
-	/* border: 3px groove #0061b0 !important; */
-	/* padding: 0 1.4em 1.4em 1.4em !important; */
-	/* margin: 0 0 1.5em 0 !important; */
-	/* -webkit-box-shadow: 0px 0px 0px 0px #000; */
-	/* box-shadow: 0px 0px 0px 0px #000; */
-}
-
 legend.scheduler-border {
 	/* font-size: 1.2em !important;
 	font-weight: bold !important; */
@@ -57,6 +38,32 @@ legend.scheduler-border {
 	/* border-bottom: none; */
 }
 
-.deptStats .apexcharts-canvas {
-	width: 700px !important;
+.list-container {
+	width: 50%;
+	margin-left: 15rem !important;
+	padding: 0 5rem 5rem 5rem !important;
+	border-radius: 1rem !important;
+}
+
+.c-pointer {
+	cursor: pointer;
+}
+
+/* scroll bar  */
+
+#naaclist-sroll::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #f5f5f5;
+}
+
+#naaclist-sroll::-webkit-scrollbar {
+	width: 5px;
+	background-color: #f5f5f5;
+}
+
+#naaclist-sroll::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 6px rgba(159, 157, 157, 0.3);
+	background-color: #9c9a9a;
 }

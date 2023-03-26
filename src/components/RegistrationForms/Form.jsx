@@ -6,10 +6,10 @@ let RegistrationFormComponent = () => {
     const [fullName, setFullName] = useState("")
     const [emailId, setEmailId] = useState("")
     const [mobileNo, setMobileNo] = useState("")
-    const [department, setDepartment] = useState("Information Technology")
-    const [eventName, setEventName] = useState("Event Name")
-    const [year, setYear] = useState("IV")
-    const [gender, setGender] = useState("Male")
+    const [department, setDepartment] = useState("")
+    const [eventName, setEventName] = useState("")
+    const [year, setYear] = useState("")
+    const [gender, setGender] = useState("")
   
     const handleSubmit =()=>{
       let data = {
@@ -23,36 +23,53 @@ let RegistrationFormComponent = () => {
           "gender":gender
       }
       registerPlacementData(data).then(res =>
-          alert("Submitted Succesfully")
+        {alert("Submitted Succesfully")
+          setRegdNo("")
+          setFullName("")
+          setEmailId("")
+          setMobileNo("")
+          setDepartment("")
+          setEventName("")
+          setYear("")
+          setGender("")
+        }
           
     ).catch(err=>
       {
           alert("Something went wrong please check logs")
-          console.log(err)
+          // console.log(err)
+          setRegdNo("")
+          setFullName("")
+          setEmailId("")
+          setMobileNo("")
+          setDepartment("")
+          setEventName("")
+          setYear("")
+          setGender("")
       }
       )}
   return (
     <>
     <div className="registrationform overflow-x-hidden overflow-y-auto border-2 mt-2 h-72">
       <div className="card-body mx-auto ml-auto" style={{width: "500px"}}>	
-        <form action="" method="post">
+        <div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
                 <span className="input-group-text"> <i className="fa fa-id-card"></i> </span>
             </div>
-            <input type="text" class="form-control" placeholder='Please enter regdNo' name="regdNo" id="" onChange={(e)=>setRegdNo(e.target.value)} />
+            <input type="text" className="form-control py-3" placeholder='Please enter regdNo' name="regdNo" id="" onChange={(e)=>setRegdNo(e.target.value)} />
           </div> 
           <div className="form-group input-group">
             <div className="input-group-prepend">
                 <span className="input-group-text"> <i className="fa fa-user"></i> </span>
             </div>
-            <input type="text" className="form-control" placeholder='Please enter fullName' name="fullName" onChange={(e)=>setFullName(e.target.value)}/>
+            <input type="text" className="form-control py-3" placeholder='Please enter fullName' name="fullName" onChange={(e)=>setFullName(e.target.value)}/>
           </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
               <span className="input-group-text"> <i className="fa fa-envelope"></i> </span>
             </div>
-            <input type="text" className="form-control" placeholder='Please enter emailId' name="emailId" onChange={(e)=>setEmailId(e.target.value)}/>
+            <input type="text" className="form-control py-3" placeholder='Please enter emailId' name="emailId" onChange={(e)=>setEmailId(e.target.value)}/>
           </div> 
           <div className="form-group input-group">
             <div className="input-group-prepend">
@@ -61,7 +78,7 @@ let RegistrationFormComponent = () => {
             <select className="custom-select">
                 <option selected="">+91</option>
             </select>
-            <input type="text" className="form-control" placeholder='Please enter mobileNo' name="mobileNo" onChange={(e)=>setMobileNo(e.target.value)}/>
+            <input type="text" className="form-control py-3" placeholder='Please enter mobileNo' name="mobileNo" onChange={(e)=>setMobileNo(e.target.value)}/>
           </div>
           <div className="form-group input-group">
             <div className="input-group-prepend">
@@ -86,6 +103,7 @@ let RegistrationFormComponent = () => {
           </div>
           <select className="form-control" name="eventName" onChange={(e)=>setEventName(e.target.value)}>
             <option>Event Name</option>
+            <option>Campus Recruitement Training</option>
           </select>
         </div>
           <div className="form-group input-group">
@@ -93,7 +111,7 @@ let RegistrationFormComponent = () => {
               <span className="input-group-text"> <i className="fa fa-calendar"></i> </span>
           </div>
           <select className="form-control" name="year" onChange={(e)=>setYear(e.target.value)}>
-            <option selected=""> Select year</option>
+            <option selected="">Select year</option>
             <option>I</option>
             <option>II</option>
             <option>III</option>
@@ -111,9 +129,9 @@ let RegistrationFormComponent = () => {
           </select>
         </div>       
           <div className="form-group">
-              <button type="submit" onClick={handleSubmit} className="btn bg-primaryColor text-white btn-block">Submit</button>
+              <button onClick={handleSubmit} className="btn bg-primaryColor text-white btn-block">Submit</button>
           </div>                                               
-      </form>
+      </div>
       </div>
 </div> 
     </>
