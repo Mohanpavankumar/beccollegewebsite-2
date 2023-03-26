@@ -132,19 +132,31 @@ export const navigationData = [
 			},
 		],
 	},
-	// {
-	// 	label: "Exams & Results",
-	// 	children: [
-	// 		{
-	// 			to: "/departments/IT",
-	// 			label: "Examination Cell",
-	// 		},
-	// 		{
-	// 			to: "http://www.ebay.com",
-	// 			label: "Bank",
-	// 		},
-	// 	],
-	// },
+	{
+		label: "Exams and Results",
+		children: [
+			{
+				to: "/examination-cell",
+				label: "Examination Cell",
+			},
+			{
+				to: "/exam-notifications",
+				label: "Exam notifications",
+			},
+			{
+				to: "/exam-downloads",
+				label: "Exam downloads",
+			},
+			{
+				to: "/exam-login",
+				label: "Exam Login",
+			},
+			{
+				to: "/exam-results",
+				label: "Exam Results",
+			},
+		],
+	},
 	{
 		label: "Placements",
 		to: "/Placements",

@@ -47,9 +47,8 @@ import AllAlumni from "./components/homepage/alumini/all-alumni";
 import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
-import RtiAct from "./pages/saturaotryData/Rti"
-import Bos from "./pages/saturaotryData/BosPage"
-// import { FacilitiesChart } from "./components/facilities/facilities";
+import RtiAct from "./pages/saturaotryData/Rti";
+import Bos from "./pages/saturaotryData/BosPage";
 import { FacilitiesChart } from "./components/facilities/facilities";
 
 const router = createBrowserRouter([
@@ -73,6 +72,18 @@ const router = createBrowserRouter([
 			{
 				path: "/exam-notifications",
 				element: <ExamNotifs />,
+			},
+			{
+				path: "/exam-downloads",
+				element: <ExamDownloads />,
+			},
+			{
+				path: "/exam-login",
+				element: <ExamLogin />,
+			},
+			{
+				path: "/exam-results",
+				element: <ExamResults />,
 			},
 			{
 				path: "/naac",
@@ -105,18 +116,6 @@ const router = createBrowserRouter([
 			{
 				path: "/bos",
 				element: <Bos />,
-			},
-			{
-				path: "/exam-downloads",
-				element: <ExamDownloads />,
-			},
-			{
-				path: "/exam-login",
-				element: <ExamLogin />,
-			},
-			{
-				path: "/exam-results",
-				element: <ExamResults />,
 			},
 			{
 				path: "/YearWise-Placements",

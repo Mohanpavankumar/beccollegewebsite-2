@@ -1,10 +1,42 @@
 import ExamHeader from "/src/components/examheader/examheader.jsx";
-import Logo from "/src/assets/logo.png";
 
 export default function ExamLogin() {
 	return (
 		<>
 			<ExamHeader bannerName="Results" />
+			{/* a form which can take requests from the user to check results */}
+			{/* <form onSubmit={handleSubmit}>
+				<label>
+					Name:
+					<input
+						type="text"
+						name="name"
+						value={formData.name}
+						onChange={handleChange}
+					/>
+				</label>
+				<br />
+				<label>
+					Email:
+					<input
+						type="email"
+						name="email"
+						value={formData.email}
+						onChange={handleChange}
+					/>
+				</label>
+				<br />
+				<label>
+					Message:
+					<textarea
+						name="message"
+						value={formData.message}
+						onChange={handleChange}
+					/>
+				</label>
+				<br />
+				<button type="submit">Submit</button>
+			</form> */}
 			<div className="text-center text-2xl">Login to check results</div>
 			<div className="flex justify-around ">
 				<img className="hidden w-64 md:block" src={Logo} />
