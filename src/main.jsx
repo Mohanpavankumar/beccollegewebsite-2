@@ -48,7 +48,7 @@ import NaacHomePage from "/src/pages/saturaotryData/naacHomepage.jsx";
 import UploadStaffImage from "./pages/UploadStaffImage";
 import CommittePage from "./pages/saturaotryData/committee";
 import RtiAct from "./pages/saturaotryData/Rti"
-import Bos from "./pages/saturaotryData/BosPage"
+import Bos from "./pages/saturaotryData/BosPage.jsx"
 // import { FacilitiesChart } from "./components/facilities/facilities";
 import { FacilitiesChart } from "./components/facilities/facilities";
 
@@ -108,7 +108,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/exam-downloads",
-				element: <ExamDownloads />,
+				element: <ExamDownloads />, 
 			},
 			{
 				path: "/exam-login",
@@ -178,6 +178,7 @@ const router = createBrowserRouter([
 				path: "/Others",
 				element: <Others />,
 			},
+			
 			{
 				path: "/Overview",
 				element: <Overview />,
