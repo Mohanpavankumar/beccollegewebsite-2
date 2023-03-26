@@ -5,7 +5,6 @@ import alumni4 from "/src/assets/homepage/alumni/image 60.png";
 import alumni5 from "/src/assets/homepage/alumni/alumni5.jpg";
 import alumni6 from "/src/assets/homepage/alumni/alumni6.jpg";
 import alumni7 from "/src/assets/homepage/alumni/alumni7.jpg";
-import usericon from "/src/assets/homepage/alumni/user-ICON.svg";
 
 export const aluminiData = [
 	{
@@ -56,12 +55,5 @@ export const aluminiData = [
 		profileImage: alumni7,
 		description: "Sr. Staff , Software applications engineer",
 		companyName: "Software",
-	},
-	{
-		id: 8,
-		name: "Venu Gopal Annamaneni",
-		profileImage: usericon,
-		description: "Head of Engineering",
-		companyName: "Livspace.com",
 	},
 ];

@@ -34,6 +34,8 @@ import { ListGroup } from "react-bootstrap";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import Marquee from "react-fast-marquee";
+import graduation from "/src/assets/homepage/courses/graduation.svg";
+
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
@@ -304,7 +306,7 @@ export default function HomePage() {
 					</div>
 
 					<div className="flex flex-col justify-center items-center mt-10">
-						<div className="mx-auto news-events-tabs tabs-notices w-full max-w-md md:px-2 py-8F px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
+						<div className="mx-auto news-events-tabs tabs-notices w-full max-w-md md:px-7 py-8 px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
 							<TabsComponent
 								defaultKey={"latestNews"}
 								tabsData={[
@@ -382,7 +384,7 @@ export default function HomePage() {
 						</div>
 					</div>
 
-					<div className="flex justify-between w-100 md:flex-row flex-col">
+					<div className="flex justify-between w-100 mt-3 md:flex-row flex-col">
 						<div className="md:w-1/2  bg-placementsbg">
 							<div className="font-bold text-2xl  md:text-3xl text-primaryColor text-center pt-10">
 								Impeccable Placements
@@ -528,9 +530,451 @@ export default function HomePage() {
 							The Bapatla Engineering College offers Diploma, undergraduate,and
 							postgraduate programmes in Engineering.
 						</p>
-						<div className="flex flex-wrap justify-center">{Course}</div>
-					</div>
+						<div className="flex flex-wrap justify-center">
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">AIM</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">99</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										CSE(AI & ML)
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
 
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(90+9)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">CIVIL</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">135</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Civil Engineering
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												DIPLOMA
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(30)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(90+9)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												M.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(6)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">CSE</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">294</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Computer Science Engineering
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												DIPLOMA
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(90)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(180+18)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												M.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(6)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">CBS</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">66</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Cyber Security
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(60+6)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">DSC</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">66</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Data Science
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(60+6)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">ECE</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">264</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Electronics & Communiation Engineering
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												DIPLOMA
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(60)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(180+18)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												M.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(6)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">EEE</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">168</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Electronics & Electronics Engineering
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												DIPLOMA
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(30)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(120+12)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												M.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(6)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">EIE</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">33</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Electronics & Instrumentation Engineering
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(30+3)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">IT</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">132</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Information Technology
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<Link
+												className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer "
+												to={"/departments/IT"}
+											>
+												B.TECH
+											</Link>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(120+12)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
+								<div className="md:left border-b-2 md:border-b-0 md:border-r-2 border-black p-3 flex md:flex-col justify-around items-center md:w-1/4 w-full">
+									<div className=" xl:text-2xl text-md font-bold">MECH</div>
+									<div>
+										<img
+											src={graduation}
+											className="w-8  text-primaryColor"
+										></img>
+									</div>
+									<div className="font-semibold text-xl">135</div>
+									<div className="xl:text-xl text-md font-medium">Students</div>
+								</div>
+								<div className="right p-2">
+									<div className="xl:text-xl text-md font-bold cursor-pointer ">
+										Mechanical Engineering
+									</div>
+									<div className="mt-4 text-sm xl:text-md font-bold">
+										Accredited by NBA since 2003
+									</div>
+									<div className="mt-2 text-sm xl:text-md font-medium text-secondary">
+										<i>Approved by AICTE</i>
+									</div>
+
+									<div className="justify-start text-xs flex">
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												DIPLOMA
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(30)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												B.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(90+9)
+											</div>
+										</div>
+										<div className="flex flex-col items-center">
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 md:m-3 mb-0 rounded-md bg-primaryColor font-bold text-white cursor-pointer ">
+												M.TECH
+											</div>
+											<div className="p-1 xl:pl-3 xl:pr-3 text-sm m-1 mt-0 font-bold">
+												(6)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div className="flex flex-col">
 						<p className="flex justify-center  font-semibold text-4xl text-primaryColor">
 							Gallery
