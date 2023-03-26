@@ -384,8 +384,8 @@ export default function HomePage() {
 						</div>
 					</div>
 
-					<div className="flex justify-between w-100 mt-3 md:flex-row flex-col">
-						<div className="md:w-1/2  bg-placementsbg">
+					<div className="flex justify-between w-100 mt-3 lg:flex-row flex-col">
+						<div className="lg:w-1/2  bg-placementsbg">
 							<div className="font-bold text-2xl  md:text-3xl text-primaryColor text-center pt-10">
 								Impeccable Placements
 							</div>
@@ -467,7 +467,7 @@ export default function HomePage() {
 							</Marquee>
 						</div>
 
-						<div className="md:w-1/2">
+						<div className="lg:w-1/2">
 							<div className="text-primaryColor text-2xl md:text-3xl pt-10 text-center font-bold ">
 								Distinguished ALumini
 							</div>
