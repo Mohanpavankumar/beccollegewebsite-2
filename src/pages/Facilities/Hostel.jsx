@@ -12,7 +12,7 @@ export default function Facilities(){
 			    <div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Girls Hostel</div>
 				<Slides6 />
 			</div>
-            <div className="row w-full pt-3 px-24">
+            <div className="row w-full pt-3 px-25 ml-5">
                         <div className="col-3">
                             <div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="Hostelhome-tab" data-toggle="pill" href="#Hostelhome" role="tab" aria-controls="Hostelhome" aria-selected="true">Home</a>
@@ -22,9 +22,9 @@ export default function Facilities(){
                             <div className="col">
                                 <div className="tab-content" id="tabContent">
                                         <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="Hostelhome" role="tabpanel" aria-labelledby="Hostelhome-tab">
-                                        <b className="font-serif text-3xl mt-5"> Hostels For Women <br></br></b>
+                                        <b className="font-serif text-3xl mt-4 pt-5"> Hostels For Women <br></br></b>
                                         <div className='line w-20 h-1 mb-2' style={{background:"#0060b1"}}></div>
-                                        <div className="w-full pr-5 ">
+                                        <div className=" pr-5 mr-5 ">
                                             <div className="flex mt-4 ">
 														<img src={tickmark} className="w-4 h-4 mt-1"></img>
 														<p className="text-justify text-lg ml-3">BEC uniquely provides on campus hostel facility to its girl student community.This hostel accommodating 1600 girl students is maintained on self-run basis by students themselves.<br></br></p>

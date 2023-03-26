@@ -115,36 +115,46 @@ export const navigationData = [
 				label: "ACCREDIATION/Approvals",
 			},
 			{
-				to: "#",
+				to: "/committees",
 				label: "Committees",
 			},
+			
 			{
-				to: "#",
-				label: "ARIIA Reports",
-			},
-			{
-				to: "http://www.ebay.com",
+				to: "/bos",
 				label: "BOS(Board of Studies)",
 			},
 			{
-				to: "http://www.ebay.com",
+				to: "/rti",
 				label: "RTI Act 2005",
 			},
 		],
 	},
-	// {
-	// 	label: "Exams & Results",
-	// 	children: [
-	// 		{
-	// 			to: "/departments/IT",
-	// 			label: "Examination Cell",
-	// 		},
-	// 		{
-	// 			to: "http://www.ebay.com",
-	// 			label: "Bank",
-	// 		},
-	// 	],
-	// },
+    {
+		label: "Results",
+		children: [
+			{
+				to: "/examination-cell",
+				label: "Examination Cell",
+			},
+			{
+				to: "/exam-notifications",
+				label: "Exam notifications",
+			},
+			{
+				to: "/exam-downloads",
+				label: "Exam downloads",
+			},
+			
+			{
+				to: "/exam-login",
+				label: "Exam login",
+			},
+			{
+				to: "/exam-results",
+				label: "Results",
+			},
+		],
+	},
 	{
 		label: "Placements",
 		to: "/Placements",
