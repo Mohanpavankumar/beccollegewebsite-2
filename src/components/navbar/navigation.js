@@ -115,25 +115,22 @@ export const navigationData = [
 				label: "ACCREDIATION/Approvals",
 			},
 			{
-				to: "#",
+				to: "/committees",
 				label: "Committees",
 			},
+
 			{
-				to: "#",
-				label: "ARIIA Reports",
-			},
-			{
-				to: "http://www.ebay.com",
+				to: "/bos",
 				label: "BOS(Board of Studies)",
 			},
 			{
-				to: "http://www.ebay.com",
+				to: "/rti",
 				label: "RTI Act 2005",
 			},
 		],
 	},
 	{
-		label: "Exams and Results",
+		label: "Results",
 		children: [
 			{
 				to: "/examination-cell",
@@ -147,13 +144,14 @@ export const navigationData = [
 				to: "/exam-downloads",
 				label: "Exam downloads",
 			},
+
 			{
 				to: "/exam-login",
-				label: "Exam Login",
+				label: "Exam login",
 			},
 			{
 				to: "/exam-results",
-				label: "Exam Results",
+				label: "Results",
 			},
 		],
 	},

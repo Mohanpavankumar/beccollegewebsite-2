@@ -113,10 +113,7 @@ const router = createBrowserRouter([
 				path: "/rti",
 				element: <RtiAct />,
 			},
-			{
-				path: "/bos",
-				element: <Bos />,
-			},
+
 			{
 				path: "/YearWise-Placements",
 				element: <YearWisePlacements />,
@@ -177,6 +174,7 @@ const router = createBrowserRouter([
 				path: "/Others",
 				element: <Others />,
 			},
+
 			{
 				path: "/Overview",
 				element: <Overview />,

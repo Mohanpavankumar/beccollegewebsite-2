@@ -15,7 +15,7 @@ export default function Facilities(){
           
 
 
-            <div className="row w-full pt-3 px-24">
+            <div className="row w-full pt-3 px-25 ml-5">
                         <div className="col-3">
                             <div className="nav flex-column nav-pills Sportsmenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="Sportshome-tab" data-toggle="pill" href="#Sportshome" role="tab" aria-controls="Sportshome" aria-selected="true">Sports Home</a>
@@ -25,7 +25,7 @@ export default function Facilities(){
                             <div className="col">
                                 <div className="tab-content" id="tabContent">
                                             <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="bankhome" role="tabpanel" aria-labelledby="bankhome-tab">
-                                                <div className="pr-4">
+                                                <div className="pr-5 mr-5">
                                                        <div className="flex mt-4 ">
                                                             <img src={tickmark} className="w-4 h-4 mt-1"></img>
                                                             <p className="text-justify text-lg ml-3">The College believes in adequate facilities being provided for the development, both of brain and brawn.<br></br></p>

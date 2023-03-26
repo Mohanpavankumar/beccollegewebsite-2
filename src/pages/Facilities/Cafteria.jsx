@@ -13,7 +13,7 @@ export default function Facilities(){
 					<div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Cafteria</div>
 				    <Slides4 />
 			   </div>
-			   <div className="row w-full pt-3 px-24">
+			   <div className="row w-full pt-3 px-25 ml-5">
 						<div className="col-3">
 							<div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
 								<a className="nav-link" id="canteenhome-tab" data-toggle="pill" href="#canteenhome" role="tab" aria-controls="canteenhome" aria-selected="true">Canteen Home</a>
@@ -24,7 +24,7 @@ export default function Facilities(){
 								<div className="tab-content" id="tabContent">
 										<div className="tab-pane fade show in active" style={{width:"fit-content"}} id="canteenhome" role="tabpanel" aria-labelledby="canteenhome-tab">
 										
-											<div className=" w-full mt-3">
+											<div className="  mt-3 mr-5 pr-5">
 													<div className="flex mt-4 ">
 														<img src={tickmark} className="w-4 h-4 mt-1"></img>
 															<p className="text-justify text-lg ml-3">

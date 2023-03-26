@@ -1,8 +1,6 @@
 export default function Patents(){
     
     return(
-        
-    
          <div className='row w-screen'>
                 <div className="col-3">
                     <div className="nav flex-column nav-pills text-sm" id="v-pills-tab" role="tablist" aria-orientation="vertical">

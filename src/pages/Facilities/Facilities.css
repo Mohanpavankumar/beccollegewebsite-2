@@ -1,21 +1,65 @@
-.facilities-header{
-    background-color:rgb(215, 215, 215);
+.facilities-header {
+    background-color: rgb(215, 215, 215);
 }
-.facilities-background{
-    background-color:rgb(171, 226, 255);
+
+.facilities-background {
+    background-color: rgb(171, 226, 255);
 }
-.library-bg{
+
+.library-bg {
     background-color: rgba(254, 250, 243, 0.94);
 }
-.facilities-Home{
+
+.facilities-Home {
     background-color: rgb(148, 253, 255);
 }
+
 tr:nth-child(even) {
-    background-color:rgb(205, 240, 253);
+    background-color: rgb(205, 240, 253);
 }
+
 tr:nth-child(odd) {
-    background-color:white;
+    background-color: white;
 }
-th{
-    background-color:rgb(95, 188, 255);
+
+th {
+    background-color: rgb(95, 188, 255);
+}
+
+
+.library-table {
+    width: 100%;
+}
+
+.library-table thead,
+tbody,
+tr,
+td,
+th {
+    display: block;
+}
+
+.library-table tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.library-table thead th{
+    height: 5rem;
+    width: 25%;
+}
+
+.library-table tbody {
+    height: 32vh;
+    overflow-y: auto;
+}
+
+.library-table tbody td,
+thead th {
+    width: 25%;
+    float: left;
+    padding: 1rem !important;
+    text-align: center;
 }
