@@ -16,7 +16,7 @@ export const DeptStats = () => {
 
     useEffect(() => {
         getDepartmentsGraphData().then(res =>
-            setData(res.data)
+            setData(res.data.flatMap(x => x))
         )
             .catch(err =>
                 console.log("SomethingWent Wrong!!!", err)
