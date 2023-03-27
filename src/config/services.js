@@ -12,6 +12,10 @@ export const getResultData = () => {
 	return AxiosInstance.get("/getResultsData");
 };
 
+export const postResultData = () => {
+	return AxiosInstance.post("/postResultsData");
+};
+
 export const getAcademicsData = () => {
 	return AxiosInstance.get("/getAcademicsData");
 };
