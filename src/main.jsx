@@ -50,6 +50,7 @@ import CommittePage from "./pages/saturaotryData/committee";
 import RtiAct from "./pages/saturaotryData/Rti";
 import Bos from "./pages/saturaotryData/BosPage";
 import { FacilitiesChart } from "./components/facilities/facilities";
+import { DeptStats } from "./pages/departments/deptstat";
 
 const router = createBrowserRouter([
 	{
@@ -133,6 +134,14 @@ const router = createBrowserRouter([
 			{
 				path: "/departments/IT",
 				element: <It />,
+			},
+			{
+				path: "/departments/Itstaff",
+				element: <ItStaff />,
+			},
+			{
+				path: "/departments/IT/deptstat",
+				element: <DeptStats />,
 			},
 			{
 				path: "/Facilities",
