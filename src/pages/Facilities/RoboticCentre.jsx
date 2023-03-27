@@ -13,7 +13,7 @@ export default function Facilities(){
 				<Slides2 />
 			</div>
 
-			<div className="row w-full pt-3 px-24">
+			<div className="row w-full pt-3 px-25 ml-5">
                         <div className="col-3">
                             <div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="roboticcentrehome-tab" data-toggle="pill" href="#roboticcentrehome" role="tab" aria-controls="roboticcentrehome" aria-selected="true"> Robotic-Centre Home</a>
@@ -23,7 +23,7 @@ export default function Facilities(){
                             <div className="col">
                                 <div className="tab-content" id="tabContent">
                                         <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="roboticcentrehome" role="tabpanel" aria-labelledby="roboticcentrehome-tab">
-												<div className="w-full pr-3">
+												<div className="mr-5 pr-5">
 													<div className="flex mt-4 ">
 														<img src={tickmark} className="w-4 h-4 mt-1"></img>
 														<p className="text-justify text-lg ml-3"> In the present day scenario robotics play a key role in automation. It serves the need of the industry to the great extent by replacing the human beings and thus improving the quality of the product developed. According to the need and utility it scatters in to small industry to a very large industry also. It scatters into medical, defense, food processing, manufacturing, assembly line up, electronics and entertainment etc.<br></br></p>

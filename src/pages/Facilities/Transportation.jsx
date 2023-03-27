@@ -13,7 +13,7 @@ export default function Facilities(){
                     <div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Transportation</div>
                     <Slides5 />
                 </div>
-                <div className="row w-full pt-3 px-24">
+                <div className="row w-full pt-3 px-25 ml-5">
                         <div className="col-3">
                             <div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="transportationhome-tab" data-toggle="pill" href="#transportationhome" role="tab" aria-controls="transportationhome" aria-selected="true">Transportation Home</a>
@@ -24,8 +24,8 @@ export default function Facilities(){
                                 <div className="tab-content" id="tabContent">
                                         <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="transportationhome" role="tabpanel" aria-labelledby="transportationhome-tab">
                                         {/* <div className='line w-14 h-1 mb-2' style={{background:"#0060b1"}}></div> */}
-                                                <div className="w-full text-lg text-justify pr-5" >
-                                                        <p className="w-full mt-3 text-justify text-lg">
+                                                <div className="w-full text-lg text-justify pr-5 mr-5" >
+                                                        <p className="pr-5 mr-5 mt-3 text-justify text-lg">
                                                             <b className="text-2xl font-serif ">BECB Bus Facility </b>
                                                             <div className='line w-20 h-1 mb-4' style={{background:"#0060b1"}}></div> 
                                                             The college has been providing commuting facility to its staff and students with notable subsidized fares. The transportation facility is handled with an efficient fleet of 11 buses punctually running from Bapatla to College from morning to late evening on all working days.<br></br><br></br>
@@ -33,8 +33,8 @@ export default function Facilities(){
                                                             Apart from the regular Shuttle services to commute the staff and students, Transport facility supports the students and staff to participate in co-curricular and extra-curricular activities during afternoons 2:15 PM to 5:00 PM.
                                                         </p>
                                                 </div> 
-                                                <div>
-                                                    <div className="flex mt-5 h-[28rem] facilities-background ">
+                                                <div className="pr-5 mr-5">
+                                                    <div className="flex mt-5 h-[29rem] facilities-background ">
                                                                  <p className="w-1/2 ml-3 p-2">
                                                                     <b className="text-3xl font-serif text-sky-600">Why Travel By Bus </b>
                                                                     <div className="flex mt-1"> 
@@ -62,7 +62,7 @@ export default function Facilities(){
                                                                              <p className="ml-3 mt-3 text-justify text-lg">Contact respective college office for more details. </p>
                                                                      </div>
                                                                  </p>
-                                                                 <img src={BusImg2} className="w-1/2 h-[29rem] ml-5 pb-2 border-2 rounded-md"></img>
+                                                                 <img src={BusImg2} className="w-1/2 h-[30rem] ml-5 pb-2 border-2 rounded-md"></img>
                                                             </div>
                                                        </div>
                                              </div>                   

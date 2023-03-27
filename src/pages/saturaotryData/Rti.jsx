@@ -8,6 +8,7 @@ import {
 } from "../../Data/SaturatoryData/RtiData";
 
 const RtiPage = (props) => {
+
 	return (
 		<div className="flex  justify-center flex-col py-3  mt-2">
 			<div className="text-center  py-3 w-screen">
@@ -36,5 +37,6 @@ const RtiPage = (props) => {
 		</div>
 	);
 };
+
 
 export default RtiPage;

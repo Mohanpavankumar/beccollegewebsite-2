@@ -5,6 +5,7 @@ import { nirfData } from "../../Data/SaturatoryData/nirfData";
 import "./page.css";
 
 const Nirf = () => {
+
 	return (
 		<div className="flex items-center justify-center flex-col py-3  mt-2">
 			<div className="text-center  py-3 w-screen">
@@ -54,5 +55,6 @@ const Nirf = () => {
 		</div>
 	);
 };
+
 
 export default Nirf;

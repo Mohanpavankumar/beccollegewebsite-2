@@ -34,7 +34,7 @@ let Placements=() =>{
 		<>
 			<div
 				id="default-carousel"
-				className="relative mt-10"
+				className="relative"
 				data-carousel="slide"
 			>
 				<div className="relative h-40 overflow-hidden md:h-96">
@@ -218,7 +218,7 @@ let Placements=() =>{
 				{data.map(c =>
 				<div>
 					{c.placementNotifications.map(x=>
-					<a href={DeltaX}  target='_blank' rel='noopener noreferrer'><li>{x.title}</li></a>
+					<a href={DeltaX}  target='_blank' className=' text-lg' rel='noopener noreferrer'><li>{x.title}</li></a>
 					)}
 				</div>
 				)}

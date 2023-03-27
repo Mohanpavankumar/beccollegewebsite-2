@@ -8,6 +8,7 @@ import {
 } from "../../Data/SaturatoryData/committeeData";
 
 const CommittePage = (props) => {
+
 	return (
 		<div className="flex items-center justify-center flex-col py-3  mt-2">
 			<div className="text-center  py-3 w-screen">
@@ -42,5 +43,6 @@ const CommittePage = (props) => {
 		</div>
 	);
 };
+
 
 export default CommittePage;

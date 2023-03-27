@@ -50,6 +50,7 @@ import CommittePage from "./pages/saturaotryData/committee";
 import RtiAct from "./pages/saturaotryData/Rti";
 import Bos from "./pages/saturaotryData/BosPage";
 import { FacilitiesChart } from "./components/facilities/facilities";
+import { DeptStats } from "./pages/departments/deptstat";
 
 const router = createBrowserRouter([
 	{
@@ -72,6 +73,18 @@ const router = createBrowserRouter([
 			{
 				path: "/exam-notifications",
 				element: <ExamNotifs />,
+			},
+			{
+				path: "/exam-downloads",
+				element: <ExamDownloads />,
+			},
+			{
+				path: "/exam-login",
+				element: <ExamLogin />,
+			},
+			{
+				path: "/exam-results",
+				element: <ExamResults />,
 			},
 			{
 				path: "/naac",
@@ -101,22 +114,7 @@ const router = createBrowserRouter([
 				path: "/rti",
 				element: <RtiAct />,
 			},
-			{
-				path: "/bos",
-				element: <Bos />,
-			},
-			{
-				path: "/exam-downloads",
-				element: <ExamDownloads />,
-			},
-			{
-				path: "/exam-login",
-				element: <ExamLogin />,
-			},
-			{
-				path: "/exam-results",
-				element: <ExamResults />,
-			},
+
 			{
 				path: "/YearWise-Placements",
 				element: <YearWisePlacements />,
@@ -138,8 +136,12 @@ const router = createBrowserRouter([
 				element: <It />,
 			},
 			{
-				path: "/departments/ItStaff",
+				path: "/departments/Itstaff",
 				element: <ItStaff />,
+			},
+			{
+				path: "/departments/IT/deptstat",
+				element: <DeptStats />,
 			},
 			{
 				path: "/Facilities",
@@ -181,6 +183,7 @@ const router = createBrowserRouter([
 				path: "/Others",
 				element: <Others />,
 			},
+
 			{
 				path: "/Overview",
 				element: <Overview />,

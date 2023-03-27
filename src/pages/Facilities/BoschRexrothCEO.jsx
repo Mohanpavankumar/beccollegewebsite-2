@@ -17,7 +17,7 @@ export default function Facilities(){
 				    <Slides3 />
 			   </div>
 
-			   <div className="row w-full pt-3 px-24">
+			   <div className="row w-full pt-3 px-25 ml-5">
                         <div className="col-3">
                             <div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
                                 <a className="nav-link" id="boschhome-tab" data-toggle="pill" href="#boschhome" role="tab" aria-controls="boschhome" aria-selected="true">Bosch-Rexroth Home</a>
@@ -28,7 +28,7 @@ export default function Facilities(){
                             <div className="col">
                                 <div className="tab-content" id="tabContent">
                                         <div className="tab-pane fade show in active" style={{width:"fit-content"}} id="boschhome" role="tabpanel" aria-labelledby="boschhome-tab">
-													<div className="pr-4 ">
+													<div className="pr-5 mr-5 ">
 															<div className="flex mt-4 ">
 																	<img src={tickmark} className="w-4 h-4 mt-1"></img>
 																	<p className="text-justify text-lg ml-3"> The College, known for its quality Engineering education, innovative practices in teaching learning processes and research, took a giant leap by joining with Bosch–Rexroth to establish a centre of competence at a cost of 5 crores in industrial automation technologies, which is the first of its kind in AP. This centre is located in the research park along with Siemens Centre of Excellence and center for Robotics, which was built in a plinth area of one lakh square feet at a cost of Rs 20 crores in the college.<br></br></p>
@@ -48,7 +48,7 @@ export default function Facilities(){
 													</div>
                                         </div>  
 										<div className="tab-pane fade " id="boschfaculty" role="tabpanel" aria-labelledby="boschfaculty-tab">
-												<div className="pr-4">
+												<div className="pr-5 mr-5">
 
 														<div className="flex mt-1">
 															<img src={tickmark} className="w-4 mt-2 h-4"></img>
@@ -152,101 +152,106 @@ export default function Facilities(){
 																			</button>
 																		</div>
 																	
-																		<div className="scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 h-[36rem] overflow-y-scroll" >
-																			<table className="table text-justify">
-
-																				<tr className="bg-sky-600 text-center ">
-																					<th className="pt-4">Property</th>
-																					<th className="pt-4">Duration</th>
-																					<th className="pt-4">Prerequisite</th>
-																					<th className="pt-4">Expert Faculty</th>
+																		<div className="scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 overflow-y-scroll" >
+																		<table className="table striped-table library-table">
+																			<thead>
+																				<tr className="bg-sky-600 text-center">
+																				<th >Property</th>
+																				<th >Duration</th>
+																				<th >Prerequisite</th>
+																				<th >Expert Faculty</th>
 																				</tr>
-																				<tr className="text-center" >
+																			</thead>
+																			<tbody id="naaclist-sroll">
+																				<tr>
 																					<td>Pneumatics</td>
-																					<td  className="text-left">
+																					<td  className="text-left" >
 																						1. Basic and Electro Pneumatics-30hrs<br></br>
 																						2. Closed loop position/pressure control Pneumatics-30 hrs
 																					</td>
-																					<td className="text-left">PLC & Basic and Electro Pneumatics</td>
-																					<td className="text-left">
-																						1.Ch.Lakshmi srinivas<br></br>
-																						2.K.Prasada Rao<br></br>
-																						3.S.Ravi Kumar<br></br>
+																					<td  className="text-left">PLC & Basic and Electro Pneumatics</td>
+																					<td  className="text-left" >
+																							1.Ch.Lakshmi srinivas<br></br>
+																							2.K.Prasada Rao<br></br>
+																							3.S.Ravi Kumar<br></br>
 																					</td>
 																				</tr>
-																				<tr className="text-center">
-																					<td>Hydraulics</td>
-																					<td  className="text-left">
-																						1. Basic and Electro Hydraulics-30hrs<br></br>
-																						2.Proportional Hydraulics-15hrs<br></br>
-																					</td>
-																					<td className="text-left">Basic and Electro Hydraulics</td>
-																					<td className="text-left">
-																						1.S.Ravi Kumar<br></br>
-																						2.D.Narayana Chowdary<br></br>
-																						3.N.Bala Krishna<br></br>
-																					</td>
+																				<tr>
+																														<td>Hydraulics</td>
+																														<td  className="text-left">
+																															1. Basic and Electro Hydraulics-30hrs<br></br>
+																															2.Proportional Hydraulics-15hrs<br></br>
+																														</td>
+																														<td className="text-left">Basic and Electro Hydraulics</td>
+																														<td className="text-left">
+																															1.S.Ravi Kumar<br></br>
+																															2.D.Narayana Chowdary<br></br>
+																															3.N.Bala Krishna<br></br>
+																														</td>
+																					
 																				</tr>
-																				<tr className="text-center ">
-																					<td>PLC</td>
-																					<td  className="text-left">
-																						1.Basic PLC --30hrs<br></br>
-																						2.Advanced PLC --15hrs
-																					</td>
-																					<td className="text-left">Basic & Electro Pneumatics</td>
-																					<td className="text-left">
-																							1.M.V.N. Chakravarthy<br></br>
-																							2.B.V.Kumara Swamy<br></br>
-																							3.T.K.Chaitanaya<br></br>
-																							4.N.Bala Krishna<br></br>
-																							5.Ch.Ramesh
-																					</td>
+																				<tr>
+																														<td>PLC</td>
+																														<td  className="text-left">
+																															1.Basic PLC --30hrs<br></br>
+																															2.Advanced PLC --15hrs
+																														</td>
+																														<td className="text-left">Basic & Electro Pneumatics</td>
+																														<td className="text-left">
+																																1.M.V.N. Chakravarthy<br></br>
+																																2.B.V.Kumara Swamy<br></br>
+																																3.T.K.Chaitanaya<br></br>
+																																4.N.Bala Krishna<br></br>
+																																5.Ch.Ramesh
+																														</td>
 																				</tr>
-																				<tr className="text-center">
-																					<td>Sensorics</td>
-																					<td  className="text-left">
-																						1.Sensorics-15hrs
-																					</td>
-																					<td>  </td>
-																					<td className="text-left">
-																						1.B.V.Kumara Swamy<br></br>
-																						2.M.V.N. Chakravarthy<br></br>
-																						3.Ch.Ramesh<br></br>
-																					</td>
+																				<tr>
+																														<td>Sensorics</td>
+																														<td  className="text-left">
+																															1.Sensorics-15hrs
+																														</td>
+																														<td>  </td>
+																														<td className="text-left">
+																															1.B.V.Kumara Swamy<br></br>
+																															2.M.V.N. Chakravarthy<br></br>
+																															3.Ch.Ramesh<br></br>
+																														</td>
 																				</tr>
-																				<tr className="text-center">
-																					<td>MLD & MTX</td>
-																					<td  className="text-left">
-																						1.MLD & MTX-18hrs
-																					</td>
-																					<td className="text-left"> Basic PLC </td>
-																					<td className="text-left">
-																						1.M.V.N. Chakravarthy<br></br>
-																						2.B.V.Kumara Swamy<br></br>
-																						3.T.K.Chaitanaya<br></br>
-																						4.N.Bala Krishna<br></br>
-																						5.Ch.Ramesh
-																					</td>
+																				<tr>
+																														<td>MLD & MTX</td>
+																														<td  className="text-left">
+																															1.MLD & MTX-18hrs
+																														</td>
+																														<td className="text-left"> Basic PLC </td>
+																														<td className="text-left">
+																															1.M.V.N. Chakravarthy<br></br>
+																															2.B.V.Kumara Swamy<br></br>
+																															3.T.K.Chaitanaya<br></br>
+																															4.N.Bala Krishna<br></br>
+																															5.Ch.Ramesh
+																														</td>
 																				</tr>
-																				<tr className="text-center">
-																					<td>MMS</td>
-																					<td  className="text-left">
-																						1.MMS -15hrs
-																					</td>
-																					<td className="text-left"> 
-																						1.Basic& Electro Pneumatics<br></br>
-																						2.Sensorics<br></br>
-																						3.Basic PLC<br></br>
-																					</td>
-																					<td className="text-left">
-																						1.Ch.Ramesh<br></br>
-																						2.T.K.Chaitanaya<br></br>
-																						3.N.Bala Krishna<br></br>
-																						4.Ch.Lakshmi Srinivas
-																					</td>
+																				<tr>
+																														<td>MMS</td>
+																														<td  className="text-left">
+																															1.MMS -15hrs
+																														</td>
+																														<td className="text-left"> 
+																															1.Basic& Electro Pneumatics<br></br>
+																															2.Sensorics<br></br>
+																															3.Basic PLC<br></br>
+																														</td>
+																														<td className="text-left">
+																															1.Ch.Ramesh<br></br>
+																															2.T.K.Chaitanaya<br></br>
+																															3.N.Bala Krishna<br></br>
+																															4.Ch.Lakshmi Srinivas
+																														</td>
 																				</tr>
-
-																			</table>
+																				
+																			</tbody>
+																		</table>
+																		
 																		</div>
 																		<div class="flex items-center p-3 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
 																			<button onClick={() => setModalShow(false)} data-modal-hide="large-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>

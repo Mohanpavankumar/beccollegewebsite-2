@@ -8,6 +8,7 @@ import {
 } from "../../Data/SaturatoryData/iqacData";
 
 const IqacPage = (props) => {
+
 	return (
 		<div className="flex  justify-center flex-col py-3  mt-2">
 			<div className="text-center  py-3 w-screen">
@@ -36,5 +37,6 @@ const IqacPage = (props) => {
 		</div>
 	);
 };
+
 
 export default IqacPage;
