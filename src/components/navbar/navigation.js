@@ -170,3 +170,17 @@ export const navigationData = [
 		to: "https://becalumni.org/",
 	},
 ];
+
+
+export const deptNavDataIT = [{
+	to: "/departments/IT/depstat",
+	label: "DeptStats",
+},
+]
+
+export const deptNavDataMech = [{
+	to: "/departments/Mech/depstat",
+	label: "DeptStats",
+},
+
+]
