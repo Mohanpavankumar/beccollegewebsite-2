@@ -121,7 +121,7 @@ const getSalaryDetails = ()=>{
                 },
             },
             legend: {
-              show: true,
+              show: false,
               position: "right",
             },
             colors: ['#0CE816', '#0C3EE8', '#9C27B0', '#FFC300', '#EA0EE0', '#FFC300', '#0C3EE8','#9C27B0', '#0EEAE0', '#0C3EE8'],

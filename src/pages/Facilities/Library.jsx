@@ -24,7 +24,7 @@ export default function Facilities() {
 				<div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Library</div>
 				<Slides />
 			</div>
-			<div className="row w-full">
+			<div className="row w-full ">
 				<div className="md:col-3">
 					<div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
 						<a className="nav-link" id="libraryhome-tab" data-toggle="pill" href="#libraryhome" role="tab" aria-controls="libraryhome" aria-selected="true">Library Home</a>

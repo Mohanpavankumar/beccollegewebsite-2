@@ -55,7 +55,7 @@ let result = Object.keys(duplicateCount).map(e =>
             </div>
     <div className='branchwise-placements-header flex p-1'>Placements {showbyYears}</div>
     <React.Fragment>
-      <div className="branchwise-placements-barchart DonutChart container-fluid mb-5">
+      <div className="DonutChart container-fluid mb-5">
         <Chart
           type="bar"
           series={[
@@ -96,7 +96,7 @@ let result = Object.keys(duplicateCount).map(e =>
                 },
             },
             legend: {
-              show: true,
+              show: false,
               position: "right",
             },
             colors: ['#0CE816', '#0C3EE8', '#9C27B0', '#FFC300', '#EA0EE0', '#FFC300', '#0C3EE8','#9C27B0', '#0EEAE0', '#0C3EE8'],
