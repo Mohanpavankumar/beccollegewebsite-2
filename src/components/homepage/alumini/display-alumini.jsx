@@ -18,7 +18,7 @@ export const DisplayAlumini = ({ isMobile }) => {
 	return (
 		<div className="flex flex-col">
 			<div
-				className={`flex justify-around md:flex-row flex-col`}
+				className={`flex justify-around md:flex-row flex-col md:flex-wrap lg:flex-nowrap  alum-center`}
 			>
 				{!!data &&
 					data.map((x) => (

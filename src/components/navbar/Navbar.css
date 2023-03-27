@@ -58,3 +58,15 @@
 .news-events-tabs .nav-link {
 	width: inherit !important;
 }
+
+@media (min-width:961px) and (max-width:2560px) {
+	.news-events-tabs .nav-link {
+		width: 300px !important;
+	}
+}
+
+@media (min-width:319px) and (max-width:769px) {
+	.alum-center {
+		margin: 0 auto !important;
+	}
+}

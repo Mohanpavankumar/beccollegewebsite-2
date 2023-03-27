@@ -87,7 +87,9 @@ export const navigationData = [
 			},
 			{
 				to: "/Acheivements",
+
 				label: "Academic Acheivements",
+
 			},
 			{
 				to: "/Patents",
@@ -115,11 +117,14 @@ export const navigationData = [
 				label: "ACCREDIATION/Approvals",
 			},
 			{
-				to: "/committees",
+
+				to: "/CommittePage",
+
 				label: "Committees",
 			},
 
 			{
+
 				to: "/bos",
 				label: "BOS(Board of Studies)",
 			},
@@ -127,6 +132,7 @@ export const navigationData = [
 				to: "/rti",
 				label: "RTI Act 2005",
 			},
+
 		],
 	},
 	{

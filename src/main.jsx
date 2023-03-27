@@ -192,6 +192,7 @@ const router = createBrowserRouter([
 				path: "/Programme",
 				element: <Programme />,
 			},
+
 			{
 				path: "/Patents",
 				element: <Patents />,
@@ -215,6 +216,14 @@ const router = createBrowserRouter([
 			{
 				path: "/upload/staffimage",
 				element: <UploadStaffImage />,
+			},
+			{
+				path: "/CommittePage",
+				element: <CommittePage />,
+			},
+			{
+				path: "/RtiAct",
+				element: <RtiAct />,
 			},
 		],
 	},

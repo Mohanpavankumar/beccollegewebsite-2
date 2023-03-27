@@ -1,4 +1,5 @@
 import graduation from "/src/assets/homepage/courses/graduation.svg";
+
 let courses = (props) => {
 	return (
 		<div className=" flex flex-col md:flex-row  border-2 bg-background border-black rounded w-9/12  h-72 md:w-5/12 md:h-56 m-10 transition-transform duration-500 hover:transform hover:scale-105">
