@@ -1,13 +1,13 @@
 import ExamHeader from "/src/components/examheader/examheader.jsx";
-import { getResultData } from "/src/config/services.js";
+// import { getResultData } from "/src/config/services.js";
 import React, { useState, useEffect } from "react";
 
 export default function examResults() {
 	const [data, setData] = useState([]);
 	const getData = () => {
-		getResultData()
-			.then((res) => setData(res.data))
-			.catch((err) => console.log("something went wrong", err));
+		// getResultData()
+		// 	.then((res) => setData(res.data))
+		// 	.catch((err) => console.log("something went wrong", err));
 	};
 	useEffect(() => {
 		getData();

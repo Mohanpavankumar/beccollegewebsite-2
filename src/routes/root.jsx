@@ -9,7 +9,7 @@ export default function Root() {
 				<Header />
 				<div
 					className="flex flex-col"
-					style={{ height: "90vh", overflowY: "scroll" }}
+					style={{ height: "90vh", overflowY: "auto", overflowX:"hidden" }}
 					id="listgroup-scroll"
 				>
 					<Outlet />

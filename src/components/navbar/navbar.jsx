@@ -12,7 +12,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Drawercomp from "/src/components/drawercomponent.jsx";
 // import HamburgerMenu from "./burgermenu";
 
-function Navbar() {
+function Navbar(props) {
 	const [click, setClick] = useState(false);
 	const [openDrawer, setOpenDrawer] = useState(false);
 	const handleClick = () => {};
@@ -36,7 +36,7 @@ function Navbar() {
 
 	const list = (anchor) => <div> hello </div>;
 
-	return <>{isMobile ? <HamburgerMenu /> : <NavBarComponent />}</>;
+	return <>{isMobile ? <HamburgerMenu /> : <NavBarComponent {...props} />}</>;
 }
 
 export default Navbar;

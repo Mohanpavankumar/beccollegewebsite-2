@@ -1,5 +1,4 @@
 import ExamHeader from "/src/components/examheader/examheader.jsx";
-import { Route, Routes, Link } from "react-router-dom";
 import Staff from "/src/components/staff/staff.jsx";
 import staffData from "/src/Data/staffData/examinationCell/staffData.js";
 

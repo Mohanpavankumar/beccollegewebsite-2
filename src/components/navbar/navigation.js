@@ -136,29 +136,36 @@ export const navigationData = [
 		],
 	},
 	{
-		label: "Results",
+		label: "Examination",
 		children: [
 			{
-				to: "/examination-cell",
+				to: "/examination/cell",
 				label: "Examination Cell",
 			},
 			{
-				to: "/exam-notifications",
+				to: "/examination/notifications",
 				label: "Exam notifications",
 			},
 			{
-				to: "/exam-downloads",
+				to: "/examination/downloads",
 				label: "Exam downloads",
 			},
-
+			// {
+			// 	to: "/examination/login",
+			// 	label: "Exam login",
+			// },
 			{
-				to: "/exam-login",
-				label: "Exam login",
+				to: "/examination/educationverification",
+				label: "Education Verification",
 			},
 			{
-				to: "/exam-results",
+				to: "/examination/studentmarks",
+				label: "Student Marks",
+			},
+			{
+				to: "/examination/results",
 				label: "Results",
-			},
+			}
 		],
 	},
 	{
@@ -170,3 +177,17 @@ export const navigationData = [
 		to: "https://becalumni.org/",
 	},
 ];
+
+
+export const deptNavDataIT = [{
+	to: "/departments/IT/depstat",
+	label: "DeptStats",
+},
+]
+
+export const deptNavDataMech = [{
+	to: "/departments/Mech/depstat",
+	label: "DeptStats",
+},
+
+]

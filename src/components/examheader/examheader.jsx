@@ -1,6 +1,6 @@
 import banner from "/src/assets/banner.png";
 
-function examHeader(props) {
+function ExamHeader(props) {
 	return (
 		<header className="exam-header">
 			<img
@@ -14,4 +14,4 @@ function examHeader(props) {
 	);
 }
 
-export default examHeader;
+export default ExamHeader;
