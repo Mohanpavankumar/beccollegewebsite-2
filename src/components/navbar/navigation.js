@@ -139,26 +139,33 @@ export const navigationData = [
 		label: "Results",
 		children: [
 			{
-				to: "/examination-cell",
+				to: "/examination/cell",
 				label: "Examination Cell",
 			},
 			{
-				to: "/exam-notifications",
+				to: "/examination/notifications",
 				label: "Exam notifications",
 			},
 			{
-				to: "/exam-downloads",
+				to: "/examination/downloads",
 				label: "Exam downloads",
 			},
-
+			// {
+			// 	to: "/examination/login",
+			// 	label: "Exam login",
+			// },
 			{
-				to: "/exam-login",
-				label: "Exam login",
+				to: "/examination/educationverification",
+				label: "Education Verification",
 			},
 			{
-				to: "/exam-results",
+				to: "/examination/studentmarks",
+				label: "Student Marks",
+			},
+			{
+				to: "/examination/results",
 				label: "Results",
-			},
+			}
 		],
 	},
 	{

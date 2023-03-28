@@ -7,7 +7,7 @@ export default function TabsComponent(props) {
 		<Tabs
 			defaultActiveKey={props.defaultKey}
 			id={new Date().valueOf().toString()}
-			className="my-2"
+			className={`my-2 custom-tab-active ${props.clsName}`}
 			fill
 		>
 			{props.tabsData.map((x) => (

@@ -1,14 +1,13 @@
 import ExamHeader from "/src/components/examheader/examheader.jsx";
-import { postResultData } from "/src/config/services.js";
 import React, { useState, useEffect } from "react";
 
 
 export default function ExamLogin() {
 	const [data, setData] = useState([]);
 	const postData = () => {
-		postResultData()
-			.then((res) => setData(res.data))
-			.catch((err) => console.log("something went wrong", err));
+		// postResultData()
+		// 	.then((res) => setData(res.data))
+		// 	.catch((err) => console.log("something went wrong", err));
 	};
 
 	useEffect(() => {

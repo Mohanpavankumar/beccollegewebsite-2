@@ -316,7 +316,7 @@ export default function HomePage() {
 										tabView: (
 											<ListGroup
 												id="listgroup-scroll"
-												style={{ height: "60vh", overflowY: "scroll" }}
+												style={{ height: "60vh", overflowY: "auto", overflowX:"hidden" }}
 												as="ul"
 											>
 												{c.latestNews.map((latestNews, index) => (

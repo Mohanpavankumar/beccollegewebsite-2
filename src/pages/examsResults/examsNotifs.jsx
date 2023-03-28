@@ -1,141 +1,35 @@
-import { useState } from "react";
-import { Tab } from "@headlessui/react";
+import { useEffect, useState } from "react";
+import { ListGroup } from "react-bootstrap";
+import TabsComponent from "../../components/shared/Tabs";
+import { getExamNotificationsData } from "../../config/services";
+import './examSection.css';
 import ExamHeader from "/src/components/examheader/examheader.jsx";
-
-function classNames(...classes) {
-	return classes.filter(Boolean).join(" ");
-}
+import NewIcon from '../../assets/icons/new.gif'
 
 export default function Example() {
-	let [categories] = useState({
-		Circulars: [
-			{
-				id: 1,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 2,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 3,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 4,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 5,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-		],
-		"Time Tables": [
-			{
-				id: 1,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 2,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 3,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 4,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-		],
-		"Course Repetition": [
-			{
-				id: 1,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 2,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 3,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-		],
-		CMM: [
-			{
-				id: 1,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-			{
-				id: 2,
-				title:
-					"3/4 B.Tech: Supplementary Exam Fee Notice for 3/4 B.Tech (V & VI Sems) (R14 & R18 Regulations)",
-				day: 29,
-				year: "JUN,2022",
-				lastdate: "12/07/2022",
-			},
-		],
+	let [data, setData] = useState({
+		"Circulars": [],
+		"TimeTables": [],
+		"CourseRepetition": []
 	});
+
+	useEffect(() => {
+		getExamNotificationsData().then(res => {
+			setData({
+				"Circulars": res.data[0].circulars,
+				"TimeTables": res.data[0].timeTables,
+				"CourseRepetition": res.data[0].courseRepitation
+			})
+		})
+	}, [])
+
 
 	return (
 		<>
 			<ExamHeader bannerName="Exam notifications" />
 			<div className="flex flex-col justify-center items-center -mt-10">
-				<div className="w-full max-w-md px-2 py-16 sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl">
-					<Tab.Group>
+				<div className="w-full max-w-md px-2 py-16 sm:px-0 md:w-max md:max-w-2xl lg:max-w-4xl exam-notif-tabs">
+					{/* <Tab.Group>
 						<Tab.List className="flex space-x-1 bg-gray-900/20">
 							{Object.keys(categories).map((category) => (
 								<Tab
@@ -175,20 +69,21 @@ export default function Example() {
 															{post.title}
 														</div>
 														<div className="post-extraInfo text-sm ml-1 font-normal leading-2 text-gray-600">
-															Last date of Payment: {post.lastdate}
+															Last date of Payment: {post.description}
 														</div>
 													</div>
 													<div className="published w-max">
 														<div className="bg-primaryColor p-1 text-white text-center font-bold">
-															{post.day}
+															{new Date(post.date).getDate()}
 														</div>
 														<div className="bg-secondaryColor p-1 text-black text-sm font-semibold">
-															{post.year}
+															{new Date(post.date).getMonth() + 1}-
+															{new Date(post.date).getFullYear()}
 														</div>
 													</div>
 
 													<a
-														href="#"
+														href={post.link}
 														className={classNames(
 															"absolute inset-0 rounded-md",
 															"ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
@@ -202,7 +97,103 @@ export default function Example() {
 								</Tab.Panel>
 							))}
 						</Tab.Panels>
-					</Tab.Group>
+					</Tab.Group> */}
+					<TabsComponent
+						clsName={'flex-nowrap'}
+						defaultKey={"Circulars"}
+						tabsData={[
+							{
+								tabKey: "Circulars",
+								tabTitle: "Circulars",
+								tabView: (
+									<ListGroup
+										id="listgroup-scroll"
+										style={{ height: "60vh", overflowY: "auto", overflowX:"hidden" }}
+										as="ul"
+									>
+										{data.Circulars.map((circular, index) => (
+											<ListGroup.Item
+												key={index}
+												as="li"
+												className="d-flex justify-between"
+											>
+												<div className="my-auto mr-2">
+													<a
+														href={circular.link}
+														className="link-primary-col"
+													>
+														{circular.title}
+													</a>
+													<p>{circular.description}</p>
+												</div>
+												<div className="my-auto text-nowrap">
+													<div className="bg-primaryColor p-1 text-white text-center font-bold">
+														{new Date(circular.date).getDate()}
+													</div>
+													<div className="bg-secondaryColor p-1 text-black text-center">
+														{new Date(circular.date).getMonth() + 1}-
+														{new Date(circular.date).getFullYear()}
+													</div>
+												</div>
+											</ListGroup.Item>
+										))}
+									</ListGroup>
+								),
+							},
+							{
+								tabKey: "TimeTables",
+								tabTitle: "Time Tables",
+								tabView: (
+									<ListGroup as="ul"
+										style={{ height: "60vh", overflowY: "auto" }}
+									>
+										{data.TimeTables.map((timeTable, index) => (
+											<ListGroup.Item
+												key={index}
+												as="li"
+												className="d-flex"
+											>
+												<div className="my-auto text-nowrap">
+													{!!timeTable.isNew && <div className="mx-2 new-text-effect">
+														<img src={NewIcon} alt="NEW" />
+													</div>}
+													<div className="mx-2 text-black text-center">
+														{new Date(timeTable.date).toLocaleDateString()}
+													</div>
+												</div>
+												<div className="my-auto mx-2">
+													<a href={timeTable.link} className="link-primary-col flex">
+														<span className="text-orange-400">{timeTable.title}</span> <p>{timeTable.description}</p>
+													</a>
+												</div>
+											</ListGroup.Item>
+										))}
+									</ListGroup>
+								),
+							},
+							{
+								tabKey: "CourseRepetition",
+								tabTitle: "Course Repetition",
+								tabView: (
+									<ListGroup as="ul">
+										{data.CourseRepetition.map((cr, index) => (
+											<ListGroup.Item
+												key={index}
+												as="li"
+												className="d-flex justify-between"
+											>
+												<div className="my-auto mr-2">
+													<a href={cr.link} className="link-primary-col">
+														{cr.title}
+													</a>
+												</div>
+											</ListGroup.Item>
+										))}
+									</ListGroup>
+								),
+							}
+						]}
+					/>
 				</div>
 			</div>
 		</>

@@ -8,13 +8,6 @@ export const getPlacementData = () => {
 	return AxiosInstance.get("/getPlacementsData");
 };
 
-export const getResultData = () => {
-	return AxiosInstance.get("/getResultsData");
-};
-
-export const postResultData = () => {
-	return AxiosInstance.post("/postResultsData");
-};
 
 export const getAcademicsData = () => {
 	return AxiosInstance.get("/getAcademicsData");
@@ -44,6 +37,14 @@ export const uploadImage = (data) => {
 export const getStaffImage = () => {
 	return AxiosInstance.get("/getStaffImgage");
 };
+
 export const getFacilitiesChartData = () => {
 	return AxiosInstance.get("/getLibraryGraphData");
+};
+
+
+// exam section
+
+export const getExamNotificationsData = () => {
+	return AxiosInstance.get("/getExamNotifications");
 };

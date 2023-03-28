@@ -51,6 +51,8 @@ import RtiAct from "./pages/saturaotryData/Rti";
 import Bos from "./pages/saturaotryData/BosPage";
 import { FacilitiesChart } from "./components/facilities/facilities";
 import { DeptStats } from "./pages/departments/deptstat";
+import StudentMarks from "./pages/examsResults/studentMarks";
+import EducationVerification from "./pages/examsResults/educationVerification";
 
 const router = createBrowserRouter([
 	{
@@ -67,24 +69,32 @@ const router = createBrowserRouter([
 				element: <Placements />,
 			},
 			{
-				path: "/examination-cell",
+				path: "/examination/cell",
 				element: <ExaminationCell />,
 			},
 			{
-				path: "/exam-notifications",
+				path: "/examination/notifications",
 				element: <ExamNotifs />,
 			},
 			{
-				path: "/exam-downloads",
+				path: "/examination/downloads",
 				element: <ExamDownloads />,
 			},
+			// {
+			// 	path: "/examination/login",
+			// 	element: <ExamLogin />,
+			// },
 			{
-				path: "/exam-login",
-				element: <ExamLogin />,
+				path: "/examination/educationverification",
+				element: <EducationVerification />,
 			},
 			{
-				path: "/exam-results",
+				path: "/examination/results",
 				element: <ExamResults />,
+			},
+			{
+				path: "/examination/studentmarks",
+				element: <StudentMarks />,
 			},
 			{
 				path: "/naac",
