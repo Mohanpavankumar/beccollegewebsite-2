@@ -7,7 +7,6 @@ import { NavBarList } from "./navBarList";
 export const NavBarComponent = (props) => {
 	return (
 		<Navbar bg="light">
-			{console.log("EJJEJE", props)}
 			<Nav className="custom-navbar font-bold text-lg mx-auto">
 				<NavBarList nodes={!props.deptName || props.deptName === "default" ? navigationData : props.deptNavigationData} />
 			</Nav>

@@ -48,3 +48,10 @@ export const getFacilitiesChartData = () => {
 export const getExamNotificationsData = () => {
 	return AxiosInstance.get("/getExamNotifications");
 };
+
+
+export const getExamDownloads = () => {
+	return AxiosInstance.get("/getExamDownloads");
+};
+
+

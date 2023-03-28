@@ -20,7 +20,7 @@ import NaacPage from "/src/pages/saturaotryData/Naac.jsx";
 import IqacPage from "./pages/saturaotryData/IqacPage.jsx";
 import Nirf from "/src/pages/saturaotryData/NirfPage.jsx";
 import Acheivements from "/src/pages/academics/acheivements.jsx";
-import ExamDownloads from "/src/pages/examsResults/exam-downloads.jsx";
+import { ExamDownloads } from "/src/pages/examsResults/exam-downloads.jsx";
 import ExamLogin from "/src/pages/examsResults/examLogin.jsx";
 import ExamResults from "/src/pages/examsResults/examResults.jsx";
 import Placements from "/src/pages/Placements/placements.jsx";

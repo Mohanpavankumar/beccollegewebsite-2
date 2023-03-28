@@ -154,7 +154,7 @@ export default function Example() {
 												className="d-flex"
 											>
 												<div className="my-auto text-nowrap">
-													{!!timeTable.isNew && <div className="mx-2 new-text-effect">
+													{!!timeTable.isNotifNew && <div className="mx-2 new-text-effect">
 														<img src={NewIcon} alt="NEW" />
 													</div>}
 													<div className="mx-2 text-black text-center">

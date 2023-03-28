@@ -1,18 +1,30 @@
+import { useEffect } from "react";
+import { useState } from "react";
+import { ListGroup } from "react-bootstrap";
+import { getExamDownloads } from "../../config/services";
 import ExamHeader from "/src/components/examheader/examheader.jsx";
-import {
-	Accordion,
-	AccordionItem,
-	AccordionButton,
-	AccordionPanel,
-	AccordionIcon,
-	Box,
-} from "@chakra-ui/react";
+// import {
+// 	Accordion,
+// 	AccordionItem,
+// 	AccordionButton,
+// 	AccordionPanel,
+// 	AccordionIcon,
+// 	Box,
+// } from "@chakra-ui/react";
 
-export default function ExamDownloads() {
+export const ExamDownloads = () => {
+	let [data, setData] = useState([]);
+
+	useEffect(() => {
+		getExamDownloads().then(res => {
+			setData(res.data)
+		})
+	}, [])
+
 	return (
 		<>
 			<ExamHeader bannerName="Exam Downloads" />
-			<Accordion className="my-4" allowMultiple>
+			{/* <Accordion className="my-4" allowMultiple>
 				<AccordionItem className="border-0 mx-3 lg:mx-64 ">
 					<h2>
 						<AccordionButton className="bg-[#EFEDED] p-3 rounded-lg">
@@ -101,7 +113,24 @@ export default function ExamDownloads() {
 						</div>
 					</AccordionPanel>
 				</AccordionItem>
-			</Accordion>
+			</Accordion> */}
+			<div className="flex flex-col justify-center items-center">
+				<ListGroup as="ul">
+					{data.map((x, index) => (
+						<ListGroup.Item
+							key={index}
+							as="li"
+							className="d-flex justify-between"
+						>
+							<div className="my-auto mx-5">
+								<a href={x.link} className="link-primary-col">
+									{x.title}
+								</a>
+							</div>
+						</ListGroup.Item>
+					))}
+				</ListGroup>
+			</div>
 		</>
 	);
 }
