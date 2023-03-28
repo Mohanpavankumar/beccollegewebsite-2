@@ -136,7 +136,7 @@ export const navigationData = [
 		],
 	},
 	{
-		label: "Results",
+		label: "Examination",
 		children: [
 			{
 				to: "/examination/cell",
