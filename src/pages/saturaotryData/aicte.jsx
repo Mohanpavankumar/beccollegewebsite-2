@@ -153,7 +153,7 @@ function Aicte() {
 										<p className="px-4">Dropdown</p>
 										<span className="border-l p-2 hover:bg-gray-100">
 											<svg
-												class="w-5 h-5"
+												className="w-5 h-5"
 												fill="none"
 												stroke="currentColor"
 												viewBox="0 0 24 24"

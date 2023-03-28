@@ -1,3 +1,4 @@
+import { IndeterminateCheckBoxRounded } from '@mui/icons-material';
 import React from 'react';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
@@ -14,8 +15,8 @@ const Branch = ({ label, children }, idx) => {
     return (
         <NavDropdown title={label} id={`basic-nav-dropdown-${idx}`} key={`basic-nav-dropdown-${idx}`} className={children.length > 5 && 'cutsom-nav-item'}>
             {
-                children.map(x =>
-                    <NavDropdown.Item className='dropdown-link-item'>
+                children.map((x, index) =>
+                    <NavDropdown.Item className='dropdown-link-item' key={index}>
                         <Link to={x.to} className='dropdown-link-item'>{x.label}</Link>
                     </NavDropdown.Item>
                 )

@@ -55,3 +55,11 @@ export const getExamDownloads = () => {
 };
 
 
+export const getStudentMarksByRegdNum = (regdNum) => {
+	return AxiosInstance.get(`/getStudentMarksByRegNum/${regdNum}`);
+};
+
+
+export const getStudentMarks= () => {
+	return AxiosInstance.get(`/getStudentMarks`);
+};

@@ -20,29 +20,29 @@ export default function ItDepartment() {
 					{DeptFacilities}
 				</div>
 			</div>
-			{/* <div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-6">
-					<div class="counter">
-						<span class="counter-value">80</span>
+			{/* <div className="container">
+			<div className="row">
+				<div className="col-md-3 col-sm-6">
+					<div className="counter">
+						<span className="counter-value">80</span>
 						<h3>Ph.D Faculty</h3>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="counter one">
-						<span class="counter-value">100</span>
+				<div className="col-md-3 col-sm-6">
+					<div className="counter one">
+						<span className="counter-value">100</span>
 						<h3>Publications</h3>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="counter two">
-						<span class="counter-value">200</span>
+				<div className="col-md-3 col-sm-6">
+					<div className="counter two">
+						<span className="counter-value">200</span>
 						<h3>R&D Projects</h3>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="counter three">
-						<span class="counter-value">182</span>
+				<div className="col-md-3 col-sm-6">
+					<div className="counter three">
+						<span className="counter-value">182</span>
 						<h3>IPR's</h3>
 					</div>
 				</div>

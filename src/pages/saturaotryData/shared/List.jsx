@@ -14,7 +14,7 @@ const ListComponent = (props) => {
             <ul className='flex flex-col p-2'>
                 {props.data.map(x =>
                     <li onClick={() => handleClick(x.isExpand)}>
-                        {!x.isExpand ? <i class="fa-solid fa-greater-than fa-xs"></i> : expand ? <i class="fa-solid fa-chevron-down fa-xs"></i> : <i class="fa-solid fa-greater-than fa-xs"></i>}
+                        {!x.isExpand ? <i className="fa-solid fa-greater-than fa-xs"></i> : expand ? <i className="fa-solid fa-chevron-down fa-xs"></i> : <i className="fa-solid fa-greater-than fa-xs"></i>}
                         {x.isExpand ? <span className='my-auto ml-2'>{x.title}</span> : <a href={x.link} target='_blank' rel='noopener noreferrer' className='my-auto ml-2'>
                             {x.title}
                         </a>}
