@@ -92,7 +92,6 @@ const ExamResults = () => {
             <div className='text-xl font-bold text-amber-400 mx-auto underline'>
                 Results
             </div>
-
             <select name="selectAscDesc" id="select" className="mr-2 ml-auto border-solid border-2 border-sky-300 rounded" onChange={(e) => setSortByOrder(e.target.value)}>
                 <option value={"asc"} selected>Sort by: New to Old</option>
                 <option value={"desc"}>Sort by: Old to New</option>

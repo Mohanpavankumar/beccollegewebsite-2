@@ -1,12 +1,19 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
+import { useNavigate } from 'react-router'
 
 const Filters = (props) => {
+    const navigate = useNavigate();
+    
+    const refreshPage = () => {
+        navigate(0);
+    }
 
     return (
         <div key={`inline-radio`}>
-            <div className='text-lg font-medium text-blue-600 text-center'>
-                Filters
+            <div className='flex justify-between mx-1'>
+                <span className='text-lg font-medium text-amber-400'>Filters</span>
+                <span onClick={refreshPage} className='my-auto underline text-md font-sm text-sky-600 c-pointer'>Reset All</span>
             </div>
             {props.dispFilters.map((x, index) => <div key={index}>
                 <div key={index} className="my-1">{x.title}</div>
