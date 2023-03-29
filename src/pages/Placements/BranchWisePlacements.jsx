@@ -63,7 +63,6 @@ let BranchWisePlacements = () => {
                           data: chartData.map(y => y.count),
                         },
                       ]}
-
                       options={{
                         title: {
                           text: "BranchWise Placements",

@@ -76,8 +76,7 @@ form{
 	margin-top: 5px;
  }
  .BarChart{
-	margin-left: 250px;
-	width: 920px ;
+	width: 1200px ;
 	border: 3px solid #0060b1;
 	margin-top: 50px;
  }
@@ -86,15 +85,14 @@ form{
 	font-size: 20px;
  }
  .placements-home-link1{
-	margin-left: 1300px;
+	margin-left: 1280px;
 	font-size: 20px;
  }
  .apexcharts-xaxis-label{
 	font-size:medium;
  }
  .DonutChart{
-	margin-left: 250px;
-	width: 920px ;
+	width: 1200px ;
 	border: 3px solid #0060b1;
 	
  }
@@ -108,20 +106,20 @@ form{
 	font-weight: 600 !important;
  }
  .placements-header{
-	margin-right: 354px !important;
+	margin-right: 154px !important;
 	font-size: large;
 	color: white;
 	background-color: #0060b1;
 	font-weight: bold;
-	margin-left: 250px;
+	margin-left: 154px;
  }
  .branchwise-placements-header{
 	font-size: large;
 	color: white;
 	background-color: #0060b1;
 	font-weight: bold;
-	margin-left: 250px;
-	margin-right: 290px !important;
+	margin-left: 120px;
+	margin-right: 120px !important;
  }
  .float-right:hover{
 	color: #fff;
