@@ -133,7 +133,7 @@ const StudentMarks = () => {
                                 Regd Number : <span className='text-orange-400 font-semibold'>{data.regdNo}</span>
                             </div>
                             <div className='font-medium'>
-                                <select value={selectedSemester} name="SelectYear" id="select" className="ml-auto my-2 mr-2 border-solid border-2 border-sky-300 rounded" onChange={(e) => setSelectedSemester(e.target.value)}>
+                                <select value={selectedSemester} name="SelectSemester" id="select" className="ml-auto my-2 mr-2 border-solid border-2 border-sky-300 rounded" onChange={(e) => setSelectedSemester(e.target.value)}>
                                     <option value={0} selected>All</option>
                                     {!!data && data.marks.map((y, index) =>
                                         <option key={index} value={y.semester}>Semester - {y.semester}</option>

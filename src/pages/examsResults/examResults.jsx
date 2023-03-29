@@ -35,7 +35,7 @@ const ExamResults = () => {
         },
         {
             title: "Semseter",
-            info: data.map(x => x.semseter)
+            info: data.map(x => x.semester)
         },
         {
             title: "ExamType",
@@ -79,21 +79,31 @@ const ExamResults = () => {
     useEffect(() => {
         setDataFilters()
         displayFilters()
+    }, [data, appliedFilters])
+
+
+    useEffect(() => {
         onChangeOrder(sortByOrder)
-    }, [data, appliedFilters, sortByOrder])
+    }, [sortByOrder])
 
     return (
-        <div className='flex flex-col'>
-            <ExamHeader bannerName="Results" />
-            <select name="selectAscDesc" id="select" className="ml-auto py-2 mr-2 border-solid border-2 border-sky-300 rounded" onChange={(e) => setSortByOrder(e.target.value)}>
+        <div className='flex flex-col mt-2'>
+            {/* <ExamHeader bannerName="Results" /> */}
+            <div className='text-xl font-bold text-amber-400 mx-auto underline'>
+                Results
+            </div>
+
+            <select name="selectAscDesc" id="select" className="mr-2 ml-auto border-solid border-2 border-sky-300 rounded" onChange={(e) => setSortByOrder(e.target.value)}>
                 <option value={"asc"} selected>Sort by: New to Old</option>
                 <option value={"desc"}>Sort by: Old to New</option>
             </select>
-            <div className="flex">
-                <div className='mx-4 px-3' style={{ borderRight: "1px solid #020202" }}>
-                    <Filters dispFilters={dispFilters} getFiltersData={getFiltersData} />
+            <div className="flex p-3">
+                <div className='flex flex-col' style={{ borderRight: "1px solid #020202" }}>
+                    <div className='mx-4'>
+                        <Filters dispFilters={dispFilters} getFiltersData={getFiltersData} />
+                    </div>
                 </div>
-                <div className='d-flex ml-8'>
+                <div className='flex ml-4'>
                     <ListGroup as="ul">
                         {!!filterData && filterData.map((x, index) => (
                             <ListGroup.Item

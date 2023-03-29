@@ -4,7 +4,10 @@ import { Form } from 'react-bootstrap'
 const Filters = (props) => {
 
     return (
-        <div key={`inline-radio`} className="mb-3">
+        <div key={`inline-radio`}>
+            <div className='text-lg font-medium text-blue-600 text-center'>
+                Filters
+            </div>
             {props.dispFilters.map((x, index) => <div key={index}>
                 <div key={index} className="my-1">{x.title}</div>
                 <div style={{ borderBottom: "1px dotted #0E0E0E" }} className="flex flex-wrap p-2">
