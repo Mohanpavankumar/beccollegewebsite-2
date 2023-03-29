@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import ExamHeader from '../../components/examheader/examheader';
 import { getExamResults } from '../../config/services';
 import Filters from './filters';
+import NewIcon from '../../assets/icons/new.gif'
 
 const ExamResults = () => {
     let [data, setData] = useState([]);
@@ -34,7 +34,7 @@ const ExamResults = () => {
             info: data.map(x => x.branch)
         },
         {
-            title: "Semseter",
+            title: "Semester",
             info: data.map(x => x.semester)
         },
         {
@@ -111,6 +111,9 @@ const ExamResults = () => {
                                 className="d-flex justify-between"
                             >
                                 <div className="my-auto mr-2">
+                                    {!!x.isNewResult && <div className="mx-2 new-text-effect">
+                                        <img src={NewIcon} alt="NEW" />
+                                    </div>}
                                     <Link to={`/examination/studentmarks?semester=${x.semester}`} className="link-primary-col">
                                         {x.title}
                                     </Link>
