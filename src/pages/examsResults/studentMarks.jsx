@@ -8,6 +8,7 @@ import ResultTable from './resultTable';
 import ResGraph from '../../assets/resGraph.png'
 import Chart from "react-apexcharts";
 import { useEffect } from 'react';
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 
 const StudentMarks = () => {
     let [regdNum, setRegdNum] = useState("");
@@ -19,15 +20,22 @@ const StudentMarks = () => {
     let [error, setError] = useState("")
     let [marks, setMarks] = useState([])
     let [selectedSemester, setSelectedSemester] = useState(0)
+    let { regdNo } = useParams();
+    const [searchParams] = useSearchParams();
+    const semester = searchParams.get('semester');
+    const navigate = useNavigate();
 
     const hanldeSubmit = () => {
         getStudentMarksByRegdNum(regdNum).then((res) => {
             setRegdNum("")
-            setShowStudentData(true)
             setData(res.data)
             getStudentMarks().then(res =>
                 setOverAllStudentsData(res.data)
             )
+            if (!!semester)
+                navigate(`/examination/studentmarks/${regdNum}?semester=${semester}`);
+            else
+                navigate(`/examination/studentmarks/${regdNum}`);
             setError("")
         }).catch(err => {
             setRegdNum("")
@@ -84,14 +92,29 @@ const StudentMarks = () => {
     }
 
     useEffect(() => {
-        getStudentMarks()
-    })
+        if (!!regdNo)
+            setShowStudentData(true)
+        else
+            setShowStudentData(false)
+    }, [regdNo])
+
+
+    useEffect(() => {
+        if (!!semester) {
+            setSelectedSemester(parseInt(semester))
+        }
+        else {
+            setShowStudentData(false)
+            setSelectedSemester(0)
+        }
+    }, [semester])
 
 
     useEffect(() => {
         getMarks()
         getStudentMarksForGraph()
     }, [data, selectedSemester])
+
 
 
     return (
@@ -110,7 +133,7 @@ const StudentMarks = () => {
                                 Regd Number : <span className='text-orange-400 font-semibold'>{data.regdNo}</span>
                             </div>
                             <div className='font-medium'>
-                                <select name="SelectYear" id="select" className="ml-auto my-2 mr-2 border-solid border-2 border-sky-300 rounded" onChange={(e) => setSelectedSemester(e.target.value)}>
+                                <select value={selectedSemester} name="SelectYear" id="select" className="ml-auto my-2 mr-2 border-solid border-2 border-sky-300 rounded" onChange={(e) => setSelectedSemester(e.target.value)}>
                                     <option value={0} selected>All</option>
                                     {!!data && data.marks.map((y, index) =>
                                         <option key={index} value={y.semester}>Semester - {y.semester}</option>
@@ -154,7 +177,7 @@ const StudentMarks = () => {
                         </div>
                         <div className='d-flex justify-around items-center flex-col'>
                             <div className='text-lg font-medium text-amber-600 underline'>
-                                How do you compare to rest of the college {selectedSemester != 0 && <>: Selected Semester</>}
+                                How do you compare to rest of the college {selectedSemester != 0 && <>: Selected Semester : {selectedSemester}</>}
                             </div>
 
                             <div className="my-4" style={{ border: "3px solid #0060b1" }}>
