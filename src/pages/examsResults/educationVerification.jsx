@@ -5,7 +5,7 @@ const EducationVerification = () => {
     return (
         <div className="flex flex-col py-3 mt-2">
             <ExamHeader bannerName="Education Verification" />
-            <div class="flex flex-col mx-auto ev-content-page">
+            <div className="flex flex-col mx-auto ev-content-page">
                 <p><strong>Contact Email ID:</strong> becexamsection@gmail.com</p>
                 <p><strong><span style={{ color: "#b45000", fontSize: "14pt" }}>Procedure for Education Verification:&nbsp;</span></strong>&nbsp;</p>
                 <p>Our college has procedure to collect consultant fee for education verification <strong>Rs. 500/- per candidate.</strong></p>

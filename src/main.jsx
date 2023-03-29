@@ -97,6 +97,10 @@ const router = createBrowserRouter([
 				element: <StudentMarks />,
 			},
 			{
+				path: "/examination/studentmarks/:semester",
+				element: <ExamResults />,
+			},
+			{
 				path: "/naac",
 				element: <NaacHome />,
 			},

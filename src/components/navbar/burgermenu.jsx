@@ -12,7 +12,7 @@ const Menu = ({ className, handleClick }) => (
 
 const Hamburger = ({ className, onClick, isOpen }) => (
 	<button onClick={onClick} className={className}>
-		{!isOpen ? <i class="fa-solid fa-bars"></i> : <i class="fa-solid fa-xmark"></i>}
+		{!isOpen ? <i className="fa-solid fa-bars"></i> : <i className="fa-solid fa-xmark"></i>}
 
 	</button>
 );

@@ -8,3 +8,44 @@
 .ev-content-page p {
 	margin: 0.5rem;
 }
+
+
+.exam-results-table {
+	width: 100%;
+}
+
+.exam-results-table thead,
+tbody,
+tr,
+td,
+th {
+	display: block;
+}
+
+.exam-results-table tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.exam-results-table thead th {
+	height: 3rem;
+	width: 12.5%;
+}
+
+.exam-results-table tbody {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.exam-results-table thead {}
+
+
+.exam-results-table tbody td,
+thead th {
+	width: 12.5%;
+	float: left;
+	padding: 1rem !important;
+	text-align: center !important;
+}
