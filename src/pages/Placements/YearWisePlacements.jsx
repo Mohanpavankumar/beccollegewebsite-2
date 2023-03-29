@@ -82,7 +82,7 @@ const getSalaryDetails = ()=>{
 
         <Chart
           type="bar"
-          width={900}
+          width={1180}
           height={500}
           series={[
             {
@@ -132,7 +132,7 @@ const getSalaryDetails = ()=>{
     </React.Fragment>
     </>
     
-    <div className='ml-[65rem]'>
+    <div className='ml-[76rem]'>
       <select className='selectYears' value={showbyYears} onChange={(event) => setYears(event.target.value)}>
           <option value={1}>2022-2023</option>
           <option value={2}>2021-2022</option>
@@ -149,7 +149,7 @@ const getSalaryDetails = ()=>{
       <div className="DonutChart container-fluid mb-5">
       <Chart 
             type="donut"
-            width={900}
+            width={1180}
             height={500}
             series={getyearwiseData().map(y=>y.count)}
 

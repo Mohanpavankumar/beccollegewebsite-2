@@ -24,7 +24,7 @@ export default function Facilities() {
 				<div className=" w-full h-14 mt-2 text-5xl text-blue-800 font-sans flex justify-center items-center">Library</div>
 				<Slides />
 			</div>
-			<div className="row w-full ">
+			<div className="row w-full ml-5 mt-3 ">
 				<div className="md:col-3">
 					<div className="nav flex-column nav-pills librarymenuitems " id="tab" role="tablist" aria-orientation="vertical">
 						<a className="nav-link" id="libraryhome-tab" data-toggle="pill" href="#libraryhome" role="tab" aria-controls="libraryhome" aria-selected="true">Library Home</a>
@@ -35,12 +35,12 @@ export default function Facilities() {
 						<a className="nav-link" id="nptel-tab" data-toggle="pill" href="#nptel" role="tab" aria-controls="nptel" aria-selected="false">NPTEL</a>
 					</div>
 				</div>
-				<div className="lef-navcontent col-7">
-					<div className="mx-2">
+				<div className="left-navcontent col-7 ">
+					<div className="ml-5 ">
 						<div className="tab-content" id="tabContent">
 							<div className="tab-pane fade show in active" style={{ width: "fit-content" }} id="libraryhome" role="tabpanel" aria-labelledby="libraryhome-tab">
 								{/* <div className='line w-14 h-1 mb-2' style={{background:"#0060b1"}}></div> */}
-								<div className="w-full text-lg text-justify pr-3 pt-3" >
+								<div className="w-[62rem] text-lg text-justify pt-3" >
 									<p> Acclaimed as the one of the biggest Libraries with 22,000 sq. ft. area in the State, The Central Library of BEC has been playing a vital role as Information Centre catering to the Academic and learning needs of the faculty and Students alike since inception. The facility is serving the student fraternity ranging from under graduate to Masters and ultimately aiding the Research stratum of Bapatla Engineering College.</p><br></br>
 									<p> As a jewel in the crown of BEC, The Library aims at providing premium quality learning resources in the form of Books, Journals, E-Journals, Video Courses and CDs pertinent to Curricula of diverse Engineering and Technology and of general nature to the students and Teaching Staff. The Library also supports Departmental Libraries for acquisition and maintenance of Titles throughout the academic year.</p><br></br>
 									<p>As the veritable abode of Knowledge, the Central Library of BEC houses,</p>
@@ -51,7 +51,7 @@ export default function Facilities() {
 										<li> 20 Print Journals  </li>
 									</p>
 								</div>
-								<div className="w-full mt-3 pr-3">
+								<div className="w-[62rem] mt-3 pr-3">
 									<div className="flex mt-1 pt-2">
 										<img src={tickmark} className="w-4 h-4 mt-1"></img>
 										<p className="ml-3  text-justify text-lg">
@@ -128,8 +128,8 @@ export default function Facilities() {
 									</div>
 								</div>
 							</div>
-							<div className="tab-pane fade px-5" id="E-library" role="tabpanel" aria-labelledby="E-library-tab">
-								<div className=" w-11/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-3 ">
+							<div className="tab-pane fade " id="E-library" role="tabpanel" aria-labelledby="E-library-tab">
+								<div className=" w-full h-60 items-center facilities-background border-2 border-black rounded-md mt-3 ">
 									<h4 className="font-serif font-semibold text-xl px-3 mt-3"> IEEE-ASP:</h4>
 									<div className='line w-14 h-1 ml-3 mb-3' style={{ background: "#0060b1" }}></div>
 									<p className="justify-center text-lg ml-5 ">All Society Periodicals on Computer Engineering + Computer Science + Electrical & Electronics Engineering + Telecommunications & related disciplines</p>
@@ -144,7 +144,7 @@ export default function Facilities() {
 										<a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 									</div>
 								</div>
-								<div className=" w-11/12 h-60 tems-center facilities-background border-2 border-black rounded-md mt-4">
+								<div className=" w-full h-60 tems-center facilities-background border-2 border-black rounded-md mt-4">
 									<h4 className="font-serif font-semibold text-xl px-3 mt-3"> ASME:</h4>
 									<div className='line w-14 h-1 ml-3 mb-3' style={{ background: "#0060b1" }}></div>
 									<p className="justify-center text-lg ml-5">American Society of Mechanical Engineers for Mechanical Engineering Journals</p>
@@ -159,7 +159,7 @@ export default function Facilities() {
 										<a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 									</div>
 								</div>
-								<div className=" w-11/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-4">
+								<div className=" w-full h-60 items-center facilities-background border-2 border-black rounded-md mt-4">
 									<h4 className="font-serif font-semibold text-xl px-3 mt-3">ASCE:</h4>
 									<div className='line w-14 h-1 ml-3 mb-3' style={{ background: "#0060b1" }}></div>
 									<p className="justify-center text-lg ml-5">American Society of Civil Engineers for Civil Engineering Journals</p>
@@ -174,7 +174,7 @@ export default function Facilities() {
 										<a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 									</div>
 								</div>
-								<div className=" w-11/12 h-60 items-center facilities-background border-2 border-black rounded-md mt-4">
+								<div className=" w-full h-60 items-center facilities-background border-2 border-black rounded-md mt-4">
 									<h4 className="font-serif font-semibold text-xl px-3 mt-3 "> Springer Nature e-Journals</h4>
 									<div className='line w-14 h-1 ml-3 mb-3' style={{ background: "#0060b1" }}></div>
 									<p className="justify-center text-lg ml-5">Engineering, Computer Science, Mathematics & Statistics, Physics & Chemistry</p>
@@ -189,7 +189,7 @@ export default function Facilities() {
 										<a href="#" className=" hover:text-black hover:no-underline no-underline font-semibold p-2 border-2 border-black rounded-xl text-lg mt-2">Download</a>
 									</div>
 								</div>
-								<div className=" w-11/12 h-60 facilities-background items-center border-2 border-black rounded-md mt-4">
+								<div className=" w-full h-60 facilities-background items-center border-2 border-black rounded-md mt-4">
 									<h4 className="font-serif font-semibold text-xl px-3 mt-3">DELNET Digital Library:</h4>
 									<div className='line w-14 h-1 ml-3 mb-3' style={{ background: "#0060b1" }}></div>
 									<p className="justify-center text-lg px-5">
@@ -201,14 +201,14 @@ export default function Facilities() {
 										(New Discovery Portal)
 									</p>
 								</div>
-								<div className="w-11/12 h-60 items-center facilities-background  border-2 border-black rounded-md mt-4">
+								<div className="w-full h-60 items-center facilities-background  border-2 border-black rounded-md mt-4">
 									<h4 className="font-serif font-semibold text-xl px-3 mt-3">Library Catalogue - OPAC (Online Public Access Catalogue):</h4>
 									<div className='line w-14 h-1 ml-3 mb-3' style={{ background: "#0060b1" }}></div>
 									<p className="justify-center text-lg ml-5 mt-4 mr-2">OPAC is an online database of complete details of Books available with the Library. Users may access the OPAC in our Library to search for Books by Author or by Title or by Subject etc... to locate the required Books.</p>
 								</div>
 							</div>
 							<div className="tab-pane fade " id="E-books" role="tabpanel" aria-labelledby="E-books-tab">
-								<div>
+								<div className="w-[63rem]">
 									<h4 className=" mt-3 text-xl text-cyan-800 "> <b>e-Journals & e-Books:</b> </h4>
 
 									<div className='line w-16 h-1' style={{ background: "#0060b1" }}></div>
@@ -219,7 +219,7 @@ export default function Facilities() {
 									<p className="text-justify mt-3 ml-2 my-2 text-lg pr-3"> Off Campus access through Knimbus mobile app is provided to access all  e journals & e books subscribed by our Library. Users can access all e resources of the Library from anywhere and at any time through the mobile app. Contact the Librarian for installation of Knimbus mobile app.</p>
 
 								</div>
-								<div className="mt-3">
+								<div className="mt-3 w-[63rem]">
 									<FacilitiesChart />
 								
 								</div>
@@ -231,11 +231,11 @@ export default function Facilities() {
 									</div>
 								</div>
 							</div>
-							<div className="tab-pane fade " id="librarystaff" role="tabpanel" aria-labelledby="librarystaff-tab">
+							<div className="tab-pane fade  " id="librarystaff" role="tabpanel" aria-labelledby="librarystaff-tab">
 								<h3 className="font-semibold font-serif text-2xl mt-3">Staff Members:</h3>
 								<div className='line w-14 h-1' style={{ background: "#0060b1" }}></div>
 								<div >
-									<div className="staff-container grid grid-flow-row justify-center gap-4 mt-3 mb-5 md:grid-cols-1 md:ml-32 md:justify-items-center lg:grid-cols-1 xl:ml-0 xl:grid-cols-2 2xl:grid-cols-3">{Library}</div>
+									<div className="staff-container grid grid-flow-row justify-center gap-4 mt-3 mb-5 md:grid-cols-1  md:ml-32 md:justify-items-center lg:grid-cols-1 xl:ml-0 2xl:grid-cols-3 xl:grid-cols-2 w-[60rem]">{Library}</div>
 								</div>
 							</div>
 							<div className="tab-pane fade " id="nptel" role="tabpanel" aria-labelledby="nptel-tab">

@@ -44,7 +44,7 @@ let result = Object.keys(duplicateCount).map(e =>
 		<div className="col">
     		<div className="tab-content" id="tabContent">
 			    <div className="tab-pane fade show in active w-96" style={{width:"fit-content"}} id="Placements2022-2023" role="tabpanel" aria-labelledby="Placements2022-2023-tab">
-            <div className='ml-[65rem]'>
+            <div className='ml-[74rem]'>
               <select className='selectYears' value={showbyYears} onChange={(event) => setshowbyYears(event.target.value)}>
                   <option value={"2022-2023"}>2022-2023</option>
                   <option value={"2021-2022"}>2021-2022</option>
@@ -58,6 +58,7 @@ let result = Object.keys(duplicateCount).map(e =>
       <div className="DonutChart container-fluid mb-5">
         <Chart
           type="bar"
+          height={500}
           series={[
             {
               name: "No of Offers",
