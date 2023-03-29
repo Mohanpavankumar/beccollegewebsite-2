@@ -11,7 +11,7 @@ function Services() {
 					Accreditations/Approvals
 				</h1>
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-auto">
+			<div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-auto">
 				{services.map((services) => (
 					<ServiceItem
 						key={services.title}

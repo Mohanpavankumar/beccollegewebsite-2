@@ -5,7 +5,7 @@ function ServiceItem({imgUrl, title, description,url}){
     return(
           <div className="p-4 col  px-2 w-300 overflow-x-hidden">       
         <div className='rounded-lg overflow-hidden shadow-xl h-10.2 w-full py-1'>
-            <img src={imgUrl} alt={title} className='w-full h-40 md:h-48  rounded-t-lg' />
+            <img src={imgUrl} alt={title} className='w-screen md:h-64  rounded-t-lg' />
             <div className='p-1 w-auto bg-white'>
                 <h3 className='text-lg md:text-xl mb-2 md:mb-3 font-semibold h-6'>{title}</h3>
                 <div className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm h-56'>
