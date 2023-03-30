@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router'
 
 const Filters = (props) => {
     const navigate = useNavigate();
-    
+
     const refreshPage = () => {
         navigate(0);
     }
@@ -17,7 +17,7 @@ const Filters = (props) => {
             </div>
             {props.dispFilters.map((x, index) => <div key={index}>
                 <div key={index} className="my-1">{x.title}</div>
-                <div style={{ borderBottom: "1px dotted #0E0E0E" }} className="flex flex-wrap p-2">
+                <div style={{ borderBottom: "1px dotted #0E0E0E", width: "15rem", overflowY: "auto", overflowX: "hidden" }} className="flex flex-wrap p-2">
                     {x.info.map((y, idx) => <Form.Check
                         inline
                         label={y}

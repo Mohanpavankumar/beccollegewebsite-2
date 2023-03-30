@@ -28,22 +28,22 @@ const ExamResults = () => {
     const displayFilters = () => {
         let fData = [{
             title: "Year",
-            info: data.map(x => x.year)
+            info: [...new Set(data.map(x => x.year))]
         }, {
             title: "Branch",
-            info: data.map(x => x.branch)
+            info: [...new Set(data.map(x => x.branch))]
         },
         {
             title: "Semester",
-            info: data.map(x => x.semester)
+            info: [...new Set(data.map(x => x.semester))]
         },
         {
             title: "ExamType",
-            info: data.map(x => x.examtype)
+            info: [...new Set(data.map(x => x.examtype))]
         },
         {
             title: "Regulation",
-            info: data.map(x => x.regulation)
+            info: [...new Set(data.map(x => x.regulation))]
         }]
         setDispFilters(fData)
     }
@@ -56,22 +56,24 @@ const ExamResults = () => {
         setAppliedFilters(appliedFilters.filter(obj => obj.name !== aFData.name).concat(aFData))
     }
 
-    const onChangeOrder = order => {
-        switch (order) {
-            case 'asc': return setFilterData(data.sort((a, b) => new Date(a.releasedDate) - new Date(b.releasedDate)))
-            case 'desc': return setFilterData(data.sort((a, b) => new Date(b.releasedDate) - new Date(a.releasedDate)))
-            default:
-                return setFilterData(data)
-        }
+
+
+    const onChangeOrder = () => {
     }
+
 
     const setDataFilters = () => {
         if (!!appliedFilters) {
             let result = data.filter(o => appliedFilters.every(({ name, value }) => o[name] == value))
-            setFilterData(result)
+
+            if (sortByOrder == 'asc')
+                return setFilterData(result.sort((a, b) => new Date(b.releasedDate) - new Date(a.releasedDate)))
+            else return setFilterData(result.sort((a, b) => new Date(a.releasedDate) - new Date(b.releasedDate)))
         }
         else {
-            setFilterData(data)
+            if (sortByOrder == 'asc')
+                return setFilterData(data.sort((a, b) => new Date(b.releasedDate) - new Date(a.releasedDate)))
+            else return setFilterData(data.sort((a, b) => new Date(a.releasedDate) - new Date(b.releasedDate)))
         }
     }
 
@@ -79,12 +81,8 @@ const ExamResults = () => {
     useEffect(() => {
         setDataFilters()
         displayFilters()
-    }, [data, appliedFilters])
+    }, [data, appliedFilters, sortByOrder])
 
-
-    useEffect(() => {
-        onChangeOrder(sortByOrder)
-    }, [sortByOrder])
 
     return (
         <div className='flex flex-col mt-2'>
@@ -92,7 +90,7 @@ const ExamResults = () => {
             <div className='text-xl font-bold text-amber-400 mx-auto underline'>
                 Results
             </div>
-            <select name="selectAscDesc" id="select" className="mr-2 ml-auto border-solid border-2 border-sky-300 rounded" onChange={(e) => setSortByOrder(e.target.value)}>
+            <select value={sortByOrder} name="selectAscDesc" id="select" className="mr-2 ml-auto border-solid border-2 border-sky-300 rounded" onChange={(e) => setSortByOrder(e.target.value)}>
                 <option value={"asc"} selected>Sort by: New to Old</option>
                 <option value={"desc"}>Sort by: Old to New</option>
             </select>
