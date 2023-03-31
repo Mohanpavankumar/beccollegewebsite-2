@@ -158,7 +158,7 @@ const router = createBrowserRouter([
 				element: <It />,
 			},
 			{
-				path: "/departments/Itstaff",
+				path: "/departments/IT/Itstaff",
 				element: <ItStaff />,
 			},
 			{
@@ -243,9 +243,10 @@ const router = createBrowserRouter([
 				path: "/CommittePage",
 				element: <CommittePage />,
 			},
+
 			{
-				path: "/RtiAct",
-				element: <RtiAct />,
+				path: "/bos",
+				element: <Bos />,
 			},
 		],
 	},

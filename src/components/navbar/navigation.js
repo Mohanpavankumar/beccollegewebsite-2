@@ -89,7 +89,6 @@ export const navigationData = [
 				to: "/Acheivements",
 
 				label: "Academic Acheivements",
-
 			},
 			{
 				to: "/Patents",
@@ -117,14 +116,12 @@ export const navigationData = [
 				label: "ACCREDIATION/Approvals",
 			},
 			{
-
 				to: "/CommittePage",
 
 				label: "Committees",
 			},
 
 			{
-
 				to: "/bos",
 				label: "BOS(Board of Studies)",
 			},
@@ -132,7 +129,6 @@ export const navigationData = [
 				to: "/rti",
 				label: "RTI Act 2005",
 			},
-
 		],
 	},
 	{
@@ -165,7 +161,7 @@ export const navigationData = [
 			{
 				to: "/examination/results",
 				label: "Results",
-			}
+			},
 		],
 	},
 	{
@@ -178,16 +174,32 @@ export const navigationData = [
 	},
 ];
 
+export const deptNavDataIT = [
+	{
+		to: "/",
+		label: "Home",
+	},
+	{
+		to: "/departments/IT",
+		label: "IT Home",
+	},
+	{
+		to: "/departments/IT/Itstaff",
+		label: "Staff",
+	},
+	{
+		to: "/departments/IT/deptstat",
+		label: "Students",
+	},
+	{
+		to: "/YearWise-Placements",
+		label: "Placements",
+	},
+];
 
-export const deptNavDataIT = [{
-	to: "/departments/IT/depstat",
-	label: "DeptStats",
-},
-]
-
-export const deptNavDataMech = [{
-	to: "/departments/Mech/depstat",
-	label: "DeptStats",
-},
-
-]
+export const deptNavDataMech = [
+	{
+		to: "/departments/Mech/depstat",
+		label: "DeptStats",
+	},
+];
