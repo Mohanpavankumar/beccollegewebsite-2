@@ -3,31 +3,31 @@ import {Link} from 'react-router-dom';
 import Placementsteam from '../../Data/Placementsteam.js';
 import Staff from "/src/components/staff/staff.jsx";
 import Devops from "/images/Devops.jpg"
-import Engineersday from "/images/EngineersDay.jpg"
-import Becdetails from "/images/BecDetails.jpg"
-import GraduationCeremony from "/images/GraduationDayCeremony.jpg"
+import Engineersday from "/images/EngineersDay.jpg";
+import Becdetails from "/images/BecDetails.jpg";
+import GraduationCeremony from "/images/GraduationDayCeremony.jpg";
 import  RegistrationFormComponent  from '../../components/RegistrationForms/Form.jsx';
 import { useEffect, useState } from 'react';
 import { getPlacementsNotifications } from '../../config/services.js';
-import DeltaX from "/images/DeltaX.pdf"
+import DeltaX from "/images/DeltaX.pdf";
 
 const PlacementsStaff = Placementsteam.map((dataArg) => {
 	return <Staff key={dataArg.staffId} item={dataArg} />;
 });
 
 let Placements=() =>{
-	const [data, setData] = useState([])
+	const [data, setData] = useState([]);
 
 	const getData = () => {
 	getPlacementsNotifications().then(res =>
-			setData(res.data)
+			setData(res.data);
 		).catch(err =>
-			console.log('something went wrong', err)
+			console.log('something went wrong', err);
 		)
 	}
 
 	useEffect(() => {
-		getData()
+		getData();
 	}, [])
 
     return(
